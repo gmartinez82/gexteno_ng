@@ -1,0 +1,540 @@
+/* Archivo CSS de 'ins_insumo' */
+
+.div_listado_buscador{
+}
+.div_listado_buscador select{
+    max-width: 110px;
+}
+.div_listado_buscador .col.orden{
+    /*
+    margin-right: 7%;
+    */
+}
+.div_listado_buscador select#cmb_filtro_ins_tipo_lista_precio_id,
+.div_listado_buscador select#cmb_filtro_ins_categoria_id{
+    max-width:350px;
+}
+.div_listado_buscador .col.categoria .selectize-control{
+    min-width:350px;    
+}
+
+#listado_adm_ins_insumo_precios_gestion{
+
+}
+
+#listado_adm_ins_insumo_precios_gestion tr{
+}
+#listado_adm_ins_insumo_precios_gestion tr td{
+}
+#listado_adm_ins_insumo_precios_gestion tr:hover td{
+    background-color: #e1f2f7!important;
+}
+#listado_adm_ins_insumo_precios_gestion tr.sel td{
+    background-color: #e1f2f7;
+}
+
+#listado_adm_ins_insumo_precios_gestion .avatar{
+
+}
+#listado_adm_ins_insumo_precios_gestion .avatar .foto{
+    width: 80px;
+}
+
+#listado_adm_ins_insumo_precios_gestion .info-insumo{
+    text-align: left;
+    font-size: 11px;
+}
+#listado_adm_ins_insumo_precios_gestion .info-insumo .foto{
+    float: left;
+    width: 45px;
+    min-height: 110px;
+}
+#listado_adm_ins_insumo_precios_gestion .info-insumo div{
+    margin: 2px;
+}
+#listado_adm_ins_insumo_precios_gestion .info-insumo .label{
+    color: #666;
+    font-weight: normal;
+}
+#listado_adm_ins_insumo_precios_gestion .info-insumo .marca{
+    font-weight: bold;
+    color: #000;
+}
+#listado_adm_ins_insumo_precios_gestion .info-insumo .descripcion-marca{
+    font-size: 10px;
+    background-color: #eee;
+    padding: 1px 6px;
+}
+#listado_adm_ins_insumo_precios_gestion .info-insumo .codigo-marca{
+    font-size: 10px;
+    background-color: #eee;
+    padding: 3px 6px;
+}
+#listado_adm_ins_insumo_precios_gestion .info-insumo .insumo{
+    font-size: 14px;
+    font-weight: bold;
+
+    color: #0283bc;
+}
+#listado_adm_ins_insumo_precios_gestion .info-insumo .codigo-interno{
+    font-size: 10px;
+
+    color: #333;
+}
+#listado_adm_ins_insumo_precios_gestion .info-insumo .categoria{
+    font-size: 10px;    
+    color: #333;
+}
+#listado_adm_ins_insumo_precios_gestion .info-insumo .codigo-barra{
+    font-size: 9px;    
+    color: #000000;
+    
+    background-color: #ededed;
+    border: #ccc dotted 1px;
+    padding: 2px;
+    width: 110px;
+    
+    text-align: center;
+}
+#listado_adm_ins_insumo_precios_gestion .info-insumo .codigo-barra img{
+    vertical-align: top;
+    margin: 0 3px;
+}
+
+#listado_adm_ins_insumo_precios_gestion .info-insumo .etiquetas{
+    margin: 1px;
+}
+#listado_adm_ins_insumo_precios_gestion .info-insumo .etiquetas .etiqueta{
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    
+    background-color: #ededed;
+    color: #666666;
+    
+    padding: 1px 6px;
+    font-size: 9px;  
+}
+
+#listado_adm_ins_insumo_precios_gestion .info-insumo .proveedors{
+    margin: 1px;
+}
+#listado_adm_ins_insumo_precios_gestion .info-insumo .proveedors .proveedor{
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    
+    background-color: #ccf1f3;
+    color: #000;
+    
+    padding: 1px 6px;
+    font-size: 10px;    
+}
+
+
+#listado_adm_ins_insumo_precios_gestion .von{
+    text-align: left;
+}
+#listado_adm_ins_insumo_precios_gestion .von .accion{
+    cursor: pointer;   
+}
+#listado_adm_ins_insumo_precios_gestion .von .accion:hover,
+#listado_adm_ins_insumo_precios_gestion .von .accion:hover{
+    opacity: 0.7;
+}
+
+#listado_adm_ins_insumo_precios_gestion .costo{
+    color: #0283bc;
+    font-weight: bold;
+
+    padding: 1px;    
+}
+#listado_adm_ins_insumo_precios_gestion .costo.cero{
+    color: #666;
+    font-weight: normal;
+}
+#listado_adm_ins_insumo_precios_gestion .costo input{
+    border: #013254 solid 1px;
+    color: #0283bc;
+    padding: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    
+    text-align: right;
+}
+#listado_adm_ins_insumo_precios_gestion .costo.cero input{
+    background-color: #f7f0d2;
+    border: #f0d462 solid 1px;
+    color: #735c01;
+    font-weight: normal;
+}
+#listado_adm_ins_insumo_precios_gestion .importe-costo-modificado{
+    font-size: 11px;
+    color: #666;
+    
+    width: 80%;
+    margin: 3px auto 2px auto;
+    padding: 2px 4px;
+}
+#listado_adm_ins_insumo_precios_gestion .importe-costo-modificado.MES_ACTUAL{
+    color: #006600;
+}
+#listado_adm_ins_insumo_precios_gestion .importe-costo-modificado.MES_ANTERIOR{
+    color: #840;
+}
+#listado_adm_ins_insumo_precios_gestion .importe-costo-modificado.MES_MUYANTERIOR{
+    color: #CC0000;
+}
+#listado_adm_ins_insumo_precios_gestion .importe-costo-modificado .importe-costo-modificado-por{
+    font-size: 10px;
+    opacity: 0.7;
+}
+#listado_adm_ins_insumo_precios_gestion .costo .texto-iva{
+    color: #0283bc;
+    font-size: 10px;
+    padding: 2px;
+}
+
+#listado_adm_ins_insumo_precios_gestion .uno-tipo-lista-precio{
+    background-color: #f0f0f0;
+}
+#listado_adm_ins_insumo_precios_gestion .PRECIO_GENERAL{
+}
+#listado_adm_ins_insumo_precios_gestion .PRECIO_MAYORISTA{
+    background-color: #e6eef0;
+}
+
+#listado_adm_ins_insumo_precios_gestion .info-importe{
+}
+#listado_adm_ins_insumo_precios_gestion .info-importe .col{
+    display: inline-block;
+    vertical-align: top;
+
+    width: 30%;
+}
+#listado_adm_ins_insumo_precios_gestion .info-importe .col.porcentajes{
+    width: 40%;
+    text-align: left;
+}
+#listado_adm_ins_insumo_precios_gestion .info-importe .col.porcentajes .bloque-porcentaje{
+}
+#listado_adm_ins_insumo_precios_gestion .info-importe .col.porcentajes .bloque-porcentaje.descuento{
+    display: nonex;
+    
+    border-top: #000 dotted 1px;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+#listado_adm_ins_insumo_precios_gestion .info-importe .col.porcentajes .bloque-porcentaje.cantidad-minima-venta{
+    display: nonex;
+    
+    border-top: #000 dotted 1px;
+    padding-top: 10px;
+    margin-top: 10px;
+    
+    color: #999999;
+}
+#listado_adm_ins_insumo_precios_gestion .info-importe .col.porcentajes .porcentaje-tipo-lista{
+}
+#listado_adm_ins_insumo_precios_gestion .info-importe .col.porcentajes .porcentaje-tipo-lista.enabled{
+}
+#listado_adm_ins_insumo_precios_gestion .info-importe .col.porcentajes .porcentaje-tipo-lista.disabled{
+    font-size: 10px;
+    color: #666;
+    text-decoration: line-through;
+    padding-left: 15px;
+}
+#listado_adm_ins_insumo_precios_gestion .info-importe .col.porcentajes .bloque-porcentaje.descuento .porcentaje-tipo-lista.enabled{
+    color: #57af07;
+}
+
+#listado_adm_ins_insumo_precios_gestion .info-importe .col.porcentajes .porcentaje-personalizado{
+}
+#listado_adm_ins_insumo_precios_gestion .info-importe .col.porcentajes .porcentaje-personalizado.enabled{
+    color: #000;
+    font-weight: bold;
+}
+#listado_adm_ins_insumo_precios_gestion .info-importe .col.porcentajes .porcentaje-personalizado.disabled{
+    color: #999;
+    text-decoration: line-through;
+}
+#listado_adm_ins_insumo_precios_gestion .info-importe .col.porcentajes .bloque-porcentaje.descuento .porcentaje-personalizado.enabled{
+    color: #4ca503;
+    font-weight: bold;
+}
+#listado_adm_ins_insumo_precios_gestion .info-importe .col.porcentajes .bloque-porcentaje.cantidad-minima-venta .cantidad-personalizada{
+    color: #0283bc;
+    font-weight: bold;
+}
+#listado_adm_ins_insumo_precios_gestion .info-importe .col.porcentajes input{
+    border: #ddd solid 1px;
+    color: #999;
+    padding: 5px 2px;
+    font-size: 13px;
+    
+    text-align: right;
+    max-width: 75%;
+}
+#listado_adm_ins_insumo_precios_gestion .info-importe .col.porcentajes .porcentaje-personalizado input{
+    background-color: #B0FFFF;
+    border: #013254 solid 2px;
+    color: #013254;
+    font-weight: bold;
+}
+#listado_adm_ins_insumo_precios_gestion .info-importe .col.porcentajes .bloque-porcentaje.descuento input{
+    border: #ddd solid 1px;
+    color: #9eca5e;
+    padding: 5px 2px;
+    font-size: 13px;
+    
+    text-align: right;
+    max-width: 75%;
+}
+#listado_adm_ins_insumo_precios_gestion .info-importe .col.porcentajes .bloque-porcentaje.descuento .porcentaje-personalizado input{
+    background-color: #cbece0;
+    color: #57af07;
+    border: #4ca503 solid 2px;
+    font-weight: bold;
+}
+#listado_adm_ins_insumo_precios_gestion .info-importe .col.porcentajes .bloque-porcentaje.cantidad-minima-venta .cantidad-personalizada input{
+    background-color: #bae8f5;
+    color: #0283bc;
+    border: #0283bc solid 2px;
+    font-weight: bold;
+}
+
+#listado_adm_ins_insumo_precios_gestion .info-importe .col.importes{
+    width: 50%;
+    font-size: 14px;
+}
+#listado_adm_ins_insumo_precios_gestion .info-importe .col.importes .importe-calculado{
+    text-align: right;
+}
+#listado_adm_ins_insumo_precios_gestion .info-importe .col.importes .importe-calculado.enabled{
+    color: #003399;
+    font-weight: bold;
+}
+#listado_adm_ins_insumo_precios_gestion .info-importe .col.importes .importe-calculado.disabled{
+    color: #666;
+    text-decoration: line-through;
+    font-size: 10px;
+}
+#listado_adm_ins_insumo_precios_gestion .info-importe .col.importes .importe-personalizado{
+    text-align: right;
+}
+#listado_adm_ins_insumo_precios_gestion .info-importe .col.importes .importe-personalizado.enabled{
+}
+#listado_adm_ins_insumo_precios_gestion .info-importe .col.importes .importe-personalizado.disabled{
+    color: #666;
+    text-decoration: line-through;
+    font-size: 12px;
+}
+#listado_adm_ins_insumo_precios_gestion .info-importe .col.importes input{
+    border: #013254 solid 1px;
+    color: #013254;
+    padding: 5px 2px;
+    font-size: 13px;
+    
+    text-align: right;
+    max-width: 90%;
+}
+#listado_adm_ins_insumo_precios_gestion .info-importe .col.importes .importe-personalizado input{
+    background-color: #B0FFFF;
+    border: #013254 solid 2px;
+    font-weight: bold;
+}
+#listado_adm_ins_insumo_precios_gestion .info-importe .col.importes .label-mas-iva{
+    color: #777;
+    font-size: 10px;
+    margin-top: 1px;
+    font-weight: normal;
+}
+#listado_adm_ins_insumo_precios_gestion .info-importe .col.importes .label-mas-iva strong{
+    font-size: 15px;
+    color: #0283bc;
+    font-weight: bold;
+}
+
+#listado_adm_ins_insumo_precios_gestion .info-politica-descuento{
+    display: none;
+    margin-top: 10px;
+}
+#listado_adm_ins_insumo_precios_gestion .info-politica-descuento-rango{
+    display: inline-block;
+    vertical-align: top;
+        
+    border: #0283c1 solid 1px;
+    background-color: #ededed;
+    width: 70px;
+    
+    font-size: 11px;
+    
+    padding: 2px;
+}
+#listado_adm_ins_insumo_precios_gestion .info-politica-descuento-rango .info-politica-descuento-rango-cantidad{
+    color: #333;
+}
+#listado_adm_ins_insumo_precios_gestion .info-politica-descuento-rango .info-politica-descuento-rango-descuento{
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#listado_adm_ins_insumo_precios_gestion .col.acciones{
+    float: right;
+    width: 8%;
+}
+
+#listado_adm_ins_insumo_precios_gestion .col.acciones .accion{
+}
+
+#listado_adm_ins_insumo_precios_gestion .col.acciones .accion img{
+    width: 13px;
+}
+#listado_adm_ins_insumo_precios_gestion .inhabilitado{
+    color: #999;
+}
+
+/* Modal Modificar */
+.div_modal .datos.modificar-importe{
+
+}
+.div_modal .datos.modificar-importe .col{
+    display: inline-block;
+    vertical-align: top;
+
+    box-sizing: border-box;
+
+    border: #ccc solid 1px;
+    background-color: #fff;
+}
+.div_modal .datos.modificar-importe .col.insumos .comentarios-cantidad{
+    background-color: #dedede;
+
+    font-style:italic;
+    font-size: 14px;
+    padding: 7px;
+    margin: 5px 0;
+}
+.div_modal .datos.modificar-importe .col.insumos .comentarios-cantidad .comentario-cantidad{
+    padding: 4px;
+    border-bottom: #ccc dotted 1px;
+}
+
+.div_modal .datos.modificar-importe .col.insumos{
+    width: 58%;
+    padding: 10px;
+}
+.div_modal .datos.modificar-importe .col.insumos .uno.insumo{
+    border-bottom: #ccc dotted 1px;
+    padding: 5px 5px;
+}
+.div_modal .datos.modificar-importe .col.insumos .uno.insumo .avatar{
+    float: left;
+    width: 50px;
+    max-height: 50px;
+    overflow: hidden;
+}
+.div_modal .datos.modificar-importe .col.insumos .uno.insumo .avatar img{
+    width: 100%;
+}
+.div_modal .datos.modificar-importe .col.insumos .uno.insumo .descripcion{
+    font-weight: bold;
+}
+.div_modal .datos.modificar-importe .col.insumos .uno.insumo .codigo-interno{
+    color: #666;
+    font-weight: normal;
+}
+.div_modal .datos.modificar-importe .col.insumos .uno.insumo .categoria{
+    font-size: 10px;    
+    color: #0283bc;
+}
+
+.div_modal .datos.modificar-importe .col.tipos-precios{
+    width: 40%;
+}
+.div_modal .datos.modificar-importe .col.tipos-precios .descripcion{
+    background-color: #dedede;
+    padding: 8px;
+}
+.div_modal .datos.modificar-importe .col.tipos-precios .advertencia-costo{
+    border: #aa563d dotted 1px;
+    background-color: #FFDDA6;
+    padding: 8px;
+    margin: 5px;
+}
+.div_modal .datos.modificar-importe .col.tipos-precios .tipos-precios-info{
+    padding: 5px 10px;
+}
+
+.div_modal .datos.modificar-importe .col.tipos-precios .uno.tipo-precio{
+    border-bottom: #ccc dotted 1px;
+    padding: 5px 5px;
+}
+.div_modal .datos.modificar-importe .col.tipos-precios .uno.tipo-precio .descripcion{
+    font-weight: bold;
+}
+.div_modal .datos.modificar-importe .col.tipos-precios .uno.tipo-precio .par{
+    display: inline-block;
+    vertical-align: top;
+
+    width: 32%;
+    box-sizing: border-box;
+}
+.div_modal .datos.modificar-importe .col.tipos-precios .uno.tipo-precio .par.full{
+    display: block;
+    width: 100%;
+}
+.div_modal .datos.modificar-importe .col.tipos-precios .uno.tipo-precio .par .label{
+    width: 95%;
+    border: none;
+    padding: 0px 10px;
+    margin: 0px;
+    
+    font-size: 11px;
+}
+.div_modal .datos.modificar-importe .col.tipos-precios .uno.tipo-precio .par .dato{
+    width: 90%;
+    padding: 0;
+}
+.div_modal .datos.modificar-importe .col.tipos-precios .uno.tipo-precio .par .dato .textbox{
+    padding: 2px!important;
+    font-size: 14px!important;
+    font-weight: bold;
+    color: #aa563d;
+}
+.div_modal .datos.modificar-importe .col.tipos-precios .uno.tipo-precio .botonera{
+    display: inline-block;
+    vertical-align: top;
+
+    width: 27%;
+    box-sizing: border-box;
+}
+.div_modal .datos.modificar-importe .col.tipos-precios .uno.tipo-precio .botonera .boton{
+}
+.div_modal .datos.modificar-importe .col.tipos-precios .uno.tipo-precio .confirmacion{
+    display: none;
+
+    background-color: #006600;
+    color: #fff;
+
+    width: 75%;
+
+    margin: 5px;
+    padding: 5px;
+}
+
+.div_modal .datos.modificar-importe .col.categoria{
+    width: 38%;
+}
+.div_modal .datos.modificar-importe .col.categoria .par{
+}
+.div_modal .datos.modificar-importe .col.categoria .par .label{
+    width: 95%;
+}
+.div_modal .datos.modificar-importe .col.categoria .par .dato{
+    width: 95%;
+}
+.div_modal .datos.modificar-importe .col.categoria .selectize-control{
+    width: 95%;
+    max-width: 95%;
+}

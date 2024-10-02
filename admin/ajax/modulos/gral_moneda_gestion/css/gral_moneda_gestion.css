@@ -1,0 +1,57 @@
+/* Archivo CSS de 'gral_moneda' */
+
+#listado_adm_gral_moneda_gestion{
+}
+
+#listado_adm_gral_moneda_gestion .codigo{
+    color: #666;
+}
+
+#listado_adm_gral_moneda_gestion .tipo-cambio-info{
+    border-bottom:#CCC dotted 1px;
+    background-color:#FFF;
+    padding: 5px;
+    text-align: left;
+}
+
+#listado_adm_gral_moneda_gestion .tipo-cambio-info .flag{
+    float: left;
+    margin-right: 10px;
+    height: 70px;
+}
+#listado_adm_gral_moneda_gestion .tipo-cambio-info .flag img{
+    width: 24px;
+}
+#listado_adm_gral_moneda_gestion .tipo-cambio-info .tipo-cambio{
+    color:#000;
+    font-size: 14px;
+}
+#listado_adm_gral_moneda_gestion .tipo-cambio-info .coeficiente-ajuste{
+    color:#003366;
+    font-size: 12px;
+}
+#listado_adm_gral_moneda_gestion .tipo-cambio-info .fecha{
+    color:#003366;
+    font-size: 12px;
+    font-weight: bold;
+}
+#listado_adm_gral_moneda_gestion .tipo-cambio-info .tipo-cambio-real{
+    float: right;
+    
+    color:#000;
+    font-size: 14px;
+    font-weight: bold;
+}
+#listado_adm_gral_moneda_gestion .tipo-cambio-info .tipo-cambio-real .moneda-origen{
+    color:#666;
+    font-size: 12px;
+    font-weight: normal;
+}
+#listado_adm_gral_moneda_gestion .tipo-cambio-info .observacion{
+    color:#666;
+    font-size: 12px;
+}
+#listado_adm_gral_moneda_gestion .tipo-cambio-info .fechahora-modificacion{
+    color:#666;
+    font-size: 12px;
+}

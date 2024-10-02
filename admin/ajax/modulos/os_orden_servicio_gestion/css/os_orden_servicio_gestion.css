@@ -1,0 +1,153 @@
+/* Archivo CSS de 'os_orden_servicio' */
+
+#listado_adm_os_orden_servicio_gestion{
+
+}
+
+#listado_adm_os_orden_servicio_gestion .os_codigo{
+    color: #000;
+    font-weight: bold;
+    padding: 2px 4px;
+    
+    word-break: break-all;
+}
+
+#listado_adm_os_orden_servicio_gestion .os_codigo.ALTA{
+  color: #CC0000;
+}
+
+#listado_adm_os_orden_servicio_gestion .os_codigo.MEDIA{
+  color: #DA8028;
+}
+
+#listado_adm_os_orden_servicio_gestion .os_codigo.BAJA{
+  color: #333;
+}
+
+#listado_adm_os_orden_servicio_gestion .os_fecha{
+    font-weight: normal;
+    color:#666;
+}
+#listado_adm_os_orden_servicio_gestion .os_creado_por{
+    font-size: 10px;
+    color: #666;
+}
+#listado_adm_os_orden_servicio_gestion .os_tipo{
+    color:#000;
+}
+#listado_adm_os_orden_servicio_gestion .os_persona{
+}
+#listado_adm_os_orden_servicio_gestion .os_persona .avatar{
+    display: inline-block;
+    vertical-align: top;
+    
+    width: 30px;
+    
+    margin: 0 5px;
+}
+#listado_adm_os_orden_servicio_gestion .os_persona .avatar img{
+    width: 100%;
+    border: #ccc solid 1px;
+}
+#listado_adm_os_orden_servicio_gestion .os_persona .info-persona{
+    display: inline-block;
+    vertical-align: top;
+    
+    color:#333;
+    font-size: 9px;
+}
+#listado_adm_os_orden_servicio_gestion .os_persona .info-persona .descripcion{
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+}
+
+#listado_adm_os_orden_servicio_gestion .os_notificacion{
+    color:#840;
+    font-size: 11px;
+}
+#listado_adm_os_orden_servicio_gestion .os_adjuntos{
+    float: right;
+}
+
+#listado_adm_os_orden_servicio_gestion .os_fecha_limite_resolucion_dias{
+    color: #666;
+    font-size: 10px;
+}
+#listado_adm_os_orden_servicio_gestion .os_fecha_limite_resolucion_dias.tiempo_ok{
+    color: #006600;
+}
+#listado_adm_os_orden_servicio_gestion .os_fecha_limite_resolucion_dias.tiempo_limite{
+    color: #DA8028;
+}
+#listado_adm_os_orden_servicio_gestion .os_fecha_limite_resolucion_dias.tiempo_vencido{
+    color: #C00;
+}
+
+#listado_adm_os_orden_servicio_gestion .os_estado{
+    color: #000;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+#listado_adm_os_orden_servicio_gestion .os_resolucion{
+    
+    color:#003399;
+    margin: 0 10px 0 25px;
+
+    font-weight: bold;
+    font-size: 9px;
+    
+    padding: 1px;
+}
+
+/* Modal */
+.div_modal .suspension_fecha_fin{
+    font-weight: bold;
+    color: #000;
+}
+.div_modal .suspension_fecha_reintegro{
+    font-weight: bold;
+    color: #000;
+}
+
+.div_modal .masivo-bloque{
+    background-color:#f0f0f0;
+    padding:5px;
+
+}
+.div_modal .masivo-bloque .comentario{
+    font-size:11px;
+    color:#666;
+}
+.div_modal .masivo-bloque .uno{
+    display: inline-block;
+    vertical-align: top;
+    
+    width:170px;
+    
+    background-color:#FFFFFF;
+    border-bottom:#999999 dotted 1px;
+    padding:8px;
+    margin:1px!important;	
+    
+    box-sizing: border-box;
+    
+    font-size:14px;
+}
+.div_modal .masivo-bloque .uno .foto{
+    overflow: hidden;
+    margin: 0!important;
+    width: 100%!important; 
+    max-height: 100px;
+}
+.div_modal .masivo-bloque .uno .foto img{
+    width: 100%; 
+}
+.div_modal .masivo-bloque .uno .descripcion{
+    font-size: 11px!important;
+}
+.div_modal .masivo-bloque .uno .observacion{
+    font-size: 10px;
+    color: #666;
+}

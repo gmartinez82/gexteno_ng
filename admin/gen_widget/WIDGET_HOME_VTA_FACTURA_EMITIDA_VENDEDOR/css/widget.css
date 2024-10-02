@@ -1,0 +1,34 @@
+#cuerpo_widget_WIDGET_HOME_VTA_FACTURA_EMITIDA_VENDEDOR{
+    background-color: transparent;
+}
+#cuerpo_widget_WIDGET_HOME_VTA_FACTURA_EMITIDA_VENDEDOR .cliente-razon-social{
+    font-size: 10px;
+}
+#cuerpo_widget_WIDGET_HOME_VTA_FACTURA_EMITIDA_VENDEDOR .cliente-descripcion{
+    color: #666; 
+    font-size: 10px;
+}
+#cuerpo_widget_WIDGET_HOME_VTA_FACTURA_EMITIDA_VENDEDOR .fecha{
+    color: #666;
+}
+#cuerpo_widget_WIDGET_HOME_VTA_FACTURA_EMITIDA_VENDEDOR .nro-comprobante{
+    font-weight: bold;
+}
+#cuerpo_widget_WIDGET_HOME_VTA_FACTURA_EMITIDA_VENDEDOR .forma-pago{
+    color: #666; 
+    font-size: 10px; 
+}
+#cuerpo_widget_WIDGET_HOME_VTA_FACTURA_EMITIDA_VENDEDOR .nro-comprobante img{
+    vertical-align: middle;
+}
+#cuerpo_widget_WIDGET_HOME_VTA_FACTURA_EMITIDA_VENDEDOR .items{
+}
+#cuerpo_widget_WIDGET_HOME_VTA_FACTURA_EMITIDA_VENDEDOR .items.diferencia{
+    background-color: #efe9ca;
+    color: black;
+}
+#cuerpo_widget_WIDGET_HOME_VTA_FACTURA_EMITIDA_VENDEDOR .importe-total,
+#cuerpo_widget_WIDGET_HOME_VTA_FACTURA_EMITIDA_VENDEDOR .importe-saldo{
+    font-weight: bold;
+    color: black;
+}

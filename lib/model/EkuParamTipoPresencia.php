@@ -1,0 +1,16 @@
+<?php
+require_once "base/BEkuParamTipoPresencia.php";
+
+class EkuParamTipoPresencia extends BEkuParamTipoPresencia {
+
+    const TIPO_OPERACION_PRESENCIAL = 'OPERACION_PRESENCIAL';
+    const TIPO_OPERACION_ELECTONICA = 'OPERACION_ELECTONICA';
+    const TIPO_OPERACION_TELEMARKETING = 'OPERACION_TELEMARKETING';
+    const TIPO_VENTA_A_DOMICILIO = 'VENTA_A_DOMICILIO';
+    const TIPO_OPERACION_BANCARIA = 'OPERACION_BANCARIA';
+    const TIPO_OPERACION_CICLICA = 'OPERACION_CICLICA';
+    const TIPO_OTRO = 'OTRO';
+
+}
+
+?>

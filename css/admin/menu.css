@@ -1,0 +1,73 @@
+@charset "iso-8859-2";
+/* CSS Document */
+
+/* A few IE bug fixes */
+
+* { margin: 10px; padding: 0; }
+* html ul ul li a { height: 100%; }
+* html ul li a { height: 100%; }
+* html ul ul li { margin-bottom: -1px; }
+
+
+/*body { padding-left:35px; font-family: Arial, Helvetica, sans-serif; }*/
+#adm_menu {
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	width: 200px;
+	margin: 5px 0;
+	display:none;
+}
+
+/* Some list and link styling */
+ul li { width: 200px; }
+ul ul li { border-left: 5px solid #CCCCCC; padding: 0; width: 195px; margin-bottom: 0; }
+ul ul li a { display:block; color: #000; padding: 3px 6px; font-size: 12px; }
+ul ul li a:hover { display:block; color: #3D761B; background-color: #eee; padding: 3px 8px; font-size: 12px; }
+li { list-style-type: none; background-color:#FFFFFF; }
+h2 { margin-top: 1.5em; }
+
+/* Header links styling */
+h3.head a { 
+	font-size:13px;
+	text-decoration:none;
+	color:#666666;
+	display:block;
+	border-top:#AFC9B0 1px solid;
+	background:#DFDFDF url(down.gif) no-repeat;
+	background-position: 98% 50%;
+	padding: 6px 6px;
+	padding-left:20px;
+}
+h3.head a:hover { 
+	color: #000;
+	background: #ccc url(down.gif) no-repeat; 
+	background-position: 98% 50%;
+}
+h3.selected a { 
+	background: #3D761B url(up.gif) no-repeat; 
+	background-position:98% 50%;
+	color: #fff;
+	padding: 6px 6px;
+	padding-left:20px;
+}
+h3.selected a:hover { 
+	background: #ccc url(up.gif) no-repeat; 
+	background-position:98% 50%;
+	color: #000;
+}
+.menu_titulo{
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	text-align:right;
+	padding:3px;
+	padding-right:10px;
+}
+#div_menu_cargando{
+	border:#CCCCCC solid 1px;
+	height:150px;
+	width:150px;
+	text-align:center;
+	padding:10px;
+	padding-top:50px;
+	margin-left:15px;
+}

@@ -1,0 +1,155 @@
+/* Archivo CSS de 'prv_insumo' */
+
+/* se habilita wrap break para los codigos */
+#listado_adm_prv_insumo_gestion .codigo_proveedor,
+#listado_adm_prv_insumo_gestion .codigo_pieza,
+#listado_adm_prv_insumo_gestion .codigo_marca{
+    word-break: break-all;
+}
+
+#listado_adm_prv_insumo_gestion .avatar{
+    
+}
+#listado_adm_prv_insumo_gestion .id{
+    font-size: 10px;
+    color: #999;
+}
+#listado_adm_prv_insumo_gestion .codigo_proveedor{
+    font-weight: bold;
+    color: #000;
+}
+#listado_adm_prv_insumo_gestion .prv-descripcion{
+    font-size: 11px;
+    font-weight: bold;
+    
+    color: #000;
+    max-width: 250px;
+}
+#listado_adm_prv_insumo_gestion .creado{
+    color: #999;
+    font-size: 11px;
+    max-width: 250px;
+}
+
+
+#listado_adm_prv_insumo_gestion .importes-venta{
+    border: #666 dotted 1px;
+    background-color: #ededed;
+    padding: 2px;    
+}
+#listado_adm_prv_insumo_gestion .importes-venta .importe-venta-neto{
+    font-weight: bold;
+    font-size: 13px;
+            
+    color: #000;
+
+    margin-top: 6px;
+}
+#listado_adm_prv_insumo_gestion .importes-venta .fecha_actualizacion{
+    font-size: 11px;
+    color: #666;
+}
+
+/* Ins Insumo */
+#listado_adm_prv_insumo_gestion .ins-insumo{
+    border: #333 dotted 1px;
+    background-color: #C7E1F3;
+    
+    padding: 3px 1px;
+    margin: 0;
+    
+    font-size: 10px;
+}
+#listado_adm_prv_insumo_gestion .ins-insumo .avatar{
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    
+    width: 20%;
+}
+#listado_adm_prv_insumo_gestion .ins-insumo .avatar .foto{
+    width: 25px;
+}
+#listado_adm_prv_insumo_gestion .ins-insumo .descripcion{
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+
+    text-align: left;
+    font-size: 10px;
+    
+    width: 75%;
+}
+
+/* Ficha */
+
+/* Ficha - Modal Top */
+.div_modal .ficha-insumo .modal-top{
+    margin: 5px;
+    padding: 5px;
+    
+    background-color: #f4f4f4;
+    border-bottom: #ccc solid 1px;
+}
+
+
+.div_modal .ficha-insumo .modal-top .col{
+    display: inline-block;
+    vertical-align: top;
+    
+    width: 100px;
+}
+.div_modal .ficha-insumo .modal-top .col .label{
+    color: #666;
+    font-weight: normal;
+}
+.div_modal .ficha-insumo .modal-top .col.foto{
+    width: 70px;
+    margin: 0 10px;
+}
+.div_modal .ficha-insumo .modal-top .col.foto img{
+    border: #ccc solid 1px;
+    width: 100%;
+}
+.div_modal .ficha-insumo .modal-top .col.info-insumo{
+    width: 450px;
+}
+.div_modal .ficha-insumo .modal-top .col.info-insumo .descripcion{
+    font-size: 16px;
+    font-weight: bold;
+}
+.div_modal .ficha-insumo .modal-top .col.info-insumo .categoria{
+    color: #003366;
+}
+.div_modal .ficha-insumo .modal-top .col.info-insumo .modelos{
+    color: #666;
+}
+.div_modal .ficha-insumo .modal-top .col.info-insumo .modelos .modelo{
+    color: #333;
+    font-weight: bold;
+}
+.div_modal .ficha-insumo .modal-top .col.marca{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Ficha - General */
+.div_modal .ficha-insumo .fotos{
+    margin: 10px;
+}
+.div_modal .ficha-insumo .fotos .foto{
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 100px;
+    
+    margin: 2px;
+}
+.div_modal .ficha-insumo .fotos .foto img{
+    width: 100%;
+}
+
+/* modal vincular ins_insumo a prv_insumo */
+.div_modal .prv_insumo.vincular input[type="text"] {
+    width: 400px;
+}

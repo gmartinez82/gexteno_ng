@@ -1,0 +1,319 @@
+/* Archivo CSS de 'ins_insumo' */
+
+.div_listado_buscador{
+    width: 95%;
+}
+.div_listado_buscador select{
+    max-width: 110px;
+}
+.div_listado_buscador .col.orden{
+    margin-right: 7%;
+}
+
+#listado_adm_ins_insumo_venta_web_gestion{
+    
+}
+
+#listado_adm_ins_insumo_venta_web_gestion tr{
+}
+#listado_adm_ins_insumo_venta_web_gestion tr td{
+}
+
+#listado_adm_ins_insumo_venta_web_gestion tr td.tienda{
+    background-color: #f5e4b8;
+}
+#listado_adm_ins_insumo_venta_web_gestion tr td.mercadolibre{
+    background-color: #f5f1c4;
+}
+
+#listado_adm_ins_insumo_venta_web_gestion .avatar{
+    
+}
+#listado_adm_ins_insumo_venta_web_gestion .avatar.foto{
+    width: 80px;
+}
+#listado_adm_ins_insumo_venta_web_gestion .id{
+    background-color: #dedede;
+    color: #666;
+    
+    padding: 3px;
+}
+
+#listado_adm_ins_insumo_venta_web_gestion .info-insumo{
+    text-align: left;
+    font-size: 11px;
+}
+#listado_adm_ins_insumo_venta_web_gestion .info-insumo .foto{
+    float: left;
+}
+#listado_adm_ins_insumo_venta_web_gestion .info-insumo div{
+    margin: 2px;
+}
+#listado_adm_ins_insumo_venta_web_gestion .info-insumo .label{
+    color: #666;
+    font-weight: normal;
+}
+#listado_adm_ins_insumo_venta_web_gestion .info-insumo .marca{
+    font-weight: bold;
+    color: #000;
+}
+#listado_adm_ins_insumo_venta_web_gestion .info-insumo .descripcion-marca{
+    font-size: 10px;
+    background-color: #eee;
+    padding: 1px 6px;
+}
+#listado_adm_ins_insumo_venta_web_gestion .info-insumo .codigo-marca{
+    font-size: 10px;
+    background-color: #eee;
+    padding: 3px 6px;
+}
+#listado_adm_ins_insumo_venta_web_gestion .info-insumo .insumo{
+    font-size: 11px;
+    font-weight: bold;
+    
+    color: #000;
+}
+#listado_adm_ins_insumo_venta_web_gestion .info-insumo .codigo-interno{
+    font-size: 10px;
+    
+    color: #333;
+}
+#listado_adm_ins_insumo_venta_web_gestion .info-insumo .categoria{
+    font-size: 10px;    
+    color: #c56900;
+}
+
+/* Von */
+#listado_adm_ins_insumo_venta_web_gestion .von{
+    text-align: center;
+    padding: 1px 5px;
+}
+#listado_adm_ins_insumo_venta_web_gestion .von .accion{
+    cursor: pointer;   
+}
+#listado_adm_ins_insumo_venta_web_gestion .von .accion:hover,
+#listado_adm_ins_insumo_venta_web_gestion .von .accion:hover{
+    opacity: 0.7;
+}
+
+/* Mercadolibre */
+#listado_adm_ins_insumo_venta_web_gestion .ml-acciones{
+    text-align: center;
+    padding: 1px 5px;
+}
+#listado_adm_ins_insumo_venta_web_gestion .ml-acciones .accion{
+    cursor: pointer;   
+}
+#listado_adm_ins_insumo_venta_web_gestion .ml-acciones .accion:hover,
+#listado_adm_ins_insumo_venta_web_gestion .ml-acciones .accion:hover{
+    opacity: 0.7;
+}
+
+
+
+#listado_adm_ins_insumo_venta_web_gestion .costo{
+    color: #000;
+}
+#listado_adm_ins_insumo_venta_web_gestion .costo-modificado{
+    color: #666;
+}
+#listado_adm_ins_insumo_venta_web_gestion .costo-modificado-por{
+    font-size: 9px;
+    color: #666;
+}
+
+#listado_adm_ins_insumo_venta_web_gestion .PRECIO_MOSTRADOR{
+    background-color: #eee;
+}
+#listado_adm_ins_insumo_venta_web_gestion .PRECIO_MAYORISTA{
+    background-color: #eee;
+}
+
+#listado_adm_ins_insumo_venta_web_gestion .info-importe{
+}
+#listado_adm_ins_insumo_venta_web_gestion .info-importe .col{
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    
+    width: 25%;
+}
+#listado_adm_ins_insumo_venta_web_gestion .info-importe .col.porcentajes{
+    width: 28%;
+    font-size: 10px;    
+}
+#listado_adm_ins_insumo_venta_web_gestion .info-importe .col.porcentajes .porcentaje-tipo-lista{
+}
+#listado_adm_ins_insumo_venta_web_gestion .info-importe .col.porcentajes .porcentaje-tipo-lista.enabled{
+    color: #000;
+    font-weight: bold;
+}
+#listado_adm_ins_insumo_venta_web_gestion .info-importe .col.porcentajes .porcentaje-tipo-lista.disabled{
+    color: #666;
+    text-decoration: line-through;
+}
+#listado_adm_ins_insumo_venta_web_gestion .info-importe .col.porcentajes .porcentaje-personalizado{
+}
+#listado_adm_ins_insumo_venta_web_gestion .info-importe .col.porcentajes .porcentaje-personalizado.enabled{
+    color: #084;
+    font-weight: bold;
+    
+    padding: 3px 6px;
+}
+#listado_adm_ins_insumo_venta_web_gestion .info-importe .col.porcentajes .porcentaje-personalizado.disabled{
+    color: #999;
+    text-decoration: line-through;
+}
+#listado_adm_ins_insumo_venta_web_gestion .info-importe .col.importes{
+    width: 60%;
+    font-size: 10px;
+}
+#listado_adm_ins_insumo_venta_web_gestion .info-importe .col.importes .importe-calculado{
+    text-align: right;
+}
+#listado_adm_ins_insumo_venta_web_gestion .info-importe .col.importes .importe-calculado.enabled{
+    color: #003399;
+    background-color: #efefef;
+    font-weight: bold;
+
+    padding: 3px 6px;
+}
+#listado_adm_ins_insumo_venta_web_gestion .info-importe .col.importes .importe-calculado.disabled{
+    color: #999;
+    text-decoration: line-through;
+    font-size: 11px;
+}
+#listado_adm_ins_insumo_venta_web_gestion .info-importe .col.importes .importe-personalizado{
+    text-align: right;
+}
+#listado_adm_ins_insumo_venta_web_gestion .info-importe .col.importes .importe-personalizado.enabled{
+    color: #0066CC;
+    background-color: #ddd;
+    font-weight: bold;
+    
+    padding: 3px 6px;
+}
+#listado_adm_ins_insumo_venta_web_gestion .info-importe .col.importes .importe-personalizado.disabled{
+    color: #999;
+    text-decoration: line-through;
+}
+#listado_adm_ins_insumo_venta_web_gestion .info-importe .importe-venta{
+    color: #003399;
+    border: #003399 solid 1px;
+    background-color: #ededed;
+    
+    font-size: 11px;
+    font-weight: bold;
+
+    padding: 3px 6px;
+    margin: 3px;
+}
+
+
+#listado_adm_ins_insumo_venta_web_gestion .col.acciones{
+    width: 8%;
+    
+}
+
+#listado_adm_ins_insumo_venta_web_gestion .col.acciones .accion{
+}
+
+#listado_adm_ins_insumo_venta_web_gestion .col.acciones .accion img{
+    width: 13px;
+}
+#listado_adm_ins_insumo_venta_web_gestion .inhabilitado{
+    color: #999;
+}
+
+#listado_adm_ins_insumo_venta_web_gestion .ml-requerimientos{
+    
+}
+#listado_adm_ins_insumo_venta_web_gestion .ml-requerimientos .ml-requerimiento{
+    display: inline-block;
+    vertical-align: top;
+    
+    border: #ccc solid 1px;
+    background-color: #ddd;
+    color: #333;
+    
+    font-size: 11px;
+    
+    padding: 3px 4px;
+    margin: 1px;
+}
+#listado_adm_ins_insumo_venta_web_gestion .ml-requerimientos .ml-requerimiento.configurado{
+    border: #000 solid 1px;
+    background-color: #084;
+    color: #fff;    
+}
+#listado_adm_ins_insumo_venta_web_gestion .ml-requerimientos .ml-requerimiento.no-configurado{
+    
+}
+#listado_adm_ins_insumo_venta_web_gestion .ml-botonera .boton{
+    border: #333 solid 1px;
+    background-color: #ddd;
+    color: #333;
+    
+    padding: 3px 6px;
+    margin: 5px;
+    
+    cursor: pointer;
+}
+#listado_adm_ins_insumo_venta_web_gestion .ml-botonera .boton:active,
+#listado_adm_ins_insumo_venta_web_gestion .ml-botonera .boton:hover{
+    background-color: #999;
+}
+#listado_adm_ins_insumo_venta_web_gestion .ml-botonera .boton.editado{
+    background-color: #E8D77B;
+}
+
+#listado_adm_ins_insumo_venta_web_gestion .ml_info{
+    
+}
+#listado_adm_ins_insumo_venta_web_gestion .ml_info .ml_info_uno{
+    padding: 3px;
+    color: #000;
+}
+#listado_adm_ins_insumo_venta_web_gestion .ml_info .ml_info_uno.par{
+    background-color: #ccc;
+}
+#listado_adm_ins_insumo_venta_web_gestion .ml_info .ml_info_uno.impar{
+    background-color: #dedede;
+}
+#listado_adm_ins_insumo_venta_web_gestion .ml_info .ml_info_uno.ml_item_status{
+}
+#listado_adm_ins_insumo_venta_web_gestion .ml_info .ml_info_uno.ml_item_status.ACTIVO{
+    background-color: #084;
+    color: #fff;
+}
+#listado_adm_ins_insumo_venta_web_gestion .ml_info .ml_info_uno.ml_item_status.PAUSADO{
+    background-color: #960;
+    color: #fff;
+}
+#listado_adm_ins_insumo_venta_web_gestion .ml_info .ml_info_uno.ml_price{
+}
+#listado_adm_ins_insumo_venta_web_gestion .ml_info .ml_info_uno.ml_price.precio-diferencia{
+    background-color: #E8D77B;
+    color: #C00;
+    font-weight: bold;
+}
+#listado_adm_ins_insumo_venta_web_gestion .ml_info .ml_info_uno.ml_price.precio-ok{
+    background-color: #fff;
+    color: #000;
+}
+#listado_adm_ins_insumo_venta_web_gestion .ml_info .ml_info_uno.ml_ultima_actualizacion{
+    font-size: 10px;
+    color: #333;
+}
+
+
+.div_modal .fotos-ml{
+}
+.div_modal .fotos-ml .foto-ml{
+    display: inline;
+}
+.div_modal .comentario-atributo{
+    font-weight: normal;
+    color: #0066CC;
+    font-size: 11px;
+}

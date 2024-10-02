@@ -1,0 +1,108 @@
+/* Archivo CSS de 'cntb_diario_asiento' */
+
+#listado_adm_cntb_diario_asiento_gestion{
+
+}
+#listado_adm_cntb_diario_asiento_gestion .cntb-ejercicio{
+    font-weight: bold;
+    color: #000;
+}
+#listado_adm_cntb_diario_asiento_gestion .fecha-inicio,
+#listado_adm_cntb_diario_asiento_gestion .fecha-fin{
+    color: #666;
+}
+#listado_adm_cntb_diario_asiento_gestion .numero{
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+}
+#listado_adm_cntb_diario_asiento_gestion .fecha{
+    color: #666;
+}
+#listado_adm_cntb_diario_asiento_gestion .cntb_tipo_origen_id{
+    background-color: #ddd;
+    padding: 2px 4px;
+    color: #666;
+}
+#listado_adm_cntb_diario_asiento_gestion .descripcion-asiento{
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    width: 600px;
+}
+#listado_adm_cntb_diario_asiento_gestion .observacion-asiento{
+    display: none;
+
+    font-size: 10px;
+    color: #666;
+    padding: 1px 0px 3px 0px;
+}
+
+#listado_adm_cntb_diario_asiento_gestion .diario-asiento-cuentas{
+
+}
+#listado_adm_cntb_diario_asiento_gestion .diario-asiento-cuentas .diario-asiento-cuenta{
+    border-bottom: #F9F9F9 dashed 1px;
+    padding: 3px;
+}
+#listado_adm_cntb_diario_asiento_gestion .diario-asiento-cuentas .diario-asiento-cuenta:hover{
+    border-bottom: #ccc dashed 1px;
+}
+#listado_adm_cntb_diario_asiento_gestion .diario-asiento-cuentas .diario-asiento-cuenta .descripcion{
+    display: inline-block;
+    vertical-align: top;
+
+    font-weight: normal;
+
+    /*background-color: #ccc;*/
+
+    width: 480px;    
+
+    text-align: left;
+}
+#listado_adm_cntb_diario_asiento_gestion .diario-asiento-cuentas .diario-asiento-cuenta .importe-debe,
+#listado_adm_cntb_diario_asiento_gestion .diario-asiento-cuentas .diario-asiento-cuenta .importe-haber{
+    display: inline-block;
+    vertical-align: top;
+
+    /*background-color: #ccc;*/
+    color: #000;
+
+    width: 200px;
+    text-align: right;
+}
+
+/* Modal Agregar Asiento */
+.div_modal .datos.cntb_diario_asiento_agregar .info-asiento .par{
+    display: inline-block;
+    vertical-align: top;
+
+    width: 45%;
+
+}
+.div_modal .datos.cntb_diario_asiento_agregar .info-asiento .par .label{
+    width: 40%;
+}
+.div_modal .datos.cntb_diario_asiento_agregar .info-asiento .par .dato{
+    width: 50%;
+}
+
+.div_modal .datos.cntb_diario_asiento_agregar .info-asiento-cuentas{
+    margin-top: 10px;
+}
+.div_modal .datos.cntb_diario_asiento_agregar .info-asiento-cuentas tfoot td{
+    height: 35px;
+}
+.div_modal .datos.cntb_diario_asiento_agregar .info-asiento-cuentas tfoot td.iguales{
+    background-color: #adde8c;
+    color: #000;
+}
+.div_modal .datos.cntb_diario_asiento_agregar .info-asiento-cuentas tfoot td.desiguales{
+    background-color: #ffe900;
+    color: #000;
+}
+
+.div_modal .datos.cntb_diario_asiento_agregar .botonera #botonera_error{
+    margin: 15px;
+}
+

@@ -1,0 +1,178 @@
+@charset "iso-8859-2";
+/* CSS Document */
+
+.imagenes{
+    margin:35px 15px;
+}
+
+.imagenes .titulo{
+    margin-left:15px;
+}
+.imagenes .titulo div{
+    display:inline;
+}
+.imagenes .titulo .label{
+    font-size:14px;
+    color:#666;
+}
+.imagenes .titulo .dato{
+    font-size:16px;
+    font-weight:bold;
+    color:#000000;
+}
+
+/* Botonera */
+.imagenes .botonera{
+    background-color:transparent;
+
+    text-align:left;
+    margin-top:-25px;
+    float:right;
+}
+.imagenes .botonera .boton{
+    background-color:#013254;
+    display:inline-block;
+    vertical-align:top;
+    width:150px;
+
+    text-align:center;
+    font-size:10px;
+}
+.imagenes .botonera .boton a{
+    color:#FFFFFF;
+    display:block;
+}
+.imagenes .botonera .boton:hover{
+    background-color:#C0C0C0;
+    color:#013254;
+    cursor:pointer;
+}
+
+/* Uno */
+.imagenes .uno{
+    border:#ccc solid 1px;
+    background:#fff;
+    padding:10px;
+    margin:8px;
+
+    display:inline-block;
+    vertical-align:top;
+    width:250px;
+
+    min-height:50px;
+
+    -moz-box-shadow:    3px 3px 5px 2px #999;
+    -webkit-box-shadow: 3px 3px 5px 2px #999;
+    box-shadow:         3px 3px 5px 2px #999;	
+}
+.imagenes .uno .sin-valor{
+    font-size:11px;
+    color: #999;
+
+    margin: 4px 10px 4px 10px;
+    padding: 3px;
+    border-bottom: #ccc dotted 1px;
+}
+.imagenes .uno .descripcion{
+    margin: 10px 5px 5px 5px;
+}
+.imagenes .uno .descripcion a{
+    font-size:13px;
+    font-weight:bold;
+    color:#000000;    
+}
+.imagenes .uno .observacion{
+    font-size:11px;
+    color:#666;
+    
+    margin: 5px;
+}
+.imagenes .uno .acciones{
+    margin:5px;
+    text-align:right;
+}
+.imagenes .uno .acciones .accion{
+    display:inline-block;
+    margin:3px;
+
+    cursor:pointer;
+}
+
+
+/* Nuevo */
+.imagenes .nuevo{
+    border:none;
+    width:60px;
+    text-align:center;
+
+    margin:15px;
+    display:inline-block;
+}
+.imagenes .nuevo .descripcion{
+    font-size:12px;
+    font-weight:bold;
+}
+
+/* Masivos */
+.masivo-bloque{
+    background-color:#ddd;
+    padding:15px;
+
+    margin:12px 5px;
+
+}
+.masivo-bloque .comentario{
+    font-size:12px;
+    color:#333;
+}
+.masivo-bloque .uno{
+    background-color:#FFFFFF;
+    border-bottom:#999999 dotted 1px;
+    padding:8px;
+    margin:5px;				
+    font-size:14px;
+}
+.masivo-titulo{
+    font-size:16px;
+    font-weight:bold;
+}
+.masivo-botones{
+    background-color:#013254;
+    border:#013254 solid 1px;
+    font-size:12px;
+
+    padding: 5px 10px;
+    margin: 3px;
+    color:#fff!important;
+}
+.masivo-botones:hover{
+    background-color:#CCCCCC;
+    color:#000!important;
+}
+
+.imagenes-agrupaciones{
+    margin-top: 15px;
+}
+.imagenes-agrupaciones .imagenes-agrupacion{
+    border: #ccc dotted 1px;
+    background-color: #f4f4f4;
+    
+    padding: 10px;
+    margin: 15px;
+}
+.imagenes-agrupaciones .imagenes-agrupacion-descripcion{
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: #ccc solid 1px;
+    
+    color: #000;
+    
+    padding: 5px;
+    padding: 5px;
+}
+.imagenes-agrupaciones .imagenes-agrupacion-observacion{
+    font-size: 14px;
+    color: #333;
+    
+    margin: 5px;
+}

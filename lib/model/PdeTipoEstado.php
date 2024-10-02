@@ -1,0 +1,17 @@
+<?php 
+require_once "base/BPdeTipoEstado.php"; 
+class PdeTipoEstado extends BPdeTipoEstado
+{
+    const TIPO_ESTADO_SOLICITADO = 'SOLICITADO';
+    const TIPO_ESTADO_APROBADO = 'APROBADO';
+    const TIPO_ESTADO_VENCIDO = 'VENCIDO';
+    const TIPO_ESTADO_EXTENDIDO = 'EXTENDIDO';
+    const TIPO_ESTADO_ANULADO = 'ANULADO';
+    const TIPO_ESTADO_FINALIZADO = 'FINALIZADO';
+    const TIPO_ESTADO_COTIZADO = 'COTIZADO';
+    const TIPO_ESTADO_COMPRADO = 'COMPRADO';
+    const TIPO_ESTADO_RECIBIDO = 'RECIBIDO';
+    const TIPO_ESTADO_RECIBIDO_PARCIAL = 'RECIBIDO_PARCIAL';
+    
+}
+?>

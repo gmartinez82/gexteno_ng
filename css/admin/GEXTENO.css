@@ -1,0 +1,272 @@
+@charset "iso-8859-2";
+/* CSS Document */
+
+/* ----------------------------------------------------------------------------------------- General */
+a{ text-decoration:none; color:#97cc05; }
+a:link{ text-decoration:none; color:#97cc05; }
+a:visited{ text-decoration:none; color:#97cc05; }
+a:hover{ text-decoration:none; color:#0283bc; }
+a:active{text-decoration: none; color:#0283bc;}
+
+.textbox.sel{
+    background-color: #e1f9a0;
+}
+
+/* ----------------------------------------------------------------------------------------- Body */
+body{
+    color:#013254;
+    margin:0px;
+    font-family:'Roboto', sans-serif;
+    font-size:13px;
+    background-color:#002235;    
+}
+body.TEST{
+    background-image: url('../../admin/imgs/bg_test_gexteno.png');
+}
+body.DEV{
+    background-image: url('../../admin/imgs/bg_dev_gexteno.png');
+}
+
+
+/* ----------------------------------------------------------------------------------------- User */
+.user .datos .label{
+    color:#ffffff;
+    border-left:#ffffff solid 1px;
+}
+.user .datos .dato{
+    font-weight:bold;
+    color:#97cc05;
+}
+.user .fechahora{
+    color:#fff;
+}
+
+/* ----------------------------------------------------------------------------------------- Cuerpo */
+#cuerpo{
+    width:98%;
+    
+    clip-path: polygon(10px 0, 100% 0, 100% 100%, 0 100%, 0 10px);
+    -webkit-clip-path: polygon(10px 0, 100% 0, 100% 100%, 0 100%, 0 10px);        
+}
+
+.adm_cuerpo_titulo{
+    clip-path: polygon(10px 0, 100% 0, 100% 100%, 0 100%, 0 10px);
+    -webkit-clip-path: polygon(10px 0, 100% 0, 100% 100%, 0 100%, 0 10px);    
+    
+    padding-left: 20px;
+    background-color: #013254;
+}
+
+/* ----------------------------------------------------------------------------------------- Buscador */
+.div_listado_buscador{
+    background-color:#dfe5e8;
+    border-bottom:#013254 solid 1px;
+    
+    padding: 20px 5px;
+    margin-bottom: 20px;
+}
+.div_listado_buscador select{
+    min-width: 100px;
+    max-width: 100px;
+}
+.div_listado_buscador .selectize-control{
+    border:#013254 solid 1px; 
+    padding: 1px 5px;   
+}
+.div_listado_buscador input,
+.div_listado_buscador select{
+    border:#013254 solid 1px;
+}
+
+/* ----------------------------------------------------------------------------------------- Tabla */
+.adm_tbl_encabezado{
+    background-color: #013254;
+    color: #0ec0f9;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight:bold;
+    padding:5px;
+}
+.adm_tbl_encabezado a{
+    color:#0283bc;
+    cursor:pointer;
+}
+.adm_tbl_encabezado img{
+    float:right;
+}
+
+/* ----------------------------------------------------------------------------------------- Tabla Lineas */
+.adm_tbl_lineas .descripcion{
+    color: #0283bc;
+    font-size: 14px;
+}
+.adm_tbl_lineas .descripcion-extendida-uno .par .label{
+    color: #727D84;    
+}
+.adm_tbl_lineas .descripcion-extendida-uno .par .dato{
+    color: #013254;    
+}
+
+/* ----------------------------------------------------------------------------------------- Grid */
+.grid-datos .grid-uno{
+    width: 15.5%;
+}
+.grid-datos .grid-uno .inner{
+    background-color: #DFE5E8;
+    border: #0283BC solid 3px;
+    
+    width:100%;
+}
+.grid-datos .grid-uno .inner .avatar{
+}
+.grid-datos .grid-uno .inner .descripcion{
+    background-color: #0283BC;
+    color: #ffffff;
+    padding: 8px 6px;
+}
+.grid-datos .grid-uno .inner.habilitado .descripcion{
+    font-size: 16px;
+}
+.grid-datos .grid-uno .inner .importes-venta{
+    background-color: #002235;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 8px 6px;
+}
+.grid-datos .grid-uno .inner.deshabilitado .importes-venta{
+    background-color: #777;
+}
+.grid-datos .grid-uno .inner .importes-venta .importe-venta-bruto{
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+
+    color: #0283BC;
+    font-size: 15px;
+}
+.grid-datos .grid-uno .inner .importes-venta .importe-iva{    
+    font-size: 10px;
+    color: #0283BC;
+}
+.grid-datos .grid-uno .inner .importes-venta .importe-venta-neto{
+    display: inline-block;
+    vertical-align: top;
+    width: 55%;
+    
+    text-align: right;
+    font-size: 22px;
+    font-weight: bold;
+}
+.grid-datos .grid-uno .inner .importes-venta .importe-costo-modificado{
+    font-size: 11px;
+    color: #97cc05;
+}
+.grid-datos .grid-uno .inner .otros-datos{
+    color: #002235;
+}
+
+
+/* ----------------------------------------------------------------------------------------- Paginador */
+#div_paginador{
+    font-size:13px;
+    padding:10px;
+    padding-right:10px;
+    font-weight:bold;
+}
+#div_paginador .nosel{
+    font-size:13px;
+    border:none;
+    padding:3px 7px;
+    background-color:#aad0e1;
+    color:#013254;
+}
+#div_paginador .nosel:hover{
+    background-color:#97cc05;
+    border-color: #97cc05;
+    color:white;
+}
+#div_paginador .sel{
+    background-color:#013254;
+    border:#002235 solid 1px;
+    color:#FFFFFF;
+    padding:3px 7px;
+}
+
+/* ----------------------------------------------------------------------------------------- Pie */
+#pie{
+    margin-left:5px;
+    padding:5px;
+    font-family: 'Roboto', sans-serif;
+    font-size:13px;
+    height:100px;
+}
+#pie .sistema-marca{
+    float: left;
+    margin-left:25px;
+    margin-top:15px;
+}
+#pie .sistema-marca img{
+    max-width: 200px;
+}
+#pie .desarrollado-por{
+    float: right;
+    color: #fff;
+    margin:10px 20px 0 0;
+}
+
+/* ----------------------------------------------------------------------------------------- Wigets */
+.gen_widgets .cuerpo_widget{
+    margin: 4px;
+    
+    clip-path: polygon(10px 0, 100% 0, 100% 100%, 0 100%, 0 10px);
+    -webkit-clip-path: polygon(10px 0, 100% 0, 100% 100%, 0 100%, 0 10px);    
+}
+.gen_widgets .cuerpo_widget .titulo{   
+}
+.gen_widgets .gen_widgets_tabs .ui-tabs-nav li.ui-tabs-active{
+    clip-path: polygon(10px 0, 100% 0, 100% 100%, 0 100%, 0 10px);
+    -webkit-clip-path: polygon(10px 0, 100% 0, 100% 100%, 0 100%, 0 10px);
+    
+    background-color: #013254;
+    color: #fff;
+    border: #013254 solid 1px;
+}
+.gen_widgets .gen_widgets_tabs .ui-tabs-nav li.ui-tabs-active a{
+    color: #fff;
+}
+
+/* ----------------------------------------------------------------------------------------- Botonera */
+.botonera .boton, .botonera-left .boton{
+    border:#013254 solid 1px;
+    background-color:#013254;
+    color:#FFFFFF;    
+}
+
+
+.ui-widget{
+    font-size: 1em;
+    font-family: Roboto, sans-serif;
+}
+
+/* ----------------------------------------------------------------------------------------- Botonera */
+@media (max-width: 1024px) {
+    body{
+    }
+    .user{
+        margin-top: -10px;
+    }
+    #menu{
+    }
+    #menu .sf-menu{
+        margin-top: 0px;
+    }
+    #menu .sf-menu a{
+        padding: .65em 1em
+    }
+    #cuerpo{
+        margin-top: 30px;
+    }
+    #cuerpo .cuerpo_widget{
+        margin-right: -1px;
+    }
+}

@@ -1,0 +1,248 @@
+/* Archivo CSS de 'vta_comision_gestion' */
+
+
+/* Listado comisiones */
+#listado_adm_vta_comision_gestion{
+
+}
+#listado_adm_vta_comision_gestion .codigo{
+    font-size: 10px;
+    color: #000;
+}
+#listado_adm_vta_comision_gestion .fecha_emision{
+    font-size: 10px;
+    color: #666;
+}
+#listado_adm_vta_comision_gestion .persona_descripcion{
+    font-weight: bold;
+    color: #000;
+}
+#listado_adm_vta_comision_gestion .vta_comision_tipo_estado{
+    color: #000;
+    text-align: left;
+}
+#listado_adm_vta_comision_gestion .vta_comision_tipo_estado img{
+    vertical-align: middle;
+}
+#listado_adm_vta_comision_gestion .vta-comprobantes-vinculados{
+    margin: 0px;
+    text-align: left;
+
+    max-height: 70px;
+    overflow: auto;
+}
+#listado_adm_vta_comision_gestion .vta-comprobantes-vinculados .vta-comprobante-vinculado{
+    color: #000;
+    font-size: 11px;
+    padding-left: 0px;
+}
+#listado_adm_vta_comision_gestion .gral-fp-forma-pagos{
+    margin: 0px;
+    text-align: left;
+}
+#listado_adm_vta_comision_gestion .gral-fp-forma-pagos .gral-fp-forma-pago{
+    color: #000;
+    font-size: 11px;
+    padding-left: 0px;
+}
+
+#listado_adm_vta_comision_gestion .importe-total{
+    color: #000;
+    font-weight: bold;
+    text-align: right;
+}
+
+/* Modal generar orden_pago */
+.div_modal .datos.vta-comision-agregar{
+
+}
+.div_modal .datos.vta-comision-agregar .buscador{
+    background-color: #ddd;
+
+    margin: 5px;
+    padding: 10px;
+}
+
+.div_modal .datos.vta-comision-agregar .buscador .col{
+    display: inline-block;
+    vertical-align: top;
+    
+    width: 100px;
+}
+.div_modal .datos.vta-comision-agregar .buscador .col.fecha{
+    width: 140px;
+}
+.div_modal .datos.vta-comision-agregar .buscador .col.si-no{
+    width: 80px;
+}
+.div_modal .datos.vta-comision-agregar .buscador .col.comisionista{
+    width: 140px;
+}
+.div_modal .datos.vta-comision-agregar .buscador .col select{
+    width: 95%;
+}
+
+/* Resumen Comprobantes */
+.bloque-resumen-comprobantes{
+    margin: 10px auto;
+    text-align: center;
+    width: 80%;
+}
+.bloque-resumen-comprobantes .col{
+    display: inline-block;
+    vertical-align: top;
+    width: 170px;
+    box-sizing: border-box;
+
+    margin: 2px;
+}
+.bloque-resumen-comprobantes .par{
+    background-color: #f4f4f4;        
+}
+.bloque-resumen-comprobantes .par .label{
+    width: 100%!important;
+
+    background-color: #ddd;
+    padding: 5px 1px;
+
+    text-align: center!important;
+    font-size: 12px;
+    font-weight: normal;
+}
+.bloque-resumen-comprobantes .par .dato{
+    width: 100%!important;
+
+    background-color: #ccc;
+    padding: 15px 1px;
+
+    text-align: center!important;
+    font-size: 18px;
+    font-weight: bold;
+}
+.bloque-resumen-comprobantes .par .dato.importe{
+}  
+
+/* Comprobantes a Comisionar */
+.div_vta_comision_agregar_comision{
+}
+
+#listado_vta_comision_agregar_comision{
+    margin: 0 auto;
+}
+#listado_vta_comision_agregar_comision tr.selected td{
+    background-color: #FFDDA6;
+    color: #000;
+}
+#listado_vta_comision_agregar_comision .vta-comprobante-numero{
+    font-weight: bold;
+    color: #000;
+}
+#listado_vta_comision_agregar_comision .vta-comprobante-fecha-emision{
+    color: #666;
+}
+#listado_vta_comision_agregar_comision .persona-descripcion{
+    font-weight: bold;
+    color: #000;    
+}
+#listado_vta_comision_agregar_comision .actividad{
+    color: #333;
+}
+#listado_vta_comision_agregar_comision .escenario{
+    color: #333;
+}
+#listado_vta_comision_agregar_comision .tipo-lista-precio{
+    color: #0000CC;
+}
+#listado_vta_comision_agregar_comision .vta-comprobante-tipo-estado-id{
+    color: #000;    
+}
+#listado_vta_comision_agregar_comision .vta-comprobante-tipo-estado-id img{
+    vertical-align: middle;
+}
+#listado_vta_comision_agregar_comision .importe-subtotal-comprobante{
+    color: #000;
+}
+#listado_vta_comision_agregar_comision .importe-iva-comprobante{
+    color: #666;
+    font-size: 11px;
+}
+#listado_vta_comision_agregar_comision .importe-tributos-comprobante{
+    color: #666;
+    font-size: 11px;
+}
+#listado_vta_comision_agregar_comision .div-porcentaje-comision{
+    font-size: 12px;
+}
+#listado_vta_comision_agregar_comision .div-porcentaje-comision.porcentaje-personalizado{
+    font-weight: bold;
+    color: #0000CC;
+}
+#listado_vta_comision_agregar_comision .div-porcentaje-comision.porcentaje-personalizado .porcentaje-comision-tachado{
+    font-size: 10px;
+    color: #bbb;
+    text-decoration: line-through;
+}
+#listado_vta_comision_agregar_comision .div-porcentaje-comision.porcentaje-personalizado input{
+    border: #0000CC solid 2px;
+    color: #0000CC;
+}
+
+#listado_vta_comision_agregar_comision .importe-total-comprobante{
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+}
+
+#listado_vta_comision_agregar_comision .importe-base-comisionable{
+    font-weight: bold;
+    color: #000;
+}
+#listado_vta_comision_agregar_comision .hdn-importe-base-comisionable{
+    display: none;
+}
+#listado_vta_comision_agregar_comision .porcentaje-comision{
+    display: none;
+}
+#listado_vta_comision_agregar_comision .importe-comision{
+    font-weight: bold;
+    color: #000;
+}
+#listado_vta_comision_agregar_comision .hdn-importe-comision{
+    display: none;
+}
+
+#listado_vta_comision_agregar_comision .vta-comprobantes-vinculados{
+    margin: 0px;
+    max-height: 50px;
+    overflow: auto;
+}
+#listado_vta_comision_agregar_comision .vta-comprobantes-vinculados .vta-comprobante-vinculado{
+    color: #666;
+    font-size: 10px;
+    padding-left: 0px;
+}
+
+/* Formas de Pago */
+#listado_vta_comision_forma_pago{
+    margin: 0 auto;
+}
+#listado_vta_comision_forma_pago th{
+    padding: 4px 10px;
+}
+#listado_vta_comision_forma_pago .ver_modal_set_cheque_info{
+    display: none;
+}
+
+/* Datos extras */
+#bloque-datos-extra{
+    margin: 20px auto 0 auto;
+    width: 65%;
+}
+#bloque-datos-extra .par{
+}
+#bloque-datos-extra .par .label{
+    width: 100%;
+}
+#bloque-datos-extra .par .dato{
+    width: 100%;
+}

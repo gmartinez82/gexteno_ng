@@ -1,0 +1,451 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Div Modal */
+.div_modal{
+}
+.div_modal .col{
+    width:45%;
+    display:inline-block;
+    vertical-align:top;
+}
+.div_modal .col.c1{
+    width:55%;
+}
+.div_modal .col.c2{
+    width:40%;
+}
+
+
+/* Div Modal Relaciones */
+.div_modal .relaciones{
+    margin: 20px 5px;
+    display:inline-block;
+    vertical-align:top;
+}
+.div_modal .relaciones .relacion{
+    margin: 0px 5px 1px 5px;
+}
+.div_modal .relaciones .relacion .titulo{
+    padding:6px;
+    border-bottom:#000000 solid 1px;
+
+    background-color:#ccc;
+    background-image:url(../../admin/imgs/btn_flecha_abajo.png);
+    background-size:16px;
+    background-repeat:no-repeat;
+    background-position:right;
+
+    font-size:12px;
+    font-weight:normal;
+    margin:0;
+
+    color:#000;
+
+    cursor:pointer;
+}
+.div_modal .relaciones .relacion .titulo:hover{
+    background-color:#ddd;
+}
+.div_modal .relaciones .relacion .buscador{
+    text-align:right;
+    padding:10px;
+    background-color:#f4f4f4;
+
+    /*display:none;*/
+}
+.div_modal .relaciones .relacion .buscador input{
+    border:#CCCCCC solid 1px;
+    background-color:#FFFFFF;
+    padding:3px;
+}
+
+.div_modal .relaciones .relacion .datos{
+    padding:0px;
+    border:none;
+    border-bottom:#000000 solid 1px;
+    background-color:#f4f4f4;
+    color:#000;
+
+    /*display:none;*/
+    min-height:100px;
+
+    /*height:300px;*/
+    overflow:auto;
+}
+.div_modal .relaciones .relacion .list{
+    width:96%;
+    color:#666;
+
+    border-top:#ccc dashed 1px;
+    background-color:#f4f4f4;
+    text-align:left;
+
+    margin:0px;
+    padding:5px;
+    display:inline-block;
+}
+.div_modal .relaciones .relacion .list.sel{
+    background-color:#B9E9FF;
+    color:#000;
+    text-shadow: 0.1em 0.1em #ddd
+}
+.div_modal .relaciones .relacion .list.sel .descripcion{
+    color:#000000;
+    font-weight:bold;
+}
+.div_modal .relaciones .relacion .list.sel .boton{
+    text-shadow:none;
+}
+.div_modal .relaciones .relacion .list .descripcion{
+    font-weight:bold;
+    font-size:10px;
+    width:65%;
+    display:inline-block;
+
+    color:#666;
+}
+.div_modal .relaciones .relacion .list .link{
+    width:25%;
+    display:inline-block;
+    text-align:right;
+}
+.div_modal .relaciones .relacion .list .link .boton{
+    display:inline-block;
+
+    background-color:#013254;
+    color:#FFFFFF;
+    padding:2px 5px 2px 5px;
+    box-shadow: 2px 2px 3px #666;
+
+    cursor:pointer;	
+}
+.div_modal .relaciones .relacion .list .segunda{
+    margin-left:22px;
+    font-size:10px;
+}
+.div_modal .relaciones .relacion .list .segunda .light{
+    color:#666;
+}
+
+/* Filtros */
+#div_filtros_adm_pde{
+    background-color:#f4f4f4;
+    border:#CCC solid 1px;
+
+    width:90%;
+    margin: 0 auto 0 auto;
+    padding:5px;
+}
+#div_filtros_adm_pde .col{
+    display:inline-block;
+    vertical-align:top;
+}
+#div_filtros_adm_pde .botonera{
+}
+#div_filtros_adm_pde .botonera .boton{
+    display:inline-block;
+    background-color:#fff;
+    border:#999 solid 1px;
+}
+#div_filtros_adm_pde .botonera .boton:hover{
+    background-color:#f1f1f1;
+    border:#333 solid 1px;
+}
+
+/* Listado */
+.adm_tbl_lineas.noleido{
+    font-weight:bold;
+    background-color:#fff;
+    background-image:url(../../admin/imgs/bg_noleidos.jpg);
+    background-repeat:repeat-x;
+    border-bottom:#000 solid 1px;
+    background-color:#fff;
+    color:#000;
+}
+.adm_tbl_lineas.destacado{
+    color:#000;
+    font-weight:bold;
+    text-shadow: 0.1em 0.1em #fff;	
+    background-image:url(../../admin/imgs/bg_destacados.jpg);
+    background-repeat:repeat-x;
+    border-bottom:#F1A032 solid 1px;
+    background-color:#FBF6D6;
+}
+.adm_tbl_lineas .ficha{
+    background-color:transparent;
+}
+.adm_tbl_lineas .link{
+    border:#CCC solid 1px;
+    background-color:#f1f1f1;
+    padding:3px;
+    width:20%;
+
+    cursor:pointer;
+}
+.adm_tbl_lineas .link:hover{
+    background-color:#FFF;
+}
+.adm_tbl_lineas .link.noleido{
+    background-color:#FF9;
+    border:#F60 dotted 2px;
+    font-weight:bold;
+}
+
+.adm_tbl_lineas .proveedor-descripcion{
+    font-weight:bold;
+}
+.adm_tbl_lineas .proveedor-codigo-cotizacion{
+    color:#999;
+}
+/* Bloque de Stock al seleccionar Insumo */
+.stock-insumo-panoles{
+    border:#ccc solid 1px;
+    background-color:#FFFFFF;
+
+    padding:10px;
+    margin:5px;
+    margin-bottom:15px;
+
+    width:90%;
+}
+.stock-insumo-panoles .titulo{
+    font-weight:bold;
+    color:#999;
+    margin:4px;
+}
+.stock-insumo-panoles .uno{
+    border-bottom:#ccc dashed 1px;
+    padding:7px;
+}
+.stock-insumo-panoles .uno div{
+    display:inline-block;
+    vertical-align:top;
+
+    font-size:11px;
+    color:#666;
+}
+.stock-insumo-panoles .uno .checkbox input{
+    vertical-align:middle;
+    margin-top: 0px;
+}
+.stock-insumo-panoles .uno .checkbox{
+    width:30px;
+}
+.stock-insumo-panoles .uno .panol{
+    width:200px;
+    font-weight:bold;
+    color:#000;
+}
+
+/* Modal Top */
+.pde-modal-top{
+    font-size:10px;
+
+    background-color:#dfdfdf;
+    border-bottom:#666 solid 1px;
+
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    border-top-left-radius: 5px;
+
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-right-radius: 5px;
+
+    padding:4px;
+    margin-bottom:10px;
+}
+.pde-modal-top .col{
+    display:inline-block;
+    vertical-align:top;
+    margin:5px;
+    padding-right:8px;
+
+    border-right:#999 dotted 1px;
+}
+.pde-modal-top .col.pedido-origen{
+    width:25px;
+}
+.pde-modal-top .col.pedido-codigo{
+    width:60px;
+}
+.pde-modal-top .col.pedido-insumo{
+    width:230px;
+}
+.pde-modal-top .col.pedido-cantidad{
+    width:60px;
+}
+.pde-modal-top .col.pedido-fecha{
+    width:140px;
+}
+.pde-modal-top .col.pedido-vencimiento{
+    width:100px;
+}
+.pde-modal-top .col.agregar-cotizacion{
+    width:100px;
+}
+.pde-modal-top .col .label{
+    color:#666;
+}
+.pde-modal-top .col .dato{
+    color:#000;
+    font-weight:bold;
+}
+
+/* Alta de insumos */
+.div_modal .col{
+    display:inline-block;
+    vertical-align:top;
+}
+.div_modal .col .bloque-datos{
+    margin:5px;
+    padding:2px;
+}
+.div_modal .col .uno{
+    background-color:#FFF;
+    border-bottom:#ccc solid 1px;
+
+    padding:6px;
+
+    color:#666;
+
+    font-size:11px;
+}
+.div_modal .col .uno .checkbox{
+    display:inline-block;
+    vertical-align:middle;
+}
+.div_modal .col .uno .descripcion{
+    display:inline-block;
+    vertical-align:middle;
+
+    color:#000;
+
+    font-weight:bold;
+}
+
+.div_modal .general{
+    width:46%;
+}
+.div_modal .proveedores{
+    width:32%;
+    min-height:150px;
+
+    background-color:#f1f1f1;
+}
+.div_modal .proveedores .buscador{
+    text-align:right;
+    margin:5px;
+}
+.div_modal .proveedores .datos{
+    max-height:450px;
+    overflow:auto;
+
+    padding:0px;
+}
+.div_modal .proveedores .datos .uno.selected{
+    background-color:#BFDFFF;
+    border-bottom:#000 solid 1px;
+}
+.div_modal .proveedores .datos .uno .inform{
+    margin:0px 5px 0px 25px;
+}
+.div_modal .proveedores .datos .uno .inform .geo{
+    color:#666;
+    font-size:10px;
+}
+.div_modal .proveedores .datos .uno .inform .email{
+    color:#06C;
+    font-size:10px;
+}
+.div_modal .proveedores .datos .uno .inform .operacion{
+    display:inline-block;
+    vertical-align:top;
+
+    padding: 1px 5px;
+
+    font-size:9px;
+
+    background-color:#f4f4f4;
+    border-bottom:#ccc solid 1px;
+    color:#000;
+
+    cursor:default;
+}
+.div_modal .proveedores .datos .uno .inform .operacion.existe{
+    border-bottom:#000 solid 1px;
+}
+.div_modal .proveedores .datos .uno .inform .operacion.pedidos.existe{
+    background-color:#FFCF9F;
+}
+.div_modal .proveedores .datos .uno .inform .operacion.cotizaciones.existe{
+    background-color:#B0FFFF;
+}
+.div_modal .proveedores .datos .uno .inform .operacion.compras.existe{
+    background-color:#81CB74;
+}
+.div_modal .proveedores .datos .uno .inform .operacion.reclamos.existe{
+    background-color:#FF8080;
+}
+
+.div_modal .proveedores .datos .uno .acciones{
+    margin: 5px 2px;
+}
+.div_modal .proveedores .datos .uno .acciones .accion.vincular-categoria{
+    padding: 0px 3px;
+    color:#039;
+    cursor:pointer;
+}
+.div_modal .proveedores .datos .uno .acciones .accion.vincular-categoria:hover{
+    color:#999;
+}
+.div_modal .proveedores .datos .uno .acciones .accion.vincular-insumo{
+    padding: 0px 3px;
+    color:#039;
+    cursor:pointer;
+}
+.div_modal .proveedores .datos .uno .acciones .accion.vincular-insumo:hover{
+    color:#999;
+}
+
+.div_modal .marcas{
+    width:20%;
+    min-height:150px;
+
+    background-color:#f1f1f1;
+}
+.div_modal .marcas .buscador{
+    text-align:right;
+    margin:5px;
+}
+.div_modal .marcas .datos{
+    max-height:450px;
+    overflow:auto;
+
+    padding:0px;
+}
+.div_modal .marcas .datos .uno.selected{
+    background-color:#BFDFFF;
+    border-bottom:#000 solid 1px;
+}
+
+.div_modal .marcas .datos .uno .acciones{
+    margin: 5px 2px;
+}
+.div_modal .marcas .datos .uno .acciones .accion.vincular-categoria{
+    padding: 0px 3px;
+    color:#039;
+    cursor:pointer;
+}
+.div_modal .marcas .datos .uno .acciones .accion.vincular-categoria:hover{
+    color:#999;
+}
+.div_modal .marcas .datos .uno .acciones .accion.vincular-insumo{
+    padding: 0px 3px;
+    color:#039;
+    cursor:pointer;
+}
+.div_modal .marcas .datos .uno .acciones .accion.vincular-insumo:hover{
+    color:#999;
+}

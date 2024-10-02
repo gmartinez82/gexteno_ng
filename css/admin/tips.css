@@ -1,0 +1,36 @@
+@charset "iso-8859-2";
+/* CSS Document */
+
+#div_tips{
+	border:#CCCCCC solid 1px;
+	margin:8px;
+	margin-top:0px;
+	background-color:#fff;
+	padding:4px;
+	padding-bottom:10px;
+
+	-moz-border-radius: 4px;
+}
+
+#div_tips .titulo{
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	text-align:right;
+	padding:5px;
+	padding-right:10px;
+	color:#FFFFFF;
+	
+	background-color:#013254;
+	background-color:#013254;
+}
+
+#div_tips ul{
+	margin: 10px 2px 5px 2px;
+	padding: 5px 5px 5px 12px;
+}
+#div_tips li{
+	margin: 10px 1px 2px 1px;
+	padding: 2px;
+	border-bottom:#CCCCCC dotted 1px;
+}

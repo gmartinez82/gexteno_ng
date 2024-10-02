@@ -1,0 +1,972 @@
+/* Archivo CSS de 'trf_pln_calendario' */
+
+.input-error{
+    border: #f00 solid 1px;
+}
+.label-error{
+    color: #f00;
+}
+
+.div_adm_per_mov_movimiento_calendario{
+    min-width: 100%;    
+}
+
+.listado_adm_per_mov_movimiento_calendario{
+    margin: 0 auto 0 auto;
+
+    width: 100%;
+    overflow: auto;
+}
+
+/* Tabla Principal */
+.listado_adm_per_mov_movimiento_calendario{
+}
+
+/* Tabla Principal TH */
+.listado_adm_per_mov_movimiento_calendario th{
+    background-color: #013254;
+    border-bottom: #ccc solid 1px;
+    padding: 10px 5px;
+
+    color: #0ec0f9;
+
+    font-size: 10px;
+}
+.listado_adm_per_mov_movimiento_calendario th a{
+    color: #0ec0f9;
+    cursor: pointer;
+}
+.listado_adm_per_mov_movimiento_calendario th.col{
+}
+.listado_adm_per_mov_movimiento_calendario th.col.entidad{
+}
+.listado_adm_per_mov_movimiento_calendario th.col.entidad .ver-edicion-vinculo-turno{
+    cursor: pointer;
+}
+.listado_adm_per_mov_movimiento_calendario th.col.dia{
+}
+.listado_adm_per_mov_movimiento_calendario th.col.tipo{
+}
+.listado_adm_per_mov_movimiento_calendario th.col.servicio{
+}
+
+/* Header Fided */
+.listado_adm_per_mov_movimiento_calendario_header_fixed { 
+    position: fixed; 
+    top: 0px; 
+    display:none;
+    background-color:white;
+
+}
+.listado_adm_per_mov_movimiento_calendario_header_fixed th{ 
+    background-color:#003366!important;
+    color: #fff;
+    padding: 10px 5px;
+    font-size: 10px;
+}
+
+.listado_adm_per_mov_movimiento_calendario th.hoy{
+    background-color: #013f7d;
+}
+
+/* Dbcontext En Tabla */
+.listado_adm_per_mov_movimiento_calendario .db_context .db_context_content{
+    padding: 0;
+    margin: 0;
+}
+.listado_adm_per_mov_movimiento_calendario .db_context .db_context_content .datos{
+    padding: 2px 8px;
+    margin: 0;
+}
+.listado_adm_per_mov_movimiento_calendario .db_context .db_context_content .carpetas{
+    max-height: 400px;
+    overflow: auto;
+}
+.listado_adm_per_mov_movimiento_calendario .db_context .db_context_content .carpetas .uno{
+    font-size: 12px;
+}
+.listado_adm_per_mov_movimiento_calendario .db_context .db_context_content .carpetas .uno.sel{
+    font-weight: bold;
+}
+.listado_adm_per_mov_movimiento_calendario .db_context .db_context_content .carpetas .uno input[type=checkbox]{
+    vertical-align: middle;
+}
+
+/* Dbcontext TH Dia y Turno */
+.listado_adm_per_mov_movimiento_calendario th .db_context{
+}
+.listado_adm_per_mov_movimiento_calendario th .db_context:hover{
+    background-color: transparent;
+    display: block;
+}
+.listado_adm_per_mov_movimiento_calendario th .db_context .db_context_content{
+    width: 320px;
+    z-index: 999;
+}
+.listado_adm_per_mov_movimiento_calendario th .db_context .db_context_content .turnos .uno{
+    color: #666;
+    padding: 2px 5px;
+    border-bottom: #dedede dotted 1px;
+}
+.listado_adm_per_mov_movimiento_calendario th .db_context .db_context_content .turnos .uno.sel{
+    color: #000;
+    font-weight: bold;
+}
+.listado_adm_per_mov_movimiento_calendario th .db_context .db_context_content .turnos .uno input{
+    vertical-align: middle;
+}
+.listado_adm_per_mov_movimiento_calendario th .db_context .db_context_content .turnos .uno label{
+    vertical-align: middle;
+}
+
+/* Dbcontext TH Chofer */
+.listado_adm_per_mov_movimiento_calendario th.entidad .db_context{
+}
+.listado_adm_per_mov_movimiento_calendario th.entidad .db_context:hover{
+    background-color: transparent;
+    display: block;
+}
+.listado_adm_per_mov_movimiento_calendario th.entidad .db_context .db_context_content{
+    width: 820px;
+    min-height: 350px;
+}
+.listado_adm_per_mov_movimiento_calendario th.entidad .db_context .db_context_content .col{
+    display: inline-block;
+    vertical-align: top;
+
+    width:45%;
+    box-sizing: border-box;
+}
+.listado_adm_per_mov_movimiento_calendario th.entidad .db_context .db_context_content .col h4{
+    font-size: 12px;
+
+    margin: 3px;
+    padding: 6px;
+
+    background-color: #f4f4f4;
+    color: #666;
+}
+.listado_adm_per_mov_movimiento_calendario th .db_context .db_context_content .bloque{
+    max-height: 250px;
+    overflow: auto;
+}
+.listado_adm_per_mov_movimiento_calendario th .db_context .db_context_content .bloque .uno{
+    color: #666;
+    padding: 2px 5px;
+    border-bottom: #dedede dotted 1px;
+}
+.listado_adm_per_mov_movimiento_calendario th .db_context .db_context_content .bloque .uno.sel{
+    color: #000;
+    font-weight: bold;
+}
+.listado_adm_per_mov_movimiento_calendario th.entidad .db_context .db_context_content .buscador{
+    background-color: #f4f4f4;
+    padding: 5px;
+    margin: 2px;
+}
+
+
+
+
+/* Tabla Principal TD */
+.listado_adm_per_mov_movimiento_calendario td{
+    background-color: #f4f4f4;
+    padding: 0;
+
+    color:#00529B;
+}
+
+
+#listado_per_mov_movimiento_calendario_ficha td.ENTRADA{
+    background-color: #f4f4f4;
+    padding: 0;
+
+    color: #0283bc;
+}
+
+#listado_per_mov_movimiento_calendario_ficha td.SALIDA{
+    background-color: #f4f4f4;
+    padding: 0;
+    color: #013254;    
+}
+#listado_per_mov_movimiento_calendario_ficha td .movimiento-id{
+    font-weight: bold;
+    font-size: 12px;
+}
+#listado_per_mov_movimiento_calendario_ficha td .codigo-credencial{
+    font-size: 12px;
+}
+#listado_per_mov_movimiento_calendario_ficha td .fecha{
+}
+#listado_per_mov_movimiento_calendario_ficha td .hora{
+    font-size: 14px;
+    font-weight: bold;
+}
+#listado_per_mov_movimiento_calendario_ficha td .ctrl-sector{
+    color: #666;
+}
+#listado_per_mov_movimiento_calendario_ficha td .ctrl-equipo{
+    color: #000;
+}
+#listado_per_mov_movimiento_calendario_ficha td .modificado{
+}
+#listado_per_mov_movimiento_calendario_ficha td .modificado-por{
+    font-weight: bold;
+}
+#listado_per_mov_movimiento_calendario_ficha td .observacion{
+    color: #000;
+    padding: 5px;
+}
+
+#listado_per_mov_movimiento_calendario_ficha .total-horas{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0;
+    color: #000;
+}
+
+/* Td Entidad */
+.listado_adm_per_mov_movimiento_calendario td.entidad{
+    background-repeat: no-repeat;
+    background-position: 10px 5px;
+    background-size: 18px;
+
+    text-align: left;
+
+    padding: 5px;
+    vertical-align: top;
+}
+
+.listado_adm_per_mov_movimiento_calendario td.entidad .foto.avatar{
+    float: left;
+    margin: 2px 7px 2px 2px;
+
+    max-height: 50px;
+    overflow: hidden;
+}
+.listado_adm_per_mov_movimiento_calendario td.entidad .foto.avatar img{
+}
+.listado_adm_per_mov_movimiento_calendario td.entidad .info-persona{
+    font-size: 12px;
+    font-weight: normal;
+    color: #0283bc;
+
+    /*max-height: 20px;*/
+    /*overflow: hidden;*/
+}
+.listado_adm_per_mov_movimiento_calendario td.entidad .info-persona.min{
+    font-size: 10px;
+    
+    max-width: 80px;
+    overflow: hidden;
+}
+.listado_adm_per_mov_movimiento_calendario td.entidad .info-persona .descripcion{
+    font-size: 13px;
+    font-weight: bold;
+    color: #013254;
+}
+.listado_adm_per_mov_movimiento_calendario td.entidad .info-persona .descripcion.BAJA{
+    text-decoration: line-through;
+    color: #F00;
+}
+
+.listado_adm_per_mov_movimiento_calendario td.entidad.persona{
+
+}
+
+.listado_adm_per_mov_movimiento_calendario td.entidad .acciones{
+    margin: 0;
+    padding: 0;
+
+    z-index: 9999;
+    position: absolute;
+}
+.listado_adm_per_mov_movimiento_calendario td.entidad .acciones .accion{
+    margin: 0;
+    padding: 0;
+}
+.listado_adm_per_mov_movimiento_calendario td.entidad .acciones .accion img{
+    max-width: 13px;
+    max-height: 13px;
+}
+
+/* Td Tipo */
+.listado_adm_per_mov_movimiento_calendario td.tipo{
+    background-color: #ddd;
+    color: #666;
+}
+
+/* Td Hoy */
+.listado_adm_per_mov_movimiento_calendario td.hoy{
+    background-color: #d7edf7!important;
+}
+
+/* Td Dia */
+.listado_adm_per_mov_movimiento_calendario td.dia{
+    vertical-align: middle;
+    background-color: #ededed;
+}
+.listado_adm_per_mov_movimiento_calendario td.dia.total{
+    background-color: #ddd;
+    color: #666;
+
+    font-weight: bold;
+    font-size: 14px;
+}
+.listado_adm_per_mov_movimiento_calendario td.dia.total .per-movimiento-horas-total{
+    margin: 3px;
+}
+.listado_adm_per_mov_movimiento_calendario td.dia.total .per-movimiento-horas-total .per-movimiento-hora{
+    display:inline-block;
+    vertical-align: top;
+
+    min-width: 42px;
+
+    color: #ffffff;
+    background-color: #0283bc;
+
+    padding: 3px 2px;
+    margin-left: -1px;
+
+    font-size: 12px;
+    text-align: center;
+}
+
+.listado_adm_per_mov_movimiento_calendario td.dia.total .gral-novedads{
+}
+.listado_adm_per_mov_movimiento_calendario td.dia.total .gral-novedads .gral-novedad{
+    display:inline-block;
+    vertical-align: top;
+
+    width: 20px;
+
+    color: #333;
+
+    border: #ccc solid 1px;
+
+    padding: 3px 2px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.listado_adm_per_mov_movimiento_calendario td.dia.total .pln-total-jornadas{
+    margin: 3px;
+}
+.listado_adm_per_mov_movimiento_calendario td.dia.total .pln-total-jornadas .pln-total-jornada{
+    display:inline-block;
+    vertical-align: top;
+
+    width: 20px;
+
+    color: #333;
+    background-color: #fff;
+    border: #ccc solid 1px;
+
+    padding: 3px 2px;
+    margin-left: -1px;
+
+    font-size: 11px;
+    text-align: center;
+}
+
+.listado_adm_per_mov_movimiento_calendario td.dia.total .pln-jornadas .pln-jornada-media{
+    display:inline-block;
+    vertical-align: top;
+
+    width: 20px;
+
+    color: #333;
+
+    border: #ccc solid 1px;
+
+    padding: 3px 2px;
+    font-size: 10px;
+
+    text-align: center;
+}
+
+
+.listado_adm_per_mov_movimiento_calendario td.dia.ui-selecting{
+    background-color: #FECA40;
+}
+.listado_adm_per_mov_movimiento_calendario td.dia.ui-selected{
+    background-color: #F39814;
+}
+
+/* Td Hora */
+.listado_adm_per_mov_movimiento_calendario td.hora{
+    font-weight: bold;
+    color: #000;
+}
+.listado_adm_per_mov_movimiento_calendario td .per-movimiento{
+    color: #000;
+}
+.listado_adm_per_mov_movimiento_calendario td .per-movimiento .per-movimiento-sinhoras{
+    padding: 3px 2px;
+    color: #666;
+    
+    width: 80%;
+    max-width: 50px;
+}
+.listado_adm_per_mov_movimiento_calendario td .per-movimiento .per-movimiento-horas{
+    background-color: #f9f9f9;
+
+    font-size: 12px;
+
+    padding: 3px 2px;
+    margin: 0;
+
+    width: 80%;
+    max-width: 50px;
+    position: relative;
+}
+
+.listado_adm_per_mov_movimiento_calendario .per-movimiento.error-100 .per-movimiento-sinhoras,
+.listado_adm_per_mov_movimiento_calendario .per-movimiento.error-100 .per-movimiento-horas{
+    background-color: #eb9ba7;
+    border-top: #CC0000 solid 1px;
+    color: #D63301!important;
+    font-weight: bold;    
+}
+.listado_adm_per_mov_movimiento_calendario .per-movimiento.error-150 .per-movimiento-sinhoras,
+.listado_adm_per_mov_movimiento_calendario .per-movimiento.error-150 .per-movimiento-horas{
+    background-color: #D9F5D8;
+    border-top: #0000CC solid 1px;
+    color: #0000CC!important;
+    font-weight: bold;    
+}
+.listado_adm_per_mov_movimiento_calendario .per-movimiento.error-151 .per-movimiento-sinhoras,
+.listado_adm_per_mov_movimiento_calendario .per-movimiento.error-151 .per-movimiento-horas{
+    background-color: #ffd;
+    border-top: #F39814 solid 1px;
+    color: #C97626!important;
+    font-weight: bold;    
+}
+
+
+
+.listado_adm_per_mov_movimiento_calendario .entidad-min{
+    background-repeat: no-repeat;
+    background-position: 10px 0;
+    background-size: 12px;
+
+    text-align: left;
+
+    width: 120px!important;
+    padding: 1px 30px;
+    vertical-align: middle;
+}
+
+/* Carpeta Seleccionada */
+.listado_adm_per_mov_movimiento_calendario td .carpeta.celda-seleccionada{
+    border-top: #C97626 solid 2px!important;
+    border-bottom: #C97626 solid 1px!important;
+    background-color: #FECA40!important;
+    opacity: 1!important;
+}
+
+.listado_adm_per_mov_movimiento_calendario td .acciones{
+    float: right;
+    display: none;
+    padding: 0 4px;
+
+}
+.listado_adm_per_mov_movimiento_calendario td .acciones.existente{
+    margin-top: -18px;
+    position: relative;
+    z-index: 9999;    
+}
+.listado_adm_per_mov_movimiento_calendario td .acciones .accion{
+    cursor: pointer;
+    display:inline-block;
+
+    font-size: 12px;
+
+    padding: 1px;
+}
+.listado_adm_per_mov_movimiento_calendario td .acciones .accion img{
+    max-width: 13px;
+    max-height: 13px;
+}
+
+.listado_adm_per_mov_movimiento_calendario td .acciones .accion:hover{
+}
+
+.listado_adm_per_mov_movimiento_calendario td .gral-novedad {
+    position: relative;
+    padding:4px;
+    font-size:10px;
+    
+    max-width: 70px;
+}
+.listado_adm_per_mov_movimiento_calendario td .gral-novedad .tramo{
+    font-size:9px;
+    color:#666;	
+}
+
+.listado_adm_per_mov_movimiento_calendario td .marca-comentario{
+    border-left: transparent solid 10px;
+    border-right: #F79833 solid 10px;
+    border-top: transparent solid 10px;
+    height: 0;
+    width: 0;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1;
+}
+
+.listado_adm_per_mov_movimiento_calendario td .marca-editado{
+    border-left: transparent solid 10px;
+    border-right: #FECA40 solid 10px;
+    border-bottom: transparent solid 10px;
+    height: 0;
+    width: 0;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+
+/* Rotate Cell */
+td.rotate-90 {
+    /* Something you can count on */
+    max-height: 140px;
+    white-space: nowrap;
+    background-color: #ddd;
+}
+td.rotate-90 > div {
+    transform: 
+        /* Magic Numbers */
+        translate(3px, 5px)
+        /* 45 is really 360 - 45 */
+        rotate(270deg);
+    width: 30px;
+
+    color: #000;
+    font-weight: bold;
+    font-size: 12px;
+}
+td.rotate-90.requerido > div {
+    color: #C97626;
+}
+td.rotate-90.excedido > div{
+    color: #F00;
+}
+td.rotate-90 > div > span {
+    border-bottom: 1px solid #ccc;
+    padding: 5px 10px;
+}
+
+/* Modal */
+.div_modal .modal-top{
+    border-bottom: #666 solid 1px;
+    border-top: #666 solid 1px;
+    background-color: #f4f4f4;
+    margin: 5px;
+    padding: 4px 8px;
+}
+.div_modal .modal-top .col{
+    display: inline-block;
+    vertical-align: top;
+
+    width: 140px;
+}
+.div_modal .modal-top .col.fecha{
+    width:80px;
+}
+.div_modal .modal-top .col.persona{
+    width:250px;
+}
+.div_modal .modal-top .col .label{
+    border: none;
+    text-align: left;
+    padding: 0;
+    color: #666;
+    width: 100%;
+    font-size: 11px;
+}
+.div_modal .modal-top .col .dato{    
+    text-align: left;
+    padding: 0;
+    margin-left: 0;
+    font-weight: bold;
+    width: 100%;
+    font-size: 12px;
+}
+.div_modal .bloque-atributos{
+    position: absolute;
+    right:0;
+    width:30%;
+
+    border: #ccc dotted 1px;
+    background-color: #fff;
+
+    padding: 10px;
+}
+
+/* Modal Agregar */
+.div_modal .agregar{
+
+}
+.div_modal .agregar .buscador{
+    background-color: #dedede;
+    padding: 5px;
+    margin: 5px;
+}
+.div_modal .agregar .buscador .par{
+    display: inline-block;
+    vertical-align: top;
+
+    width: 30%;
+}
+.div_modal .agregar .buscador .par.descripcion{
+    width: 50%;
+}
+.div_modal .agregar .buscador .par.tipo-carpeta{
+    width: 20%;
+}
+.div_modal .agregar .buscador .botonera{
+    display: inline-block;
+    vertical-align: top;
+
+    width: 20%;
+}
+
+.div_modal .agregar .nuevo{
+    background-color: #dedede;
+    padding: 5px;
+    margin: 5px;
+}
+
+.div_modal .agregar .resultados{
+    margin: 10px;
+}
+.div_modal .agregar .resultados .uno{
+    border-bottom: #666 dotted 1px;
+    padding: 14px 8px;
+}
+.div_modal .agregar .resultados .uno:hover{
+}
+.div_modal .agregar .resultados .uno .descripcion{
+    font-size: 12px;
+    color: #000;
+}
+.div_modal .agregar .resultados .uno.vinculado{
+    background-color: #eee;
+}
+.div_modal .agregar .resultados .uno.vinculado .descripcion{
+    font-size: 13px;
+    font-weight: bold;
+}
+.div_modal .agregar .resultados .uno.sugerido{
+    background-color: #f9e5bc;
+    border-bottom: #000 dotted 1px;
+}
+.div_modal .agregar .resultados .uno.sugerido .descripcion{
+    font-size: 15px;
+    font-weight: bold;
+    color: #C97626;
+}
+.div_modal .agregar .resultados .uno .info-carpeta{
+    font-size: 10px;
+}
+.div_modal .agregar .resultados .uno .info-carpeta .col{
+    display: inline-block;
+    vertical-align: top;
+    color: #666;
+}
+.div_modal .agregar .resultados .uno .info-carpeta .col.galpon{
+    width: 150px;
+}
+
+.div_modal .agregar .resultados .uno .asignado{
+    font-size: 10px;
+}
+.div_modal .agregar .resultados .uno .asignado.misma-carpeta{
+    color: #003366;
+}
+.div_modal .agregar .resultados .uno .asignado.otra-carpeta{
+    color: #D50000;
+}
+.div_modal .agregar .resultados .uno .acciones{
+    float: right;
+}
+.div_modal .agregar .resultados .uno .acciones .accion{
+    background-color: #00529B;
+    border: #000 solid 1px;
+    color: #fff;
+    cursor: pointer;
+
+    padding: 4px 8px;
+}
+.div_modal .agregar .resultados .uno .acciones .accion:hover{
+    opacity: 0.8;
+}
+
+/* Div Modal Agrupacion */
+.div_modal .agregar .agrupacion{
+
+}
+.div_modal .agregar .agrupacion .col{
+    display: inline-block;
+    vertical-align: top;
+
+    width: 45%;
+    box-sizing: border-box;
+}
+.div_modal .agregar .agrupacion .col.c1{
+    width: 55%;
+}
+.div_modal .agregar .agrupacion .col.c2{
+    width: 40%;
+}
+.div_modal .agregar .agrupacion .col.c2 h4{
+    border-bottom: #000 solid 1px;
+
+    margin: 4px;
+    padding: 3px;
+}
+.div_modal .agregar .agrupacion .col.c2 h4 input[type=text]{
+    float: right;
+    margin-top: -7px;
+}
+.div_modal .agregar .agrupacion .col.c2 .bloque-agrupaciones{
+    margin: 15px 5px;
+}
+.div_modal .agregar .agrupacion .col.c2 .bloque-agrupaciones .agrupaciones{
+    margin: 5px;
+}
+.div_modal .agregar .agrupacion .col.c2 .bloque-agrupaciones .agrupaciones .uno{
+    background: #f4f4f4;
+    border-bottom: #666 dotted 1px;
+    padding: 5px 10px;
+
+    cursor: pointer;
+}
+.div_modal .agregar .agrupacion .col.c2 .bloque-agrupaciones .agrupaciones .uno.hoy{
+    background-color: #f5e79e;
+    padding: 8px 10px;
+    border-bottom: #000 dotted 1px;
+}
+.div_modal .agregar .agrupacion .col.c2 .bloque-agrupaciones .agrupaciones .uno:hover{
+    opacity: 0.8;
+}
+.div_modal .agregar .agrupacion .col.c2 .bloque-agrupaciones .agrupaciones .uno .descripcion{
+    font-size: 12px;
+    font-weight: bold;
+}
+.div_modal .agregar .agrupacion .col.c2 .bloque-agrupaciones .agrupaciones .uno .observacion{
+    font-size: 11px;
+    color: #C97626;
+}
+.div_modal .agregar .agrupacion .col.c2 .bloque-agrupaciones .agrupaciones .uno .desde-hasta{
+    font-size: 11px;
+    color: #333;
+}
+.div_modal .agregar .agrupacion .col.c2 .bloque-agrupaciones .agrupaciones .no-resultado{
+    background-color: #f4f4f4;
+    color: #999;
+    padding: 10px;
+}
+
+/* Modal Agregar Chofer */
+.div_modal .agregar-chofer{
+
+}
+.div_modal .agregar-chofer .resultados{
+    margin: 10px;
+}
+.div_modal .agregar-chofer .resultados .choferes .chofer{
+    border-bottom: #ccc dotted 1px;
+    padding: 5px 8px;
+
+    cursor: pointer;
+}
+.div_modal .agregar-chofer .resultados .choferes .chofer:hover{
+    background-color: #fff;
+}
+
+/* Composicion Turno */
+.composicion-turno{
+    padding: 2px;
+    margin: 4px 1px;
+
+    font-size: 10px;
+}
+.composicion-turno .uno-dia{
+    display: inline-block;
+    vertical-align: top;
+
+    width: 80px;
+
+    background-color: #fff;
+    border: #ccc solid 1px;
+
+    margin: 0px;
+    padding: 5px;
+
+    min-height: 60px;
+}
+.composicion-turno .uno-dia .descripcion{
+    font-size: 10px!important;
+    font-weight: bold;
+}
+
+.composicion-turno .uno-dia.TIPO.VIAJE{ 
+    background-color: #98e9ff; 
+    width: 120px;
+}
+.composicion-turno .uno-dia.TIPO.DESCANSO{ 
+    background-color: #b1e177; 
+    width: 35px; 
+}
+.composicion-turno .uno-dia.TIPO.DESCANSO.DUERME{ 
+    background-color: #98e9ff; 
+    width: 35px; 
+}
+
+/* Acciones en Modal Turnos */
+.div_modal .turnos .acciones{}
+.div_modal .turnos .acciones .par{}
+.div_modal .turnos .acciones .par .label{
+    padding: 1px;
+
+    font-size: 10px;
+}
+.div_modal .turnos .acciones .par .dato{
+    padding: 1px;
+}
+.div_modal .turnos .acciones .par .dato select{
+    font-size: 10px;
+    padding: 2px;
+}
+
+/* Modal Vincular Turnos */
+.div_modal .vincular-turno{
+}
+.div_modal .vincular-turno .col{
+    display: inline-block;
+    vertical-align: top;
+
+    width: 45%;
+    box-sizing: border-box;
+
+    padding: 10px;
+}
+/* col operarios */
+.div_modal .vincular-turno .col.operarios{
+    width: 30%;
+
+    background-color: #eee;
+}
+.div_modal .vincular-turno .col.operarios .uno{
+    padding: 6px 10px;
+    border-bottom: #ccc dotted 1px;
+}
+.div_modal .vincular-turno .col.operarios .uno .descripcion{
+    font-weight: bold;
+}
+.div_modal .vincular-turno .col.operarios .uno .turnos-vinculados{
+    margin-left: 10px;
+}
+.div_modal .vincular-turno .col.operarios .uno .turnos-vinculados .turno-vinculado{
+    color: #666;    
+}
+.div_modal .vincular-turno .col.operarios .uno .turnos-vinculados .turno-vinculado.todos{
+    color: #009900;
+}
+.div_modal .vincular-turno .col.operarios .uno .turnos-vinculados .turno-vinculado .descripcion{
+    font-weight: normal;
+}
+
+/* col turnos */
+.div_modal .vincular-turno .col.turnos{
+    width: 65%;
+
+}
+.div_modal .vincular-turno .col.turnos .uno{    
+    padding: 12px 10px;
+    border-bottom: #ccc dotted 1px;
+
+    min-height: 35px;
+}
+.div_modal .vincular-turno .col.turnos .uno .descripcion{
+    font-size: 15px;
+    font-weight: bold;
+}
+.div_modal .vincular-turno .col.turnos .uno .botonera{
+    float: right;
+}
+
+/* Div Modal Comentarios */
+.div_modal .comentario .par{
+    margin: 10px;
+}
+.div_modal .comentario .par .label{
+    width: 100%!important;
+    text-align: left;
+
+    color: #333!important;
+    border-bottom: none!important;
+    padding: 2px;
+}
+.div_modal .comentario .par .dato{
+    width: 100%;    
+    text-align: left;
+    padding: 2px;
+}
+
+
+/* Div Modal Alta Novedad */
+.div_modal .div-modal-alta-novedad{
+
+}
+.div_modal .div-modal-alta-novedad .per-personas{
+        background-color: #ddd;
+        padding: 10px;
+        margin: 10px;
+    }
+.div_modal .div-modal-alta-novedad .per-personas .uno.per-persona{
+        background-color: #fff;
+        display: inline-block;
+        vertical-align: top;
+        
+        width: 50px;
+        
+        border: #ccc dotted 1px;
+        padding: 5px;        
+    }
+.div_modal .div-modal-alta-novedad .per-personas .uno.per-persona .foto{
+        max-height: 50px;
+        overflow: hidden;
+    }
+.div_modal .div-modal-alta-novedad .per-personas .uno.per-persona .foto img{
+        max-width: 100%;
+    } 
+.div_modal .div-modal-alta-novedad .dias-semana{
+
+}
+.div_modal .div-modal-alta-novedad .dias-semana .dia-semana{
+    display: inline-block;
+    vertical-align: top;
+
+    border: #ccc dotted 1px;
+    background-color: #dedede;
+
+    width: 50px;
+
+    padding: 4px 1px;
+    margin: 2px;
+}
+.div_modal .div-modal-alta-novedad .dias-semana .dia-semana.sel{
+    border: #000 dotted 1px;
+    background-color: #98e9ff;
+}
+.div_modal .div-modal-alta-novedad .dias-semana .dia-semana input[type=checkbox]{
+    vertical-align: middle;
+}
+.div_modal .div-modal-alta-novedad .loading{
+    display: none;
+}

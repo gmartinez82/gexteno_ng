@@ -1,0 +1,106 @@
+
+
+#cuerpo_widget_WIDGET_ULTIMAS_ACTUALIZACIONES .div-ultima-actualizacion{
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    box-sizing: border-box;
+    
+    font-size: 12px;    
+}
+#cuerpo_widget_WIDGET_ULTIMAS_ACTUALIZACIONES .fecha-actualizacion{
+    border-bottom: #ccc dotted 1px;
+    padding: 2px 7px 2px 10px;
+    margin: 2px;
+    font-weight: normal;
+    font-size: 11px;
+    color: #0283bc;
+}
+#cuerpo_widget_WIDGET_ULTIMAS_ACTUALIZACIONES .ultimas-actualizaciones{
+    margin: 0 5px;
+    padding-left: 22px;
+}
+#cuerpo_widget_WIDGET_ULTIMAS_ACTUALIZACIONES .ultimas-actualizaciones .uno{
+}
+#cuerpo_widget_WIDGET_ULTIMAS_ACTUALIZACIONES .ultimas-actualizaciones .uno .info-titulo{
+    font-weight: bold;
+    color: #000;
+}
+#cuerpo_widget_WIDGET_ULTIMAS_ACTUALIZACIONES .ultimas-actualizaciones .uno .info-preview{
+    color: #333;
+}
+#cuerpo_widget_WIDGET_ULTIMAS_ACTUALIZACIONES .ultimas-actualizaciones .link-info-extendida-ver,
+#cuerpo_widget_WIDGET_ULTIMAS_ACTUALIZACIONES .ultimas-actualizaciones .link-info-extendida-ocultar{    
+    font-size: 10px;
+    
+    cursor: pointer;
+    padding: 1px 5px;
+    color: #0000FF;
+    
+    text-align: center;
+    
+    display: inline-block;
+}
+#cuerpo_widget_WIDGET_ULTIMAS_ACTUALIZACIONES .ultimas-actualizaciones .link-info-extendida-ocultar{
+    margin: 10px;
+    width: 150px;
+}
+#cuerpo_widget_WIDGET_ULTIMAS_ACTUALIZACIONES .ultimas-actualizaciones .uno .icon-no-leido{
+    background-color: #009900;
+    color: #fff;
+    padding: 2px 5px;
+}
+#cuerpo_widget_WIDGET_ULTIMAS_ACTUALIZACIONES .ultimas-actualizaciones .info-extendida{
+    display: none;
+    
+    background-color: #eee;
+    border: #666 solid 1px;
+    
+    margin: 5px 0;
+    padding: 2px 15px;
+}
+#cuerpo_widget_WIDGET_ULTIMAS_ACTUALIZACIONES .ultimas-actualizaciones .info-extendida .fotos{
+    margin: 15px;
+}
+#cuerpo_widget_WIDGET_ULTIMAS_ACTUALIZACIONES .ultimas-actualizaciones .info-extendida .fotos .foto{
+    display: inline-block;
+    vertical-align: top;
+    
+    width: 150px;
+    box-sizing: border-box;
+}
+#cuerpo_widget_WIDGET_ULTIMAS_ACTUALIZACIONES .ultimas-actualizaciones .info-extendida .fotos .foto img{
+    border: #000 solid 1px;
+}
+#cuerpo_widget_WIDGET_ULTIMAS_ACTUALIZACIONES .ultimas-actualizaciones .info-extendida .fotos .foto .descripcion{
+    font-weight: bold;
+    color: #000;
+}
+#cuerpo_widget_WIDGET_ULTIMAS_ACTUALIZACIONES .ultimas-actualizaciones .info-extendida .fotos .foto .observacion{
+    color: #666;
+}
+
+#cuerpo_widget_WIDGET_ULTIMAS_ACTUALIZACIONES .ultimas-actualizaciones .info-extendida .archivos{
+    margin: 15px;
+}
+#cuerpo_widget_WIDGET_ULTIMAS_ACTUALIZACIONES .ultimas-actualizaciones .info-extendida .archivos .archivo{
+    display: inline-block;
+    vertical-align: top;
+    
+    width: 250px;
+    box-sizing: border-box;
+}
+#cuerpo_widget_WIDGET_ULTIMAS_ACTUALIZACIONES .ultimas-actualizaciones .info-extendida .archivos .archivo img{
+    float: left;
+    margin-right: 8px;
+}
+#cuerpo_widget_WIDGET_ULTIMAS_ACTUALIZACIONES .ultimas-actualizaciones .info-extendida .archivos .archivo .descripcion{
+    font-weight: bold;
+    color: #000;
+}
+#cuerpo_widget_WIDGET_ULTIMAS_ACTUALIZACIONES .ultimas-actualizaciones .info-extendida .archivos .archivo .observacion{
+    color: #666;
+}
+#cuerpo_widget_WIDGET_ULTIMAS_ACTUALIZACIONES .botonera{
+    margin: 15px;
+}

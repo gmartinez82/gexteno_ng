@@ -1,0 +1,22 @@
+<?php
+require_once "base/BVtaNotaCreditoTipoEstado.php";
+
+class VtaNotaCreditoTipoEstado extends BVtaNotaCreditoTipoEstado {
+
+    const TIPO_GENERADO = 'GENERADO';
+    const TIPO_RECHAZADO_AFIP = 'RECHAZADO_AFIP';
+    const TIPO_OBSERVADO_AFIP = 'OBSERVADO_AFIP';
+    const TIPO_APROBADO_AFIP = 'APROBADO_AFIP';
+    const TIPO_PENDIENTE = 'PENDIENTE';
+    const TIPO_IMPUTADO = 'IMPUTADO';
+    const TIPO_IMPUTADO_PARCIAL = 'IMPUTADO_PARCIAL';
+    const TIPO_ANULADO = 'ANULADO';
+    const TIPO_ANULADO_PARCIAL = 'ANULADO_PARCIAL';
+    const TIPO_ANULADO_SIN_CAE = 'ANULADO_SIN_CAE';
+    const TIPO_ANULADO_RENUMERADO = 'ANULADO_RENUMERADO';
+    const TIPO_CANCELADO_SIFEN = 'CANCELADO_SIFEN';
+    const TIPO_INUTILIZADO_SIFEN = 'INUTILIZADO_SIFEN';
+
+}
+
+?>

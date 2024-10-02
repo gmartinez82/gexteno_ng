@@ -1,0 +1,304 @@
+/* CSS Document */
+
+#listado_adm_ins_stock_resumen_gestion{
+}
+#listado_adm_ins_stock_resumen_gestion .uno{
+}
+#listado_adm_ins_stock_resumen_gestion .uno .boton{
+    cursor:pointer;
+}
+#listado_adm_ins_stock_resumen_gestion .uno .categoria{
+    color: #003366;
+    font-size: 10px;
+}
+#listado_adm_ins_stock_resumen_gestion .uno .insumo{
+    color: #0283bc;
+    font-weight: bold;
+    font-size: 14px;
+}
+#listado_adm_ins_stock_resumen_gestion .uno .deshabilitado .insumo{
+    color: #999;
+}
+#listado_adm_ins_stock_resumen_gestion .uno .codigo-interno{
+    color: #003366;
+    font-size: 10px;
+}
+#listado_adm_ins_stock_resumen_gestion .uno .pan_panol_descripcion{
+    font-size: 10px;
+    font-weight: bold;
+    color: #000;
+}
+#listado_adm_ins_stock_resumen_gestion .uno .pan_panol_tipo{
+    font-size: 10px;
+    color: #999;
+}
+#listado_adm_ins_stock_resumen_gestion .uno .ubicacion{
+    color: #060;
+    text-align: center;
+}
+#listado_adm_ins_stock_resumen_gestion .uno .ins_clasificacion{
+    font-size:12px;
+    font-weight:bold;
+}
+#listado_adm_ins_stock_resumen_gestion .uno .cantidad_real{
+    font-size:12px;
+    font-weight:bold;
+    color:#333;
+}
+#listado_adm_ins_stock_resumen_gestion .uno .cantidad_reserva{
+    font-size:12px;
+    font-weight:bold;
+
+    border:#003366 solid 1px;
+    background-color:#0283bc;
+    color: #fff;
+
+    padding:3px;
+    margin:4px;
+}
+#listado_adm_ins_stock_resumen_gestion .uno .cantidad_disponible{
+    font-size:12px;
+    font-weight:bold;
+    color:#FFF;
+
+    border:#060 solid 1px;
+    background-color:#090;
+
+    padding:5px 3px;
+    margin:4px;
+}
+#listado_adm_ins_stock_resumen_gestion .uno .cantidad_disponible.punto_maximo_mayor{
+    color:#FFF;
+    border:#036 solid 1px;
+    background-color:#1286bf;
+}
+#listado_adm_ins_stock_resumen_gestion .uno .cantidad_disponible.punto_pedido_menor{
+    color:#FFF;
+    border:#F90 solid 1px;
+    background-color:#F90;
+}
+#listado_adm_ins_stock_resumen_gestion .uno .cantidad_disponible.punto_minimo_menor{
+    color:#FFF;
+    border:#F00 solid 1px;
+    background-color: #c00;
+}
+#listado_adm_ins_stock_resumen_gestion .uno .cantidad_disponible.detalle{
+    cursor:pointer;
+}
+#listado_adm_ins_stock_resumen_gestion .uno .cantidad_pasivo{
+    font-size:11px;
+    color:#666;
+
+    border:#ddd solid 1px;
+    background-color:#f4f4f4;
+
+    padding:3px;
+    margin:4px;
+
+    width:40%;
+}
+#listado_adm_ins_stock_resumen_gestion .uno .cantidad_pasivo.detalle{
+    cursor:pointer;
+}
+#listado_adm_ins_stock_resumen_gestion .uno .reservados{
+    position: absolute;
+    float: right;
+
+    margin-top: -34px;
+    margin-left: 57px;
+
+    padding: 3px 6px;
+    background-color: #c00;
+
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+
+    font-size: 9px;
+    color: #fff;
+}
+#listado_adm_ins_stock_resumen_gestion .uno .puntos-modificado{
+    font-size: 10px;
+    color: #999;
+}
+#listado_adm_ins_stock_resumen_gestion .uno .puntos-modificado-por{
+    font-size: 10px;
+    color: #666;
+}
+#listado_adm_ins_stock_resumen_gestion .uno .puntos{
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    
+    border: #ccc solid 1px;
+    background-color: #fff;
+    
+    text-align: center;
+    font-size: 10px;
+    color: #666;
+    
+    padding: 2px 4px 2px 4px;
+    
+    width: 23%;
+}
+#listado_adm_ins_stock_resumen_gestion .uno .puntos.accion{
+    border: none;
+    background-color: transparent;
+    
+    width: 23%;
+    margin-top: -5px;
+    
+    cursor: pointer;
+}
+#listado_adm_ins_stock_resumen_gestion .uno .puntos.sugerido{
+    background-color: #ddd;
+    color: #0283bc;
+}
+
+#listado_adm_ins_stock_resumen_gestion .uno .tipo-estado{
+    font-size: 10px;
+}
+#listado_adm_ins_stock_resumen_gestion .uno .pdi-pedido-activos{
+    border: #0000CC dotted 1px;
+    background-color: #9CC;
+    color: #0000CC;
+    
+    font-size: 10px;
+    
+    margin: 3px 0px;
+    padding: 2px 5px;
+}
+#listado_adm_ins_stock_resumen_gestion .uno .pdi-pedido-activos .pdi-pedido-activo{
+    margin: 3px;
+}
+#listado_adm_ins_stock_resumen_gestion .uno .pde-pedido-activos{
+    border: #F60 dotted 1px;
+    background-color: #E8D77B;
+    color: #c00;
+    
+    font-size: 10px;
+    
+    margin: 3px 0px;
+    padding: 2px 5px;
+}
+
+#listado_adm_ins_stock_resumen_gestion .uno .pdi-pedido-agrupacion-item-activos{
+    border: #666 dotted 1px;
+    background-color: #CCC;
+    color: #333;
+    
+    font-size: 10px;
+    
+    margin: 3px 0px;
+    padding: 2px 5px;
+}
+#listado_adm_ins_stock_resumen_gestion .uno .pdi-pedido-agrupacion-item-activos .pdi-pedido-agrupacion-item-activo{
+    margin: 3px;
+}
+
+
+#listado_adm_ins_stock_resumen_gestion .uno .pde-pedido-activos .pde-pedido-activo{
+    margin: 3px;
+}
+#listado_adm_ins_stock_resumen_gestion .uno .pde-oc-activos{
+    border: #F60 dotted 1px;
+    background-color: #E8D77B;
+    color: #c00;
+    
+    font-size: 10px;
+    
+    margin: 3px 0px;
+    padding: 2px 5px;
+}
+#listado_adm_ins_stock_resumen_gestion .uno .pde-oc-activos .pde-oc-activo{
+    margin: 3px;
+}
+#listado_adm_ins_stock_resumen_gestion .uno .pde-oc-agrupacion-item-activos{
+    border: #666 dotted 1px;
+    background-color: #CCC;
+    color: #333;
+    
+    font-size: 10px;
+    
+    margin: 3px 0px;
+    padding: 2px 5px;
+}
+#listado_adm_ins_stock_resumen_gestion .uno .pde-oc-agrupacion-item-activos .pde-oc-agrupacion-item-activo{
+    margin: 3px;
+}
+
+#listado_adm_ins_stock_resumen_gestion .uno .modificado{
+    text-align: center;
+    cursor:pointer;
+    color: #666;
+    font-size: 10px;
+}
+#listado_adm_ins_stock_resumen_gestion .uno .modificado:hover{
+    color:#000;
+}
+#listado_adm_ins_stock_resumen_gestion .uno .costo{
+    cursor:pointer;
+    color: #000;
+}
+#listado_adm_ins_stock_resumen_gestion .uno .costo .modificado{
+    font-size: 10px;
+    color: #666;
+}
+#listado_adm_ins_stock_resumen_gestion .uno .costo:hover{
+    color:#000;
+}
+
+.div_modal .info-insumo{
+    background-color: #9CC;
+    border: #036 solid 1px;
+
+    padding:10px;
+    margin:5px 15px;
+}
+
+.div_modal .tabla-modal .reservados{
+    position: absolute;
+    float: right;
+
+    margin-top: -24px;
+    margin-left: 50px;
+
+    padding: 3px 6px;
+    background-color: #c00;
+
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+
+    font-size: 9px;
+    color: #fff;
+}
+.div_modal .ubicacion{
+    color: #060;
+    text-align: left;
+    font-size: 14px;
+}
+
+.div_modal .datos.detalle .cantidad{
+    background-color: #ccc!important;
+}
+.div_modal .datos.detalle .cantidad-disponoble{
+    background-color: #ccc!important;
+    font-weight: bold;
+}
+.div_modal .datos.detalle .pdi-tipo-origen{
+    font-size: 10px;
+}
+.div_modal .datos.detalle .creado{
+}
+.div_modal .datos.detalle .creado-por{
+    font-weight: bold;
+    font-size: 10px;
+    color: #000;
+}
+.div_modal .datos.detalle .comentario{
+    font-style: normal;
+    color: #0000CC;
+    padding: 1px;
+}
+

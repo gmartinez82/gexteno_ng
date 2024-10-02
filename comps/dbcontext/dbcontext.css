@@ -1,0 +1,63 @@
+/* CSS Document */
+
+/* DB Context */
+.db_context{
+    cursor:pointer;
+}
+.db_context:hover{
+    background-color:#f4f4f4;
+}
+.db_context .db_context_content{
+    position:absolute;
+
+    background-color:#FFF;
+    border:#ccc solid 1px;
+
+    -webkit-border-bottom-left-radius: 15px;
+    -moz-border-radius-bottomleft: 15px;
+    border-bottom-left-radius: 15px;
+
+    box-shadow: 2px 2px 3px #666; 
+
+    width:250px;
+    margin-left:-150px;
+    min-height:100px;
+    text-align:left;
+
+    display:none;
+}
+.db_context .db_context_content .datos{
+    margin:10px;
+    padding:5px;
+
+    cursor:default;
+}
+.db_context .db_context_content .datos .titulo{
+    font-weight:normal;
+    margin: 0px 3px 10px 3px;
+    padding:6px 6px 6px 8px;
+    background-color:#f4f4f4;
+    color:#000;    
+}
+.db_context .db_context_content .datos .titulo .par{
+    text-align: left!important;
+}
+.db_context .db_context_content .datos .uno{
+    margin:2px;
+    padding:5px;
+    border-bottom:#CCC dotted 1px;
+    cursor:pointer;
+}
+.db_context .db_context_content .datos .uno:hover{
+    background-color:#f9f9f9;
+    border-bottom:#999 dotted 1px;
+}
+.db_context .db_context_content .datos .uno .icono{
+    margin-right:7px;
+}
+.db_context .db_context_content .datos .uno a{
+    display:block;
+    width:100%;
+
+    color:#000;
+}

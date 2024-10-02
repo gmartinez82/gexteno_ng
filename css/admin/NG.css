@@ -1,0 +1,19 @@
+@charset "iso-8859-2";
+/* CSS Document */
+
+.logo-empresa{
+    float:left;
+    width: 185px;
+    margin-right: 10px;
+}
+
+/* ----------------------------------------------------------------------------------------- Grid */
+.grid-datos .grid-uno{
+    width: 19%;
+}
+
+/* ----------------------------------------------------------------------------------------- Tabla */
+.adm_cuerpo_titulo{
+    border-bottom: #e55550 solid 3px;
+    color: #e55550;
+}

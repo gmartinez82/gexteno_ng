@@ -1,0 +1,73 @@
+/* Archivo CSS de 'vta_presupuesto_conflicto' */
+
+#listado_adm_vta_presupuesto_conflicto_gestion{
+    
+}
+
+#listado_adm_vta_presupuesto_conflicto_gestion .par td{
+    background-color: #f0f0f0;
+}
+#listado_adm_vta_presupuesto_conflicto_gestion .impar td{
+    background-color: #fff;
+}
+
+#listado_adm_vta_presupuesto_conflicto_gestion .codigo-vta-presupuesto{
+    font-size: 10px;
+    color: #000;
+    font-weight: bold;
+}
+
+#listado_adm_vta_presupuesto_conflicto_gestion .fecha-vta-presupuesto{
+    font-size: 10px;
+    color: #666;
+}
+
+#listado_adm_vta_presupuesto_conflicto_gestion .codigo{
+    font-size: 10px;
+    color: #000;
+}
+
+#listado_adm_vta_presupuesto_conflicto_gestion .fecha{
+    font-size: 10px;
+    color: #666;
+}
+
+#listado_adm_vta_presupuesto_conflicto_gestion .creado-por{
+    font-size: 10px;
+    color: #666;
+}
+
+#listado_adm_vta_presupuesto_conflicto_gestion .observacion{
+    /*font-size: 10px;*/
+    color: #000;
+    font-weight: bold;
+}
+#listado_adm_vta_presupuesto_conflicto_gestion .cliente{
+    color: #aa563d;
+    font-weight: bold;
+}
+#listado_adm_vta_presupuesto_conflicto_gestion .insumo{
+    color: #000;
+    font-weight: bold;
+}
+#listado_adm_vta_presupuesto_conflicto_gestion .codigo-interno{
+    color: #333;
+}
+#listado_adm_vta_presupuesto_conflicto_gestion .importe_inicial{
+    color: #000;
+}
+#listado_adm_vta_presupuesto_conflicto_gestion .importe_actualizado{
+    color: #000;
+}
+#listado_adm_vta_presupuesto_conflicto_gestion .importe_diferencia{
+    font-size: 10px;
+    color: #666;
+}
+#listado_adm_vta_presupuesto_conflicto_gestion .importe_resuelto{
+    color: #000;
+    font-weight: bold;
+}
+#listado_adm_vta_presupuesto_conflicto_gestion .fecha-resolucion{
+    font-size: 10px;
+    color: #666;
+}

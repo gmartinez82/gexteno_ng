@@ -1,0 +1,87 @@
+/* Archivo CSS de 'cntb_periodo' */
+
+.bloque-comprobantes-info{
+    
+}
+.bloque-comprobantes-info .col{
+    display: inline-block;
+    vertical-align: top;
+    
+    background-color: #fff;
+    border: #ccc dotted 1px;
+    
+    padding: 3px;
+    
+    width: 65px;
+    
+}
+.bloque-comprobantes-info .col .label{
+    font-size: 10px;
+    height: 30px;
+    
+    color: #666;
+    text-align: center;
+}
+.bloque-comprobantes-info .col .dato{
+    font-size: 14px;
+    font-weight: bold;
+    
+    color: #666;
+    text-align: center;
+}
+
+/* Control Generar */
+.error-comprobantes{
+    display:none;
+
+    background-color: #ddd;
+
+    padding: 5px;
+    margin: 5px;
+}
+.error-comprobantes .error-comprobantes-col{
+    display: inline-block;
+    vertical-align: top;
+
+    box-sizing: border-box;
+    width: 49%;
+
+    padding: 5px;
+    margin: 2px;
+
+    border: #ccc solid 1px;
+    background-color: #ffffff;
+}
+
+.error-comprobantes .error-comprobantes-col h4{
+    margin: 2px;
+    padding: 2px;
+}
+
+.error-comprobantes .error-comprobantes-ventas{
+
+}
+
+.error-comprobantes .error-comprobantes-compras{
+
+}
+
+.error-comprobantes .error-comprobantes-col .error-comprobantes-uno{
+    display: inline-block;
+    vertical-align: top;
+
+    box-sizing: border-box;
+    width: 24%;
+
+    border: #aa563d dotted 1px;
+    background-color: #f8f4c5;
+    color: #000;
+    
+    font-size: 8px;
+
+    padding: 3px;
+    margin: 2px;
+}
+.error-comprobantes .error-comprobantes-col .error-comprobantes-uno .error-comprobantes-uno-persona{
+    font-weight: bold;
+}

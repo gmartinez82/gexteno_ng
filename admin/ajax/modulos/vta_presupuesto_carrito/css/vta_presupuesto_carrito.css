@@ -1,0 +1,261 @@
+/* Archivo CSS de 'carrito' */
+
+/* Agregar a Carrito */
+.agregar-insumo-a-carrito{    
+}
+.agregar-insumo-a-carrito .fotos{
+    margin: 20px 15px;
+}
+.agregar-insumo-a-carrito .fotos .foto{
+    display: inline-block;
+    vertical-align: top;
+    
+    width: 65px;
+    max-height: 100px;
+    overflow: hidden;
+    
+    text-align: center;
+}
+.agregar-insumo-a-carrito .foto img{
+    border: #666 solid 1px;
+}
+.agregar-insumo-a-carrito .par .dato{
+    width: 75%!important;
+    font-size: 11px;
+}
+.agregar-insumo-a-carrito .par .dato .comentario.bulto-cerrado{
+    background-color: #0283BC;
+    color: #fff;
+    font-size: 13px;
+    padding: 5px;
+}
+.agregar-insumo-a-carrito .par .dato .label-error:emtpy{
+    display: none;
+}
+.agregar-insumo-a-carrito .par.insumo .dato{
+    font-size: 13px;
+    color: #3883bc;
+}
+.agregar-insumo-a-carrito .par.cliente .dato input,
+.agregar-insumo-a-carrito .par.lista-precio .dato select,
+.agregar-insumo-a-carrito .par.bultos .dato select,
+.agregar-insumo-a-carrito .par.cantidad .dato input{
+    padding: 5px!important;
+    font-weight: bold;
+    font-size: 13px!important;
+    color: #013254; 
+}
+.agregar-insumo-a-carrito .botonera .boton{
+    padding: 10px;
+    font-size: 14px;
+}
+
+.agregar-insumo-a-carrito .col{
+    display: inline-block;
+    vertical-align: top;
+    
+    box-sizing: border-box;
+    width: 10%;
+    
+    padding: 10px 6px;
+}
+.agregar-insumo-a-carrito .col.c1{
+    width: 48%;    
+}
+.agregar-insumo-a-carrito .col.c2{
+    width: 50%;    
+}
+
+.agregar-insumo-a-carrito .bloque-carrito-importes{
+    background-color: #DFE5E8;
+}
+.agregar-insumo-a-carrito .bloque-politica-descuentos-titulo{
+    background-color: #002235;
+    color: #fff;
+    
+    padding: 8px;    
+}
+.agregar-insumo-a-carrito .bloque-politica-descuentos-comentario{    
+    padding: 10px 20px;    
+    font-size: 11px;
+}
+.agregar-insumo-a-carrito .bloque-politica-descuentos-rangos{
+    padding: 10px;
+}
+.agregar-insumo-a-carrito .bloque-politica-descuentos-rangos .aplica{
+    border-bottom: #5BAD04 solid 1px;
+    border-top: #5BAD04 solid 1px;
+    background-color: rgba(196, 255, 34, 0.5);
+    font-weight: bold;
+}
+.agregar-insumo-a-carrito .bloque-politica-descuentos-rangos .importe-unitario-descuento,
+.agregar-insumo-a-carrito .bloque-politica-descuentos-rangos .importe-total-descuento{
+    color: #0283BC;
+    
+    font-size: 11px;
+    padding: 2px;
+}
+.agregar-insumo-a-carrito .bloque-politica-descuentos-rangos .importe-unitario{
+    font-size: 13px;
+    color: #000;
+}
+.agregar-insumo-a-carrito .bloque-politica-descuentos-rangos .importe-total > td{
+    background-color: #cc0000;
+}
+.agregar-insumo-a-carrito .bloque-politica-descuentos-rangos .importe-total{
+    font-size: 13px;
+    color: #000;
+}
+
+/* Bloque Totales */
+.agregar-insumo-a-carrito .bloque-total{
+}
+.agregar-insumo-a-carrito .bloque-total-datos{
+    padding: 10px;
+}
+.agregar-insumo-a-carrito .bloque-total-titulo{
+    background-color: #002235;
+    color: #fff;
+    
+    padding: 8px;    
+}
+.agregar-insumo-a-carrito .bloque-total th{
+    font-size: 0.9em;
+}
+
+.agregar-insumo-a-carrito .bloque-total-datos .cantidad{
+}
+.agregar-insumo-a-carrito .bloque-total-datos .cantidad-minima-venta{
+    background-color: #bae8f5;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
+}
+.agregar-insumo-a-carrito .bloque-total-datos .cantidad-minima-venta .ins-unidad-medida-descripcion{
+    font-size: 11px;
+    font-weight: normal;
+    color: #666;
+}
+.agregar-insumo-a-carrito .bloque-total-datos .stock{
+}
+.agregar-insumo-a-carrito .bloque-total-datos .stock.alerta-amarilla{
+    background-color: yellow;
+}
+.agregar-insumo-a-carrito .bloque-total-datos .stock.alerta-roja{
+    background-color: #cc0000;
+    color: #fff;
+}
+.agregar-insumo-a-carrito .bloque-total-datos .importe-unitario{
+    font-size: 13px;
+    color: #000;
+}
+.agregar-insumo-a-carrito .bloque-total-datos .importe-unitario-con-iva{
+    font-size: 18px;
+    color: #002235;
+    font-weight: normal;
+    
+    margin-top: 3px;
+}
+.agregar-insumo-a-carrito .bloque-total-datos .td-importe-total{
+    background-color: rgba(196, 255, 34, 0.5);
+}
+.agregar-insumo-a-carrito .bloque-total-datos .importe-total{
+    font-size: 13px;
+    font-weight: normal;
+    color: #000;
+}
+.agregar-insumo-a-carrito .bloque-total-datos .importe-total-con-iva{
+    font-size: 18px;
+    font-weight: bold;
+    color: #002235;
+    
+    margin-top: 3px;
+}
+.agregar-insumo-a-carrito .bloque-total-datos .label-mas-iva{
+    font-size: 11px;
+    font-weight: normal;
+    color: #666;    
+}
+
+
+/* Carrito en TOP */
+.bloque-carrito{
+    background-color: #5BAD04;
+    
+    width: 98%;
+    min-height: 50px;
+    
+    margin: 10px auto;
+    padding: 0;
+}
+.bloque-carrito .bloque-carrito-titulo{
+    
+    background-color: #0283BC;
+    
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+
+    padding: 8px 10px;
+    
+}
+.bloque-carrito .col{
+    display: inline-block;
+    vertical-align: top;
+    
+    box-sizing: border-box;
+    width: 10%;
+    
+    padding: 10px 6px;    
+}
+.bloque-carrito .col.presupuesto-id{ width: 7%; }
+.bloque-carrito .col.sucursal{ width: 7%; }
+.bloque-carrito .col.vendedor{ width: 12%; }
+.bloque-carrito .col.cliente{ width: 12%; }
+.bloque-carrito .col.tipo-lista-precio { width: 10%; }
+.bloque-carrito .col.tipo-estado { width: 7%; }
+.bloque-carrito .col.tipo-estado .icon-tipo-estado{ vertical-align: middle; }
+.bloque-carrito .col.presupuesto-cantidad{ width: 4%; }
+.bloque-carrito .col.presupuesto-subtotal { width: 9%; }
+.bloque-carrito .col.presupuesto-total { width: 9%; }
+
+.bloque-carrito .col .par{
+}
+.bloque-carrito .col .par .label{
+    width: 100%;
+    text-align: left;
+    color: #fff;
+    font-size: 11px;
+    
+    padding: 1px;
+}
+.bloque-carrito .col .par .dato{
+    width: 100%;
+    text-align: left;
+    color: #fff;
+    text-shadow: #333 1px 1px 1px;
+    font-weight: bold;
+    font-size: 11px;
+    
+    padding: 1px;
+}
+
+.bloque-carrito .col.botonera{ 
+    width: 18%; 
+    float: right; 
+    margin: 5px 1px 1px 1px!important;
+    padding: 1px!important;
+}
+
+.bloque-carrito .botonera .boton-carrito{
+    border: #013254 solid 1px;
+    background-color: rgba(223, 229, 232, 0.6);
+
+    padding: 4px 5px;
+    margin: 1px;
+    
+    cursor: pointer;
+}
+.bloque-carrito .botonera .boton-carrito:hover{
+    opacity: 0.7;
+}

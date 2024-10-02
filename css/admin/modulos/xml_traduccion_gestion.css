@@ -1,0 +1,34 @@
+/* Archivo CSS de 'xml_traduccion_gestion' */
+
+#table_xml_traduccion{
+    
+}
+#table_xml_traduccion textarea{
+    color: #666;
+    width: 95%;
+}
+#table_xml_traduccion .xml-lenguaje-codigo{
+    font-weight: bold;
+    font-size: 12px;
+    color: #000;
+}
+#table_xml_traduccion .xml-lenguaje-info{
+    margin-top: 2px;
+}
+#table_xml_traduccion .xml-lenguaje-entorno{
+    display: inline;
+    font-size: 10px;
+    color: #666;
+    padding: 2px;
+    margin-right: 5px;
+}
+#table_xml_traduccion .xml-lenguaje-pagina{
+    display: inline;
+    font-size: 10px;
+    color: #666;
+    padding: 2px;
+}
+#table_xml_traduccion .textarea-modificado{
+    background-color: #B1EDB3;
+    color: #000;
+}

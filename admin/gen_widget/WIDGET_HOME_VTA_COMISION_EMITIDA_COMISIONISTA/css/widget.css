@@ -1,0 +1,52 @@
+#cuerpo_widget_WIDGET_HOME_VTA_COMISION_EMITIDA_COMISIONISTA{
+    background-color: transparent;
+}
+#cuerpo_widget_WIDGET_HOME_VTA_COMISION_EMITIDA_COMISIONISTA .cliente-razon-social{
+    font-size: 10px;
+}
+#cuerpo_widget_WIDGET_HOME_VTA_COMISION_EMITIDA_COMISIONISTA .cliente-descripcion{
+    color: #666; 
+    font-size: 10px;
+}
+#cuerpo_widget_WIDGET_HOME_VTA_COMISION_EMITIDA_COMISIONISTA .codigo{
+    color: #000;
+    font-size: 10px;
+}
+#cuerpo_widget_WIDGET_HOME_VTA_COMISION_EMITIDA_COMISIONISTA .fecha{
+    color: #666;
+    font-size: 10px;
+}
+#cuerpo_widget_WIDGET_HOME_VTA_COMISION_EMITIDA_COMISIONISTA .comisionista{
+    color: #666;
+    font-size: 10px;
+}
+#cuerpo_widget_WIDGET_HOME_VTA_COMISION_EMITIDA_COMISIONISTA .nro-comprobante{
+    font-weight: bold;
+}
+#cuerpo_widget_WIDGET_HOME_VTA_COMISION_EMITIDA_COMISIONISTA .forma-pago{
+    color: #666; 
+    font-size: 10px; 
+}
+#cuerpo_widget_WIDGET_HOME_VTA_COMISION_EMITIDA_COMISIONISTA .tipo-lista-precio{
+    color: #333; 
+    font-size: 10px; 
+}
+#cuerpo_widget_WIDGET_HOME_VTA_COMISION_EMITIDA_COMISIONISTA .nro-comprobante img{
+    vertical-align: middle;
+}
+#cuerpo_widget_WIDGET_HOME_VTA_COMISION_EMITIDA_COMISIONISTA .items{
+}
+#cuerpo_widget_WIDGET_HOME_VTA_COMISION_EMITIDA_COMISIONISTA .items.diferencia{
+    background-color: #efe9ca;
+    color: black;
+}
+#cuerpo_widget_WIDGET_HOME_VTA_COMISION_EMITIDA_COMISIONISTA .importe-total,
+#cuerpo_widget_WIDGET_HOME_VTA_COMISION_EMITIDA_COMISIONISTA .importe-saldo{
+    font-weight: bold;
+    color: black;
+}
+#cuerpo_widget_WIDGET_HOME_VTA_COMISION_EMITIDA_COMISIONISTA .importe-base-comisionable,
+#cuerpo_widget_WIDGET_HOME_VTA_COMISION_EMITIDA_COMISIONISTA .importe-comisionable{
+    font-weight: bold;
+    color: black;
+}

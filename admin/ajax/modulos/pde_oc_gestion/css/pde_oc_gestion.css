@@ -1,0 +1,249 @@
+/* Archivo CSS de 'pde_oc' */
+
+#listado_adm_pde_oc{
+}
+#listado_adm_pde_oc_gestion .codigo-agrupacion{
+    background-color: #eee;
+    font-size:10px;
+}
+#listado_adm_pde_oc_gestion .codigo{
+    font-size:10px;
+}
+#listado_adm_pde_oc_gestion .creado{
+    font-size:10px;
+    color: #666;
+}
+#listado_adm_pde_oc_gestion .creado-por{
+    font-size:10px;
+    color: #999;
+}
+#listado_adm_pde_oc_gestion .proveedor{
+    font-weight:normal;
+    color:#000000;
+}
+#listado_adm_pde_oc_gestion .descripcion{
+    font-size:12px;
+}
+#listado_adm_pde_oc_gestion .codigo-interno{
+    font-size:10px;
+    color:#666;
+}
+#listado_adm_pde_oc_gestion .marca{
+    font-size:10px;
+    color:#999;
+}
+#listado_adm_pde_oc_gestion .vencimiento{
+    text-align: left;
+    font-size:10px;
+    color:#999;
+    padding-left: 14px;
+}
+#listado_adm_pde_oc_gestion .tipo-estado,
+#listado_adm_pde_oc_gestion .tipo-estado-recepcion,
+#listado_adm_pde_oc_gestion .tipo-estado-facturacion{
+    color: #000;
+}
+#listado_adm_pde_oc_gestion .cantidad-recepcion{
+    text-align: center;
+    font-weight: bold;
+    margin: 2px 1px;
+    padding: 4px;
+}
+#listado_adm_pde_oc_gestion .cantidad-recepcion.cantidad-recepcion-nada{
+    background-color: #eee;
+    color: #666;
+}
+#listado_adm_pde_oc_gestion .cantidad-recepcion.cantidad-recepcion-total{
+    background-color: #b7d8a1;
+    color: #000;
+}
+#listado_adm_pde_oc_gestion .cantidad-recepcion.cantidad-recepcion-parcial{
+    background-color: #fdf497;
+    color: #840;
+}
+#listado_adm_pde_oc_gestion .cantidad-facturacion{
+    text-align: center;
+    font-weight: bold;
+    margin: 2px 1px;
+    padding: 4px;
+}
+#listado_adm_pde_oc_gestion .cantidad-facturacion.cantidad-facturacion-nada{
+    background-color: #eee;
+    color: #666;
+}
+#listado_adm_pde_oc_gestion .cantidad-facturacion.cantidad-facturacion-total{
+    background-color: #b7d8a1;
+    color: #000;
+}
+#listado_adm_pde_oc_gestion .cantidad-facturacion.cantidad-facturacion-parcial{
+    background-color: #fdf497;
+    color: #840;
+}
+#listado_adm_pde_oc_gestion .importe-estimado{
+    padding: 2px;
+    margin: 1px;
+}
+#listado_adm_pde_oc_gestion .texto-iva{
+    font-size:10px;
+    color:#999999;    
+}
+#listado_adm_pde_oc_gestion .importe-real{
+    padding: 2px;
+    margin: 1px;
+}
+#listado_adm_pde_oc_gestion .importe-real.anomalia{
+    background-color: #ffc7cd;
+    color: #C00;
+}
+#listado_adm_pde_oc_gestion .importe-unitario{
+}
+#listado_adm_pde_oc_gestion .importe-total{
+    color:#000;
+}
+#listado_adm_pde_oc_gestion .centro-recepcion{
+    font-size:10px;
+    color:#000;
+}
+#listado_adm_pde_oc_gestion .recepcions{
+    color: #666!important;
+}
+#listado_adm_pde_oc_gestion .recepcion{
+    font-size:10px;
+}
+#listado_adm_pde_oc_gestion .recepcion .boton{
+    cursor: pointer;
+}
+
+/* Modal Agregar */
+.div_modal .datos.agregar{    
+}
+.div_modal .datos.agregar .par{
+}
+.div_modal .datos.agregar .par .label{
+    width: 30%;
+}
+.div_modal .datos.agregar .par .dato{    
+}
+
+/* Modal Agregar Masivo */
+.div_modal .datos.agregar-masivo{    
+}
+.div_modal .datos.agregar-masivo .par{
+}
+.div_modal .datos.agregar-masivo .par .label{
+    width: 25%;
+}
+.div_modal .datos.agregar-masivo .par .dato{
+    padding: 3px;
+}
+
+.div_modal .datos.agregar-masivo #listado_pde_oc_items{
+    margin: 0 auto 0 auto;
+}
+.div_modal .datos.agregar-masivo #listado_pde_oc_items thead th{
+    background-color: #666;
+    border-bottom: #ccc solid 1px;
+    color: #fff;
+    padding: 5px;
+}
+.div_modal .datos.agregar-masivo #listado_pde_oc_items tfoot th{
+    background-color: #CCC;
+    border-bottom: #ccc solid 1px;
+    color: #000;
+    padding: 5px;
+    
+    font-size: 14px;
+}
+.div_modal .datos.agregar-masivo #listado_pde_oc_items td{
+    background-color: #fff;
+    border-bottom: #ccc solid 1px;
+    color: #000;
+    padding: 5px;
+}
+.div_modal .datos.agregar-masivo #listado_pde_oc_items td .ins-insumo{
+}
+.div_modal .datos.agregar-masivo #listado_pde_oc_items td .prv-insumo{
+    color: #840;
+    padding: 3px;
+    font-size: 10px;
+}
+.div_modal .datos.agregar-masivo #listado_pde_oc_items td .marca{
+    font-size: 10px;
+    color: #999;
+}
+.div_modal .datos.agregar-masivo #listado_pde_oc_items td .codigo-marca{
+    font-size: 10px;
+    color: #666;
+}
+.div_modal .datos.agregar-masivo #listado_pde_oc_items td .costo-porcenaje-variacion{
+    padding: 2px 0px;
+}
+.div_modal .datos.agregar-masivo #listado_pde_oc_items td .costo-porcenaje-variacion.alerta_blanca{
+    color: #666;
+}
+.div_modal .datos.agregar-masivo #listado_pde_oc_items td .costo-porcenaje-variacion.alerta_amarilla{
+    color: #F99D1C;
+}
+.div_modal .datos.agregar-masivo #listado_pde_oc_items td .costo-porcenaje-variacion.alerta_naranja{
+    color: #DA8028;
+}
+.div_modal .datos.agregar-masivo #listado_pde_oc_items td .costo-porcenaje-variacion.alerta_roja{
+    color: #C00;
+}
+.div_modal .datos.agregar-masivo #listado_pde_oc_items td .costo-porcenaje-variacion.alerta_balerta_verdelanca{
+    color: #00cc33;
+}
+.div_modal .datos.agregar-masivo #listado_pde_oc_items td .costo-total-proveedor{
+    font-weight: bold;
+}
+
+/* Modal Agregar */
+.div_modal .datos.modal-recibir{    
+}
+.div_modal .datos.modal-recibir .par{
+}
+.div_modal .datos.modal-recibir .par .label{
+    width: 30%;
+}
+.div_modal .datos.modal-recibir .par .dato{    
+}
+.div_modal .datos.modal-recibir .texto-iva{
+    font-size:10px;
+    color:#999999;    
+}
+.div_modal .datos.modal-recibir .mensaje-recepcion-en-centro-recepcion{
+    background-color: #DA8028;
+    color: white;
+    padding: 8px 14px;
+}
+.div_modal .datos.modal-recibir .mensaje-recepcion-en-panol{
+    background-color: #0283bc;
+    color: white;
+    padding: 8px 14px;
+}
+
+/* Modal Reclamos */
+.div_modal .tabla-modal .oc-codigo{
+    color:#000;
+}
+.div_modal .tabla-modal .oc-tipo-estado{
+    font-size:10px;
+    color:#666;
+}
+
+/* Modal Etiqueta */
+.div_modal .etiqueta-recepcion{
+}
+.div_modal .etiqueta-recepcion .epl{
+    width:75%;
+    font-size:11px;
+    font-weight:normal!important;
+
+    margin: 5px 0px;
+    padding:15px;
+
+    border:#CCC solid 1px;
+    background-color:#FFF;
+
+    color:#930!important;
+}

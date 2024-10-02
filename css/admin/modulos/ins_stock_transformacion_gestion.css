@@ -1,0 +1,164 @@
+/* Archivo CSS de 'ins_stock_transformacion' */
+
+.div_modal h3{
+    background-color: #ddd;
+    padding: 10px;
+    margin: 1px;
+}
+.div_modal .col{
+    display:inline-block;
+    vertical-align:top;
+
+    width:48%;
+}
+.div_modal .col select{
+    max-width: 98%;
+}
+
+/* Origen */
+.div_modal .col.insumo-origen .bloque-stock-panol{
+    background-color:#FFF;
+    border:#CCC solid 1px;
+
+    width:95%;
+    margin:10px;
+}
+.div_modal .col.insumo-origen .par{}
+.div_modal .col.insumo-origen .par .label{}
+.div_modal .col.insumo-origen .par .dato{}
+.div_modal .col.insumo-origen .par .dato.cantidad{
+    background-color: #aa563d;
+    color: #fff;
+    font-size: 12px;
+    padding: 3px;
+}
+
+/* Destino */
+.div_modal .col.insumo-destino{
+    background-color:#FFF;
+    border:#CCC solid 1px;
+}
+.div_modal .col.insumo-destino .cantidad{
+    background-color: #aa563d;
+    color: #fff;
+    font-size: 12px;
+    padding: 3px;
+}
+.div_modal .col.insumo-destino .error{
+    width:95%;
+}
+.div_modal .col.insumo-destino .acciones{
+    text-align:right;
+    margin:5px;
+}
+.div_modal .col.insumo-destino .acciones .accion{
+    color:#069;
+    cursor:pointer;
+}
+.div_modal .col.insumo-destino .acciones .accion:hover{
+    color:#CCC;
+}
+.div_modal .col.insumo-destino .bloque-datos{
+    height:400px;
+    overflow:auto;
+}
+.div_modal .col.insumo-destino .uno{
+    background-color:#f4f4f4;
+    border:#CCC dotted 1px;
+    border-top:#ccc solid 2px;
+    padding:5px;
+    margin:10px;
+
+    font-size:10px;
+    width:95%;
+}
+.div_modal .col.insumo-destino .uno .par{
+    margin:0;
+}
+.div_modal .col.insumo-destino .uno .par .dato{
+    padding:0;
+}
+.div_modal .col.insumo-destino .uno select.insumo{
+    width:300px;
+}
+
+
+#listado_adm_ins_stock_transformacion_gestion{
+}
+#listado_adm_ins_stock_transformacion_gestion .panol-origen{
+}
+#listado_adm_ins_stock_transformacion_gestion .insumo-origen{
+    font-weight:bold;
+    color:#000;
+}
+#listado_adm_ins_stock_transformacion_gestion .cantidad-origen{
+    color:#333;
+}
+#listado_adm_ins_stock_transformacion_gestion .fecha{
+    color:#666;
+    font-style:italic;
+}
+#listado_adm_ins_stock_transformacion_gestion .creado-por{
+    color:#666;
+    font-style:italic;
+}
+
+
+#listado_adm_ins_stock_transformacion_gestion .uno-destino{
+    border:#CCC dotted 1px;
+    background-color:#FFF;
+    padding:5px;
+    margin:3px;
+
+    display:inline-block;
+    width:auto;
+}
+#listado_adm_ins_stock_transformacion_gestion .uno-destino .insumo-destino{
+    font-weight:bold;
+    color:#000;
+}
+#listado_adm_ins_stock_transformacion_gestion .uno-destino .cantidad-destino{
+    color:#666;
+}
+
+/* Confirmacion */
+.transformacion-confirmar{
+    text-align: left;
+    margin: 20px;
+}
+
+.transformacion-confirmar .bloque-insumos{
+    margin: 0 auto;
+}
+.transformacion-confirmar .insumo{
+    font-size: 14px;
+    font-weight: bold;
+
+    margin: 5px;
+    padding: 10px;
+}
+.transformacion-confirmar .insumo .cantidad{
+    background-color: #ddd;
+    padding: 5px 15px;
+}    
+.transformacion-confirmar .insumo .descripcion{
+    padding: 5px 15px;
+}    
+.transformacion-confirmar .insumo .panol{
+    padding: 5px 15px;
+}    
+.transformacion-confirmar .palabra-equivalencia{
+    font-size: 15px;
+
+    margin: 5px;
+    padding: 10px;
+}
+.transformacion-confirmar .alerta-afecta-costo{
+    border: #aa563d dotted 2px;
+    background-color: #ffdda6;
+    
+    margin: 0 auto 0 auto;
+    padding: 10px;
+    width: 60%;
+    
+}

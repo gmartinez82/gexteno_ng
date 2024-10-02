@@ -1,0 +1,871 @@
+/* Archivo CSS de 'pde_orden_pago' */
+
+/* Modal generar orden_pago */
+.div_modal .datos.generar-orden_pago{
+
+}
+.div_modal .datos.generar-orden_pago .buscador{
+    background-color: #ddd;
+
+    padding: 10px 20px;
+}
+
+.div_modal .datos.generar-orden_pago .buscador .col{
+    display: inline-block;
+    vertical-align: top;
+}
+.div_modal .datos.generar-orden_pago .buscador .col.c1{
+    width: 400px;
+}
+.div_modal .datos.generar-orden_pago .buscador .col.c2{
+    /*width: 300px;*/
+}
+.div_modal .datos.generar-orden_pago .buscador .col.c3{
+    /*width: 300px;*/
+}
+
+.div_modal .datos.generar-orden_pago .proveedor-info{
+    border-top: #f4f4f4 solid 1px;
+    background-color: #ededed;
+
+    margin: 0 auto 10px auto;
+    padding: 5px;
+
+    font-size: 11px;
+}
+.div_modal .datos.generar-orden_pago .proveedor-info .par{
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 32%;
+}
+.div_modal .datos.generar-orden_pago .proveedor-info .par .label{
+    width: 30%!important;
+    padding: 1px;
+}
+.div_modal .datos.generar-orden_pago .proveedor-info .par .dato{
+    width: 68%!important;
+    padding: 1px;
+}
+
+.div_modal .datos.generar-orden_pago #form_generar_orden_pago .col{
+    display: inline-block;
+    vertical-align: top;
+
+    width:45%;
+    box-sizing: border-box;
+}
+.div_modal .datos.generar-orden_pago #form_generar_orden_pago .col.c1{
+    width:55%;
+}
+.div_modal .datos.generar-orden_pago #form_generar_orden_pago .col.c2{
+    width:43%;
+}
+.div_modal .datos.generar-orden_pago #form_generar_orden_pago .col.c2 select{
+    max-width: 85%;
+}
+.div_modal .datos.generar-orden_pago #form_generar_orden_pago tr td{
+    vertical-align: top;
+}
+.div_modal .datos.generar-orden_pago #form_generar_orden_pago tr.selected td{
+    background-color: #FFDDA6;
+    color: #000;
+}
+
+
+.div_modal_modal .datos.generar-ws-fe-afip #form_generar_ws_fe_afip .col{
+    display:inline-block;
+    vertical-align: top;
+
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+
+    margin: 5px;
+    padding: 10px 30px;
+
+    width: 48%;
+}
+
+.div_modal_modal .datos.generar-ws-fe-afip #form_generar_ws_fe_afip .col.col1{
+    width: 50%;
+}
+.div_modal_modal .datos.generar-ws-fe-afip #form_generar_ws_fe_afip .col.col1 select{
+    max-width: 100%;
+}
+.div_modal_modal .datos.generar-ws-fe-afip #form_generar_ws_fe_afip .col.col2{
+    width: 46%;
+}
+
+.div_modal_modal #detalle_pde_comprobante_total{
+    border: none;
+    color: #666;
+}
+.div_modal_modal #detalle_pde_comprobante_total td{
+    border: #dedede solid 1px;
+    background-color: #fff;
+
+    padding: 4px;
+}
+.div_modal_modal #detalle_pde_comprobante_total tr.total td{
+    background-color: #ddd!important;
+    font-weight: bold;
+
+    padding: 6px;
+}
+
+.div_modal .datos.pago-recibido-orden-pago{
+
+}
+.div_modal .datos.pago-recibido-orden-pago .mensaje-genera-recibo{
+    border: #f7ec08 dotted 2px;
+    background-color: #FFDDA6;
+
+    margin: 10px auto;
+    padding: 10px;
+
+    width: 80%;
+
+    font-size: 12px;
+
+    color: #000;
+
+}
+
+/* Items */
+#listado_pde_orden_pago_items{
+    margin: 0 auto 0 auto;
+}
+#listado_pde_orden_pago_items th{
+    background-color: #999;
+    border-bottom: #ccc solid 1px;
+    color: #fff;
+    padding: 5px;
+}
+#listado_pde_orden_pago_items td{
+    background-color: #fff;
+    border-bottom: #ccc solid 1px;
+    color: #000;
+    padding: 5px;
+}
+#listado_pde_orden_pago_items td .ver_modal_set_cheque_info{
+    display: none;
+}
+#listado_pde_orden_pago_items td .label-mensaje{
+    color: #AD3826;
+    font-size: 11px;
+}
+#listado_pde_orden_pago_items_confirmacion th{
+    background-color: #ddd;
+    border-bottom: #ccc solid 1px;
+    color: #000;
+    padding: 5px;
+}
+#listado_pde_orden_pago_items_confirmacion td{
+    background-color: #fff;
+    border-bottom: #ccc solid 1px;
+    color: #000;
+    padding: 5px;
+}
+
+
+
+#listado_pde_orden_pago_generar_orden_pago{
+
+}
+
+#listado_pde_orden_pago_generar_orden_pago .par td{
+    background-color: #f0f0f0;
+}
+#listado_pde_orden_pago_generar_orden_pago .impar td{
+    background-color: #fff;
+}
+
+#listado_pde_orden_pago_generar_orden_pago .codigo-pde-comprobante{
+    color: #666;
+}
+
+#listado_pde_orden_pago_generar_orden_pago .fecha-pde-comprobante{
+    font-size: 10px;
+    color: #666;
+}
+
+#listado_pde_orden_pago_generar_orden_pago .pde_comprobante_tipo_estado_id{
+    color: #000;
+}
+#listado_pde_orden_pago_generar_orden_pago .numero-pde-comprobante{
+    color: #000;
+    font-weight: bold;
+}
+#listado_pde_orden_pago_generar_orden_pago .fecha-vencimiento-pde-comprobante{
+    font-size: 10px;
+    color: #666;
+}
+#listado_pde_orden_pago_generar_orden_pago .fecha-vencimiento-dias-faltan{
+    color: #008bb9;
+}
+#listado_pde_orden_pago_generar_orden_pago .fecha-vencimiento-dias-pasados{
+    color: #F00;
+}
+
+
+#listado_pde_orden_pago_generar_orden_pago .disponible{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#listado_pde_orden_pago_generar_orden_pago .unidad-medida{
+    font-size: 10px;
+    color: #999;
+}
+
+#listado_pde_orden_pago_generar_orden_pago .importe-unitario{
+}
+#listado_pde_orden_pago_generar_orden_pago .importe-unitario.bruto{
+    text-decoration: line-through;
+    color: #999;
+}
+#listado_pde_orden_pago_generar_orden_pago .importe-unitario.neto{
+    color: #000;
+}
+#listado_pde_orden_pago_generar_orden_pago .importe-total{
+}
+#listado_pde_orden_pago_generar_orden_pago .importe-total.bruto{
+    text-decoration: line-through;
+    color: #999;
+}
+#listado_pde_orden_pago_generar_orden_pago .importe-total.neto{
+    color: #000;
+    font-weight: bold;
+}
+#listado_pde_orden_pago_generar_orden_pago .importe-iva{
+    color: #000;
+}
+
+#listado_pde_orden_pago_generar_orden_pago .porcentaje-descuento{
+    background-color: #f4f4f4;
+    padding: 3px;
+
+    font-size: 10px;
+    color: #666;
+}
+
+
+#listado_pde_orden_pago_generar_orden_pago .pde_comprobante_tipo_estado_id{
+}
+
+#listado_pde_orden_pago_generar_orden_pago .pde_comprobante_tipo_estado_id img{
+    vertical-align: middle;
+    position: relative;
+}
+
+#listado_pde_orden_pago_generar_orden_pago .pde_comprobante_tipo_estado_remision_id{
+}
+
+#listado_pde_orden_pago_generar_orden_pago .pde_comprobante_tipo_estado_remision_id img{
+    vertical-align: middle;
+    position: relative;
+}
+
+#listado_pde_orden_pago_generar_orden_pago .pde_comprobante_tipo_estado_orden_pagocion_id{
+}
+
+#listado_pde_orden_pago_generar_orden_pago .pde_comprobante_tipo_estado_orden_pagocion_id img{
+    vertical-align: middle;
+    position: relative;
+}
+
+#listado_pde_orden_pago_generar_orden_pago{
+}
+#listado_pde_orden_pago_generar_orden_pago .txt_pde_comprobante_importe_saldo{
+    display: none;
+    text-align: right;
+    font-size: 12px;
+    padding: 3px;
+}
+
+
+/* Listado orden_pago */
+#listado_adm_pde_orden_pago_gestion{
+
+}
+#listado_adm_pde_orden_pago_gestion .actividad{
+    background-color: #ededed;
+    padding: 2px 3px;
+
+    font-size: 10px;
+    color: #666;
+}
+#listado_adm_pde_orden_pago_gestion .fecha_emision{
+    font-size: 10px;
+    color: #666;
+}
+#listado_adm_pde_orden_pago_gestion .codigo{
+    font-size: 10px;
+    color: #000;
+    font-weight: bold;
+}
+
+#listado_adm_pde_orden_pago_gestion .cuit{
+    color: #666;
+    font-size: 11px;
+}
+#listado_adm_pde_orden_pago_gestion .persona_descripcion{
+    font-weight: bold;
+    color: #000;
+}
+#listado_adm_pde_orden_pago_gestion .nota-publica{
+    color: #008000;
+}
+#listado_adm_pde_orden_pago_gestion .pde_tipo_orden_pago{
+    color: #333;
+    font-weight: bold;
+}
+#listado_adm_pde_orden_pago_gestion .pde_orden_pago_tipo_estado{
+    color: #000;
+}
+#listado_adm_pde_orden_pago_gestion .pde_orden_pago_tipo_estado img{
+    vertical-align: middle;
+}
+#listado_adm_pde_orden_pago_gestion .pde-comprobantes-vinculados{
+    margin: 0px;
+    text-align: left;
+
+    max-height: 70px;
+    overflow: auto;    
+}
+#listado_adm_pde_orden_pago_gestion .pde-comprobantes-vinculados .pde-comprobante-vinculado{
+    color: #000;
+    font-size: 10px;
+    padding-left: 0px;
+}
+#listado_adm_pde_orden_pago_gestion .gral-fp-forma-pagos{
+    margin: 0px;
+    text-align: left;
+    
+    max-height: 70px;
+    overflow: auto;    
+}
+#listado_adm_pde_orden_pago_gestion .gral-fp-forma-pagos .gral-fp-forma-pago{
+    color: #000;
+    font-size: 10px;
+    padding-left: 0px;
+}
+
+#listado_adm_pde_orden_pago_gestion .importe{
+    font-weight: normal;
+}
+#listado_adm_pde_orden_pago_gestion .importe .par{
+    padding: 1px;
+}
+#listado_adm_pde_orden_pago_gestion .importe .par .label{
+    text-align: left;
+    color: #666;
+    padding: 0px;
+}
+#listado_adm_pde_orden_pago_gestion .importe .par .dato{
+    color: #000;
+    font-weight: bold;
+    text-align: right;
+    padding: 0px;
+}
+#listado_adm_pde_orden_pago_gestion .importe.importe-total-saldo.deudor .par .dato{
+    color: #FF7E00!important;
+}
+#listado_adm_pde_orden_pago_gestion .importe.importe-total-saldo.acreedor .par .dato{
+    color: #ccc!important;
+}
+
+
+/* Ficha - Modal Top */
+.div_modal .ficha-orden_pago .modal-top{
+    margin: 5px;
+    padding: 5px;
+
+    background-color: #f4f4f4;
+    border-bottom: #ccc solid 1px;
+}
+.div_modal .ficha-orden_pago .modal-top .col{
+    display: inline-block;
+    vertical-align: top;
+
+    width: 100px;
+}
+.div_modal .ficha-orden_pago .modal-top .col .label{
+    color: #666;
+    font-weight: normal;
+}
+.div_modal .ficha-orden_pago .modal-top .col.foto{
+    width: 70px;
+    margin: 0 10px;
+}
+.div_modal .ficha-orden_pago .modal-top .col.foto img{
+    border: #ccc solid 1px;
+    width: 100%;
+}
+.div_modal .ficha-orden_pago .modal-top .col.cliente{
+    width: 350px;
+}
+
+/* Ficha Estados */
+#tab_estados .tabla-modal .fecha{
+    font-size: 10px;
+    color: #000;
+}
+
+#tab_estados .tabla-modal .descripcion{
+    color: #000;
+}
+
+#tab_estados .tabla-modal .tipo-estado{
+
+}
+
+#tab_estados .tabla-modal .tipo-estado img{
+    vertical-align: middle;
+    position: relative;
+}
+
+#tab_estados .tabla-modal .observacion{
+    color: #AD3826;
+}
+
+#tab_estados .tabla-modal .creado-por{
+    color: #000;
+}
+
+#tab_estados .tabla-modal .actual{
+}
+
+
+/* Ficha Ordenes de Venta */
+#tab_oc{
+
+}
+
+#tab_oc .tabla-modal .par td{
+    background-color: #f0f0f0;
+}
+#tab_oc .tabla-modal .impar td{
+    background-color: #fff;
+}
+
+#tab_oc .tabla-modal .codigo-pde-orden_pago{
+    color: #000;
+}
+
+#tab_oc .tabla-modal .fecha-pde-orden_pago{
+    font-size: 10px;
+    color: #666;
+}
+
+#tab_oc .tabla-modal .codigo-pde-orden-venta{
+    color: #000;
+    font-weight: bold;
+}
+
+#tab_oc .tabla-modal .fecha-pde-orden-venta{
+    font-size: 10px;
+    color: #666;
+}
+
+#tab_oc .tabla-modal .cliente{
+}
+
+#tab_oc .tabla-modal .email{
+}
+
+#tab_oc .tabla-modal .descripcion{
+    color: #000;
+    font-weight: bold;
+}
+
+#tab_oc .tabla-modal .pde_comprobante_tipo_estado_id{
+}
+
+#tab_oc .tabla-modal .pde_comprobante_tipo_estado_id img{
+    vertical-align: middle;
+    position: relative;
+}
+
+#tab_oc .tabla-modal .pde_comprobante_tipo_estado_remision_id{
+}
+
+#tab_oc .tabla-modal .pde_comprobante_tipo_estado_remision_id img{
+    vertical-align: middle;
+    position: relative;
+}
+
+#tab_oc .tabla-modal .pde_comprobante_tipo_estado_orden_pagocion_id{
+}
+
+#tab_oc .tabla-modal .pde_comprobante_tipo_estado_orden_pagocion_id img{
+    vertical-align: middle;
+    position: relative;
+}
+
+#tab_oc .tabla-modal .ins_tipo_lista_precio_id{
+}
+
+#tab_oc .tabla-modal .cantidad{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#tab_oc .tabla-modal .unidad-medida{
+    font-size: 10px;
+    color: #999;
+}
+
+#tab_oc .tabla-modal .importe-unitario{
+}
+#tab_oc .tabla-modal .importe-unitario.bruto{
+    text-decoration: line-through;
+    color: #999;
+}
+#tab_oc .tabla-modal .importe-unitario.neto{
+    color: #000;
+}
+#tab_oc .tabla-modal .importe-total{
+}
+#tab_oc .tabla-modal .importe-total.bruto{
+    text-decoration: line-through;
+    color: #999;
+}
+#tab_oc .tabla-modal .importe-total.neto{
+    color: #000;
+    font-weight: bold;
+}
+
+/* Ficha Notas de Credito */
+#tab_oc{
+
+}
+
+#tab_nota_credito .tabla-modal .par td{
+    background-color: #f0f0f0;
+}
+#tab_nota_credito .tabla-modal .impar td{
+    background-color: #fff;
+}
+
+#tab_nota_credito .tabla-modal .codigo-pde-nota-credito{
+    font-weight: bold;
+    color: #000;
+}
+
+#tab_nota_credito .tabla-modal .fecha-emision-pde-nota-credito{
+    font-size: 10px;
+    color: #666;
+}
+
+#tab_nota_credito .tabla-modal .numero-nota-credito-pde-nota-credito{
+    color: #000;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+#tab_nota_credito .tabla-modal .cae-pde-nota-credito{
+    font-size: 10px;
+}
+
+#tab_nota_credito .tabla-modal .descripcion-pde-tipo-nota-credito{
+    font-size: 10px;
+}
+
+#tab_nota_credito .tabla-modal .descripcion{
+    color: #000;
+    font-weight: bold;
+}
+
+#tab_nota_credito .tabla-modal .condicion-iva{
+}
+
+#tab_nota_credito .tabla-modal .tipo-personeria{
+}
+
+#tab_nota_credito .tabla-modal .empresa-orden_pagodora{
+}
+
+#tab_nota_credito .tabla-modal .cantidad{
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+}
+
+#tab_nota_credito .tabla-modal .unidad-medida{
+    font-size: 10px;
+    color: #999;
+}
+
+#tab_nota_credito .tabla-modal .importe-unitario{
+    color: #000;
+}
+
+#tab_nota_credito .tabla-modal .importe-total{
+    color: #000;
+    font-weight: bold;
+}
+
+/* Ficha Solicitud AFIP */
+#tab_solicitud_afip{
+
+}
+
+#tab_solicitud_afip .tabla-modal .par td{
+    background-color: #f0f0f0;
+}
+#tab_solicitud_afip .tabla-modal .impar td{
+    background-color: #fff;
+}
+
+#tab_solicitud_afip .tabla-modal .numero-comprobante-solicitud{
+    color: #000;
+    font-weight: bold;
+}
+
+#tab_solicitud_afip .tabla-modal .fecha-comprobante-solicitud{
+    font-size: 10px;
+    color: #666;
+}
+
+#tab_solicitud_afip .tabla-modal .tipo-comprobante-solicitud{
+}
+
+#tab_solicitud_afip .tabla-modal .importe-neto{
+    color: #000;
+}
+
+#tab_solicitud_afip .tabla-modal .importe-iva{
+    color: #000;
+}
+
+#tab_solicitud_afip .tabla-modal .importe-concepto{
+    color: #000;
+}
+
+#tab_solicitud_afip .tabla-modal .importe-tributo{
+    color: #000;
+}
+
+#tab_solicitud_afip .tabla-modal .importe-exento{
+    color: #000;
+}
+
+#tab_solicitud_afip .tabla-modal .importe-total{
+    color: #000;
+    font-weight: bold;
+}
+
+#tab_solicitud_afip .tabla-modal .tipo-comprobante-respuesta{
+}
+
+#tab_solicitud_afip .tabla-modal .numero-comprobante-respuesta{
+    color: #000;
+    font-weight: bold;
+}
+
+#tab_solicitud_afip .tabla-modal .fecha-comprobante-respuesta{
+    font-size: 10px;
+    color: #999;
+}
+
+#tab_solicitud_afip .tabla-modal .cantida-registro{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#tab_solicitud_afip .tabla-modal .resultado-cabecera{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#tab_solicitud_afip .tabla-modal .resultado-detalle{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#tab_solicitud_afip .tabla-modal .cae{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#tab_solicitud_afip .tabla-modal .cae-fecha-vencimiento{
+    font-size: 10px;
+    color: #999;
+}
+
+
+/* Ficha Emails */
+#tab_emails .tabla-modal-ficha-emails{
+
+}
+
+#tab_emails .tabla-modal-ficha-emails .par td{
+    background-color: #f0f0f0;
+}
+#tab_emails .tabla-modal-ficha-emails .impar td{
+    background-color: #fff;
+}
+
+#tab_emails .tabla-modal-ficha-emails .fecha{
+    color: #000;
+}
+#tab_emails .tabla-modal-ficha-emails .codigo-orden_pago{
+    font-weight: bold;
+    color: #000;
+}
+#tab_emails .tabla-modal-ficha-emails .fecha-orden_pago{
+    color: #666;
+}
+#tab_emails .tabla-modal-ficha-emails .asunto{
+    color: #000;
+    font-size: 11px;
+    font-weight: bold;
+}
+#tab_emails .tabla-modal-ficha-emails .destinatario{
+    color: #666;
+}
+#tab_emails .tabla-modal-ficha-emails .observacion{
+    color: #AD3826;
+    font-style: italic;
+}
+#tab_emails .tabla-modal-ficha-emails .creado-por-descripcion{
+    color: #000;
+    /*font-weight: bold;*/
+}
+
+/* Listado items Generar NC */
+#listado_pde_orden_pago_generar_nota_credito{
+
+}
+
+#listado_pde_orden_pago_generar_nota_credito .par td{
+    background-color: #f0f0f0;
+}
+#listado_pde_orden_pago_generar_nota_credito .impar td{
+    background-color: #fff;
+}
+
+#listado_pde_orden_pago_generar_nota_credito .codigo-pde-orden_pago{
+    color: #000;
+}
+
+#listado_pde_orden_pago_generar_nota_credito .fecha-pde-orden_pago{
+    font-size: 10px;
+    color: #666;
+}
+
+#listado_pde_orden_pago_generar_nota_credito .codigo-pde-orden-venta{
+    color: #000;
+    font-weight: bold;
+}
+
+#listado_pde_orden_pago_generar_nota_credito .fecha-pde-orden-venta{
+    font-size: 10px;
+    color: #666;
+}
+
+#listado_pde_orden_pago_generar_nota_credito .disponible{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#listado_pde_orden_pago_generar_nota_credito .unidad-medida{
+    font-size: 10px;
+    color: #999;
+}
+
+#listado_pde_orden_pago_generar_nota_credito .importe-unitario{
+}
+#listado_pde_orden_pago_generar_nota_credito .importe-unitario.bruto{
+    text-decoration: line-through;
+    color: #999;
+}
+#listado_pde_orden_pago_generar_nota_credito .importe-unitario.neto{
+    color: #000;
+}
+#listado_pde_orden_pago_generar_nota_credito .importe-total{
+}
+#listado_pde_orden_pago_generar_nota_credito .importe-total.bruto{
+    text-decoration: line-through;
+    color: #999;
+}
+#listado_pde_orden_pago_generar_nota_credito .importe-total.neto{
+    color: #000;
+    font-weight: bold;
+}
+
+#listado_pde_orden_pago_generar_nota_credito .importe-iva{
+    color: #000;
+}
+
+#listado_pde_orden_pago_generar_nota_credito .pde_comprobante_tipo_estado_id{
+}
+
+#listado_pde_orden_pago_generar_nota_credito .pde_comprobante_tipo_estado_id img{
+    vertical-align: middle;
+    position: relative;
+}
+
+#listado_pde_orden_pago_generar_nota_credito .pde_comprobante_tipo_estado_remision_id{
+}
+
+#listado_pde_orden_pago_generar_nota_credito .pde_comprobante_tipo_estado_remision_id img{
+    vertical-align: middle;
+    position: relative;
+}
+
+#listado_pde_orden_pago_generar_nota_credito .pde_comprobante_tipo_estado_orden_pagocion_id{
+}
+
+#listado_pde_orden_pago_generar_nota_credito .pde_comprobante_tipo_estado_orden_pagocion_id img{
+    vertical-align: middle;
+    position: relative;
+}
+
+#listado_pde_orden_pago_generar_nota_credito{
+}
+#listado_pde_orden_pago_generar_nota_credito .txt_pde_orden_pago_pde_comprobante_cantidad{
+    display: none;
+}
+
+
+/* Modal generar Nota de Credito Item */
+.div_modal .datos #form_generar_nota_credito_item .col{
+    display:inline-block;
+    vertical-align: top;
+
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+
+    margin: 5px;
+    padding: 10px 30px;
+
+    width: 45%;
+}
+
+.div_modal .datos #form_generar_nota_credito_item .col.col1{
+}
+.div_modal .datos #form_generar_nota_credito_item .col.col1 select{
+    max-width: 100%;
+}
+
+.div_modal .datos #form_generar_nota_credito_item .col.col2{
+}
+
+.div_modal #detalle_pde_orden_pago_total{
+    border: none;
+    color: #666;
+}
+.div_modal #detalle_pde_orden_pago_total td{
+    border: #dedede solid 1px;
+    background-color: #fff;
+
+    padding: 4px;
+}
+.div_modal #detalle_pde_orden_pago_total tr.total td{
+    background-color: #ddd!important;
+    font-weight: bold;
+
+    padding: 6px;
+}

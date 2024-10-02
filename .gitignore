@@ -1,0 +1,8 @@
+# Ignorar el directorio backups dentro de bd/
+bd/backups/
+
+# Ignorar todo el directorio imgs/
+imgs/
+
+# Ignorar el archivo DbConfig.php dentro de lib/
+lib/DbConfig.php

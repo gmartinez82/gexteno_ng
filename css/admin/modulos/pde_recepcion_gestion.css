@@ -1,0 +1,140 @@
+/* Archivo CSS de 'pde_recepcion' */
+
+
+/* Modal Top */
+.pde-modal-top{
+    font-size:10px;
+
+    background-color:#dfdfdf;
+    border-bottom:#666 solid 1px;
+
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    border-top-left-radius: 5px;
+
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-right-radius: 5px;
+
+    padding:4px;
+    margin-bottom:10px;
+}
+.pde-modal-top .col{
+    display:inline-block;
+    vertical-align:top;
+    margin:5px;
+    padding-right:8px;
+
+    border-right:#999 dotted 1px;
+}
+.pde-modal-top .col.recepcion-codigo{
+    width:40px;
+}
+.pde-modal-top .col.recepcion-proveedor{
+    width:100px;
+}
+.pde-modal-top .col.recepcion-insumo{
+    width:140px;
+}
+.pde-modal-top .col.recepcion-cantidad{
+    width:50px;
+}
+.pde-modal-top .col.recepcion-fecha{
+    width:130px;
+}
+.pde-modal-top .col .label{
+    color:#666;
+}
+.pde-modal-top .col .dato{
+    color:#000;
+    font-weight:bold;
+}
+
+/* Bloque de Insumos Identificados en Recepcion */
+.bloque_insumos_identificados_entrantes{
+    max-height:200px;
+    overflow:auto;
+
+    margin: 0 auto 0 auto;
+}
+
+#listado_adm_pde_recepcion_gestion{
+
+}
+#listado_adm_pde_recepcion_gestion .codigo{
+    font-size: 10px;    
+    color: #000;
+}
+#listado_adm_pde_recepcion_gestion .creado{
+    font-size: 10px;    
+    color: #666;
+}
+#listado_adm_pde_recepcion_gestion .creado-por{
+    font-size: 10px;    
+    color: #999;
+}
+
+#listado_adm_pde_recepcion_gestion .codigo-interno{
+    font-size: 10px;    
+    color: #333;
+}
+#listado_adm_pde_recepcion_gestion .tipo-estado{
+    color: #000;
+}
+#listado_adm_pde_recepcion_gestion .fecha_entrega{
+    text-align: center;
+    font-size: 10px;
+    color: #666;
+}
+#listado_adm_pde_recepcion_gestion .tipo-estado-facturacion{
+    color: #000;
+    margin-top: 5px;
+}
+#listado_adm_pde_recepcion_gestion .nro-comprobante{
+    color: #666;
+}
+#listado_adm_pde_recepcion_gestion .importe_rcp_unidad{
+    color: #000;
+}
+#listado_adm_pde_recepcion_gestion .importe_rcp_total{
+    font-weight: bold;
+    color: #000;
+}
+#listado_adm_pde_recepcion_gestion .importe_oc_unidad{
+    color: #000;
+}
+#listado_adm_pde_recepcion_gestion .importe_oc_unidad.existe-variacion{
+    background-color: #FF9;
+    color: #C00;
+    font-weight: bold;
+    padding: 5px;
+}
+
+
+/* Div Modal */
+.div_modal{
+
+}
+
+/* Div Modal */
+.div_modal .datos.registrar-pde-factura{
+
+}
+.div_modal .datos.registrar-pde-factura .col{
+    display: inline-block;
+    vertical-align: top;
+
+    box-sizing: border-box;
+
+    width: 45%;
+}
+.div_modal .datos.registrar-pde-factura #tabla_pde_recepcions_en_factura{
+
+}
+.div_modal .datos.registrar-pde-factura #tabla_pde_recepcions_en_factura .iva-importe{
+    color: #333;
+}
+.div_modal .datos.registrar-pde-factura #tabla_pde_recepcions_en_factura .iva-valor{
+    font-size: 10px;
+    color: #666;
+}

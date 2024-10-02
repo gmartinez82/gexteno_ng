@@ -1,0 +1,242 @@
+/* Archivo CSS de 'cli_cliente' */
+
+#listado_adm_cli_cliente_gestion{
+    
+}
+#listado_adm_cli_cliente_gestion .descripcion{
+    font-size: 14px;
+    
+}
+#listado_adm_cli_cliente_gestion .descripcion-extendida-uno{
+    max-height: 50px;
+    overflow: auto;
+}
+#listado_adm_cli_cliente_gestion .descripcion-extendida-uno.observacion .par .dato{
+    font-size: 10px;
+    color: #aa563d;
+}
+#listado_adm_cli_cliente_gestion .gral_condicion_iva_id{
+    color: #000;
+    font-size: 10px;
+}
+#listado_adm_cli_cliente_gestion .gral_tipo_personeria_id{
+    color: #333;
+    font-size: 10px;
+}
+#listado_adm_cli_cliente_gestion .cli-categoria{
+    background-color: #cce3e8;
+    padding: 5px 10px;
+    
+    color: #000;
+}
+#listado_adm_cli_cliente_gestion .cli-categoria.MAYORISTA{
+    background-color: #f5ce00;
+}
+#listado_adm_cli_cliente_gestion .cli-categoria.MINORISTA{
+    background-color: #f3f5c8;
+}
+
+/* Cliente Tienda */
+#listado_adm_cli_cliente_gestion .tienda-info{
+    border: #000080 dotted 1px;
+    background-color: #fff;
+    padding: 2px;
+    margin-top: 5px;
+}
+#listado_adm_cli_cliente_gestion .tienda-codigo{
+    font-weight: normal;
+    color: #000080;
+    font-size: 10px;
+}
+#listado_adm_cli_cliente_gestion .tienda-centro-pedido{
+    font-weight: bold;
+    color: #000;
+    font-size: 13px;
+}
+#listado_adm_cli_cliente_gestion .tienda-email{
+    font-size: 10px;
+    color: #000080;
+}
+#listado_adm_cli_cliente_gestion .tienda-ultima-conexion{
+    font-size: 10px;
+    margin-top: 2px;
+    color: #333;
+}
+
+#listado_adm_cli_cliente_gestion .dato-contacto{
+    font-size: 11px;
+    color: #000;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#listado_adm_cli_cliente_gestion .vta-vendedor-asignado{
+    font-size: 11px;
+    font-weight: bold;
+    color: #000;
+}
+#listado_adm_cli_cliente_gestion .vta-vendedor-asignado-celular{
+    font-size: 11px;
+    color: #000;
+}
+#listado_adm_cli_cliente_gestion .vta-vendedor-asignado-email{
+    font-size: 10px;
+    color: #000;
+}
+#listado_adm_cli_cliente_gestion .gral-sucursal-asignado{
+    background-color: #dedede;
+
+    font-size: 11px;
+    font-weight: bold;
+    color: #000;
+    
+    padding: 5px;
+    margin: 3px;
+}
+#listado_adm_cli_cliente_gestion .gral-sucursal-asignado-tipo{
+    font-size: 10px;
+    font-weight: normal;
+}
+
+#listado_adm_cli_cliente_gestion .cli-cliente-tipo-gestion{
+    color: #000000;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+#listado_adm_cli_cliente_gestion .cli-cliente-tipo-estado-venta{
+    color: #000000;
+    font-size: 11px;
+    font-weight: normal;
+    padding: 3px;
+}
+
+#listado_adm_cli_cliente_gestion .creado{
+    color: #666; 
+    font-size: 10px; 
+    margin: 2px;
+}
+#listado_adm_cli_cliente_gestion .creado-por{
+    color: #999; 
+    font-size: 9px; 
+    margin: 2px;
+}
+
+/* Modal Generar Cliente Tienda */
+.datos.generar-clave-tienda{
+    
+}
+.datos.generar-clave-tienda .cli-cliente-tienda-info{
+    border: #f5ce00 solid 2px;
+    background-color: #FFDDA6;
+    padding: 10px 0;
+}
+
+/* Ficha Ordenes de Venta */
+#tab_orden_venta{
+
+}
+
+#tab_orden_venta .tabla-modal .par td{
+    background-color: #f0f0f0;
+}
+#tab_orden_venta .tabla-modal .impar td{
+    background-color: #fff;
+}
+
+#tab_orden_venta .tabla-modal .codigo-vta-presupuesto{
+    color: #000;
+}
+
+#tab_orden_venta .tabla-modal .fecha-vta-presupuesto{
+    font-size: 10px;
+    color: #666;
+}
+
+#tab_orden_venta .tabla-modal .codigo-vta-orden-venta{
+    color: #000;
+    font-weight: bold;
+}
+
+#tab_orden_venta .tabla-modal .fecha-vta-orden-venta{
+    font-size: 10px;
+    color: #666;
+}
+
+#tab_orden_venta .tabla-modal .cliente{
+}
+
+#tab_orden_venta .tabla-modal .email{
+}
+
+#tab_orden_venta .tabla-modal .descripcion{
+    color: #000;
+    font-weight: bold;
+}
+
+#tab_orden_venta .tabla-modal .vta_orden_venta_tipo_estado_id{
+    color: #000;
+    font-size: 11px;
+}
+
+#tab_orden_venta .tabla-modal .vta_orden_venta_tipo_estado_id img{
+    vertical-align: middle;
+    position: relative;
+}
+
+#tab_orden_venta .tabla-modal .vta_orden_venta_tipo_estado_remision_id{
+    color: #000;
+    font-size: 11px;
+}
+
+#tab_orden_venta .tabla-modal .vta_orden_venta_tipo_estado_remision_id img{
+    vertical-align: middle;
+    position: relative;
+}
+
+#tab_orden_venta .tabla-modal .vta_orden_venta_tipo_estado_facturacion_id{
+    color: #000;
+    font-size: 11px;
+}
+
+#tab_orden_venta .tabla-modal .vta_orden_venta_tipo_estado_facturacion_id img{
+    vertical-align: middle;
+    position: relative;
+}
+
+#tab_orden_venta .tabla-modal .ins_tipo_lista_precio_id{
+}
+
+#tab_orden_venta .tabla-modal .cantidad{
+    font-size: 16px;
+    font-weight: bold;
+    
+    margin-left: 38px
+}
+
+#tab_orden_venta .tabla-modal .unidad-medida{
+    font-size: 10px;
+    color: #999;
+}
+
+#tab_orden_venta .tabla-modal .importe-unitario{
+}
+#tab_orden_venta .tabla-modal .importe-unitario.bruto{
+    text-decoration: line-through;
+    color: #999;
+}
+#tab_orden_venta .tabla-modal .importe-unitario.neto{
+    color: #000;
+}
+#tab_orden_venta .tabla-modal .importe-total{
+}
+#tab_orden_venta .tabla-modal .importe-total.bruto{
+    text-decoration: line-through;
+    color: #999;
+}
+#tab_orden_venta .tabla-modal .importe-total.neto{
+    color: #000;
+    font-weight: bold;
+}
+

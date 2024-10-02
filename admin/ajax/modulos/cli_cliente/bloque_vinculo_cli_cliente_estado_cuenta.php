@@ -1,0 +1,31 @@
+
+<?php if(UsCredencial::getEsAcreditado('CLI_CLIENTE_ALTA_VINCULO_CLI_CLIENTE_ESTADO_CUENTA')){ ?>
+<div class='vinculo cli_cliente_estado_cuenta' padre='cli_cliente' hijo='cli_cliente_estado_cuenta' padre_id='<?php echo $cli_cliente->getId() ?>'>
+
+    <div class='titulo'>
+         <?php Lang::_lang('CliClienteEstadoCuentas') ?>
+        <?php 
+        $cantidad_cli_cliente_estado_cuentas = count($cli_cliente->getCliClienteEstadoCuentas());
+        echo ($cantidad_cli_cliente_estado_cuentas > 0) ? '('.$cantidad_cli_cliente_estado_cuentas.')' : '' ;
+        ?>			 
+    </div>
+
+    <div class='buscador'>
+        <input name='cli_cliente_estado_cuenta_txt_buscar' id='cli_cliente_estado_cuenta_txt_buscar' type='text' />
+        <img src='<?php echo Gral::getPath('path_http') ?>admin/imgs/lupa.png' align="absmiddle">
+
+        <?php if(UsCredencial::getEsAcreditado('CLI_CLIENTE_ALTA_VINCULO_CLI_CLIENTE_ESTADO_CUENTA_ACCIONES_ALTA')){ ?>
+        <div class="trigger wopenModal boton" archivo="ajax/modulos/cli_cliente_estado_cuenta/cli_cliente_estado_cuenta_alta.php?cli_cliente_id=<?php Gral::_echo($cli_cliente->getId()) ?>" contenedor="div_modal" ancho="750" alto="600" tipo="formulario" post="buscarVinculoResultados(1, '', 'cli_cliente', 'cli_cliente_estado_cuenta', <?php Gral::_echo($cli_cliente->getId()) ?>)" title='<?php Lang::_lang('Agregar') ?> <?php Lang::_lang('CliClienteEstadoCuenta') ?>'>
+        <img src='imgs/btn_add.png' border='0' width='18' align='absmiddle' />
+        </div>
+        <?php } ?>
+		
+    </div>
+
+    <div class='datos'>
+        &nbsp;
+    </div>
+
+</div>
+<?php } ?>
+

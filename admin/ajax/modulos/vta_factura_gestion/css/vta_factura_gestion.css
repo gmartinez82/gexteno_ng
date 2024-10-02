@@ -1,0 +1,1009 @@
+/* Archivo CSS de 'vta_factura' */
+
+/* Modal generar factura */
+.div_modal .datos.generar-factura{
+
+}
+.div_modal .datos.generar-factura .buscador{
+    background-color: #ddd;
+
+    margin: 5px;
+    padding: 10px;
+}
+
+.div_modal .datos.generar-factura .buscador .col{
+    display: inline-block;
+    vertical-align: top;
+}
+.div_modal .datos.generar-factura .buscador .col.c1{
+    width: 400px;
+}
+.div_modal .datos.generar-factura .buscador .col.c2{
+    /*width: 300px;*/
+}
+.div_modal .datos.generar-factura .buscador .col.c3{
+    /*width: 300px;*/
+}
+
+.div_modal .datos.generar-factura #form_generar_factura tr.selected td{
+    background-color: #FFDDA6;
+
+    color: #000;
+}
+
+
+.div_modal_modal .datos.generar-ws-fe-afip #form_generar_ws_fe_afip .col{
+    display:inline-block;
+    vertical-align: top;
+
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+
+    margin: 5px;
+    padding: 10px 30px;
+
+    width: 48%;
+}
+
+.div_modal_modal .datos.generar-ws-fe-afip #form_generar_ws_fe_afip .col.col1{
+    width: 50%;
+}
+.div_modal_modal .datos.generar-ws-fe-afip #form_generar_ws_fe_afip .col.col1 select{
+    max-width: 100%;
+}
+.div_modal_modal .datos.generar-ws-fe-afip #form_generar_ws_fe_afip .col.col2{
+    width: 46%;
+}
+
+.div_modal_modal #detalle_vta_comprobante_total{
+    border: none;
+    color: #666;
+}
+.div_modal_modal #detalle_vta_comprobante_total td{
+    border: #dedede solid 1px;
+    background-color: #fff;
+
+    padding: 4px;
+}
+.div_modal_modal #detalle_vta_comprobante_total tr.total td{
+    background-color: #ddd!important;
+    font-weight: bold;
+
+    padding: 6px;
+}
+.div_modal_modal #detalle_vta_comprobante_total tr.otros-tributos{
+}
+.div_modal_modal #detalle_vta_comprobante_total tr.otros-tributos .tributo-descripcion{
+    color: #000;
+}
+.div_modal_modal #detalle_vta_comprobante_total tr.otros-tributos .tributo-base-imponible{
+    color: #666;
+}
+.div_modal_modal #detalle_vta_comprobante_total tr.otros-tributos .tributo-observacion{
+    color: #AD3826;
+    font-size: 10px;
+}
+
+/* Items */
+#listado_vta_factura_items{
+    margin: 0 auto 0 auto;
+}
+#listado_vta_factura_items th{
+    background-color: #666;
+    border-bottom: #ccc solid 1px;
+    color: #fff;
+    padding: 5px;
+}
+#listado_vta_factura_items td{
+    background-color: #fff;
+    border-bottom: #ccc solid 1px;
+    color: #000;
+    padding: 5px;
+}
+
+#listado_vta_factura_items_confirmacion th{
+    background-color: #ddd;
+    border-bottom: #ccc solid 1px;
+    color: #000;
+    padding: 5px;
+}
+#listado_vta_factura_items_confirmacion td{
+    background-color: #fff;
+    border-bottom: #ccc solid 1px;
+    color: #000;
+    padding: 5px;
+}
+
+/* Bloque Presupuestos en Generacion de Factura */
+.bloque-vta-presupuestos{
+    margin: 10px auto;
+    width: 95%;
+}
+.bloque-vta-presupuestos .bloque-vta-presupuesto{
+    display: inline-block;
+    vertical-align: top;
+
+    width: 80%;
+
+    border-bottom: #013254 dotted 1px;
+    background-color: #fff;
+
+    font-size: 11px;
+    font-weight: bold;
+
+    padding: 8px 12px;
+    margin: 2px;
+
+    cursor: pointer;
+}
+.bloque-vta-presupuestos .bloque-vta-presupuesto input{
+    vertical-align: middle;
+}
+.bloque-vta-presupuestos .bloque-vta-presupuesto label{
+    cursor: pointer;                
+}
+.bloque-vta-presupuestos .bloque-vta-presupuesto:hover{
+    background-color: #e1f9a0;
+}
+
+#listado_vta_factura_generar_factura{
+    font-size: 12px;
+}
+
+#listado_vta_factura_generar_factura .uno.par td{
+    background-color: #f0f0f0;
+}
+#listado_vta_factura_generar_factura .uno.impar td{
+    background-color: #f0f0f0;
+}
+#listado_vta_factura_generar_factura .uno.separador td{
+    background-color: #ccc;
+}
+
+#listado_vta_factura_generar_factura .codigo-vta-factura{
+    color: #000;
+}
+
+#listado_vta_factura_generar_factura .fecha-vta-factura{
+    font-size: 10px;
+    color: #666;
+}
+#listado_vta_factura_generar_factura .codigo-vta-presupuesto{
+    color: #013254;
+    font-weight: bold;
+}
+
+#listado_vta_factura_generar_factura .codigo-vta-orden-venta{
+    color: #000;
+    font-weight: bold;
+}
+
+#listado_vta_factura_generar_factura .fecha-vta-orden-venta{
+    font-size: 10px;
+    color: #666;
+}
+#listado_vta_factura_generar_factura .descripcion{
+    font-size: 12px;
+}
+#listado_vta_factura_generar_factura .cantidad-factura,
+#listado_vta_factura_generar_factura .cantidad-remito{
+    font-size: 11px;
+    font-weight: bold;
+
+    margin-left: 20px;
+}
+
+#listado_vta_factura_generar_factura .unidad-medida{
+    font-size: 10px;
+    color: #999;
+}
+
+#listado_vta_factura_generar_factura .importe-unitario{
+}
+#listado_vta_factura_generar_factura .importe-unitario.bruto{
+    text-decoration: line-through;
+    color: #999;
+}
+#listado_vta_factura_generar_factura .importe-unitario.neto{
+    color: #000;
+}
+#listado_vta_factura_generar_factura .importe-unitario.neto.real input{
+    display: none;
+    text-align: right;
+    color: #000;
+}
+#listado_vta_factura_generar_factura .ins_tipo_lista_precio_id{
+    font-size: 11px;
+    color: #666;
+}
+
+#listado_vta_factura_generar_factura .importe-total{
+}
+#listado_vta_factura_generar_factura .importe-total.bruto{
+    text-decoration: line-through;
+    color: #999;
+}
+#listado_vta_factura_generar_factura .importe-total.neto{
+    color: #000;
+    font-weight: bold;
+}
+
+#listado_vta_factura_generar_factura .importe-iva{
+    color: #000;
+    font-size: 10px;
+}
+#listado_vta_factura_generar_factura .gral_tipo_iva_id{
+    font-size: 10px;
+    color: #666;
+}
+
+#listado_vta_factura_generar_factura .vta_orden_venta_tipo_estado_id{
+    font-size: 10px;
+    color: #000;
+}
+
+#listado_vta_factura_generar_factura .vta_orden_venta_tipo_estado_id img{
+    vertical-align: middle;
+    position: relative;
+    width: 10px;
+}
+
+#listado_vta_factura_generar_factura .vta_orden_venta_tipo_estado_remision_id{
+    font-size: 10px;
+    color: #000;
+}
+
+#listado_vta_factura_generar_factura .vta_orden_venta_tipo_estado_remision_id img{
+    vertical-align: middle;
+    position: relative;
+    width: 10px;
+}
+
+#listado_vta_factura_generar_factura .vta_orden_venta_tipo_estado_facturacion_id{
+    font-size: 10px;
+    color: #000;
+}
+
+#listado_vta_factura_generar_factura .vta_orden_venta_tipo_estado_facturacion_id img{
+    vertical-align: middle;
+    position: relative;
+    width: 10px;
+}
+
+#listado_vta_factura_generar_factura .txt_vta_orden_venta_cantidad{
+    display: none;
+}
+
+/* Listado factura */
+#listado_adm_vta_factura_gestion{
+
+}
+#listado_adm_vta_factura_gestion .actividad{
+    background-color: #ededed;
+    padding: 2px 3px;
+
+    font-size: 10px;
+    color: #666;
+}
+#listado_adm_vta_factura_gestion .fecha_emision{
+    font-size: 11px;
+    color: #000;
+    font-weight: bold;
+}
+#listado_adm_vta_factura_gestion .codigo{
+    font-size: 10px;
+    color: #666;
+}
+#listado_adm_vta_factura_gestion .tipo-origen{
+    background-color: #ededed;
+    padding: 2px 3px;
+    margin: 2px;
+
+    font-size: 10px;
+    color: #333;
+}
+#listado_adm_vta_factura_gestion .cliente{
+}
+#listado_adm_vta_factura_gestion .cliente .icn-tipo-cliente{
+    display: inline-block;
+    vertical-align: middle;
+    width: 10%;
+    vertical-align: top;
+}
+#listado_adm_vta_factura_gestion .cliente .cliente-info{
+    display: inline-block;
+    vertical-align: top;
+    width: 85%;
+}
+#listado_adm_vta_factura_gestion .cliente .cliente-info .persona-descripcion{
+    font-weight: bold;
+    color: #000;
+}
+#listado_adm_vta_factura_gestion .cliente .cliente-info .cliente-descripcion{
+    color: #0283bc;
+    font-size: 10px;
+}
+
+#listado_adm_vta_factura_gestion .email{
+    color: #333;
+    word-break: break-all;
+}
+#listado_adm_vta_factura_gestion .forma-pago{
+    color: #666;
+    font-size: 10px;
+    cursor:help;
+}
+#listado_adm_vta_factura_gestion .documento{
+    color: #333;
+}
+#listado_adm_vta_factura_gestion .bloque-comisionistas{
+    display: nonex;
+    background-color: #ededed; 
+    margin-top: 5px; 
+    padding: 2px 3px; 
+}
+#listado_adm_vta_factura_gestion .bloque-comisionistas .comisionista{
+    display: inline-block;
+    vertical-align: top;
+
+    width: 32%;
+    box-sizing: border-box;
+
+    font-size: 9px;
+    text-align: center;
+}
+#listado_adm_vta_factura_gestion .bloque-comisionistas .comisionista .label{
+    color: #666;
+}
+#listado_adm_vta_factura_gestion .bloque-comisionistas .comisionista .dato{
+    color: #000;
+    font-weight: bold;
+}
+#listado_adm_vta_factura_gestion .bloque-comisionistas .comisionista.comisionado .dato{
+    color: #03adf7;
+}
+#listado_adm_vta_factura_gestion .bloque-comisionistas .comisionista.comisionado .codigo-comision{
+    color: #0029ce;
+}
+
+#listado_adm_vta_factura_gestion .vta_tipo_factura{
+    color: #333;
+    font-weight: bold;
+}
+#listado_adm_vta_factura_gestion .sucursal{
+    font-size: 10px;
+    margin-left: 20px;
+    color: #666;
+}
+#listado_adm_vta_factura_gestion .vta_factura_tipo_estado{
+    color: #000;
+}
+#listado_adm_vta_factura_gestion .vta_factura_tipo_estado img{
+    vertical-align: middle;
+}
+#listado_adm_vta_factura_gestion .vta-comprobantes-vinculados{
+    margin: 0px;
+    max-height: 50px;
+    overflow: auto;
+}
+#listado_adm_vta_factura_gestion .vta-comprobantes-vinculados .vta-comprobante-vinculado{
+    color: #666;
+    font-size: 10px;
+    padding-left: 0px;
+}
+
+#listado_adm_vta_factura_gestion .subtotal{
+    text-align: right;
+    color: #000;
+}
+#listado_adm_vta_factura_gestion .iva,
+#listado_adm_vta_factura_gestion .tributos{
+    text-align: right;
+    color: #666;
+    font-size: 11px;
+}
+#listado_adm_vta_factura_gestion .total{
+    color: #000;
+    font-weight: bold;
+    text-align: right;
+}
+#listado_adm_vta_factura_gestion .numero_timbrado{
+    font-size: 11px;
+}
+#listado_adm_vta_factura_gestion .numero_factura{
+    color: #000;
+    font-weight: bold;
+}
+#listado_adm_vta_factura_gestion .cae{
+    font-size: 10px;
+    /*color: #666;*/
+    
+    max-width: 100px;
+    overflow-wrap: break-word;
+}
+#listado_adm_vta_factura_gestion .fecha_emision_cae{
+    font-size: 10px;
+    color: #666;
+}
+#listado_adm_vta_factura_gestion .afip-observacions{
+    margin: 1px;
+}
+#listado_adm_vta_factura_gestion .afip-observacions .afip-observacion{
+    font-size: 10px;
+    color: #003eff;
+}
+
+/* Ficha - Modal Top */
+.div_modal .ficha-factura .modal-top{
+    margin: 5px;
+    padding: 5px;
+
+    background-color: #f4f4f4;
+    border-bottom: #ccc solid 1px;
+}
+.div_modal .ficha-factura .modal-top .col{
+    display: inline-block;
+    vertical-align: top;
+
+    width: 100px;
+}
+.div_modal .ficha-factura .modal-top .col .label{
+    color: #666;
+    font-weight: normal;
+}
+.div_modal .ficha-factura .modal-top .col.foto{
+    width: 70px;
+    margin: 0 10px;
+}
+.div_modal .ficha-factura .modal-top .col.foto img{
+    border: #ccc solid 1px;
+    width: 100%;
+}
+.div_modal .ficha-factura .modal-top .col.cliente{
+    width: 350px;
+}
+
+/* Ficha Estados */
+#tab_estados .tabla-modal .fecha{
+    font-size: 10px;
+    color: #000;
+}
+
+#tab_estados .tabla-modal .descripcion{
+    color: #000;
+}
+
+#tab_estados .tabla-modal .tipo-estado{
+
+}
+
+#tab_estados .tabla-modal .tipo-estado img{
+    vertical-align: middle;
+    position: relative;
+}
+
+#tab_estados .tabla-modal .observacion{
+    color: #000;
+    font-weight: bold;
+}
+
+#tab_estados .tabla-modal .creado-por{
+    color: #000;
+}
+
+#tab_estados .tabla-modal .actual{
+}
+
+
+/* Ficha Ordenes de Venta */
+#tab_orden_venta{
+
+}
+
+#tab_orden_venta .tabla-modal .par td{
+    background-color: #f0f0f0;
+}
+#tab_orden_venta .tabla-modal .impar td{
+    background-color: #fff;
+}
+
+#tab_orden_venta .tabla-modal .codigo-vta-factura{
+    color: #000;
+}
+
+#tab_orden_venta .tabla-modal .fecha-vta-factura{
+    font-size: 10px;
+    color: #666;
+}
+
+#tab_orden_venta .tabla-modal .codigo-vta-orden-venta{
+    color: #000;
+    font-weight: bold;
+}
+
+#tab_orden_venta .tabla-modal .fecha-vta-orden-venta{
+    font-size: 10px;
+    color: #666;
+}
+
+#tab_orden_venta .tabla-modal .cliente{
+}
+
+#tab_orden_venta .tabla-modal .email{
+}
+
+#tab_orden_venta .tabla-modal .descripcion{
+    color: #000;
+    font-weight: bold;
+}
+
+#tab_orden_venta .tabla-modal .vta_orden_venta_tipo_estado_id{
+}
+
+#tab_orden_venta .tabla-modal .vta_orden_venta_tipo_estado_id img{
+    vertical-align: middle;
+    position: relative;
+}
+
+#tab_orden_venta .tabla-modal .vta_orden_venta_tipo_estado_remision_id{
+}
+
+#tab_orden_venta .tabla-modal .vta_orden_venta_tipo_estado_remision_id img{
+    vertical-align: middle;
+    position: relative;
+}
+
+#tab_orden_venta .tabla-modal .vta_orden_venta_tipo_estado_facturacion_id{
+}
+
+#tab_orden_venta .tabla-modal .vta_orden_venta_tipo_estado_facturacion_id img{
+    vertical-align: middle;
+    position: relative;
+}
+
+#tab_orden_venta .tabla-modal .ins_tipo_lista_precio_id{
+}
+
+#tab_orden_venta .tabla-modal .cantidad{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#tab_orden_venta .tabla-modal .unidad-medida{
+    font-size: 10px;
+    color: #999;
+}
+
+#tab_orden_venta .tabla-modal .importe-unitario{
+}
+#tab_orden_venta .tabla-modal .importe-unitario.bruto{
+    text-decoration: line-through;
+    color: #999;
+}
+#tab_orden_venta .tabla-modal .importe-unitario.neto{
+    color: #000;
+}
+#tab_orden_venta .tabla-modal .importe-subtotal{
+}
+#tab_orden_venta .tabla-modal .importe-subtotal.bruto{
+    text-decoration: line-through;
+    color: #999;
+}
+#tab_orden_venta .tabla-modal .importe-subtotal.neto{
+    color: #000;
+    font-weight: bold;
+}
+#tab_orden_venta .tabla-modal .importe-total{
+    color: #000;
+    font-weight: bold;
+}
+
+/* Ficha Notas de Credito */
+#tab_orden_venta{
+
+}
+
+#tab_nota_credito .tabla-modal .par td{
+    background-color: #f0f0f0;
+}
+#tab_nota_credito .tabla-modal .impar td{
+    background-color: #fff;
+}
+
+#tab_nota_credito .tabla-modal .codigo-vta-nota-credito{
+    font-weight: bold;
+    color: #000;
+}
+
+#tab_nota_credito .tabla-modal .fecha-emision-vta-nota-credito{
+    font-size: 10px;
+    color: #666;
+}
+
+#tab_nota_credito .tabla-modal .numero-nota-credito-vta-nota-credito{
+    color: #000;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+#tab_nota_credito .tabla-modal .cae-vta-nota-credito{
+    font-size: 10px;
+}
+
+#tab_nota_credito .tabla-modal .descripcion-vta-tipo-nota-credito{
+    font-size: 10px;
+}
+
+#tab_nota_credito .tabla-modal .descripcion{
+    color: #000;
+    font-weight: bold;
+}
+
+#tab_nota_credito .tabla-modal .condicion-iva{
+}
+
+#tab_nota_credito .tabla-modal .tipo-personeria{
+}
+
+#tab_nota_credito .tabla-modal .empresa-facturadora{
+}
+
+#tab_nota_credito .tabla-modal .cantidad{
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+}
+
+#tab_nota_credito .tabla-modal .unidad-medida{
+    font-size: 10px;
+    color: #999;
+}
+
+#tab_nota_credito .tabla-modal .importe-unitario{
+    color: #000;
+}
+
+#tab_nota_credito .tabla-modal .importe-total{
+    color: #000;
+    font-weight: bold;
+}
+
+/* Ficha Solicitud AFIP */
+#tab_solicitud_afip{
+
+}
+
+#tab_solicitud_afip .tabla-modal .par td{
+    background-color: #f0f0f0;
+}
+#tab_solicitud_afip .tabla-modal .impar td{
+    background-color: #fff;
+}
+
+#tab_solicitud_afip .tabla-modal .numero-comprobante-solicitud{
+    color: #000;
+    font-weight: bold;
+}
+
+#tab_solicitud_afip .tabla-modal .fecha-comprobante-solicitud{
+    font-size: 10px;
+    color: #666;
+}
+
+#tab_solicitud_afip .tabla-modal .tipo-comprobante-solicitud{
+}
+
+#tab_solicitud_afip .tabla-modal .importe-neto{
+    color: #000;
+}
+
+#tab_solicitud_afip .tabla-modal .importe-iva{
+    color: #000;
+}
+
+#tab_solicitud_afip .tabla-modal .importe-concepto{
+    color: #000;
+}
+
+#tab_solicitud_afip .tabla-modal .importe-tributo{
+    color: #000;
+}
+
+#tab_solicitud_afip .tabla-modal .importe-exento{
+    color: #000;
+}
+
+#tab_solicitud_afip .tabla-modal .importe-total{
+    color: #000;
+    font-weight: bold;
+}
+
+#tab_solicitud_afip .tabla-modal .tipo-comprobante-respuesta{
+}
+
+#tab_solicitud_afip .tabla-modal .numero-comprobante-respuesta{
+    color: #000;
+    font-weight: bold;
+}
+
+#tab_solicitud_afip .tabla-modal .fecha-comprobante-respuesta{
+    font-size: 10px;
+    color: #999;
+}
+
+#tab_solicitud_afip .tabla-modal .cantida-registro{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#tab_solicitud_afip .tabla-modal .resultado-cabecera{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#tab_solicitud_afip .tabla-modal .resultado-detalle{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#tab_solicitud_afip .tabla-modal .cae{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#tab_solicitud_afip .tabla-modal .cae-fecha-vencimiento{
+    font-size: 10px;
+    color: #999;
+}
+
+
+/* Ficha Emails */
+#tab_emails .tabla-modal-ficha-emails{
+
+}
+
+#tab_emails .tabla-modal-ficha-emails .par td{
+    background-color: #f0f0f0;
+}
+#tab_emails .tabla-modal-ficha-emails .impar td{
+    background-color: #fff;
+}
+
+#tab_emails .tabla-modal-ficha-emails .fecha{
+    color: #000;
+}
+#tab_emails .tabla-modal-ficha-emails .codigo-factura{
+    font-weight: bold;
+    color: #000;
+}
+#tab_emails .tabla-modal-ficha-emails .fecha-factura{
+    color: #666;
+}
+#tab_emails .tabla-modal-ficha-emails .asunto{
+    color: #000;
+    font-size: 11px;
+    font-weight: bold;
+}
+#tab_emails .tabla-modal-ficha-emails .destinatario{
+    color: #666;
+}
+#tab_emails .tabla-modal-ficha-emails .observacion{
+    color: #AD3826;
+    font-style: italic;
+}
+#tab_emails .tabla-modal-ficha-emails .creado-por-descripcion{
+    color: #000;
+    /*font-weight: bold;*/
+}
+
+/* Listado items Generar NC */
+#listado_vta_factura_generar_nota_credito{
+
+}
+
+#listado_vta_factura_generar_nota_credito .par td{
+    background-color: #f0f0f0;
+}
+#listado_vta_factura_generar_nota_credito .impar td{
+    background-color: #fff;
+}
+
+#listado_vta_factura_generar_nota_credito .codigo-vta-factura{
+    color: #000;
+}
+
+#listado_vta_factura_generar_nota_credito .fecha-vta-factura{
+    font-size: 10px;
+    color: #666;
+}
+
+#listado_vta_factura_generar_nota_credito .codigo-vta-orden-venta{
+    color: #000;
+    font-weight: bold;
+}
+
+#listado_vta_factura_generar_nota_credito .fecha-vta-orden-venta{
+    font-size: 10px;
+    color: #666;
+}
+
+#listado_vta_factura_generar_nota_credito .disponible{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#listado_vta_factura_generar_nota_credito .unidad-medida{
+    font-size: 10px;
+    color: #999;
+}
+#listado_vta_factura_generar_nota_credito .ins_tipo_lista_precio_id{
+    font-size: 10px;
+    color: #999;
+}
+
+#listado_vta_factura_generar_nota_credito .importe-unitario{
+}
+#listado_vta_factura_generar_nota_credito .importe-unitario.bruto{
+    text-decoration: line-through;
+    color: #999;
+}
+#listado_vta_factura_generar_nota_credito .importe-unitario.neto{
+    color: #000;
+}
+#listado_vta_factura_generar_nota_credito .importe-total{
+}
+#listado_vta_factura_generar_nota_credito .importe-total.bruto{
+    text-decoration: line-through;
+    color: #999;
+}
+#listado_vta_factura_generar_nota_credito .importe-total.neto{
+    color: #000;
+    font-weight: bold;
+}
+
+#listado_vta_factura_generar_nota_credito .importe-iva{
+    color: #000;
+}
+
+#listado_vta_factura_generar_nota_credito .vta_orden_venta_tipo_estado_id{
+}
+
+#listado_vta_factura_generar_nota_credito .vta_orden_venta_tipo_estado_id img{
+    vertical-align: middle;
+    position: relative;
+}
+
+#listado_vta_factura_generar_nota_credito .vta_orden_venta_tipo_estado_remision_id{
+}
+
+#listado_vta_factura_generar_nota_credito .vta_orden_venta_tipo_estado_remision_id img{
+    vertical-align: middle;
+    position: relative;
+}
+
+#listado_vta_factura_generar_nota_credito .vta_orden_venta_tipo_estado_facturacion_id{
+}
+
+#listado_vta_factura_generar_nota_credito .vta_orden_venta_tipo_estado_facturacion_id img{
+    vertical-align: middle;
+    position: relative;
+}
+
+#listado_vta_factura_generar_nota_credito{
+}
+#listado_vta_factura_generar_nota_credito .txt_vta_factura_vta_orden_venta_cantidad{
+    display: none;
+}
+
+
+/* Modal generar Nota de Credito Item */
+.div_modal .datos #form_generar_nota_credito_item .col{
+    display:inline-block;
+    vertical-align: top;
+
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+
+    margin: 5px;
+    padding: 10px 30px;
+
+    width: 45%;
+}
+
+.div_modal .datos #form_generar_nota_credito_item .col.col1{
+}
+.div_modal .datos #form_generar_nota_credito_item .col.col1 select{
+    max-width: 100%;
+}
+
+.div_modal .datos #form_generar_nota_credito_item .col.col2{
+}
+
+.div_modal #detalle_vta_factura_total{
+    border: none;
+    color: #666;
+}
+.div_modal #detalle_vta_factura_total td{
+    border: #dedede solid 1px;
+    background-color: #fff;
+
+    padding: 4px;
+}
+.div_modal #detalle_vta_factura_total tr.total td{
+    background-color: #ddd!important;
+    font-weight: bold;
+
+    padding: 6px;
+}
+
+/* Div Modal Alerta Consumidor Final Solicitud Datos */
+.div_modal .consumidor-final-solicitud-datos-alerta,
+.div_modal_modal .consumidor-final-solicitud-datos-alerta{
+    border: #F1A032 dotted 2px;
+    background-color: #fbef65;
+
+    color: #000;
+
+    padding: 6px;
+    margin: 5px;
+}
+
+/* Generar Nota de Credito desde Factura */
+#form_generar_nota_credito{
+
+}
+#form_generar_nota_credito .afectar-stock{
+    border: #4294c6 dotted 2px;
+    background-color: #b8e2de;
+
+    margin: 10px auto;
+    padding: 10px;
+
+    font-size: 14px;
+
+    width: 70%;
+}
+#form_generar_nota_credito .afectar-stock input[type=checkbox]{
+    vertical-align: middle;
+}
+
+
+
+#listado_vta_recibo_items_descuento_financiero{
+    margin: 0 auto 0 auto;
+}
+#listado_vta_recibo_items_descuento_financiero th{
+    background-color: #666;
+    border-bottom: #ccc solid 1px;
+    color: #fff;
+    padding: 5px;
+}
+#listado_vta_recibo_items_descuento_financiero td{
+    background-color: #fff;
+    border-bottom: #ccc solid 1px;
+    color: #000;
+    padding: 5px;
+}
+#listado_vta_recibo_items_descuento_financiero td .ver_modal_set_cheque_info{
+    display: none;
+}
+#listado_vta_recibo_items_descuento_financiero td .ver_modal_set_retencion_info{
+    display: none;
+}
+
+#listado_vta_recibo_items_descuento_financiero_confirmacion th{
+    background-color: #ddd;
+    border-bottom: #ccc solid 1px;
+    color: #000;
+    padding: 5px;
+}
+#listado_vta_recibo_items_descuento_financiero_confirmacion td{
+    background-color: #fff;
+    border-bottom: #ccc solid 1px;
+    color: #000;
+    padding: 5px;
+}
+
+.div-bloque-items-datos{
+    display: none;
+}

@@ -1,0 +1,237 @@
+/* Archivo CSS de 'pdi_pedido' */
+
+.cambio-tipo-asignacion{
+	text-align:center;
+}
+.cambio-tipo-asignacion .mensaje{
+	color:#666;
+	font-size:11px;
+	text-align:left;
+}
+
+/* Imputar Masivo */
+.datos.pdi-imputar-masivo{
+    
+}
+.datos.pdi-imputar-masivo .top{
+    
+}
+.datos.pdi-imputar-masivo .top .par{
+    display: inline-block;
+    vertical-align: top;
+    
+    width: 30%;
+}
+.datos.pdi-imputar-masivo .top .par .label{
+    width: 30%;
+}
+.datos.pdi-imputar-masivo .top .par .dato{
+    width: 60%;
+}
+.datos.pdi-imputar-masivo .detalle{
+    background-color: #fff;
+}
+
+#tbl_imputar_masivo_detalle{
+    
+}
+#tbl_imputar_masivo_detalle th{
+    border-bottom: #000 solid 1px;
+    background-color: #666;
+    color: #fff;
+    padding: 5px;
+}
+#tbl_imputar_masivo_detalle td{
+    border-bottom: #ccc solid 1px;
+    background-color: #f4f4f4;
+    color: #000;
+    padding: 5px;
+}
+#tbl_imputar_masivo_detalle td .categoria{
+    color:#666;
+    text-align: left;
+}
+#tbl_imputar_masivo_detalle td .insumo{
+    color:#000;
+    font-weight: bold;
+    text-align: left;
+}
+#tbl_imputar_masivo_detalle td .asignado{
+    background-color: #eee;
+    border: 1px solid #ddd;
+    padding: 2px;
+    color:#003399;
+    text-align: left;
+    font-size: 11px;
+    cursor: pointer;
+}
+#tbl_imputar_masivo_detalle td .asignado img{
+    vertical-align: middle;
+}
+#tbl_imputar_masivo_detalle td .asignado:hover{
+    color:#ccc;
+}
+#tbl_imputar_masivo_detalle td .ot{
+    font-weight: bold;    
+    color:#006600;
+}
+#tbl_imputar_masivo_detalle td .accion{
+    color:#000;
+    text-align: left;
+}
+#tbl_imputar_masivo_detalle td .tarea{
+    color:#993300;
+    text-align: left;
+}
+#tbl_imputar_masivo_detalle td .mas-info{
+    color:#666;
+    text-align: left;
+}
+#tbl_imputar_masivo_detalle td .tachado{
+    font-weight: normal;
+    text-decoration: line-through;
+    color:#F00;
+}
+
+/* Buscador de Insumos */
+.div_modal_modal .buscador-insumo{
+    
+}
+.div_modal_modal .buscador-insumo .col{
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+}
+.div_modal_modal .buscador-insumo .col.c1{
+    width: 37%;
+}
+.div_modal_modal .buscador-insumo .col.c2{
+    width: 61%;
+}
+.div_modal_modal .datos .par .label{
+    width:25%;
+}
+.div_modal_modal .datos .bloque-tareas-resueltas{
+    
+}
+.div_modal_modal .datos .bloque-tareas-resueltas .uno{
+    border-bottom: #666 dotted 1px;
+    padding:4px;
+    min-height: 47px;
+}
+.div_modal_modal .datos .bloque-tareas-resueltas .uno .radio{
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    float: left;
+    height: 23px;
+    width: 24px;
+    margin: 0 10px 0 0;
+    padding: 11px 5px;
+    vertical-align: middle;
+}
+.div_modal_modal .datos .bloque-tareas-resueltas .uno .radio.permitido{
+    background-color: #00CC33;
+    border: 1px solid #000;
+    float: left;
+    height: 23px;
+    width: 24px;
+    margin: 0 10px 0 0;
+    padding: 11px 5px;
+    vertical-align: middle;
+}
+.div_modal_modal .datos .bloque-tareas-resueltas .uno .accion{
+    color:#993300;
+    font-weight: bold;
+}
+.div_modal_modal .datos .bloque-tareas-resueltas .uno .tarea{
+    color:#000;
+    font-weight: bold;
+}
+.div_modal_modal .datos .bloque-tareas-resueltas .uno .observacion{
+    color:#993300;
+}
+.div_modal_modal .datos .bloque-tareas-resueltas .uno .operario{
+    color:#666;
+}
+.div_modal_modal .datos .bloque-tareas-resueltas .uno .galpon{
+    color:#666;
+}
+.div_modal_modal .datos .bloque-tareas-resueltas .uno .creado{
+    color:#666;
+}
+.div_modal_modal .datos .bloque-tareas-resueltas .uno .boton{
+    border: 1px solid #000;
+    color: #000;
+    cursor: pointer;
+    float: right;
+    margin-top: -10px;
+    padding: 4px;
+    width: auto;
+    text-align: center;
+}
+.div_modal_modal .datos .bloque-tareas-resueltas .uno .boton.vincular.vinculado{
+    background-color: #ccc;
+}
+.div_modal_modal .datos .bloque-tareas-resueltas .uno .boton.vincular.no-vinculado{
+    background-color: #00cc33;
+}
+
+.tabla-historial{
+    
+}
+.tabla-historial th{
+    border-bottom: #000 solid 1px;
+    background-color: #666;
+    color: #fff;
+    padding: 5px;    
+}
+.tabla-historial td{
+    border-bottom: #ccc solid 1px;
+    background-color: #f4f4f4;
+    color: #000;
+    padding: 5px;    
+}
+.tabla-historial td .ot-codigo{
+    font-weight: bold;
+}
+
+
+/*Esteban 04/07/2017*/
+#listado_adm_pdi_pedido .uno .urgencia{
+    font-size: 11px;
+    color: #666;
+}
+#listado_adm_pdi_pedido .uno .codigo{
+    font-size: 11px;
+    color: #666;
+}
+#listado_adm_pdi_pedido .uno .codigo-interno{
+    font-size: 11px;
+    color: #666;
+}
+#listado_adm_pdi_pedido .uno .categoria{
+    font-size: 11px;
+    color: #666;
+}
+
+#listado_adm_pdi_pedido .adm_tbl_bloque .uno {
+    display: inline-block;
+    vertical-align: top;
+    width: 23%;
+    border-left: #ddd dotted 1px;
+}
+#listado_adm_pdi_pedido .adm_tbl_bloque .uno .cantidad{
+    font-size: 15px;
+    color: #000;
+}
+#listado_adm_pdi_pedido .adm_tbl_bloque .uno .fecha{
+    font-size: 11px;
+    color:#666;
+}
+
+#listado_adm_pdi_pedido .pan-panols{
+}
+#listado_adm_pdi_pedido .pan-panols .pan-panol{
+    font-weight: bold;
+    color: #000;
+}

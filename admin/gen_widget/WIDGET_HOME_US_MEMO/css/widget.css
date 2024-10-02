@@ -1,0 +1,110 @@
+#cuerpo_widget_WIDGET_HOME_US_MEMO .no-resultado{
+    background-color: #fff;
+    border: #ccc solid 1px;
+    margin: 10px;
+    padding: 10px;
+    color: #999;
+}
+
+#cuerpo_widget_WIDGET_HOME_US_MEMO .us-memo-botonera{
+    text-align: center;
+}
+#cuerpo_widget_WIDGET_HOME_US_MEMO .us-memo-botonera .boton{
+    background-color: #AA563D;
+    border: #5E2522 solid 1px;
+    color: #FFFFFF;
+    padding: 5px;
+    cursor: pointer;
+}
+#cuerpo_widget_WIDGET_HOME_US_MEMO .us-memo-botonera .boton:hover{
+    opacity: 0.8;
+}
+
+#cuerpo_widget_WIDGET_HOME_US_MEMO .us-memos{
+    background-color: #fff;
+    border: #ccc solid 1px;
+    margin: 10px;
+    padding: 5px;
+}    
+#cuerpo_widget_WIDGET_HOME_US_MEMO .us-memos .us-memo{
+    display: inline-block;
+    vertical-align: top;
+
+    box-sizing: border-box;
+    width:49%;
+    min-height: 90px;
+
+    background-color: #fff;
+    border: #ccc solid 1px;
+    border-bottom: #ccc solid 1px;        
+
+    margin: 1px;
+    padding: 8px 12px;
+}
+#cuerpo_widget_WIDGET_HOME_US_MEMO .us-memos .us-memo.NO_INICIADO{
+    background-color: #fff;
+}
+#cuerpo_widget_WIDGET_HOME_US_MEMO .us-memos .us-memo.EN_CURSO{
+    background-color: #d9eaf4;
+}
+#cuerpo_widget_WIDGET_HOME_US_MEMO .us-memos .us-memo.FINALIZADO{
+    background-color: #b8d9a2;
+}
+#cuerpo_widget_WIDGET_HOME_US_MEMO .us-memos .us-memo.ANULADO{
+    background-color: #f5c8cb;
+}
+#cuerpo_widget_WIDGET_HOME_US_MEMO .us-memos .us-memo .us-memo-tipo-estado{
+    float: right;
+    text-align: center;
+    background-color: #999;
+    color: #fff;
+    padding: 3px 6px;
+
+    width: 75px;
+}
+#cuerpo_widget_WIDGET_HOME_US_MEMO .us-memos .us-memo .us-memo-tipo-estado.NO_INICIADO{
+    background-color: #999;
+}    
+#cuerpo_widget_WIDGET_HOME_US_MEMO .us-memos .us-memo .us-memo-tipo-estado.EN_CURSO{
+    background-color: #007fff;
+}    
+#cuerpo_widget_WIDGET_HOME_US_MEMO .us-memos .us-memo .us-memo-tipo-estado.FINALIZADO{
+    background-color: #006600;
+}    
+#cuerpo_widget_WIDGET_HOME_US_MEMO .us-memos .us-memo .us-memo-tipo-estado.ANULADO{
+    background-color: #960d15;
+}
+#cuerpo_widget_WIDGET_HOME_US_MEMO .us-memos .us-memo .us-memo-creado{
+    color: #666;
+    font-size: 11px;
+}
+#cuerpo_widget_WIDGET_HOME_US_MEMO .us-memos .us-memo .us-memo-descripcion{
+    font-size: 12px;
+    font-weight: bold;
+    color: #0283bc;
+}
+#cuerpo_widget_WIDGET_HOME_US_MEMO .us-memos .us-memo .us-memo-observacion{
+    line-height: 18px;
+    font-size: 11px;
+    margin: 4px 0;
+
+    max-height: 35px;
+    overflow: hidden;    
+}
+#cuerpo_widget_WIDGET_HOME_US_MEMO .us-memos .us-memo .us-memo-observacion .us-memo-tipo{
+    background-color: #999;
+    color: #fff;
+    padding: 2px 6px;
+    margin-right: 3px;
+}
+#cuerpo_widget_WIDGET_HOME_US_MEMO .us-memos .us-memo .us-memo-botonera{
+    float: right;
+    margin-top: 30px;
+    margin-right: -70px;
+}
+#cuerpo_widget_WIDGET_HOME_US_MEMO .us-memos .us-memo .us-memo-botonera .boton-uno{
+    cursor: pointer;
+}
+#cuerpo_widget_WIDGET_HOME_US_MEMO .us-memos .us-memo .us-memo-botonera .boton-uno:hover{
+    opacity: 0.8;
+}

@@ -1,0 +1,181 @@
+/* Archivo CSS de 'fnd_caja' */
+
+#listado_adm_fnd_caja_gestion{
+    
+}
+#listado_adm_fnd_caja_gestion .fnd_cajero_id{
+    color: #000;    
+    font-size: 12px;
+}
+#listado_adm_fnd_caja_gestion .gral_caja_id{
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+}
+#listado_adm_fnd_caja_gestion .fecha{
+    background-color: #f4f4f4;
+    border: #ddd solid 1px;
+    padding: 3px;
+    margin: 2px;
+    
+    color: #333;
+}
+#listado_adm_fnd_caja_gestion .fnd_caja_tipo_estado_id{
+    color: #000;    
+}
+
+#listado_adm_fnd_caja_gestion .saldo-inicial-cantidad,
+#listado_adm_fnd_caja_gestion .cobro-cantidad,
+#listado_adm_fnd_caja_gestion .pago-cantidad,
+#listado_adm_fnd_caja_gestion .orden-pago-cantidad,
+#listado_adm_fnd_caja_gestion .ingreso-cantidad,
+#listado_adm_fnd_caja_gestion .egreso-cantidad{
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+}
+#listado_adm_fnd_caja_gestion .saldo-inicial,
+#listado_adm_fnd_caja_gestion .cobro-importe,
+#listado_adm_fnd_caja_gestion .pago-importe,
+#listado_adm_fnd_caja_gestion .orden-pago-importe,
+#listado_adm_fnd_caja_gestion .ingreso-importe,
+#listado_adm_fnd_caja_gestion .egreso-importe{
+    background-color: #fff;
+    border: #ddd solid 1px;
+    color: #000;    
+    padding: 3px 1px;
+}
+
+#listado_adm_fnd_caja_gestion .ingreso{
+    color: #142785;
+}
+
+#listado_adm_fnd_caja_gestion .egreso{
+    color: #b16914;
+}
+
+
+.div_modal{
+}
+.div_modal .datos.caja{
+}
+.div_modal .datos.caja .info-caja{
+    margin:15px;
+}
+.div_modal .datos.caja .info-caja .col{
+    display:inline-block;
+    vertical-align:top;
+
+    border:#CCC solid 1px;
+    background-color:#FFF;
+    padding:4px;
+}
+.div_modal .datos.caja .info-caja .col.total{
+    background-color:transparent;
+    border:none;
+
+    font-weight:bold;
+}
+.div_modal .datos.caja .info-caja .forma-pago{
+    width:200px;
+}
+.div_modal .datos.caja .info-caja .cantidad{
+    width:60px;
+}
+.div_modal .datos.caja .info-caja .importe{
+    width:90px;
+    text-align:right;
+}
+
+
+.div_modal .datos.caja .mensaje.importante{
+    border:#F00 solid 1px;
+    background-color:#FF6;
+
+    padding:10px;
+    color:#C00;
+}
+
+/* Movimientos */
+#listado_fnd_caja_movimiento_items{
+    margin: 0 auto 0 auto;
+}
+#listado_fnd_caja_movimiento_items th{
+    background-color: #666;
+    border-bottom: #ccc solid 1px;
+    color: #fff;
+    padding: 5px;
+}
+#listado_fnd_caja_movimiento_items td{
+    background-color: #fff;
+    border-bottom: #ccc solid 1px;
+    color: #000;
+    padding: 5px;
+}
+#listado_fnd_caja_movimiento_items td .ver_modal_set_cheque_info{
+    display: none;
+}
+#listado_fnd_caja_movimiento_items td .ver_modal_set_retencion_info{
+    display: none;
+}
+
+#listado_fnd_caja_movimiento_items_confirmacion th{
+    background-color: #ddd;
+    border-bottom: #ccc solid 1px;
+    color: #000;
+    padding: 5px;
+}
+#listado_fnd_caja_movimiento_items_confirmacion td{
+    background-color: #fff;
+    border-bottom: #ccc solid 1px;
+    color: #000;
+    padding: 5px;
+}
+
+
+#formu-ingreso .ver_modal_set_cheque_info{
+    display: none;
+}
+
+#formu-egreso .ver_modal_set_cheque_info{
+    display: none;
+}
+
+.texto-caja-abierta{
+    background-color: #f4f4f4;
+    border: #ccc solid 1px;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+
+/* Modificar Datos */
+.div_modal_modal .datos.modificar-datos-cheque .col{
+    display: inline-block;
+    vertical-align: top;
+}
+.div_modal_modal .datos.modificar-datos-cheque .col.c1{
+    width: 43%;
+}
+.div_modal_modal .datos.modificar-datos-cheque .col.c2{
+    width: 55%;
+}
+
+.div_modal_modal .datos.modificar-datos-cheque .col.c2 .cheques
+{
+    font-size: 11px;
+    max-height: 400px;
+    overflow: auto;
+}
+.div_modal_modal .datos.modificar-datos-cheque .col.c2 .cheques th
+{
+    background-color: #666;
+    color: #fff;    
+}
+.div_modal_modal .datos.modificar-datos-cheque .col.c2 .cheques td
+{
+    border-bottom: #ccc datos 1px;
+    background-color: #fff;
+    color: #000;    
+}

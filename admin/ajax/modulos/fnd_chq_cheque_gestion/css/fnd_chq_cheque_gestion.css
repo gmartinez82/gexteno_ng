@@ -1,0 +1,125 @@
+/* Archivo CSS de 'fnd_chq_cheque' */
+
+
+#listado_adm_fnd_chq_cheque{
+
+}
+
+
+#listado_adm_fnd_chq_cheque .id{
+    font-size: 10px;
+    color: #666;
+}
+#listado_adm_fnd_chq_cheque .chq-fecha-emision{
+    color: #000;
+    font-size: 10px;
+}
+#listado_adm_fnd_chq_cheque .chq-tipo-emisor{
+    font-weight: bold;
+    padding: 1px;
+}
+#listado_adm_fnd_chq_cheque .chq-tipo-emisor.PROPIO{
+    color: #AA563D;
+}
+#listado_adm_fnd_chq_cheque .chq-tipo-emisor.TERCERO{
+    color: #0782C1;
+}
+#listado_adm_fnd_chq_cheque .chq-numero{
+    color: #000;
+    font-weight: bold;
+}
+#listado_adm_fnd_chq_cheque .chq-chequera{
+}
+
+
+#listado_adm_fnd_chq_cheque .gral-banco{
+    color: #000;
+    font-size: 10px;
+}
+
+#listado_adm_fnd_chq_cheque .gral-banco-sucursal{
+    color: #666;
+}
+#listado_adm_fnd_chq_cheque .comprobantes-vinculados{
+    font-size: 10px;
+    color: #666;
+}
+#listado_adm_fnd_chq_cheque .comprobantes-vinculados .comprobante-vinculado{
+    padding: 3px;
+}
+
+#listado_adm_fnd_chq_cheque .chq-importe{
+    font-weight: bold;
+    color: #000;
+    text-align: right;
+}
+
+#listado_adm_fnd_chq_cheque .chq-fecha-cobro{
+    font-weight: bold;
+    color: #333;
+}
+
+#listado_adm_fnd_chq_cheque .chq-firmante{
+    color: #000;
+    font-weight: bold;
+}
+
+#listado_adm_fnd_chq_cheque .chq-entregador{
+    color: #000;
+}
+
+
+#listado_adm_fnd_chq_cheque .chq-emision{
+    color: #000;
+    font-size: 10px;
+}
+
+
+#listado_adm_fnd_chq_cheque .chq-tipo-pago{
+    color: #003366;
+}
+
+#listado_adm_fnd_chq_cheque .chq-tipo-estado{
+    color: #000;
+    font-size: 10px;
+}
+#listado_adm_fnd_chq_cheque .chq-tipo-estado img{
+    vertical-align: middle;
+}
+
+#listado_adm_fnd_chq_cheque .chq-dias-faltantes{
+    color: #666;
+}
+#listado_adm_fnd_chq_cheque .chq-dias-faltantes.negro{
+    color: #000;
+}
+#listado_adm_fnd_chq_cheque .chq-dias-faltantes.rojo{
+    color: #fb0922;
+}
+#listado_adm_fnd_chq_cheque .chq-dias-faltantes.rojo_fondo{
+    background-color: #C30;
+    color: #fff;
+    
+    padding: 3px;
+    margin: 3px;
+}
+#listado_adm_fnd_chq_cheque .chq-dias-faltantes.amarillo{
+    color: #DA8028;
+}
+#listado_adm_fnd_chq_cheque .chq-dias-faltantes.amarillo_fondo{
+    background-color: #ECD5A1;
+    color: #000;
+    
+    padding: 3px;
+    margin: 3px;
+}
+#listado_adm_fnd_chq_cheque .chq-dias-faltantes.verde
+{
+    color: #0ea909;
+}
+
+
+#listado_adm_fnd_chq_cheque .fnd-caja-descripcion{
+    color: #003366;
+    font-size: 10px;
+}

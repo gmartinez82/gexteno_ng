@@ -1,0 +1,8 @@
+$(function ($) {
+    setInitWidget();
+});
+
+function setInitWidget() {
+        
+}
+

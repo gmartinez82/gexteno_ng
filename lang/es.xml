@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- es language -->
+<language>
+
+	<label>
+		<lab>comentario_us_usuario_alta_codigo</lab>
+		<value>Puede utilizar cualquier valor que tenga carÃ¡cter de univoco</value>
+	</label>					
+				
+	<label>
+		<lab>help_us_usuario_alta_codigo</lab>
+		<value>Numero de CUIT del empleado</value>
+	</label>					
+				
+</language>

@@ -1,0 +1,41 @@
+/* Archivo CSS de 'per_persona' */
+
+#listado_adm_per_persona_gestion{
+    
+}
+#listado_adm_per_persona_gestion .descripcion{
+    font-size: 14px;
+}
+#listado_adm_per_persona_gestion .legajo{
+}
+#listado_adm_per_persona_gestion .documento{
+}
+#listado_adm_per_persona_gestion .gral_area_id{
+    font-weight: bold;
+    color: #000;
+}
+#listado_adm_per_persona_gestion .gral_sector_id{
+    color: #333;
+}
+#listado_adm_per_persona_gestion .codigo_credencial{
+    background-color: #fff;
+    border: #CCC solid 1px;
+    color: #333;
+    
+    width: 60px;
+    
+    padding: 4px 2px;
+    font-size: 10px;
+}
+
+#listado_adm_per_persona_gestion .per_persona_dedos{}
+#listado_adm_per_persona_gestion .per_persona_dedos .per-persona-dedo{
+        display: inline-block;
+        width: 15px;
+        
+        border-radius: 25px;
+        padding: 3px;
+        
+        background-color: #0283bc;
+        color: #ffffff;
+    }

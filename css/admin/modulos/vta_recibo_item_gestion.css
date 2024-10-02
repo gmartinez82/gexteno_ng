@@ -1,0 +1,43 @@
+/* Archivo CSS de 'vta_recibo_item_gestion' */
+
+#listado_adm_vta_recibo_item_gestion .importe_unitario{
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    color: #000;
+}
+
+#listado_adm_vta_recibo_item_gestion .codigo{
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    color: #000;
+}
+#listado_adm_vta_recibo_item_gestion .importe-conciliado{
+    background-color: #e2e793;
+    border: #3b7521 solid 1px;
+    color: #3b7521;
+    font-weight: bold;
+}
+#listado_adm_vta_recibo_item_gestion input.moneda{
+    text-align: right;
+}
+
+#listado_adm_vta_recibo_item_gestion .creado-por,
+#listado_adm_vta_recibo_item_gestion .modificado{
+    color: #000;
+    padding: 2px;
+}
+#listado_adm_vta_recibo_item_gestion .diferencia-importe,
+#listado_adm_vta_recibo_item_gestion .diferencia-porcentual{
+    background-color: #fff;
+    border: #ccc solid 1px;
+    color: #000;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+}

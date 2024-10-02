@@ -1,0 +1,12 @@
+----------------------------------------------------
+Configuracion AFIP
+----------------------------------------------------
+
+1. cambiar $path en linea 22 de archivo BWsAa.php
+2. cambiar $path en linea 24 de archivo BWsAfip.php
+3. cambiar manejo de excepciones en BWsExceptionHandler.php de acuerdo a la version de PHP
+4. configurar en tabla los campos CUIT, AFIP_CRT (BEGIN CERTIFICATE) y AFIP_KEY (BEGIN RSA PRIVATE KEY) para la empresa
+5. configurar demas campos del registro de la empresa, CUIT LAE 30633697260 / 20105413476
+6. permisos de escritura para las carpetas comps/afip/keys y comps/afip/xml
+7. borrar el contenido de las carpetas comps/afip/keys y comps/afip/xml
+

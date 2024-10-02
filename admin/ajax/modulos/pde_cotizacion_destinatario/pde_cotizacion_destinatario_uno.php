@@ -1,0 +1,157 @@
+
+<?php
+
+?>
+<td align='center' class='adm_tbl_lineas <?php echo $estado ?> <?php echo $publicado ?> <?php echo $destacado ?> <?php echo $principal ?>'>
+    <div class="vermasinfo" identificador="<?php echo $pde_cotizacion_destinatario->getId() ?>" modulo="pde_cotizacion_destinatario">+</div>
+</td>
+
+<td align='center' class='adm_tbl_lineas <?php echo $estado ?> <?php echo $publicado ?> <?php echo $destacado ?> <?php echo $principal ?>'>
+    <div class="id">
+            <?php Gral::_echo($pde_cotizacion_destinatario->getId()) ?>
+    </div>
+</td>	
+
+<td align='left' class='adm_tbl_lineas <?php echo $estado ?> <?php echo $publicado ?> <?php echo $destacado ?> <?php echo $principal ?>'>
+    <div class="descripcion">
+            <?php Gral::_echo($pde_cotizacion_destinatario->getDescripcion()) ?>
+    </div>
+    <?php if (count($pde_cotizacion_destinatario->getArrDescripcionExtendidaParaBackend()) > 0) { ?>
+        <div class="descripcion-extendida">
+            <?php foreach ($pde_cotizacion_destinatario->getArrDescripcionExtendidaParaBackend() as $i => $arr_descripcion_extendida) { ?>
+                <?php if (trim($arr_descripcion_extendida['dato']) != '') { ?>
+                    <div class="descripcion-extendida-uno <?php echo $i ?> ">
+                        <div class="par">
+                            <div class="label">
+                                <?php Gral::_echo($arr_descripcion_extendida['label']) ?>            
+                            </div>
+                            <div class="dato">
+                                <?php Gral::_echo($arr_descripcion_extendida['dato']) ?>            
+                            </div>
+                        </div>
+                    </div>
+                <?php } ?>
+            <?php } ?>
+        </div>
+    <?php } ?>                
+
+</td>	
+
+<td align='center' class='adm_tbl_lineas <?php echo $estado ?> <?php echo $publicado ?> <?php echo $destacado ?> <?php echo $principal ?>'>
+	
+    <div class="pde_cotizacion_id <?php Gral::_echo($pde_cotizacion_destinatario->getPdeCotizacion()->getCodigo()) ?> ">	
+
+        <?php Gral::_echo($pde_cotizacion_destinatario->getPdeCotizacion()->getDescripcion()) ?>
+    </div>
+
+</td>
+<td align='center' class='adm_tbl_lineas <?php echo $estado ?> <?php echo $publicado ?> <?php echo $destacado ?> <?php echo $principal ?>'>
+	
+    <div class="us_usuario_id <?php Gral::_echo($pde_cotizacion_destinatario->getUsUsuario()->getCodigo()) ?> ">	
+
+        <?php Gral::_echo($pde_cotizacion_destinatario->getUsUsuario()->getDescripcion()) ?>
+    </div>
+
+</td>
+<td align='center' class='adm_tbl_lineas <?php echo $estado ?> <?php echo $publicado ?> <?php echo $destacado ?> <?php echo $principal ?>'>
+	
+    <div class="observado <?php Gral::_echo(GralSiNo::getOxId($pde_cotizacion_destinatario->getObservado())->getCodigo()) ?> ">	
+
+        <?php if($pde_cotizacion_destinatario->getObservado()){ ?>
+        <img src='imgs/tilde_<?php echo $pde_cotizacion_destinatario->getObservado() ?>.png' width='16' border='0' alt="<?php Gral::_echo($pde_cotizacion_destinatario->getObservado()) ?>" title="<?php Gral::_echo(GralSiNo::getOxId($pde_cotizacion_destinatario->getObservado())->getDescripcion()) ?>" />
+        <?php }else{ ?>
+        -
+        <?php } ?>        
+
+    </div>
+
+</td>
+<td align='center' class='adm_tbl_lineas <?php echo $estado ?> <?php echo $publicado ?> <?php echo $destacado ?> <?php echo $principal ?>'>
+	
+    <div class="leido <?php Gral::_echo(GralSiNo::getOxId($pde_cotizacion_destinatario->getLeido())->getCodigo()) ?> ">	
+
+        <?php if($pde_cotizacion_destinatario->getLeido()){ ?>
+        <img src='imgs/tilde_<?php echo $pde_cotizacion_destinatario->getLeido() ?>.png' width='16' border='0' alt="<?php Gral::_echo($pde_cotizacion_destinatario->getLeido()) ?>" title="<?php Gral::_echo(GralSiNo::getOxId($pde_cotizacion_destinatario->getLeido())->getDescripcion()) ?>" />
+        <?php }else{ ?>
+        -
+        <?php } ?>        
+
+    </div>
+
+</td>
+<td align='center' class='adm_tbl_lineas <?php echo $estado ?> <?php echo $publicado ?> <?php echo $destacado ?> <?php echo $principal ?>'>
+	
+    <div class="destacado <?php Gral::_echo(GralSiNo::getOxId($pde_cotizacion_destinatario->getDestacado())->getCodigo()) ?> ">	
+
+        <?php if($pde_cotizacion_destinatario->getDestacado()){ ?>
+        <img src='imgs/tilde_<?php echo $pde_cotizacion_destinatario->getDestacado() ?>.png' width='16' border='0' alt="<?php Gral::_echo($pde_cotizacion_destinatario->getDestacado()) ?>" title="<?php Gral::_echo(GralSiNo::getOxId($pde_cotizacion_destinatario->getDestacado())->getDescripcion()) ?>" />
+        <?php }else{ ?>
+        -
+        <?php } ?>        
+
+    </div>
+
+</td>
+<td align='center' class='adm_tbl_lineas <?php echo $estado ?> <?php echo $publicado ?> <?php echo $destacado ?> <?php echo $principal ?>'>
+	
+    <div class="aviso_email <?php Gral::_echo(GralSiNo::getOxId($pde_cotizacion_destinatario->getAvisoEmail())->getCodigo()) ?> ">	
+
+        <?php if($pde_cotizacion_destinatario->getAvisoEmail()){ ?>
+        <img src='imgs/tilde_<?php echo $pde_cotizacion_destinatario->getAvisoEmail() ?>.png' width='16' border='0' alt="<?php Gral::_echo($pde_cotizacion_destinatario->getAvisoEmail()) ?>" title="<?php Gral::_echo(GralSiNo::getOxId($pde_cotizacion_destinatario->getAvisoEmail())->getDescripcion()) ?>" />
+        <?php }else{ ?>
+        -
+        <?php } ?>        
+
+    </div>
+
+</td>
+<td align='center' class='adm_tbl_lineas <?php echo $estado ?> <?php echo $publicado ?> <?php echo $destacado ?> <?php echo $principal ?>'>
+	
+    <div class="aviso_sms <?php Gral::_echo(GralSiNo::getOxId($pde_cotizacion_destinatario->getAvisoSms())->getCodigo()) ?> ">	
+
+        <?php if($pde_cotizacion_destinatario->getAvisoSms()){ ?>
+        <img src='imgs/tilde_<?php echo $pde_cotizacion_destinatario->getAvisoSms() ?>.png' width='16' border='0' alt="<?php Gral::_echo($pde_cotizacion_destinatario->getAvisoSms()) ?>" title="<?php Gral::_echo(GralSiNo::getOxId($pde_cotizacion_destinatario->getAvisoSms())->getDescripcion()) ?>" />
+        <?php }else{ ?>
+        -
+        <?php } ?>        
+
+    </div>
+
+</td>
+<td align='center' class='adm_tbl_lineas <?php echo $estado ?> <?php echo $publicado ?> <?php echo $destacado ?> <?php echo $principal ?>'>
+    <div class="codigo">
+            <?php Gral::_echo($pde_cotizacion_destinatario->getCodigo()) ?>
+    </div>
+</td>	
+
+<td align='center' class='adm_tbl_lineas <?php echo $estado ?> <?php echo $publicado ?> <?php echo $destacado ?> <?php echo $principal ?>'>
+    <ul class="adm_botones_acciones">
+	
+	<?php if(UsCredencial::getEsAcreditado('PDE_COTIZACION_DESTINATARIO_ADM_ACCION_MODIFICAR')){ ?>
+	<li class='adm_botones_accion'>
+            <a href='pde_cotizacion_destinatario_alta.php?id=<?php Gral::_echo($pde_cotizacion_destinatario->getId()) ?>' title='<?php Lang::_lang('Modificar') ?>'><img src='imgs/btn_modi.gif' width='20' border='0' /></a>
+	</li>
+	<?php } ?>
+	
+	<?php if(UsCredencial::getEsAcreditado('PDE_COTIZACION_DESTINATARIO_ADM_ACCION_ELIMINAR')){ ?>
+	<li class='adm_botones_accion'>
+            <a href='Javascript:eliminar(<?php Gral::_echo($pde_cotizacion_destinatario->getId()) ?>)' title='<?php Lang::_lang('Eliminar') ?>'><img src='imgs/btn_elim.gif' width='20' border='0' /></a>
+	</li>
+	<?php } ?>
+
+	<?php if(UsCredencial::getEsAcreditado('PDE_COTIZACION_DESTINATARIO_ADM_ACCION_ESTADO')){ ?>
+	<li class='adm_botones_accion estado' title='<?php Lang::_lang('Habilitar/Deshabilitar') ?>'>
+            <img src='imgs/btn_estado_<?php Gral::_echo($pde_cotizacion_destinatario->getEstado())  ?>.gif' width='20' border='0' />
+	</li>
+	<?php } ?>
+
+        <?php if (UsCredencial::getEsAcreditado('PDE_COTIZACION_DESTINATARIO_ADM_ACCION_CONFIG')) { ?>
+        <li class='adm_botones_accion db_context' archivo='<?php Gral::_echo(Gral::getPath('path_http')) ?>admin/ajax/modulos/pde_cotizacion_destinatario/pde_cotizacion_destinatario_db_context_acciones.php?id=<?php Gral::_echo($pde_cotizacion_destinatario->getId()) ?>' modulo_metodo_init="setInitPdeCotizacionDestinatario()">
+            <img src='imgs/btn_config.png' width='20' />       
+        </li>
+        <?php } ?>
+
+    </ul>
+</td>
+
+

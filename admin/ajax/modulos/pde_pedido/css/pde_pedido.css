@@ -1,0 +1,186 @@
+/* Archivo CSS de 'pde_pedido' */
+
+#listado_adm_pde_pedido{
+    
+}
+#listado_adm_pde_pedido .codigo{
+    font-size:10px;
+    color:#999;
+}
+#listado_adm_pde_pedido .codigo-interno{
+    font-size:10px;
+    color:#666;
+}
+#listado_adm_pde_pedido .marca{
+    font-size:10px;
+    color:#666;
+}
+#listado_adm_pde_pedido .observacion{
+    color:#960;
+}
+#listado_adm_pde_pedido .centro-pedido{
+    font-size:10px;
+    color:#666;
+}
+#listado_adm_pde_pedido .urgencia{
+    background-color: #ddd;
+    padding: 5px;
+    margin: 2px;
+    
+    color: #333;
+}
+#listado_adm_pde_pedido .urgencia.BAJA{
+    background-color: #ddd;
+}
+#listado_adm_pde_pedido .urgencia.MEDIA{
+    background-color: #E8D77B;
+}
+#listado_adm_pde_pedido .urgencia.ALTA{
+    background-color: #DBA8A8;
+}
+
+#listado_adm_pde_pedido{
+}
+#listado_adm_pde_pedido .proveedor-descripcion{
+    font-size:10px;
+    font-weight:normal;
+
+    color:#000;
+}
+#listado_adm_pde_pedido .creado{
+    color:#666;
+    font-size:10px;
+}
+#listado_adm_pde_pedido .link.modal.cotizaciones,
+#listado_adm_pde_pedido .link.modal.ocs{
+    font-size: 14px;
+    padding: 8px;
+}
+
+.tabs #tab_general{
+}
+.tabs #tab_general .dato{
+    width:80%;
+}
+.tabs #tab_general .uno.proveedor{
+    border-bottom:#CCC dotted 1px;
+    font-size:10px;
+    font-weight:normal;
+}
+.tabs #tab_general .uno.proveedor .descripcion{
+    display:inline-block;
+    vertical-align:top;
+
+    width:200px;
+}
+.tabs #tab_general .uno.proveedor .emails{
+    display:inline-block;
+    vertical-align:top;
+
+    width:200px;
+}
+.tabs #tab_general .uno.proveedor .envio{
+    display:inline-block;
+    vertical-align:top;
+
+    width:390px;
+}
+.tabs #tab_general .uno.proveedor .envio .enviado{
+    color:#060;
+}
+.tabs #tab_general .uno.proveedor .envio .no-enviado{
+    color:#F00;
+}
+.tabs #tab_general .uno.proveedor .envio .por-enviar{
+    color:#333;
+}
+.tabs #tab_general .uno.proveedor .envio .accion.forzar-envio{
+    cursor: pointer;
+    color: #069;
+}
+.tabs #tab_general .uno.proveedor .envio .accion.forzar-envio:hover{
+    opacity: 0.7;
+}
+
+/* Cotizaciones */
+.tabs #tab_cotizaciones{
+    width:96%;
+}
+.tabs #tab_cotizaciones .creado, .tabs #tab_cotizaciones_historico .creado{
+    font-size:10px;
+    color:#666;
+}
+.tabs #tab_cotizaciones .centro-pedido, .tabs #tab_cotizaciones_historico .centro-pedido{
+    color:#777;
+    font-size:10px;
+}
+.tabs #tab_cotizaciones .proveedor-descripcion, .tabs #tab_cotizaciones_historico .proveedor-descripcion{
+    color:#000;
+}
+.tabs #tab_cotizaciones .comentario, .tabs #tab_cotizaciones_historico .comentario{
+    color:#C30;
+}
+.tabs #tab_cotizaciones .importe-unidad, .tabs #tab_cotizaciones_historico .importe-unidad{
+}
+.tabs #tab_cotizaciones .importe-total, .tabs #tab_cotizaciones_historico .importe-total{
+    color:#000;
+}
+.tabs #tab_cotizaciones .condiciones-pago, .tabs #tab_cotizaciones_historico .condiciones-pago{
+    color:#069;
+}
+.tabs #tab_cotizaciones .condiciones-pago .condicion-pago, .tabs #tab_cotizaciones_historico .condiciones-pago .condicion-pago{
+    color:#000;
+    display:inline;
+    font-size:10px;
+}
+.tabs #tab_cotizaciones .importe-ult-compra{
+    font-weight:bold;
+    color:#000;
+}
+.tabs #tab_cotizaciones .fecha-ult-compra{
+    color:#666;
+}
+.tabs #tab_cotizaciones .oc-codigo, .tabs #tab_cotizaciones_historico .oc-codigo{
+    color:#000;
+}
+.tabs #tab_cotizaciones .oc-tipo-estado, .tabs #tab_cotizaciones_historico .oc-tipo-estado{
+    font-size:10px;
+    color:#666;
+}
+
+/* Cotizaciones Modal Modal */
+.div_modal_modal .datos.cotizar .col{
+    display:inline-block;
+    vertical-align:top;
+
+    /*#display: inline;*/
+    _display: inline;
+    zoom: 1;
+
+    width:48%;
+}
+.div_modal_modal .datos.cotizar .col.c1{
+    width:68%;
+}
+.div_modal_modal .datos.cotizar .col.c2{
+    width:30%;
+}
+.div_modal_modal .datos.cotizar .col.c2 .condiciones-pago{
+    background-color:#CCC;
+    padding:5px;
+}
+.div_modal_modal .datos.cotizar .condiciones-pago .comentario{
+    color:#000;
+}
+.div_modal_modal .datos.cotizar .condiciones-pago .uno.condicion-pago{
+    font-size:11px;
+}
+
+/* Enviar Email */
+.div_modal .bloque-info-proveedores-destinatarios{
+    background-color: #dedede;
+    border: #ccc dotted 1px;
+    
+    margin: 10px;
+    padding: 10px;    
+}

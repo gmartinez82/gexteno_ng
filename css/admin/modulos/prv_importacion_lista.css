@@ -1,0 +1,611 @@
+/* Archivo CSS de 'prv_insumo' */
+/* cambiar */
+#div_prv_importacion_lista{
+    margin: 15px auto 0 auto;
+    width: 99%;
+}
+
+#div_prv_importacion_lista .botonera.botonera-siguiente{
+}
+#div_prv_importacion_lista .botonera.botonera-siguiente .boton{
+    padding: 8px 15px;
+}
+
+/* Tab 1 */
+#div_prv_importacion_lista #tabs-1{
+    background-color: #f4f4f4;
+    border: #ccc solid 1px;
+
+    margin: 20px auto 20px auto;
+    padding: 30px;
+
+    width: 90%;
+}
+#div_prv_importacion_lista #tabs-1 form{
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+
+    width: 56%;
+
+}
+#div_prv_importacion_lista #tabs-1 .restablecer{
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+
+    width: 40%;
+
+    background-color: #fff;
+    border: #ccc solid 1px;
+}
+#div_prv_importacion_lista #tabs-1 .restablecer .titulo{
+    background-color: #ccc;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    padding: 5px 15px;
+}
+#div_prv_importacion_lista #tabs-1 .restablecer .importacions.activas{
+    margin: 5px;
+    font-size: 11px;
+}
+#div_prv_importacion_lista #tabs-1 .restablecer .uno{
+    border-bottom: #ccc dotted 1px;
+    margin: 2px;
+}
+#div_prv_importacion_lista #tabs-1 .restablecer .uno:hover{
+    background-color: #f4f4f4;
+}
+#div_prv_importacion_lista #tabs-1 .restablecer .uno .cancelar{
+    float: right;
+    margin-top: -30px;
+    
+    cursor: pointer;
+}
+#div_prv_importacion_lista #tabs-1 .restablecer .uno .restablecer_importacion{
+    padding: 6px 10px;
+    cursor: pointer;
+}
+#div_prv_importacion_lista #tabs-1 .restablecer .uno .restablecer_importacion .creado-por{
+    color: #999;
+    font-size: 11px;
+}
+
+/* Tab 2 */
+
+#div_prv_importacion_lista{
+}
+
+#div_prv_importacion_lista thead tr{
+    background-color: #ccc;
+}
+#div_prv_importacion_lista th{
+    background-color: #013254;
+    color:#fff;
+    font-size: 11px;
+    font-weight: normal;
+    padding: 2px 0px;
+}
+#div_prv_importacion_lista th .column_name{
+    background-color: #eee;
+    border: 1px solid #000;
+    color: #000;
+    max-width: 135px;
+    margin: 4px;
+}
+
+/* Tab 3 */
+
+#div_prv_importacion_lista{
+    width: auto;
+}
+#div_prv_importacion_listatr{
+}
+#div_prv_importacion_lista tr th{
+    line-height: 24px;
+}
+#div_prv_importacion_lista tr td{
+    border: none;
+/*    border-top: #bbb solid 1px;
+    border-right: #bbb solid 1px;*/
+    
+    font-size: 10px;
+    padding: 4px 1px 4px 1px;
+
+    text-align: center;    
+}
+#div_prv_importacion_lista tr.conflicto td{
+    background-color: #FFCCBA;
+}
+
+#tabla_tabs_3{
+    border: none;
+    width: 100%;
+}
+
+/* Th */
+
+#div_prv_importacion_lista .t3_th_nro_fila{
+    width: 35px;
+}
+#div_prv_importacion_lista .t3_th_nuevo{
+    width: 30px;
+}
+#div_prv_importacion_lista .t3_th_id{
+    width: 70px;
+}
+#div_prv_importacion_lista .t3_th_cod_proveedor{
+    width: 100px;
+}
+#div_prv_importacion_lista .t3_th_insumo{
+    /*width: 250px;*/
+}
+#div_prv_importacion_lista .t3_th_cod_marca{
+    width: 110px;
+}
+#div_prv_importacion_lista .t3_th_cod_pieza{
+    width: 110px;
+}
+#div_prv_importacion_lista .t3_th_nuevo_importe{
+    width: 80px;
+}
+#div_prv_importacion_lista .t3_th_nuevo_descuento{
+    width: 60px;
+}
+#div_prv_importacion_lista .t3_th_nuevo_importe_neto{
+    width: 90px;
+}
+#div_prv_importacion_lista .t3_th_ultimo_importe{
+    width: 90px;
+}
+#div_prv_importacion_lista .t3_th_ultimo_fecha{
+    width: 100px;
+}
+#div_prv_importacion_lista .t3_th_nuevo_incremento{
+    width: 60px;
+}
+#div_prv_importacion_lista .t3_th_insumo_importe{
+    width: 90px;
+}
+#div_prv_importacion_lista .t3_th_insumo_incremento{
+    width: 60px;
+}
+#div_prv_importacion_lista .t3_th_insumo_accion{
+    width: 30px;
+}
+#div_prv_importacion_lista .t3_th_cancelar{
+    width: 30px;
+}
+
+/* Td */
+#div_prv_importacion_lista .t3_td_id .btn_ver_modal{
+    padding: 4px 1px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #f4f4f4;
+}
+#div_prv_importacion_lista .t3_td_id .btn_ver_modal:hover{
+    background-color: #ccc;
+}
+#div_prv_importacion_lista .t3_td_id .btn_ver_modal.verde{
+    color: #006600;
+}
+#div_prv_importacion_lista .t3_td_id .btn_ver_modal.amarillo{
+    color: #C97626;
+}
+#div_prv_importacion_lista .t3_td_id .btn_ver_modal.rojo{
+    color: #C00;
+}
+
+#div_prv_importacion_lista .t3_td_insumo{
+    text-align: left;
+    font-weight: bold;
+}
+
+#div_prv_importacion_lista .t3_td_insumo .descripcion{
+    display: inline-block;
+    width: 90%; 
+}
+#div_prv_importacion_lista .t3_td_insumo .descripcion_insumo{
+    float: right;
+}
+#div_prv_importacion_lista .t3_td_insumo .insumo-matriz-descripcion{
+    padding: 5px 5px;
+    background-color: #ddd;
+    color: #333;
+    font-weight: normal;
+}
+
+#div_prv_importacion_lista .t3_td_cod_marca{
+}
+#div_prv_importacion_lista .t3_td_cod_marca input, #div_prv_importacion_lista .t3_td_cod_marca select{
+    width: 75%;
+    border: #ccc solid 1px!important;
+    background-color: #fff;
+    
+    padding: 5px 7px;
+    margin: 1px 0;
+    color: #000;
+}
+#div_prv_importacion_lista .t3_td_cod_marca input{
+    font-weight: bold;
+}
+
+
+#div_prv_importacion_lista .t3_td_cod_pieza{
+}
+#div_prv_importacion_lista .t3_td_cod_pieza input, #div_prv_importacion_lista .t3_td_cod_pieza select{
+    width: 75%;
+    border: #ccc solid 1px!important;
+    background-color: #fff;
+    
+    padding: 5px 7px;
+    margin: 1px 0;
+    color: #000;
+}
+#div_prv_importacion_lista .t3_td_cod_pieza input{
+    font-weight: bold;
+}
+
+#div_prv_importacion_lista .t3_td_nuevo_importe{
+    background-color: #f4f4f4;
+    text-align: right;
+    padding-right: 4px;
+}
+#div_prv_importacion_lista .t3_td_nuevo_descuento{
+    background-color: #f4f4f4;
+}
+#div_prv_importacion_lista .t3_td_nuevo_importe_neto{
+    background-color: #f4f4f4;
+    color: #013254;
+    text-align: right;
+    font-weight: bold;
+    
+    padding-right: 4px;
+}
+#div_prv_importacion_lista .t3_td_ultimo_importe .ultimo-importe{
+    color: #000;
+}
+#div_prv_importacion_lista .t3_td_ultimo_importe .ultimo-fecha{
+    color: #666;
+}
+#div_prv_importacion_lista .t3_td_ultimo_importe{
+    background-color: #ddd;
+    color: #013254;
+}
+#div_prv_importacion_lista .t3_td_ultimo_fecha{
+    background-color: #ddd;
+    color: #013254;
+}
+#div_prv_importacion_lista .t3_td_nuevo_incremento{
+    background-color: #f4f4f4;
+}
+#div_prv_importacion_lista .t3_td_nuevo_incremento .nuevo_incremento{
+    background-color: #ccc;
+    color: #000;
+    margin: 0 auto;
+    padding: 3px;
+    width: 50%;
+}
+#div_prv_importacion_lista .t3_td_nuevo_incremento .nuevo_incremento.rojo{
+    border: #CC0000 solid 1px;
+    background-color: #FDD;
+    color: #000;
+}
+#div_prv_importacion_lista .t3_td_nuevo_incremento .nuevo_incremento.verde{
+    border: #006600 solid 1px;
+    background-color: #fff;
+    color: #000;
+}
+#div_prv_importacion_lista .t3_td_nuevo_incremento .nuevo_incremento.amarillo{
+    border: yellow solid 1px;
+    background-color: #ffff8d;
+    color: #000;
+}
+#div_prv_importacion_lista .t3_td_insumo_importe{
+    background-color: #C7E1F3;
+}
+#div_prv_importacion_lista .t3_td_insumo_incremento{
+    background-color: #C7E1F3;
+}
+#div_prv_importacion_lista .t3_td_insumo_incremento .insumo_incremento{
+    background-color: #ccc;
+    color: #000;
+    margin: 0 auto;
+    padding: 3px;
+    width: 50%;
+}
+#div_prv_importacion_lista .t3_td_insumo_incremento .insumo_incremento.rojo{
+    border: #CC0000 solid 1px;
+    background-color: #FDD;
+    color: #000;
+}
+#div_prv_importacion_lista .t3_td_insumo_incremento .insumo_incremento.verde{
+    border: #006600 solid 1px;
+    background-color: #fff;
+    color: #000;
+}
+#div_prv_importacion_lista .t3_td_insumo_incremento .insumo_incremento.amarillo{
+    border: yellow solid 1px;
+    background-color: #ffff8d;
+    color: #000;
+}
+
+
+/* Modal Debug */
+#modal_debug{
+    background-color: #ccc;
+    color: #000;
+    font-size: 11px;
+    text-align: center;
+    
+}
+#modal_debug table {
+    border-collapse: collapse;
+}
+
+#modal_debug table, #modal_debug th, #modal_debug td {
+    border: 1px solid black;
+}
+
+/* Modal Descripcion Matriz */
+.div_modal_descripcion_matriz .datos{
+    border: #ccc solid 1px;
+    background-color: #f4f4f4;
+    
+    padding: 5px;
+    
+}
+.div_modal_descripcion_matriz .descripcion-matriz{
+    
+}
+.div_modal_descripcion_matriz .descripcion-matriz .par{
+}
+.div_modal_descripcion_matriz .descripcion-matriz .par .label{
+    text-align: left;
+    width: 90%;
+    
+    color: #666;
+    font-size: 14px;
+    
+    padding: 2px;
+}
+.div_modal_descripcion_matriz .descripcion-matriz .par .dato{
+    text-align: left;
+    width: 90%;
+
+    color: #000;
+
+    padding: 2px;
+}
+.div_modal_descripcion_matriz .descripcion-matriz .par .dato input{
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px;
+}
+
+
+.cantidad-sugerencias{
+    background-color: #fff;
+    border: #013254 solid 1px;
+    color: #013254;
+    padding: 3px;
+    width: 10px;
+
+    font-size: 10px;
+    font-weight: bold;
+    
+    margin: 0 auto 0 auto;
+}
+
+/* Modal sugerencias */
+.vinculacion-sugerencia{
+    border: #ccc solid 1px;
+    background-color: #f4f4f4;
+    margin: 10px;
+    padding: 15px;
+
+}
+.vinculacion-sugerencia .bloque{
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+
+    width: 32%;
+
+    margin: 2px;
+    padding: 5px;
+
+    background-color: #fff;
+    border: #ccc solid 1px;
+}
+.vinculacion-sugerencia .bloque.insumos{
+    background-color: #C7E1F3;
+}
+.vinculacion-sugerencia .bloque.matrices{
+    background-color: #DFF2BF;
+}
+.vinculacion-sugerencia .bloque h3{
+    border-bottom: #ccc solid 1px;
+    padding: 5px;
+    margin: 0;
+}
+.vinculacion-sugerencia .bloque .buscador{
+    background-color: #ccc;
+    padding: 5px;
+}
+.vinculacion-sugerencia .bloque .buscador input{
+    padding: 5px;
+    font-size: 12px;
+}
+.vinculacion-sugerencia .bloque .comentario{
+    color: #666;
+    padding: 1px 2px;
+}
+
+.vinculacion-sugerencia .bloque .datos{
+    padding: 10px;
+    height: 350px;
+    overflow: auto;
+}
+
+.vinculacion-sugerencia .bloque .datos .uno{
+    border-bottom: #ccc dotted 1px;
+    padding: 5px;
+    margin: 2px;
+}
+.vinculacion-sugerencia .bloque .datos .uno.sel{
+    background-color: #0082c2!important;
+}
+.vinculacion-sugerencia .bloque .datos .uno.insumo{
+    background-color: #C7E1F3;
+}
+.vinculacion-sugerencia .bloque .datos .uno.matriz{
+    background-color: #DFF2BF;
+}
+.vinculacion-sugerencia .bloque .datos .uno .avatar{
+    display: inline-block;
+    vertical-align: top;
+
+    text-align: center;
+    margin-top: 4px;
+
+    width: 17%;
+}
+.vinculacion-sugerencia .bloque .datos .uno .avatar img{
+    width: 90%;
+}
+.vinculacion-sugerencia .bloque .datos .uno .info-insumo{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 10px;
+
+    width: 75%;
+}
+.vinculacion-sugerencia .bloque .datos .uno .info-insumo .descripcion{
+    color: #000;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+/* Tab 5 */
+
+/* Resultados */
+#div_prv_importacion_lista .resultados{
+    margin: 10px;
+}
+#div_prv_importacion_lista .resultados .uno.resultado{
+    border-bottom: #C97626 dotted 1px;
+    padding: 15px 10px;
+    margin: 5px;
+
+    font-size: 13px;
+}
+#div_prv_importacion_lista .resultados .uno.resultado .creado{
+    color: #000;
+}
+#div_prv_importacion_lista .resultados .uno.resultado .descripcion{
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+}
+#div_prv_importacion_lista .resultados .uno.resultado .observacion{
+    color: #013254;
+}
+#div_prv_importacion_lista .resultados .uno.resultado .observacion-tecnica{
+    color: #333;
+}
+
+/* td tab3 alerts */
+#div_prv_importacion_lista .t3_td_alerta{
+    background-color: #fdd;
+}
+
+#div_prv_importacion_lista .t3_td_alerta .t3_td_alerta_ins_insumo_descripcion{
+    border: #D63301 solid 1px;
+    background-color: #ffcece;
+}
+
+#div_prv_importacion_lista .insumo-matriz-descripcion.t3_td_alerta_ins_matriz_descripcion{
+    border: #D63301 solid 1px;
+    background-color: #ffcece;
+}
+
+#div_prv_importacion_lista .t3_td_alerta.t3_td_alerta_marca_id_cod_marca{
+    background-color: #D63301;
+    padding: 3px 4px;
+}
+
+#div_prv_importacion_lista .t3_td_alerta.t3_td_alerta_marca_id_cod_oem{
+    background-color: #D63301;
+    padding: 3px 4px;
+}
+
+/* Errores Paso */
+.errores-paso{
+    width: 50%;
+    
+    margin: 10px auto 10px auto;
+    padding: 10px;
+    color: #FF0000;
+}
+.errores-paso .error-paso{
+    border-bottom: #FF0000 dotted 1px;
+    margin: 5px;
+    padding: 5px;
+}
+
+/* Importacion Info Top */
+.importacion-info-top{
+    background-color: #0283bc;
+    color: #013254;
+    
+    margin: 0px 3px 5px 3px;
+    padding: 10px 15px;
+}
+.importacion-info-top .col{
+    display: inline-block;
+    vertical-align: top;
+    
+    width: 200px;
+}
+.importacion-info-top .col.id{
+    width: 120px;
+}
+.importacion-info-top .col.proveedor{
+    width: 380px;
+}
+.importacion-info-top .col.descuento{
+    width: 120px;
+}
+.importacion-info-top .col.filas{
+    width: 120px;
+}
+.importacion-info-top .par{
+    padding: 0;
+}
+.importacion-info-top .par .label{
+    display: inline-block;
+    padding: 4px 6px;
+    text-align: right;
+    width: 30%;
+    box-sizing: border-box;
+
+    color: #fff;
+    font-weight: normal;
+    font-size: 12px;
+}
+.importacion-info-top .par .dato{
+    background-color: #f4f4f4;
+    display: inline-block;
+    padding: 4px 6px;
+    text-align: left;
+    width: 60%;
+    box-sizing: border-box;
+
+    font-weight: bold;
+    font-size: 12px;
+}
+    

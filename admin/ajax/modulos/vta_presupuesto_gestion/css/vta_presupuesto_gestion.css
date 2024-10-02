@@ -1,0 +1,1315 @@
+/* Archivo CSS de 'vta_presupuesto' */
+
+#listado_adm_vta_presupuesto_gestion{
+
+}
+#listado_adm_vta_presupuesto_gestion .tipo-emision{
+    background-color: #ddd;
+    color: #000;
+
+    font-size: 10px;
+
+    padding: 3px 1px;
+}
+#listado_adm_vta_presupuesto_gestion .tipo-venta{
+    background-color: #999;
+    color: #fff;
+
+    font-size: 10px;
+
+    padding: 3px 1px;
+}
+#listado_adm_vta_presupuesto_gestion .tipo-venta:empty{
+    display: none;
+}
+#listado_adm_vta_presupuesto_gestion .tipo-venta.VENTA_A{
+    background-color: #013254;
+}
+#listado_adm_vta_presupuesto_gestion .tipo-venta.VENTA_Z{
+}
+#listado_adm_vta_presupuesto_gestion .nota-interna{
+    background-color: #97CC05;
+    color: #fff;
+
+    font-size: 10px;
+
+    padding: 3px 1px;
+}
+#listado_adm_vta_presupuesto_gestion .nota-interna:empty{
+    display: none;
+}
+#listado_adm_vta_presupuesto_gestion .tiempo-registro{
+    font-size: 9px;
+    color: #002235;
+}
+#listado_adm_vta_presupuesto_gestion .codigo{
+    color: #000;
+    font-weight: bold;
+}
+#listado_adm_vta_presupuesto_gestion .fecha{
+    color: #000;
+    font-size: 12px;
+}
+#listado_adm_vta_presupuesto_gestion .vendedor{
+    color: #666;
+    font-size: 9px;
+}
+#listado_adm_vta_presupuesto_gestion .cliente{
+    font-weight: bold;
+    color: #000;
+}
+#listado_adm_vta_presupuesto_gestion .cliente img{
+    vertical-align: middle;
+}
+#listado_adm_vta_presupuesto_gestion .localidad{
+    font-size: 10px;
+    color: #333;
+    word-break: break-all;
+}
+#listado_adm_vta_presupuesto_gestion .email{
+    font-size: 10px;
+    color: #333;
+    word-break: break-all;
+}
+#listado_adm_vta_presupuesto_gestion .documento{
+    font-size: 10px;
+    color: #333;
+}
+#listado_adm_vta_presupuesto_gestion .sucursal-retiro{
+    font-size: 10px;
+    color: #0000cc;
+}
+#listado_adm_vta_presupuesto_gestion .centro-recepcion{
+    font-size: 10px;
+    color: #0000cc;
+}
+#listado_adm_vta_presupuesto_gestion .cli-cliente-tienda-codigo{
+    color: #016DC5;
+}
+#listado_adm_vta_presupuesto_gestion .nota-cliente{
+    color: #016DC5;
+}
+#listado_adm_vta_presupuesto_gestion .empresa-transportadora{
+    color: #016DC5;
+}
+#listado_adm_vta_presupuesto_gestion .centro-pedido{
+    font-size: 10px;
+    font-weight: bold;
+    color: #016DC5;
+}
+
+#listado_adm_vta_presupuesto_gestion .sucursal{
+    font-size: 10px;
+    margin-left: 20px;
+    color: #666;
+}
+#listado_adm_vta_presupuesto_gestion .tipo-estado{
+    color: #000;
+}
+#listado_adm_vta_presupuesto_gestion .tipo-estado.EN_PRODUCCION img,
+#listado_adm_vta_presupuesto_gestion .tipo-estado.PRODUCCION_FINALIZADA img{
+    width: 24px;
+}
+#listado_adm_vta_presupuesto_gestion .tipo-estado img{
+    vertical-align: middle;
+}
+#listado_adm_vta_presupuesto_gestion .fecha-vencimiento{
+    color: #000;
+}
+#listado_adm_vta_presupuesto_gestion .items{
+    text-align: center;
+}
+#listado_adm_vta_presupuesto_gestion .importe-subtotal{
+    text-align: right;
+    font-size: 11px;
+    color: #000;
+}
+#listado_adm_vta_presupuesto_gestion .importe-iva{
+    text-align: right;
+    font-size: 11px;
+    color: #666;
+}
+#listado_adm_vta_presupuesto_gestion .tipo-lista{
+    text-align: right;
+    color: #999;
+    font-size: 11px;
+}
+#listado_adm_vta_presupuesto_gestion .importe-total{
+    color: #000;
+    font-weight: bold;
+    text-align: right;
+}
+#listado_adm_vta_presupuesto_gestion .importe-logistica{
+    color: #013254;
+    text-align: right;
+    font-size: 11px;
+}
+#listado_adm_vta_presupuesto_gestion .importe-recargo{
+    color: #013254;
+    text-align: right;
+    font-size: 11px;
+}
+#listado_adm_vta_presupuesto_gestion .importe-descuento{
+    color: #013254;
+    text-align: right;
+    font-size: 11px;
+}
+
+/* Listado */
+.div_listado_presupuesto_edicion_datos{
+    margin: 10px auto 0 auto;
+    padding: 10px;
+    max-width: 1280px;
+}
+
+/* Buscador */
+.div_modal .buscador-producto,
+.div_listado_presupuesto_edicion_datos .buscador-producto{
+
+    margin: 1px auto 5px auto;
+
+    text-align:center;
+
+    width:80%;
+}
+.div_modal .buscador-producto input,
+.div_listado_presupuesto_edicion_datos .buscador-producto input{
+    background-image:url(../imgs/buscador.jpg);
+    background-repeat:no-repeat;
+    background-position:10px;
+    background-size:43px;
+
+    border:#666 solid 1px;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    padding:7px 7px 7px 30px;
+    font-size:20px;	
+}
+.div_modal .buscador-producto .borrar,
+.div_listado_presupuesto_edicion_datos .buscador-producto .borrar{
+    vertical-align:top;
+    visibility:hidden;
+}
+
+
+
+/* Modal Buscador Productos */
+.div_modal .buscador.productos{
+    margin:10px;
+}
+
+.div_modal .buscador.productos .buscador-modal{
+    text-align:center;
+}
+.div_modal .buscador.productos .buscador-producto-uno{
+    margin:5px;
+    padding:10px;
+
+    background-color:#f4f4f4;
+    border:#0283bc solid 1px;
+}
+.div_modal .buscador.productos .buscador-producto-uno .producto-imagen{
+    display:inline-block;
+    vertical-align:top;
+
+    width:12%;
+}
+.div_modal .buscador.productos .buscador-producto-uno .producto-info{
+    display:inline-block;
+    vertical-align:top;
+
+    width:80%;
+}
+.div_modal .buscador.productos .buscador-producto-uno .producto-info .descripcion{
+    font-size:16px;
+    font-weight:bold;
+}
+.div_modal .buscador.productos .buscador-producto-uno .producto-info .categoria{
+    font-weight: normal;
+    color:#013254;
+}
+.div_modal .buscador.productos .buscador-producto-uno .producto-info .codigo{
+    color:#999;
+    font-size: 11px;
+}
+.div_modal .buscador.productos .buscador-producto-uno .producto-info .codigo strong{
+    color: #000000;
+}
+.div_modal .buscador.productos .buscador-producto-uno .producto-info .importe-sin-iva{
+    font-size:12px;
+    font-weight:bold;
+
+    margin:1px;
+
+    color:#000000;
+}
+.div_modal .buscador.productos .buscador-producto-uno .producto-info .importe-sin-iva .leyenda-masiva{
+    font-size: 10px;
+    color: #666;
+    font-weight: normal;
+}
+.div_modal .buscador.productos .buscador-producto-uno .producto-info .importe-con-iva{
+    font-size:18px;
+    font-weight:bold;
+
+    margin:3px;
+
+    color:#0283bc;
+}
+.div_modal .buscador.productos .buscador-producto-uno .producto-info .importe .unidad-medida{
+    font-size:14px;
+    color:#000;
+}
+.div_modal .buscador.productos .buscador-producto-uno .producto-info .importe.tachado{
+    font-size:18px;
+    color:#999;
+    font-weight:normal;
+    text-shadow: none;
+    text-decoration:line-through;
+}
+
+.div_modal .buscador.productos .buscador-producto-uno .producto-info .botonera{
+    float:right;
+    cursor:pointer;
+}
+.div_modal .buscador.productos .buscador-producto-uno .producto-info .boton.agregar{
+    border:#013254 solid 1px;
+    background-color:#0283bc;
+    padding:10px 25px;
+    color:#FFF;
+}
+.div_modal .buscador.productos .buscador-producto-uno .producto-info .boton.agregar:hover{
+    background-color:#013254;
+    color:#fff;
+}
+
+.div_modal .buscador.productos .buscador-producto-uno .producto-info .no-controla-stock{
+    background-color: #e1f9a0; 
+    padding: 5px; 
+    width: 150px; 
+    font-weight: bold;
+    text-align: center;
+}
+.div_modal .no-resultado{
+    font-size:20px;
+    color:#999;
+
+    margin:25px;
+}
+
+.div_listado_presupuesto_edicion_datos select{
+}
+.div_listado_presupuesto_edicion_datos select.alert{
+    background-color: #fbef65;
+    border: #840 solid 1px;
+}
+.div_listado_presupuesto_edicion_datos .cmb_ins_insumo_bulto_id{
+    border: #0283bc solid 1px;
+    background-color: white;
+    color: #000000;
+}
+.div_listado_presupuesto_edicion_datos .cantidad-total-calculado{
+    font-size: 12px;
+    font-weight: bold;
+    color: #0283bc;
+}
+.div_listado_presupuesto_edicion_datos #cmb_filtro_pan_panol_id{
+    max-width: 60px;
+}
+
+.div_listado_presupuesto_edicion_datos .cantidad-minima-venta{
+    background-color: #bae8f5;
+    font-weight: normal;
+    font-size: 11px;
+    padding: 2px;
+}
+
+.div_listado_presupuesto_edicion_datos .codigo-interno{
+    word-break: break-all;
+}
+.div_listado_presupuesto_edicion_datos .foto{
+    float: left;
+    min-width: 30px;
+}
+.div_listado_presupuesto_edicion_datos .descripcion{
+}
+.div_listado_presupuesto_edicion_datos .descripcion_edicion{
+    float:right;
+    cursor: pointer;
+}
+.div_listado_presupuesto_edicion_datos .marca{
+    color:#999;
+    font-size: 9px;
+}
+.div_listado_presupuesto_edicion_datos .codigo-marca{
+    word-break: break-all;
+    color:#000;
+}
+.div_listado_presupuesto_edicion_datos .descuento{
+}
+.div_listado_presupuesto_edicion_datos .descuento input{    
+    margin: 0;
+    padding: 5px 10px 5px 10px!important;
+    min-width: 35px;
+}
+.div_listado_presupuesto_edicion_datos .descuento .descuento-rango-comentario{
+    font-size: 9px;
+    font-weight: bold;
+    color: #006600;
+    margin-right: 25px;
+}
+.div_listado_presupuesto_edicion_datos .descuento.descuento-aplicado .ui-corner-all{
+    border: #002235 solid 1px;
+}
+.div_listado_presupuesto_edicion_datos .descuento.descuento-aplicado input{
+    background-color: #ffffcc;
+    font-weight: bold;
+    color: #002235;
+}
+
+.div_listado_presupuesto_edicion_datos .txt_importe_unitario{
+    border: #aaaaaa solid 1px;
+    
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    
+    margin: 0;
+    padding: 5px 10px 5px 10px!important;
+    min-width: 35px;
+    max-width: 80px;
+    
+    text-align: right;
+}
+
+.div_listado_presupuesto_edicion_datos .stock-con-panol-seleccionado{    
+}
+.div_listado_presupuesto_edicion_datos .stock-con-panol-seleccionado .stock-cantidad{
+    font-weight: bold;
+    color: #000;
+}
+.div_listado_presupuesto_edicion_datos .stock-con-panol-seleccionado .stock-unidad-medida{
+    font-size: 9px;
+    font-weight: normal;
+    color: #666;
+}
+.div_listado_presupuesto_edicion_datos .stock-con-panol-seleccionado .stock-reservados{
+    color: #0000cc;
+}
+
+.div_listado_presupuesto_edicion_datos .mensaje-limite-cantidad-items{
+    background-color: #e1f9a0;
+    
+    width: 90%;
+    margin: 15px auto;
+    padding: 15px;
+    
+    font-size: 14px;
+}
+
+
+/* Datos Edicion Pie */
+.div_listado_presupuesto_edicion_datos_pie{
+    background-color: #BFC5CA;
+
+    margin: 10px auto 0 auto;
+    padding: 10px;
+    width: 96%;
+    max-width: 1280px;
+}
+.div_listado_presupuesto_edicion_datos_pie .mensaje-confirmacion{
+    margin: 5px;
+    padding: 8px;
+}
+.div_listado_presupuesto_edicion_datos_pie .mensaje-confirmacion.guardado-ok{
+    border: #428E2C solid 1px;
+    background-color: #C7E29F;
+    color: #245E12;
+}
+
+.div_listado_presupuesto_edicion_datos_pie .mensaje-alerta{
+    background-color: #fff;
+    border: #006600 solid 1px;
+    color: #006600;
+    
+    margin: 5px;
+}
+.div_listado_presupuesto_edicion_datos_pie .mensaje-alerta .mensaje-alerta-titulo{
+    background-color: #006600;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 7px;
+}
+.div_listado_presupuesto_edicion_datos_pie .mensaje-alerta .mensaje-alerta-datos{
+    padding: 20px 20px;
+}
+.div_listado_presupuesto_edicion_datos_pie .mensaje-alerta .mensaje-alerta-datos .mensaje-alerta-uno{
+    font-size: 13px;
+    border-bottom: #999 dotted 1px;
+    margin: 5px;
+    padding: 4px 10px;
+}
+.div_listado_presupuesto_edicion_datos_pie .mensaje-alerta .mensaje-alerta-datos .mensaje-alerta-uno.resumen{
+    font-weight: bold;
+}
+.div_listado_presupuesto_edicion_datos_pie .mensaje-alerta .mensaje-alerta-datos .mensaje-alerta-uno.resumen-con-detalle{
+    font-weight: bold;
+    border-bottom: #006600 dotted 1px;
+    cursor: pointer;
+}
+.div_listado_presupuesto_edicion_datos_pie .mensaje-alerta .mensaje-alerta-datos .mensaje-alerta-uno.detalle{
+    display: none;
+    font-weight: normal;
+    color: #000;
+    cursor: default;
+}
+.div_listado_presupuesto_edicion_datos_pie .mensaje-alerta .mensaje-alerta-datos .mensaje-alerta-uno img{
+    vertical-align: middle;
+    position: relative;
+
+    margin-right: 10px;
+}
+
+.div_listado_presupuesto_edicion_datos_pie .label-error-general{
+    border: #C00 solid 1px;
+    background-color: #fcefa1;
+    color: #C00;    
+    
+    margin: 5px;
+    padding: 8px;
+}
+.div_listado_presupuesto_edicion_datos_pie .label-error-general:empty{
+    display: none;
+}
+.div_listado_presupuesto_edicion_datos_pie .col{
+    display:inline-block;
+    vertical-align: top;
+
+    background-color: #DFE5E8;
+    box-sizing: border-box;
+
+    margin: 5px;
+    padding: 10px 10px;
+
+    width: 31%;
+}
+.div_listado_presupuesto_edicion_datos_pie .col input[type=text],
+.div_listado_presupuesto_edicion_datos_pie .col select{
+    width: 80%;
+    max-width: 95%;
+}
+.div_listado_presupuesto_edicion_datos_pie .col textarea{
+    width: 90%;
+    max-width: 95%;
+}
+.div_listado_presupuesto_edicion_datos_pie .col input[type=button]{
+    padding: 2px;
+    border: #ccc solid 1px;
+}
+.div_listado_presupuesto_edicion_datos_pie .col .readonly{
+    font-size: 13px;
+    font-weight: bold;
+    color: #002235;
+    border: none;
+    background-color: transparent;
+    word-wrap: break-word;
+}
+.div_listado_presupuesto_edicion_datos_pie .col.c1{
+    width: 25%;
+}
+.div_listado_presupuesto_edicion_datos_pie .col.c2{
+    width: 25%;
+}
+.div_listado_presupuesto_edicion_datos_pie .col.c3{
+    width: 23%;
+}
+.div_listado_presupuesto_edicion_datos_pie .col.c4{
+    float: right;
+    width: 20%;
+}
+.div_listado_presupuesto_edicion_datos_pie .col .par{
+    margin: 5px;
+}
+.div_listado_presupuesto_edicion_datos_pie .col .par .label{
+    width: 100%;
+    text-align: left;
+
+    margin: 0;
+    padding: 0;
+
+    color: #013254;
+}
+.div_listado_presupuesto_edicion_datos_pie .col .par .dato{    
+    width: 100%;
+    text-align: left;
+
+    margin: 0;
+    padding: 1px;
+    
+    font-weight: bold;
+    color: #0283bc;
+}
+.div_listado_presupuesto_edicion_datos_pie .col .par .dato.codigo-presupuesto{
+    font-size: 14px;
+    font-weight: bold;
+    color: #002235;
+}
+.div_listado_presupuesto_edicion_datos_pie .col .par .dato.label-minimo-lista-precio{
+    font-size: 12px;
+    font-weight: bold;
+    color: #5bad04;
+}
+.div_listado_presupuesto_edicion_datos_pie .col.c4 .par{
+    border-bottom: #ccc dotted 1px;
+}
+.div_listado_presupuesto_edicion_datos_pie .col.c4 .par .label{
+    text-align: right;
+    font-size: 14px;
+}
+.div_listado_presupuesto_edicion_datos_pie .col.c4 .par .dato{
+    text-align: right;
+    font-size: 16px;
+    font-weight: bold;
+
+    padding: 2px 4px;
+    color: #0283bc;
+}
+.div_listado_presupuesto_edicion_datos_pie .col.c4 .par .porcentaje{
+    float: left;
+    background-color: #ddd;
+    color: #333;
+
+    text-align: right;
+    font-size: 12px;
+    font-weight: normal;
+
+    margin: 0;
+    padding: 2px 4px;
+}
+.div_listado_presupuesto_edicion_datos_pie .col.c4 .par .porcentaje.descuento{
+    background-color: #006600;
+    color: #fff;
+}
+.div_listado_presupuesto_edicion_datos_pie .col.c4 .par .porcentaje.recargo{
+    background-color: #b81604;
+    color: #fff;
+}
+.div_listado_presupuesto_edicion_datos_pie .col.c4 .par .porcentaje.logistica{
+    background-color: #f77b00;
+    color: #fff;
+}
+.div_listado_presupuesto_edicion_datos_pie .col.c4 .par.total .dato{
+    background-color: #002235;
+    color: #fff;    
+
+    font-size: 20px;
+    padding: 4px 4px;
+    margin-top: 5px;
+}
+.div_listado_presupuesto_edicion_datos_pie .mensaje-conflicto{
+    border: #C00 solid 1px;
+    background-color: #fcefa1;
+    color: #C00;
+
+    width: 70%;
+
+    margin: 0 auto 0 auto;
+    padding: 6px 10px;
+    text-align: center;
+}
+
+/* Edicion del Presupuesto */
+#listado_adm_vta_presupuesto_gestion_edicion{
+}
+#listado_adm_vta_presupuesto_gestion_edicion .descripcion{
+    font-size: 12px;
+    color: #000;
+}
+#listado_adm_vta_presupuesto_gestion_edicion .descripcion.modificado{
+    color: #0283bc;
+}
+#listado_adm_vta_presupuesto_gestion_edicion .unidad-medida{
+    color: #999;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+/* Ultimas Ventas */
+#listado_adm_vta_presupuesto_gestion_edicion .vta-orden-venta-ultimas-del-cliente{
+    color: #0283bc;
+    font-size: 10px;
+}
+
+#listado_adm_vta_presupuesto_gestion_edicion .descuento-aplicado-label{
+    font-size: 9px;
+    font-weight: bold;
+    color: #006600;
+    padding: 1px 3px;
+    width: 40px;
+}
+#listado_adm_vta_presupuesto_gestion_edicion .importe-unitario{
+}
+#listado_adm_vta_presupuesto_gestion_edicion .importe-unitario.bruto{
+    text-decoration: line-through;
+    color: #999;
+}
+#listado_adm_vta_presupuesto_gestion_edicion .importe-unitario.neto{
+    color: #000;
+}
+#listado_adm_vta_presupuesto_gestion_edicion .importe-unitario.neto.min{
+    color: #0283bc;
+    font-size: 11px;
+    margin-right: 10px;
+}
+#listado_adm_vta_presupuesto_gestion_edicion .importe-unitario.importe-actualizado-conflicto{
+    border: #C00 solid 1px;
+    background-color: #fcefa1;
+    color: #C00;
+    padding: 3px 4px;
+    font-weight: bold;
+}
+#listado_adm_vta_presupuesto_gestion_edicion .gral-tipo-iva{
+    color: #666;
+    font-size: 10px;
+}
+
+#listado_adm_vta_presupuesto_gestion_edicion .importe-subtotal{
+}
+#listado_adm_vta_presupuesto_gestion_edicion .importe-subtotal.bruto{
+    text-decoration: line-through;
+    color: #999;
+}
+#listado_adm_vta_presupuesto_gestion_edicion .importe-subtotal.neto{
+    color: #000;
+    font-weight: bold;
+}
+#listado_adm_vta_presupuesto_gestion_edicion .importe-subtotal.neto.importe-actualizado-conflicto{
+    border: #C00 solid 1px;
+    background-color: #fcefa1;
+    color: #C00;
+    padding: 3px 4px;
+    font-weight: bold;
+}
+
+#listado_adm_vta_presupuesto_gestion_edicion .importe-costo-modificado{
+    font-size: 10px;
+    color: #666;
+
+    margin: 1px auto 1px auto;
+    padding: 1px 2px;
+}
+#listado_adm_vta_presupuesto_gestion_edicion .importe-costo-modificado.MES_ACTUAL{
+    color: #006600;
+}
+#listado_adm_vta_presupuesto_gestion_edicion .importe-costo-modificado.MES_ANTERIOR{
+    color: #840;
+}
+#listado_adm_vta_presupuesto_gestion_edicion .importe-costo-modificado.MES_MUYANTERIOR{
+    color: #CC0000;
+}
+#listado_adm_vta_presupuesto_gestion_edicion .importe-costo-modificado .importe-costo-modificado-por{
+    font-size: 10px;
+    opacity: 0.5;
+}
+
+#listado_adm_vta_presupuesto_gestion_edicion .importe-total{
+    color: #000;
+    font-weight: bold;
+}
+#listado_adm_vta_presupuesto_gestion_edicion .iva-incluido{
+    color: #666;
+    font-size: 10px;
+}
+
+
+/* Ficha - Modal Top */
+.div_modal .ficha-presupuesto .modal-top{
+    margin: 5px;
+    padding: 5px;
+
+    background-color: #f4f4f4;
+    border-bottom: #ccc solid 1px;
+}
+.div_modal .ficha-presupuesto .modal-top .col{
+    display: inline-block;
+    vertical-align: top;
+
+    width: 100px;
+}
+.div_modal .ficha-presupuesto .modal-top .col .label{
+    color: #666;
+    font-weight: normal;
+}
+.div_modal .ficha-presupuesto .modal-top .col.foto{
+    width: 70px;
+    margin: 0 10px;
+}
+.div_modal .ficha-presupuesto .modal-top .col.foto img{
+    border: #ccc solid 1px;
+    width: 100%;
+}
+.div_modal .ficha-presupuesto .modal-top .col.cliente{
+    width: 350px;
+}
+
+/* Ficha - General */
+.div_modal .ficha-insumo .fotos{
+    margin: 10px;
+}
+.div_modal .ficha-insumo .fotos .foto{
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 100px;
+
+    margin: 2px;
+}
+.div_modal .ficha-insumo .fotos .foto img{
+    width: 100%;
+}
+
+/* Ficha Estados */
+#tab_estados .tabla-modal .fecha{
+    font-size: 10px;
+    color: #000;
+}
+
+#tab_estados .tabla-modal .descripcion{
+    color: #000;
+    font-weight: bold;
+}
+
+#tab_estados .tabla-modal .tipo-estado{
+}
+
+#tab_estados .tabla-modal .tipo-estado img{
+    vertical-align: middle;
+    position: relative;
+}
+
+#tab_estados .tabla-modal .observacion{
+    color: #000;
+}
+
+#tab_estados .tabla-modal .creado-por{
+    color: #000;
+}
+
+#tab_estados .tabla-modal .actual{
+}
+
+/* Ficha Items */
+#tab_items .tabla-modal-tab-items{
+
+}
+
+#tab_items .tabla-modal-tab-items .par td{
+    background-color: #f0f0f0;
+}
+#tab_items .tabla-modal-tab-items .impar td{
+    background-color: #fff;
+}
+
+#tab_items .tabla-modal-tab-items .codigo-interno{
+}
+
+#tab_items .tabla-modal-tab-items .descripcion{
+    color: #000;
+    font-weight: bold;
+}
+
+#tab_items .tabla-modal-tab-items .ins-marca-descripcion{
+}
+
+#tab_items .tabla-modal-tab-items .codigo-marca{
+}
+
+#tab_items .tabla-modal-tab-items .cantidad{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#tab_items .tabla-modal-tab-items .unidad{
+    font-size: 10px;
+    color: #999;
+}
+
+#tab_items .tabla-modal-tab-items .descuento{
+    font-size: 12px;
+    color: #000;
+}
+
+#tab_items .tabla-modal-tab-items .importe-unitario{
+}
+#tab_items .tabla-modal-tab-items .importe-unitario.bruto{
+    text-decoration: line-through;
+    color: #999;
+}
+#tab_items .tabla-modal-tab-items .importe-unitario.neto{
+    color: #000;
+}
+#tab_items .tabla-modal-tab-items .importe-total{
+}
+#tab_items .tabla-modal-tab-items .importe-total.bruto{
+    text-decoration: line-through;
+    color: #999;
+}
+#tab_items .tabla-modal-tab-items .importe-total.neto{
+    color: #000;
+    font-weight: bold;
+}
+#tab_items .tabla-modal-tab-items .creado,
+#tab_items .tabla-modal-tab-items .modificado{
+    color: #666;
+    font-size: 10px;
+}
+#tab_items .tabla-modal-tab-items .vta-orden-venta-codigo{
+    color: #000;
+    font-size: 10px;
+    font-weight: bold;
+}
+#tab_items .tabla-modal-tab-items .vta-orden-venta-creado{
+    color: #666;
+    font-size: 10px;
+}
+
+
+/* Ficha Cancelados */
+#tab_cancelado .tabla-modal-tab-cancelado{
+
+}
+
+#tab_cancelado .tabla-modal-tab-cancelado .par td{
+    background-color: #f0f0f0;
+}
+#tab_cancelado .tabla-modal-tab-cancelado .impar td{
+    background-color: #fff;
+}
+
+#tab_cancelado .tabla-modal-tab-cancelado .creado{
+    font-size: 10px;
+    color: #000;
+}
+
+#tab_cancelado .tabla-modal-tab-cancelado .observacion{
+    color: #000;
+    font-weight: bold;
+}
+
+#tab_cancelado .tabla-modal-tab-cancelado .codigo-interno{
+}
+
+#tab_cancelado .tabla-modal-tab-cancelado .vta-presupuesto-ins-insumo-descripcion{
+}
+
+#tab_cancelado .tabla-modal-tab-cancelado .vta-presupuesto-ins-insumo-marca-descripcion{
+}
+
+#tab_cancelado .tabla-modal-tab-cancelado .codigo-marca{
+}
+
+#tab_cancelado .tabla-modal-tab-cancelado .cantidad{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#tab_cancelado .tabla-modal-tab-cancelado .unidad-medida{
+    font-size: 10px;
+    color: #999;
+}
+
+#tab_cancelado .tabla-modal-tab-cancelado .descuento{
+    font-size: 12px;
+    color: #000;
+}
+
+#tab_cancelado .tabla-modal-tab-cancelado .importe-unitario{
+}
+#tab_cancelado .tabla-modal-tab-cancelado .importe-unitario.bruto{
+    text-decoration: line-through;
+    color: #999;
+}
+#tab_cancelado .tabla-modal-tab-cancelado .importe-unitario.neto{
+    color: #000;
+}
+#tab_cancelado .tabla-modal-tab-cancelado .importe-total{
+}
+#tab_cancelado .tabla-modal-tab-cancelado .importe-total.bruto{
+    text-decoration: line-through;
+    color: #999;
+}
+#tab_cancelado .tabla-modal-tab-cancelado .importe-total.neto{
+    color: #000;
+    font-weight: bold;
+}
+
+/* Ficha Conflictos */
+#tab_conflicto .tabla-modal-ficha-conflictos{
+
+}
+
+#tab_conflicto .tabla-modal-ficha-conflictos .par td{
+    background-color: #f0f0f0;
+}
+#tab_conflicto .tabla-modal-ficha-conflictos .impar td{
+    background-color: #fff;
+}
+
+#tab_conflicto .tabla-modal-ficha-conflictos .codigo-presupuesto-conflicto{
+    font-weight: bold;
+    color: #000;
+}
+#tab_conflicto .tabla-modal-ficha-conflictos .fecha-presupuesto-conflicto{
+    color: #666;
+}
+
+#tab_conflicto .tabla-modal-ficha-conflictos .descripcion{
+    color: #000;
+    font-weight: bold;
+}
+
+#tab_conflicto .tabla-modal-ficha-conflictos .importe_inicial{
+    color: #000;
+    /*font-weight: bold;*/
+}
+
+#tab_conflicto .tabla-modal-ficha-conflictos .importe_actualizado{
+    color: #000;
+    /*font-weight: bold;*/
+}
+
+#tab_conflicto .tabla-modal-ficha-conflictos .importe_resuelto{
+    color: #000;
+    font-weight: bold;
+}
+
+#tab_conflicto .tabla-modal-ficha-conflictos .observacion{
+    color: #000;
+    font-weight: bold;
+}
+
+/* Ficha Emails */
+#tab_emails .tabla-modal-ficha-emails{
+
+}
+
+#tab_emails .tabla-modal-ficha-emails .par td{
+    background-color: #f0f0f0;
+}
+#tab_emails .tabla-modal-ficha-emails .impar td{
+    background-color: #fff;
+}
+
+#tab_emails .tabla-modal-ficha-emails .fecha{
+    color: #000;
+}
+
+#tab_emails .tabla-modal-ficha-emails .codigo-presupuesto{
+    font-weight: bold;
+    color: #000;
+}
+#tab_emails .tabla-modal-ficha-emails .fecha-presupuesto{
+    color: #666;
+}
+#tab_emails .tabla-modal-ficha-emails .asunto{
+    color: #000;
+    font-size: 11px;
+    font-weight: bold;
+}
+#tab_emails .tabla-modal-ficha-emails .destinatario{
+    color: #666;
+}
+#tab_emails .tabla-modal-ficha-emails .observacion{
+    color: #AD3826;
+    font-style: italic;
+}
+#tab_emails .tabla-modal-ficha-emails .creado-por-descripcion{
+    color: #000;
+}
+
+/* Botonera Preaprobacion */
+.botonera.preaprobacion{
+    padding: 1px;
+}
+
+.botonera.preaprobacion .boton{
+    background-color: #333333;
+
+    padding: 7px 5px; 
+    width: 43%;
+}
+.botonera.preaprobacion .boton#btn_presupuesto_abandonar_presupuesto{
+    background-color: #0a79af;
+}
+.botonera.preaprobacion .boton .titulo{
+    font-weight: bold;
+    font-size: 16px;
+    color: #97CC05;
+}
+.botonera.preaprobacion .boton .comentario{
+    font-size: 11px;
+    color: #DFE5E8;
+}
+
+/* Botonera Confirmacion */
+.botonera.confirmacion{
+    padding: 1px;
+}
+.botonera.confirmacion .col{
+    background-color: transparent;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 26%;
+}
+.botonera.confirmacion .col.c1{
+}
+.botonera.confirmacion .col.c2{
+}
+.botonera.confirmacion .col.c3{
+}
+
+.botonera.confirmacion .boton{
+    background-color: #002235;
+
+    padding: 15px 5px; 
+    width: 310px;
+}
+.botonera.confirmacion .boton .titulo{
+    font-weight: bold;
+    font-size: 16px;
+    color: #97CC05;
+}
+.botonera.confirmacion .boton .comentario{
+    font-size: 10px;
+    color: #DFE5E8;
+}
+.botonera.confirmacion .checkbox{
+    font-size: 10px;
+    font-weight: normal;
+    color: #000;
+}
+
+.botonera.confirmacion.ajuste{
+    padding: 0;
+}
+.botonera.confirmacion.ajuste .boton{
+    border: #ccc solid 1px;
+    background-color: #333;    
+}
+.botonera.confirmacion.ajuste .boton .titulo{
+}
+.botonera.confirmacion.ajuste .boton .comentario{
+    font-size: 11px;
+    color: #999;
+}
+
+
+/* Modal Confirmacion */
+.div_modal .datos.confirmacion{
+}
+.div_modal .datos.confirmacion .col{
+    display: inline-block;
+    vertical-align: top;
+
+    width:48%;
+    box-sizing: border-box;
+}
+.div_modal .datos.confirmacion .mensaje{
+    text-align: center;
+    padding: 5px 10px;
+    margin: 10px;
+}
+.div_modal .datos.confirmacion .mensaje.cantidad{
+    background-color: #C00;
+    border: #C00 solid 1px;
+    color: #fff;    
+}
+.div_modal .datos.confirmacion .mensaje.parcial{
+    background-color: #fcefa1;
+    border: #C00 solid 1px;
+    color: #C00;
+
+    padding: 25px;
+}
+.div_modal .datos.confirmacion .mensaje.total{
+    background-color: #fff;
+    border: #428E2C solid 1px;
+    color: #428E2C;    
+}
+.div_modal .datos.confirmacion .mensaje.alerta{
+    border: #F1A032 dotted 2px;
+    background-color: #fbef65;
+}
+.div_modal .datos.confirmacion .consumidor-final-solicitud-datos-alerta{
+    border: #F1A032 dotted 2px;
+    background-color: #fbef65;
+
+    color: #000;
+
+    padding: 6px;
+    margin: 5px;
+}
+
+/* Bloque Stock Alerta */
+.div_modal .datos.confirmacion .stock-movimiento-alerta{
+    border: #002235 solid 1px;
+    background-color: #f9f9fa;
+
+    font-weight: normal;
+    color: #000;
+
+    font-size: 11px;
+    padding: 5px;
+    margin: 2px;
+}
+.div_modal .datos.confirmacion .stock-movimiento-alerta h5{
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+}
+.div_modal .datos.confirmacion .stock-movimiento-alerta table{
+}
+.div_modal .datos.confirmacion .stock-movimiento-alerta table th{
+}
+.div_modal .datos.confirmacion .stock-movimiento-alerta table td{
+    border-bottom: #999 dotted 1px;
+}
+.div_modal .datos.confirmacion .stock-movimiento-alerta table td.uno{
+    color: #016DC5;
+    font-size: 12px;
+}
+.div_modal .datos.confirmacion .stock-movimiento-alerta table td.uno.restriccion{
+    color: #CC0000;
+    font-weight: bold;
+    font-size: 12px;
+}
+.div_modal .datos.confirmacion .bloque-mensaje-restriccion.por-inexistencia-stock{
+    background-color: #CC0000;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+}
+
+#div_dbsug_cli_cliente .uno.crear-nuevo-cliente{
+    font-weight: bold;
+    
+    padding: 15px;
+    
+    text-align: center;
+    cursor: pointer
+}
+
+.bloque-monedas-importe{
+}
+.bloque-monedas-importe .uno-moneda{
+    display: inline-block;
+    vertical-align: top;    
+    box-sizing: border-box;
+    
+    width: 100px;
+    
+    padding: 5px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 11px;
+    
+}
+
+.bloque-monedas-importe .uno-moneda .moneda-flag{
+}
+.bloque-monedas-importe .uno-moneda .moneda-flag img{
+}
+.bloque-monedas-importe .uno-moneda .moneda-descripcion{
+    color: #666;
+}
+.bloque-monedas-importe .uno-moneda .tipo-cambio{
+    color: #666;
+}
+.bloque-monedas-importe .uno-moneda .importe-convertido{
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+}
+.confirmacion .bloque-monedas-importe .uno-moneda{
+    cursor: pointer;
+}
+.confirmacion .bloque-monedas-importe .uno-moneda:hover{
+    background-color: #fff;
+}
+.confirmacion .bloque-monedas-importe .uno-moneda:active{
+    background-color: #ccc;
+}
+
+/* Bloque Venta Inmediata Info Adicional */
+.bloque-venta-inmediata-info-adicional-facturacion{
+    
+}
+.bloque-venta-inmediata-info-adicional-facturacion .col{
+}
+.bloque-venta-inmediata-info-adicional-facturacion .col .par{
+}
+.bloque-venta-inmediata-info-adicional-facturacion .col .par .label{
+    width: 18%!important;
+    font-size: 11px;
+    font-weight: normal;
+}
+.bloque-venta-inmediata-info-adicional-facturacion .col .par .dato{
+    width: 80%!important;
+}
+
+/* Bloque Presupuesto Importe Totales */
+.bloque-presupuesto-importe-totales{
+    background-color: #dedede;
+    margin-top: 15px;
+}
+.bloque-presupuesto-importe-totales .bloque-presupuesto-importe-totales-col{
+    display: inline-block;
+    vertical-align: top;
+
+    width: 15%;
+    padding: 1px 0;
+}
+.bloque-presupuesto-importe-totales .bloque-presupuesto-importe-totales-col.importes{
+    width: 65%;
+    padding: 10px;
+    text-align: center;
+}
+.bloque-presupuesto-importe-totales .bloque-presupuesto-importe-totales-col.importes .label{
+    background-color: #666666;
+    color: #fff;
+
+    font-size: 12px;
+    font-weight: normal;
+    text-align: center;
+
+    padding: 3px;
+}
+.bloque-presupuesto-importe-totales .bloque-presupuesto-importe-totales-col.importes .dato{
+    background-color: #ffffff;
+    color: #777;
+
+    font-size: 12px;
+    font-weight: normal;
+    text-align: center;
+
+    padding: 3px;
+    height: 30px;
+}
+.bloque-presupuesto-importe-totales .bloque-presupuesto-importe-totales-col.importes .importe-total .dato{
+    font-size: 13px;
+    font-weight: bold;
+    color: #000;
+}
+
+.bloque-presupuesto-importe-totales .bloque-presupuesto-importe-totales-col.monedas{
+    width: 30%;
+}

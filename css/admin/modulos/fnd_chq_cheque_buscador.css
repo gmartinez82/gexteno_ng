@@ -1,0 +1,150 @@
+/* Archivo CSS de 'fnd_chq_cheque' */
+
+.div_modal_cheque_buscador .datos{
+    border:#CCCCCC dotted 1px;
+    background-color:#f9f9f9;
+    padding:10px;
+}
+.div_modal_cheque_buscador .titulo{
+    font-size:14px;
+    font-weight:bold;
+
+    margin:5px;
+}
+.div_modal_cheque_buscador .datos .par{
+    text-align:left;
+    padding:0px;
+}
+.div_modal_cheque_buscador .datos .par .label{
+    width:30%;
+    text-align:left;    
+    border-bottom:#CCCCCC dotted 1px;
+    color:#666666;
+
+    vertical-align:top;
+}
+.div_modal_cheque_buscador .datos .par .dato{
+    vertical-align:top;
+    width:65%;
+    font-weight:bold;
+    color:#000;
+}
+.div_modal_cheque_buscador .datos .par .dato input,
+.div_modal_cheque_buscador .datos .par .dato textarea,
+.div_modal_cheque_buscador .datos .par .dato select{
+    max-width: 90%;
+}
+.div_modal_cheque_buscador .datos .comentario{
+    font-style:normal;
+    font-size:11px;
+    color: #666;
+    padding: 4px 2px;
+}
+
+/* Modificar Datos */
+.div_modal_cheque_buscador .datos.modificar-datos-cheque .col{
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+.div_modal_cheque_buscador .datos.modificar-datos-cheque .col.c1{
+    width: 38%;
+}
+.div_modal_cheque_buscador .datos.modificar-datos-cheque .col.c2{
+    width: 61%;
+}
+
+.div_modal_cheque_buscador .datos.modificar-datos-cheque .col.c2 .col .label{
+    font-size: 10px;
+    color: #666;
+}
+.div_modal_cheque_buscador .cheques-buscador
+{
+    font-size: 11px;
+    max-height: 500px;
+    overflow: auto;
+}
+.div_modal_cheque_buscador .cheques-buscador th
+{
+    background-color: #666;
+    color: #fff; 
+    padding: 5px;
+}
+.div_modal_cheque_buscador .cheques-buscador td
+{
+    border-bottom: #ccc solid 1px;
+    background-color: #fff;
+    color: #000;    
+}
+
+
+
+.div_modal_cheque_buscador .cheques-buscador
+{
+}
+
+.div_modal_cheque_buscador .cheques-buscador .chq-fecha-emision {
+    font-size: 10px;
+    color: #0782C1;
+}
+
+.cheques-buscador .chq-tipo-emisor{
+   color: #666;
+   font-size: 11px;
+}
+
+.div_modal_cheque_buscador .cheques-buscador .chq-tipo-estado{
+    font-size: 10px;
+}
+
+
+.div_modal_cheque_buscador .cheques-buscador .chq-chequera{
+    font-size: 10px;
+}
+
+.div_modal_cheque_buscador .cheques-buscador .chq-numero{
+    font-size: 10px;
+}
+
+.div_modal_cheque_buscador .cheques-buscador .chq-numero{
+    font-size: 10px;
+}
+
+.div_modal_cheque_buscador .cheques-buscador .chq-banco {
+    font-size: 10px;
+}
+.cheques-buscador .chq-firmante{
+   color: #000;
+   font-weight: bold;
+   font-size: 11px;
+}
+
+
+.div_modal_cheque_buscador .cheques-buscador .chq-importe {
+    font-weight: bold;
+}
+
+
+.div_modal_cheque_buscador .cheques-buscador .chq-dias-faltantes
+{
+    color: #666;
+}
+
+.div_modal_cheque_buscador .cheques-buscador .chq-dias-faltantes.rojo
+{
+    color: #fb0922;
+    font-weight: bold;
+}
+
+
+.div_modal_cheque_buscador .cheques-buscador .chq-dias-faltantes.amarillo
+{
+    color: #806030;
+}
+
+
+.div_modal_cheque_buscador .cheques-buscador .chq-dias-faltantes.verde
+{
+    color: #0ea909;
+    font-weight: bold;
+}

@@ -1,0 +1,219 @@
+@charset "iso-8859-2";
+/* CSS Document */
+
+a{ text-decoration:none; color:#97cc05; }
+a:link{ text-decoration:none; color:#97cc05; }
+a:visited{ text-decoration:none; color:#97cc05; }
+a:hover{ text-decoration:none; color:#0283bc; }
+a:active{text-decoration: none; color:#0283bc;}
+
+body{
+    color:#013254;
+    margin:0px;
+    font-family:'Roboto', sans-serif;
+    font-size:11px;
+    background-color:#002235;
+    
+}
+body.TEST{
+    background-image: url('../../admin/imgs/bg_test_gexteno.png');
+    background-repeat: repeat;
+}
+body.DEV{
+    background-image: url('../../admin/imgs/bg_dev_gexteno.png');
+    background-repeat: repeat;
+}
+
+/* --------------------------------------------------------------------------------------------------------- Login */
+.login{
+    background-color:#fff;
+    border:#013254 solid 1px;
+
+    margin: 50px auto 50px auto;
+
+    padding:20px;
+    width:550px;
+
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+
+    box-shadow: 3px 3px 4px #002235; 
+}
+.login .empresa-proyecto{
+    text-align: center;
+    font-size: 15px;
+    color: #003399;
+}
+.login .col{
+    display:inline-block;
+    vertical-align:top;
+}
+.login .col.c1{
+    width:50%;
+
+    background-color:#f9f9f9;
+    border:#CCC dashed 1px;
+    padding:30px;
+}
+.login .col.c2{
+    width:27%;
+
+    padding:10px;	
+}
+.login .acceso{
+    font-size:16px;
+    text-align:center;
+
+    color:#999999;
+}
+
+.login .titulo{
+    font-family:Geneva, Arial, Helvetica, sans-serif;
+    font-size:20px;
+    font-weight:bold;
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+    text-align:center;
+    color: #013254;
+}
+.login .subtitulo{
+    font-family:Geneva, Arial, Helvetica, sans-serif;
+    font-size:14px;
+    font-weight:bold;
+    color:#666666;
+    margin-bottom:20px;
+}
+.login .label{
+    text-align:left;
+    padding-top:15px;
+
+    font-size:14px;
+    color:#666666;
+}
+.login .input{
+    text-align:left;
+}
+.login input{
+    color:#002235;
+    padding:12px 5px;
+
+    font-size:18px;
+    border:#002235 solid 1px;
+}
+.login .action{
+    text-align:left;
+    padding-top:25px;
+    padding-bottom:15px;
+}
+.login .action input{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:12px;
+    background-color:#013254;
+    border:#013254 solid 1px;
+    color:#FFFFFF;
+    padding:8px 15px 8px 25px;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    cursor:pointer;
+}
+.login .action input:hover{
+    background-color:#999999;
+}
+.login .action .secundario{
+    background-color:#999;
+}
+.login .action .secundario:hover{
+    background-color:#888;
+}
+
+.login .error{
+    border:#CC0000 solid 1px;
+    background-color:#FFCECE;
+    color:#CC0000;
+    font-weight:bold;
+
+    width:200px;
+    text-align:left;
+    padding:5px;
+    padding-left:50px;
+    margin: 0 auto 0 auto;
+}
+
+.login .no-error{
+    border:#060 solid 1px;
+    background-color:#EDF9D0;
+    color:#060;
+    font-weight:bold;
+
+    width:250px;
+    text-align:left;
+    padding:5px;
+    padding-left:10px;
+    margin: 0 auto 0 auto;
+}
+
+.login .mas-links{
+    margin: 0 auto 0 auto;
+
+    text-align:left;
+}
+.login .mas-links-titulo{
+    font-weight:bold;
+    color:#000;
+    font-size:14px;
+    margin-bottom:10px;
+}
+.login .mas-links .link{
+    padding:5px;
+    font-size:12px;
+}
+.login .mas-links .link a{
+    color:#013254;
+    border-bottom:#ccc dotted 1px;
+
+    padding:5px;
+}
+.login .mas-links .link a:hover{
+    color:#CCC;
+}
+.login .mas-links .indicaciones{
+    margin-top:5px;
+    font-style:oblique;
+}
+
+.login .poweredby{
+    margin: 20px auto 0 auto;
+    padding:10px;
+}
+.login .poweredby .labell{
+    color:#999;
+}
+.login .poweredby .dato{
+    font-weight:bold;
+}
+.login .poweredby .dato a{
+    color:#013254;
+    font-size:14px;
+}
+.login .logo-empresa{
+    text-align: center;
+    margin: 10px 0;
+}
+.login .logo-empresa img{
+    margin: 5px;
+    width: 30%;
+}
+.login .logo-proyecto{
+    text-align: center;
+    margin: 10px 0;
+}
+.login .logo-proyecto img{
+    margin: 5px;
+    width: 30%;
+}
+/* --------------------------------------------------------------------------------------------------------- */

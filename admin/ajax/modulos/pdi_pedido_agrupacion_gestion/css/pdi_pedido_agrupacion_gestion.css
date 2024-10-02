@@ -1,0 +1,423 @@
+/* Archivo CSS de 'pdi_pedido_agrupacion' */
+
+/* Div Modal */
+.div_modal{
+}
+.div_modal .col{
+    width:45%;
+    display:inline-block;
+    vertical-align:top;
+}
+.div_modal .col.c1{
+    width:40%;
+}
+.div_modal .col.c2{
+    width:40%;
+}
+
+#listado_adm_pdi_pedido_agrupacion_gestion{
+}
+#listado_adm_pdi_pedido_agrupacion_gestion .codigo{
+    color: #000;
+    font-size:10px;
+}
+#listado_adm_pdi_pedido_agrupacion_gestion .creado{
+    font-size:10px;
+    color: #666;
+}
+#listado_adm_pdi_pedido_agrupacion_gestion .creado-por{
+    font-size:10px;
+    color: #999;
+}
+#listado_adm_pdi_pedido_agrupacion_gestion .proveedor{
+    font-weight:bold;
+    color:#000;
+}
+
+#listado_adm_pdi_pedido_agrupacion_gestion .panol{
+    font-weight:normal;
+    color:#666;
+}
+#listado_adm_pdi_pedido_agrupacion_gestion .panol strong{
+    color: #000;
+}
+#listado_adm_pdi_pedido_agrupacion_gestion .observaciones{
+    max-height: 40px;
+    overflow: auto;
+}
+#listado_adm_pdi_pedido_agrupacion_gestion .observacion{
+    font-size: 11px;
+    font-weight: bold;
+    color:#840;
+}
+#listado_adm_pdi_pedido_agrupacion_gestion .observacion .label{
+    font-weight: normal;
+    color:#666;
+}
+#listado_adm_pdi_pedido_agrupacion_gestion .insumos-en-pedido{
+    margin-top: 3px;
+    font-size:10px;
+    color: #666;
+
+    max-height: 100px;
+    overflow: auto;
+}
+#listado_adm_pdi_pedido_agrupacion_gestion .insumos-en-pedido .insumo{
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    
+    box-sizing: border-box;
+    
+    color: #000;
+    margin-right: 10px;
+}
+#listado_adm_pdi_pedido_agrupacion_gestion .insumos-en-item-temporal{
+    margin-top: 3px;
+    font-size:10px;
+    color: #666;
+
+    max-height: 100px;
+    overflow: auto;
+}
+#listado_adm_pdi_pedido_agrupacion_gestion .insumos-en-item-temporal .insumo{
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    
+    box-sizing: border-box;
+
+    color: #666;
+    margin-right: 10px;
+}
+
+#listado_adm_pdi_pedido_agrupacion_gestion .descripcion{
+    font-size:10px;
+}
+#listado_adm_pdi_pedido_agrupacion_gestion .importe-total{
+    font-size:12px;
+    color:#000;    
+}
+#listado_adm_pdi_pedido_agrupacion_gestion .centro-recepcion{
+    font-size:10px;
+    color:#000;
+}
+#listado_adm_pdi_pedido_agrupacion_gestion .recepcions{
+    color: #666!important;
+}
+#listado_adm_pdi_pedido_agrupacion_gestion .recepcion{
+    font-size:10px;
+}
+#listado_adm_pdi_pedido_agrupacion_gestion .cantidad-items{
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+}
+#listado_adm_pdi_pedido_agrupacion_gestion .cantidad-items-temporales{
+    color: #666;
+    font-size: 14px;
+}
+
+/* Modal Agregar */
+.div_modal .datos-masivo{
+
+}
+
+.div_modal .datos-masivo .par{
+
+}
+
+.div_modal .datos-masivo.agregar .par .label{
+    width: 30%;
+}
+
+.div_modal .datos-masivo.agregar .par .dato{    
+}
+
+/* Modal Agregar Masivo */
+.div_modal .datos-masivo{
+
+}
+
+.div_modal .datos-masivo .par{
+}
+
+.div_modal .datos-masivo .par .label{
+    width: 25%;
+}
+
+.div_modal .datos-masivo .par .dato{
+    padding: 3px;
+}
+
+.div_modal .datos-masivo #div_listado_pdi_pedido_agrupacion_items{
+    /*max-height: 400px;
+    overflow: auto;*/
+}
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items{
+    margin: 0 auto 0 auto;
+}
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items thead th{
+    background-color: #666;
+    border-bottom: #ccc solid 1px;
+    color: #fff;
+    padding: 5px;
+}
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items tfoot th{
+    background-color: #CCC;
+    border-bottom: #ccc solid 1px;
+    color: #000;
+    padding: 5px;
+
+    font-size: 12px;
+}
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items tr.selected td{
+    background-color: #ffdda6;
+}
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items tr:hover td{
+    background-color: #fff;
+    border-bottom: #666 solid 1px;
+}
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items td{
+    background-color: transparent;
+    border-bottom: #ccc solid 1px;
+    color: #000;
+    padding: 5px;
+}
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items td .boton{
+    cursor: pointer;
+}
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items td .ins-insumo{
+}
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items td .prv-insumo{
+    color: #840;
+    padding: 3px 1px 1px 1px;
+    font-size: 10px;
+}
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items td .prv-insumo{
+    color: #840;
+    padding: 3px 1px 1px 1px;
+    font-size: 10px;
+}
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items td .vincular-prv-insumo{
+    color: #0000CC;
+    padding: 2px;
+    font-size: 10px;
+    
+    cursor: pointer;
+}
+
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items td .marca{
+    font-size: 10px;
+    color: #999;
+}
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items td .codigo-marca{
+    font-size: 10px;
+    color: #666;
+}
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items td .costo-unitario{
+    font-weight: bold;
+    color: #000;
+}
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items td .costo-unitario-fecha{
+    font-size: 10px;
+    color: #666;
+}
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items td .costo-unitario-proveedor{
+    font-weight: bold;
+    color: #840;
+}
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items td .costo-unitario-proveedor-fecha{
+    font-size: 10px;
+    color: #666;
+}
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items td .costo-porcenaje-variacion{
+    padding: 2px 0px;
+}
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items td .costo-porcenaje-variacion.alerta_blanca{
+    color: #666;
+}
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items td .costo-porcenaje-variacion.alerta_amarilla{
+    color: #F99D1C;
+}
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items td .costo-porcenaje-variacion.alerta_naranja{
+    color: #DA8028;
+}
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items td .costo-porcenaje-variacion.alerta_roja{
+    color: #C00;
+}
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items td .costo-porcenaje-variacion.alerta_balerta_verdelanca{
+    color: #00cc33;
+}
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items td .descuento-comercial{
+}
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items td .descuento-comercial select{
+    max-width: 100px;
+}
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items td .importe-oc{
+}
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items td .importe-oc.diferencia{
+}
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items td .importe-oc.diferencia input{
+    background-color: #F9F8BF;
+}
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items td .txt_cantidad_recibir{
+    display: none;
+}
+
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items td .txt_cantidad_solicitado{
+    display: none;
+}
+
+
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items td .txt_importe_unitario{
+    display: none;
+    text-align: right;
+}
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items td .pdi-pedido-activos{
+    border: #0000CC dotted 1px;
+    background-color: #9CC;
+    color: #0000CC;
+    
+    font-size: 10px;
+    
+    margin: 3px 0px;
+    padding: 2px 5px;
+}
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items td .pdi-pedido-activos .pdi-pedido-activo{
+    margin: 3px;
+}
+
+
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items td .pdi-pedido-agrupacion-item-activos{
+    border: #666 dotted 1px;
+    background-color: #CCC;
+    color: #333;
+    
+    font-size: 10px;
+    
+    margin: 3px 0px;
+    padding: 2px 5px;
+}
+
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items td .pdi-pedido-agrupacion-item-activos .pdi-pedido-agrupacion-item-activo{
+    margin: 3px;
+}
+
+
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items td .pde-pedido-activos{
+    border: #F60 dotted 1px;
+    background-color: #E8D77B;
+    color: #c00;
+    
+    font-size: 10px;
+    
+    margin: 3px 0px;
+    padding: 2px 5px;
+}
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items td .pde-pedido-activos .pde-pedido-activo{
+    margin: 3px;
+}
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items td .pde-oc-activos{
+    border: #F60 dotted 1px;
+    background-color: #E8D77B;
+    color: #c00;
+    
+    font-size: 10px;
+    
+    margin: 3px 0px;
+    padding: 2px 5px;
+}
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items td .pde-oc-activos .pde-oc-activo{
+    margin: 3px;
+}
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items td .pde-oc-agrupacion-item-activos{
+    border: #666 dotted 1px;
+    background-color: #CCC;
+    color: #333;
+    
+    font-size: 10px;
+    
+    margin: 3px 0px;
+    padding: 2px 5px;
+}
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items td .pde-oc-agrupacion-item-activos .pde-oc-agrupacion-item-activo{
+    margin: 3px;
+}
+
+/* Reclamos */
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items .pdi_pedido_reclamos{
+    cursor: pointer;
+}
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items .pdi_pedido_reclamos:hover{
+    opacity: 0.8;
+}
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items .pdi_pedido_reclamar{
+    color: #0000CC;
+    margin: 2px;
+    
+    cursor: pointer;
+}
+.div_modal .datos-masivo #listado_pdi_pedido_agrupacion_items .pdi_pedido_reclamar:hover{
+    opacity: 0.8;
+}
+
+
+/* Modal Agregar */
+.div_modal .datos-masivo.modal-recibir{    
+}
+.div_modal .datos-masivo.modal-recibir .par{
+}
+.div_modal .datos-masivo.modal-recibir .par .label{
+    width: 30%;
+}
+.div_modal .datos-masivo.modal-recibir .par .dato{    
+}
+
+
+/* Modal Reclamos */
+.div_modal .tabla-modal .oc-codigo{
+    color:#000;
+}
+.div_modal .tabla-modal .oc-tipo-estado{
+    font-size:10px;
+    color:#666;
+}
+
+/* Ficha */
+.tabs .tab_pedidos{
+    
+}
+.tabs #tab_pedidos .codigo{
+    font-weight: bold;
+    color: #000;
+    font-size: 11px;
+}
+.tabs #tab_pedidos .fecha{
+    color: #666;
+    font-size: 11px;
+}
+.tabs #tab_pedidos .tipo-estado{
+    color: #000;
+    font-size: 11px;
+}
+.tabs #tab_pedidos .codigo-interno{
+    color: #999;
+    font-size: 11px;
+}
+.tabs #tab_pedidos .marca{
+    color: #999;
+    font-size: 11px;
+}
+.tabs #tab_pedidos .pdi-estados{
+    
+}
+.tabs #tab_pedidos .pdi-estados .pdi-estado{
+    color: #840;
+    font-size: 11px;
+}
+.tabs #tab_pedidos .creado-por{
+    color: #999;
+    font-size: 10px;
+}
+

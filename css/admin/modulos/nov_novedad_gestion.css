@@ -1,0 +1,76 @@
+/* Archivo CSS de 'nov_novedad' */
+
+#listado_adm_nov_novedad_gestion{
+
+}
+#listado_adm_nov_novedad_gestion .id{
+    color: #666;    
+}
+#listado_adm_nov_novedad_gestion .creado{
+    color: #000;    
+}
+#listado_adm_nov_novedad_gestion .creado-por{
+    color: #000;    
+}
+#listado_adm_nov_novedad_gestion .descripcion{
+    color: #000;
+    font-size: 13px;    
+}
+#listado_adm_nov_novedad_gestion .descripcion_breve{
+    color: #333;    
+    font-size: 12px;    
+}
+
+.usuarios-destinatarios{
+    margin-top: 15px;
+}
+.usuarios-destinatarios .usuario-destinatario{
+    display: inline-block;
+    vertical-align: top;
+    width: 19%;
+    
+    padding: 5px;
+    margin: 1px;
+
+    background-color: #eee;
+    text-align: center;
+    box-sizing: border-box;
+}
+.usuarios-destinatarios .usuario-destinatario.verde{
+    border: #009900 solid 1px;
+    background-color: #d5f0c7;
+}
+.usuarios-destinatarios .usuario-destinatario.amarillo{
+    border: #F1A032 solid 1px;
+    background-color: #FFFFCC;
+}
+.usuarios-destinatarios .usuario-destinatario.gris{
+}
+
+.usuarios-destinatarios .usuario-destinatario .usuario-destinatario-info{
+}
+.usuarios-destinatarios .usuario-destinatario .usuario-destinatario-info .usuario-destinatario-icono{
+    display: inline-block;
+    vertical-align: middle;
+    width: 17%;
+}
+.usuarios-destinatarios .usuario-destinatario .usuario-destinatario-info .usuario-destinatario-descripcion{
+    display: inline-block;
+    vertical-align: middle;
+
+    font-size: 11px;
+    font-weight: bold;
+    width: 80%;
+    color: #000;
+    text-align: left;
+}
+.usuarios-destinatarios .usuario-destinatario .usuario-destinatario-fecha-observado{
+    font-size: 10px;
+    color: #666;
+    text-align: left;
+}
+.usuarios-destinatarios .usuario-destinatario .usuario-destinatario-fecha-leido{
+    font-size: 10px;
+    color: #666;
+    text-align: left;    
+}

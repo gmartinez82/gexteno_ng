@@ -1,0 +1,3642 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Arbol: Menu Backend -->
+<arbol>
+	<clase>GenArbol</clase>
+	<tabla>gen_arbol</tabla>
+	<item_clase>GenMenuItem</item_clase>
+	<id>2</id>
+
+
+		<item>			
+		
+                    <id>1</id>
+                    <descripcion>Inicio</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>null</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo>Ir al home</alternativo>
+                    <link>index.php</link>
+                    <observacion></observacion>
+                    <orden>1</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2024-03-11 16:41:38</modificado>
+                    <modificado_por>1</modificado_por>
+                    <familia_descripcion>Inicio</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>3</id>
+                    <descripcion>Productos</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>null</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>2</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2024-03-11 16:41:38</modificado>
+                    <modificado_por>1</modificado_por>
+                    <familia_descripcion>Productos</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>26</id>
+                    <descripcion>de NG</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>3</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>ins_insumo_gestion.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:41:28</modificado>
+                    <modificado_por>1</modificado_por>
+                    <familia_descripcion>Productos > de NG</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>27</id>
+                    <descripcion>de Proveedores</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>3</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>prv_insumo_gestion.php</link>
+                    <observacion></observacion>
+                    <orden>2</orden>
+                    <estado>0</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Productos > de Proveedores</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>2</id>
+                    <descripcion>Importacion de Listas</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>3</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>prv_importacion_lista.php</link>
+                    <observacion></observacion>
+                    <orden>3</orden>
+                    <estado>0</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Productos > Importacion de Listas</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>28</id>
+                    <descripcion>Precios de Venta</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>3</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>ins_insumo_precios_gestion.php</link>
+                    <observacion></observacion>
+                    <orden>4</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Productos > Precios de Venta</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>120</id>
+                    <descripcion>Tienda Online</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>3</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>5</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Productos > Tienda Online</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>163</id>
+                    <descripcion>Productos en Tienda</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>120</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>ins_insumo_venta_web_gestion.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Productos > Tienda Online > Productos en Tienda</familia_descripcion>
+            
+
+                </item>
+
+                </item>
+
+                </item>
+
+		<item>			
+		
+                    <id>56</id>
+                    <descripcion>Stock</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>null</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>3</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2024-03-11 16:41:38</modificado>
+                    <modificado_por>1</modificado_por>
+                    <familia_descripcion>Stock</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>57</id>
+                    <descripcion>Resumen de Stock</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>56</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>ins_stock_resumen_gestion.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Stock > Resumen de Stock</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>137</id>
+                    <descripcion>Pedidos Internos</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>56</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Stock > Pedidos Internos</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>138</id>
+                    <descripcion>Masivos</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>137</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>pdi_pedido_agrupacion_gestion.php</link>
+                    <observacion></observacion>
+                    <orden>1</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Stock > Pedidos Internos > Masivos</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>107</id>
+                    <descripcion>Individuales</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>137</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>pdi_pedido_gestion.php</link>
+                    <observacion></observacion>
+                    <orden>2</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Stock > Pedidos Internos > Individuales</familia_descripcion>
+            
+
+                </item>
+
+                </item>
+
+                </item>
+
+		<item>			
+		
+                    <id>33</id>
+                    <descripcion>Ventas</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>null</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>4</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2024-03-11 16:41:38</modificado>
+                    <modificado_por>1</modificado_por>
+                    <familia_descripcion>Ventas</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>39</id>
+                    <descripcion>Presupuestos</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>33</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>vta_presupuesto_gestion.php</link>
+                    <observacion></observacion>
+                    <orden>1</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2023-05-02 20:36:10</modificado>
+                    <modificado_por>1</modificado_por>
+                    <familia_descripcion>Ventas > Presupuestos</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>40</id>
+                    <descripcion>Ordenes de Venta</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>33</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>vta_orden_venta_gestion.php</link>
+                    <observacion></observacion>
+                    <orden>2</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2023-05-02 20:36:10</modificado>
+                    <modificado_por>1</modificado_por>
+                    <familia_descripcion>Ventas > Ordenes de Venta</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>41</id>
+                    <descripcion>Remitos</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>33</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>vta_remito_gestion.php</link>
+                    <observacion></observacion>
+                    <orden>3</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2023-05-02 20:36:10</modificado>
+                    <modificado_por>1</modificado_por>
+                    <familia_descripcion>Ventas > Remitos</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>42</id>
+                    <descripcion>Conflictos</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>33</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>vta_presupuesto_conflicto_gestion.php</link>
+                    <observacion></observacion>
+                    <orden>4</orden>
+                    <estado>0</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2023-05-02 20:36:10</modificado>
+                    <modificado_por>1</modificado_por>
+                    <familia_descripcion>Ventas > Conflictos</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>58</id>
+                    <descripcion>Facturacion</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>33</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>5</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2023-05-02 20:36:10</modificado>
+                    <modificado_por>1</modificado_por>
+                    <familia_descripcion>Ventas > Facturacion</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>59</id>
+                    <descripcion>Facturacion</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>58</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>vta_factura_gestion.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Ventas > Facturacion > Facturacion</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>60</id>
+                    <descripcion>Notas de Credito</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>58</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>vta_nota_credito_gestion.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Ventas > Facturacion > Notas de Credito</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>61</id>
+                    <descripcion>Notas de Debito</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>58</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>vta_nota_debito_gestion.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Ventas > Facturacion > Notas de Debito</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>62</id>
+                    <descripcion>Recibos de Venta</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>58</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>vta_recibo_gestion.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Ventas > Facturacion > Recibos de Venta</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>63</id>
+                    <descripcion>Resumen de Cuenta</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>58</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>vta_comprobante_gestion.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Ventas > Facturacion > Resumen de Cuenta</familia_descripcion>
+            
+
+                </item>
+
+                </item>
+
+		<item>			
+		
+                    <id>109</id>
+                    <descripcion>Comisiones</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>33</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>vta_comision_gestion.php</link>
+                    <observacion></observacion>
+                    <orden>6</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2023-05-02 20:36:10</modificado>
+                    <modificado_por>1</modificado_por>
+                    <familia_descripcion>Ventas > Comisiones</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>166</id>
+                    <descripcion>Valoraciones</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>33</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>7</orden>
+                    <estado>1</estado>
+                    <creado>2023-05-02 20:35:51</creado>
+                    <creado_por>1</creado_por>
+                    <modificado>2023-05-02 20:36:10</modificado>
+                    <modificado_por>1</modificado_por>
+                    <familia_descripcion>Ventas > Valoraciones</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>167</id>
+                    <descripcion>Sucursales</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>166</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>gral_sucursal_valoracion_adm.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2023-05-02 20:36:15</creado>
+                    <creado_por>1</creado_por>
+                    <modificado>2023-05-02 20:36:40</modificado>
+                    <modificado_por>1</modificado_por>
+                    <familia_descripcion>Ventas > Valoraciones > Sucursales</familia_descripcion>
+            
+
+                </item>
+
+                </item>
+
+                </item>
+
+		<item>			
+		
+                    <id>64</id>
+                    <descripcion>Compras</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>null</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>5</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2024-03-11 16:41:38</modificado>
+                    <modificado_por>1</modificado_por>
+                    <familia_descripcion>Compras</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>65</id>
+                    <descripcion>Pedidos de Cotizacion</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>64</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>pde_pedido_gestion.php</link>
+                    <observacion></observacion>
+                    <orden>1</orden>
+                    <estado>0</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Compras > Pedidos de Cotizacion</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>136</id>
+                    <descripcion>Ordenes de Compra</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>64</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>2</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Compras > Ordenes de Compra</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>67</id>
+                    <descripcion>Masivas</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>136</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>pde_oc_agrupacion_gestion.php</link>
+                    <observacion></observacion>
+                    <orden>1</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Compras > Ordenes de Compra > Masivas</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>66</id>
+                    <descripcion>Individuales</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>136</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>pde_oc_gestion.php</link>
+                    <observacion></observacion>
+                    <orden>2</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Compras > Ordenes de Compra > Individuales</familia_descripcion>
+            
+
+                </item>
+
+                </item>
+
+		<item>			
+		
+                    <id>68</id>
+                    <descripcion>Recepciones</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>64</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>pde_recepcion_gestion.php</link>
+                    <observacion></observacion>
+                    <orden>3</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Compras > Recepciones</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>106</id>
+                    <descripcion>Ordenes de Pago</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>64</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>pde_orden_pago_gestion.php</link>
+                    <observacion></observacion>
+                    <orden>4</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Compras > Ordenes de Pago</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>69</id>
+                    <descripcion>Facturacion</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>64</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>5</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Compras > Facturacion</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>70</id>
+                    <descripcion>Facturas</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>69</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>pde_factura_gestion.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Compras > Facturacion > Facturas</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>71</id>
+                    <descripcion>Notas de Credito</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>69</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>pde_nota_credito_gestion.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Compras > Facturacion > Notas de Credito</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>72</id>
+                    <descripcion>Notas de Debito</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>69</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>pde_nota_debito_gestion.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Compras > Facturacion > Notas de Debito</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>73</id>
+                    <descripcion>Recibos de Compra</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>69</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>pde_recibo_gestion.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Compras > Facturacion > Recibos de Compra</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>74</id>
+                    <descripcion>Resumen de Cuenta</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>69</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>pde_comprobante_gestion.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Compras > Facturacion > Resumen de Cuenta</familia_descripcion>
+            
+
+                </item>
+
+                </item>
+
+                </item>
+
+		<item>			
+		
+                    <id>112</id>
+                    <descripcion>Finanzas</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>null</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>6</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2024-03-11 16:41:38</modificado>
+                    <modificado_por>1</modificado_por>
+                    <familia_descripcion>Finanzas</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>123</id>
+                    <descripcion>Cajas</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>112</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>fnd_caja_gestion.php</link>
+                    <observacion></observacion>
+                    <orden>1</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Finanzas > Cajas</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>113</id>
+                    <descripcion>Cheques</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>112</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>fnd_chq_cheque_gestion.php</link>
+                    <observacion></observacion>
+                    <orden>2</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Finanzas > Cheques</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>114</id>
+                    <descripcion>Chequeras</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>112</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>fnd_chq_chequera_adm.php</link>
+                    <observacion></observacion>
+                    <orden>3</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Finanzas > Chequeras</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>121</id>
+                    <descripcion>Tarjetas y Otros</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>112</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>4</orden>
+                    <estado>0</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Finanzas > Tarjetas y Otros</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>122</id>
+                    <descripcion>Conciliacion</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>121</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>vta_recibo_item_gestion.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Finanzas > Tarjetas y Otros > Conciliacion</familia_descripcion>
+            
+
+                </item>
+
+                </item>
+
+                </item>
+
+		<item>			
+		
+                    <id>75</id>
+                    <descripcion>Contabilidad</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>null</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>7</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2024-03-11 16:41:38</modificado>
+                    <modificado_por>1</modificado_por>
+                    <familia_descripcion>Contabilidad</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>77</id>
+                    <descripcion>AFIP CITI</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>75</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>1</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Contabilidad > AFIP CITI</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>105</id>
+                    <descripcion>Generacion</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>77</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>afip_citi_prc_gestion.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Contabilidad > AFIP CITI > Generacion</familia_descripcion>
+            
+
+                </item>
+
+                </item>
+
+		<item>			
+		
+                    <id>76</id>
+                    <descripcion>Asientos Contables</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>75</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>cntb_diario_asiento_gestion.php</link>
+                    <observacion></observacion>
+                    <orden>2</orden>
+                    <estado>0</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Contabilidad > Asientos Contables</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>124</id>
+                    <descripcion>Cuentas Contables</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>75</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>cntb_cuenta_adm.php</link>
+                    <observacion></observacion>
+                    <orden>3</orden>
+                    <estado>0</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Contabilidad > Cuentas Contables</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>125</id>
+                    <descripcion>Liquidación Mensual</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>75</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>cntb_periodo_gestion.php</link>
+                    <observacion></observacion>
+                    <orden>4</orden>
+                    <estado>0</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Contabilidad > Liquidación Mensual</familia_descripcion>
+            
+
+                </item>
+
+                </item>
+
+		<item>			
+		
+                    <id>171</id>
+                    <descripcion>RRHH</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>null</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>8</orden>
+                    <estado>1</estado>
+                    <creado>2024-03-11 16:41:14</creado>
+                    <creado_por>1</creado_por>
+                    <modificado>2024-03-11 16:41:38</modificado>
+                    <modificado_por>1</modificado_por>
+                    <familia_descripcion>RRHH</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>172</id>
+                    <descripcion>Personas</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>171</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>per_persona_gestion.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2024-03-11 16:41:53</creado>
+                    <creado_por>1</creado_por>
+                    <modificado>2024-03-11 16:42:10</modificado>
+                    <modificado_por>1</modificado_por>
+                    <familia_descripcion>RRHH > Personas</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>173</id>
+                    <descripcion>Movimientos</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>171</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>per_mov_movimiento_calendario.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2024-03-11 16:42:14</creado>
+                    <creado_por>1</creado_por>
+                    <modificado>2024-03-11 16:42:36</modificado>
+                    <modificado_por>1</modificado_por>
+                    <familia_descripcion>RRHH > Movimientos</familia_descripcion>
+            
+
+                </item>
+
+                </item>
+
+		<item>			
+		
+                    <id>4</id>
+                    <descripcion>Configuración General</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>null</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>9</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2024-03-11 16:41:38</modificado>
+                    <modificado_por>1</modificado_por>
+                    <familia_descripcion>Configuración General</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>22</id>
+                    <descripcion>Usuarios</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>4</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>1</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Usuarios</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>23</id>
+                    <descripcion>Usuarios</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>22</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>us_usuario_adm.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Usuarios > Usuarios</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>24</id>
+                    <descripcion>Grupos</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>22</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>us_grupo_adm.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Usuarios > Grupos</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>25</id>
+                    <descripcion>Credenciales</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>22</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>us_credencial_adm.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Usuarios > Credenciales</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>110</id>
+                    <descripcion>Auditoria</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>22</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Usuarios > Auditoria</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>111</id>
+                    <descripcion>Navegacion</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>110</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>us_navegacion_adm.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Usuarios > Auditoria > Navegacion</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>128</id>
+                    <descripcion>Acciones</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>110</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>us_usuario_auditoria_adm.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Usuarios > Auditoria > Acciones</familia_descripcion>
+            
+
+                </item>
+
+                </item>
+
+                </item>
+
+		<item>			
+		
+                    <id>7</id>
+                    <descripcion>Productos</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>4</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>2</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Productos</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>8</id>
+                    <descripcion>Categorías</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>7</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>ins_categoria_arbol.php?id=1</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Productos > Categorías</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>13</id>
+                    <descripcion>Unidades de Medida</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>7</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>ins_unidad_medida_adm.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Productos > Unidades de Medida</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>14</id>
+                    <descripcion>Marcas</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>7</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>ins_marca_adm.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Productos > Marcas</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>18</id>
+                    <descripcion>Etiquetas</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>7</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>ins_etiqueta_adm.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Productos > Etiquetas</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>31</id>
+                    <descripcion>Atributos</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>7</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>ins_atributo_adm.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Productos > Atributos</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>108</id>
+                    <descripcion>Barcode</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>7</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>ins_insumo_barcode_gestion.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Productos > Barcode</familia_descripcion>
+            
+
+                </item>
+
+                </item>
+
+		<item>			
+		
+                    <id>127</id>
+                    <descripcion>Sucursales</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>4</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>gral_sucursal_adm.php</link>
+                    <observacion></observacion>
+                    <orden>3</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Sucursales</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>43</id>
+                    <descripcion>Clientes</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>4</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>4</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Clientes</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>44</id>
+                    <descripcion>Clientes</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>43</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>cli_cliente_gestion.php</link>
+                    <observacion></observacion>
+                    <orden>1</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2023-05-04 17:05:15</modificado>
+                    <modificado_por>1</modificado_por>
+                    <familia_descripcion>Configuración General > Clientes > Clientes</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>99</id>
+                    <descripcion>Grupos</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>43</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>cli_grupo_adm.php</link>
+                    <observacion></observacion>
+                    <orden>2</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2023-05-04 17:05:15</modificado>
+                    <modificado_por>1</modificado_por>
+                    <familia_descripcion>Configuración General > Clientes > Grupos</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>126</id>
+                    <descripcion>Categorias</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>43</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>cli_categoria_adm.php</link>
+                    <observacion></observacion>
+                    <orden>3</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2023-05-04 17:05:15</modificado>
+                    <modificado_por>1</modificado_por>
+                    <familia_descripcion>Configuración General > Clientes > Categorias</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>170</id>
+                    <descripcion>Rubros</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>43</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>cli_rubro_adm.php</link>
+                    <observacion></observacion>
+                    <orden>4</orden>
+                    <estado>1</estado>
+                    <creado>2023-05-04 17:04:46</creado>
+                    <creado_por>1</creado_por>
+                    <modificado>2023-05-04 17:05:15</modificado>
+                    <modificado_por>1</modificado_por>
+                    <familia_descripcion>Configuración General > Clientes > Rubros</familia_descripcion>
+            
+
+                </item>
+
+                </item>
+
+		<item>			
+		
+                    <id>34</id>
+                    <descripcion>Ventas</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>4</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>5</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Ventas</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>35</id>
+                    <descripcion>Compradores</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>34</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>vta_comprador_adm.php</link>
+                    <observacion></observacion>
+                    <orden>1</orden>
+                    <estado>0</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Ventas > Compradores</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>36</id>
+                    <descripcion>Preventistas</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>34</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>vta_preventista_adm.php</link>
+                    <observacion></observacion>
+                    <orden>2</orden>
+                    <estado>0</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Ventas > Preventistas</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>37</id>
+                    <descripcion>Vendedores</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>34</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>vta_vendedor_adm.php</link>
+                    <observacion></observacion>
+                    <orden>3</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Ventas > Vendedores</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>38</id>
+                    <descripcion>Desc por Vendedor</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>34</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>vta_vendedor_descuento_gestion.php</link>
+                    <observacion></observacion>
+                    <orden>4</orden>
+                    <estado>0</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Ventas > Desc por Vendedor</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>45</id>
+                    <descripcion>Empresa Transportadora</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>34</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>gral_empresa_transportadora_adm.php</link>
+                    <observacion></observacion>
+                    <orden>5</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Ventas > Empresa Transportadora</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>48</id>
+                    <descripcion>Formas de Pago</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>34</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>6</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Ventas > Formas de Pago</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>49</id>
+                    <descripcion>Forma de Pago</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>48</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>gral_fp_forma_pago_adm.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Ventas > Formas de Pago > Forma de Pago</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>50</id>
+                    <descripcion>Medios de Pago</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>48</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>gral_fp_medio_pago_adm.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Ventas > Formas de Pago > Medios de Pago</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>51</id>
+                    <descripcion>Cuotas</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>48</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>gral_fp_cuota_adm.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Ventas > Formas de Pago > Cuotas</familia_descripcion>
+            
+
+                </item>
+
+                </item>
+
+		<item>			
+		
+                    <id>98</id>
+                    <descripcion>Escenarios</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>34</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>gral_escenario_adm.php</link>
+                    <observacion></observacion>
+                    <orden>7</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Ventas > Escenarios</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>12</id>
+                    <descripcion>Listas de Precios</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>34</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>ins_tipo_lista_precio_adm.php</link>
+                    <observacion></observacion>
+                    <orden>8</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Ventas > Listas de Precios</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>129</id>
+                    <descripcion>Políticas de Descuentos</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>34</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>vta_politica_descuento_gestion.php</link>
+                    <observacion></observacion>
+                    <orden>9</orden>
+                    <estado>0</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Ventas > Políticas de Descuentos</familia_descripcion>
+            
+
+                </item>
+
+                </item>
+
+		<item>			
+		
+                    <id>141</id>
+                    <descripcion>Compras</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>4</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>6</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Compras</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>142</id>
+                    <descripcion>Conceptos de Facturas</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>141</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>pde_factura_concepto_adm.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Compras > Conceptos de Facturas</familia_descripcion>
+            
+
+                </item>
+
+                </item>
+
+		<item>			
+		
+                    <id>15</id>
+                    <descripcion>Vehículos</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>4</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>7</orden>
+                    <estado>0</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Vehículos</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>16</id>
+                    <descripcion>Marcas</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>15</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>veh_marca_adm.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Vehículos > Marcas</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>17</id>
+                    <descripcion>Modelos</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>15</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>veh_modelo_adm.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Vehículos > Modelos</familia_descripcion>
+            
+
+                </item>
+
+                </item>
+
+		<item>			
+		
+                    <id>19</id>
+                    <descripcion>Proveedores</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>4</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>8</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Proveedores</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>20</id>
+                    <descripcion>Proveedores</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>19</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>prv_proveedor_gestion.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Proveedores > Proveedores</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>100</id>
+                    <descripcion>Grupos</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>19</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>prv_grupo_adm.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Proveedores > Grupos</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>130</id>
+                    <descripcion>Rubros</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>19</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>prv_rubro_adm.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Proveedores > Rubros</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>155</id>
+                    <descripcion>Categorias</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>19</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>prv_categoria_adm.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Proveedores > Categorias</familia_descripcion>
+            
+
+                </item>
+
+                </item>
+
+		<item>			
+		
+                    <id>117</id>
+                    <descripcion>Finanzas</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>4</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>9</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Finanzas</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>143</id>
+                    <descripcion>Cajeros</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>117</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>fnd_cajero_adm.php</link>
+                    <observacion></observacion>
+                    <orden>1</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Finanzas > Cajeros</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>118</id>
+                    <descripcion>Cheques</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>117</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>2</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Finanzas > Cheques</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>119</id>
+                    <descripcion>Trazabilidad de Estados</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>118</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>fnd_chq_tipo_emisor_fnd_chq_tipo_estado_adm.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Finanzas > Cheques > Trazabilidad de Estados</familia_descripcion>
+            
+
+                </item>
+
+                </item>
+
+		<item>			
+		
+                    <id>104</id>
+                    <descripcion>Bancos</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>117</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>gral_banco_adm.php</link>
+                    <observacion></observacion>
+                    <orden>3</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Finanzas > Bancos</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>158</id>
+                    <descripcion>Tipos de Cambio</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>117</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>gral_moneda_gestion.php</link>
+                    <observacion></observacion>
+                    <orden>4</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Finanzas > Tipos de Cambio</familia_descripcion>
+            
+
+                </item>
+
+                </item>
+
+		<item>			
+		
+                    <id>52</id>
+                    <descripcion>Geo</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>4</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>10</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Geo</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>53</id>
+                    <descripcion>Paises</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>52</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>geo_pais_adm.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Geo > Paises</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>54</id>
+                    <descripcion>Provincias</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>52</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>geo_provincia_adm.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Geo > Provincias</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>55</id>
+                    <descripcion>Localidades</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>52</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>geo_localidad_adm.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Geo > Localidades</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>146</id>
+                    <descripcion>Zonas</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>52</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>geo_zona_adm.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Geo > Zonas</familia_descripcion>
+            
+
+                </item>
+
+                </item>
+
+		<item>			
+		
+                    <id>164</id>
+                    <descripcion>Tienda</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>4</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>11</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Tienda</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>165</id>
+                    <descripcion>Slides</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>164</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>sld_slider_adm.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > Tienda > Slides</familia_descripcion>
+            
+
+                </item>
+
+                </item>
+
+		<item>			
+		
+                    <id>5</id>
+                    <descripcion>General</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>4</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>12</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > General</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>6</id>
+                    <descripcion>Menu</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>5</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>gen_menu_item_arbol.php?id=2</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > General > Menu</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>21</id>
+                    <descripcion>Traducciones</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>5</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>xml_traduccion_gestion.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > General > Traducciones</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>32</id>
+                    <descripcion>Importaciones</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>5</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>prv_importacion_adm.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Configuración General > General > Importaciones</familia_descripcion>
+            
+
+                </item>
+
+                </item>
+
+                </item>
+
+		<item>			
+		
+                    <id>9</id>
+                    <descripcion>Procesos</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>null</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>10</orden>
+                    <estado>0</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2024-03-11 16:41:38</modificado>
+                    <modificado_por>1</modificado_por>
+                    <familia_descripcion>Procesos</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>10</id>
+                    <descripcion>Exportar</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>9</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Procesos > Exportar</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>11</id>
+                    <descripcion>1 - Generar CSV</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>10</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>http://192.168.1.4/prcs/cron/tienda.php?accion=ejecutar</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Procesos > Exportar > 1 - Generar CSV</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>29</id>
+                    <descripcion>2 - Permiso de Importacion</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>10</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link></link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>0</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Procesos > Exportar > 2 - Permiso de Importacion</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>30</id>
+                    <descripcion>3 - Importar a Tienda</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>10</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>0</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Procesos > Exportar > 3 - Importar a Tienda</familia_descripcion>
+            
+
+                </item>
+
+                </item>
+
+                </item>
+
+		<item>			
+		
+                    <id>46</id>
+                    <descripcion>Reportes</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>null</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>11</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2024-03-11 16:41:38</modificado>
+                    <modificado_por>1</modificado_por>
+                    <familia_descripcion>Reportes</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>131</id>
+                    <descripcion>Productos</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>46</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>1</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2023-05-02 20:37:56</modificado>
+                    <modificado_por>1</modificado_por>
+                    <familia_descripcion>Reportes > Productos</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>157</id>
+                    <descripcion>Productos</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>131</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>rep_ins_insumo.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Reportes > Productos > Productos</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>47</id>
+                    <descripcion>Lista de Precios</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>131</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>rep_insumos_lista.php</link>
+                    <observacion></observacion>
+                    <orden>2</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Reportes > Productos > Lista de Precios</familia_descripcion>
+            
+
+                </item>
+
+                </item>
+
+		<item>			
+		
+                    <id>132</id>
+                    <descripcion>Clientes</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>46</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>2</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2023-05-02 20:37:56</modificado>
+                    <modificado_por>1</modificado_por>
+                    <familia_descripcion>Reportes > Clientes</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>133</id>
+                    <descripcion>Clientes</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>132</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>rep_cli_cliente.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Reportes > Clientes > Clientes</familia_descripcion>
+            
+
+                </item>
+
+                </item>
+
+		<item>			
+		
+                    <id>134</id>
+                    <descripcion>Proveedores</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>46</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>3</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2023-05-02 20:37:56</modificado>
+                    <modificado_por>1</modificado_por>
+                    <familia_descripcion>Reportes > Proveedores</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>135</id>
+                    <descripcion>Proveedores</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>134</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>rep_prv_proveedor.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Reportes > Proveedores > Proveedores</familia_descripcion>
+            
+
+                </item>
+
+                </item>
+
+		<item>			
+		
+                    <id>101</id>
+                    <descripcion>Stock</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>46</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>4</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2023-05-02 20:37:56</modificado>
+                    <modificado_por>1</modificado_por>
+                    <familia_descripcion>Reportes > Stock</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>102</id>
+                    <descripcion>Resumen de Stock</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>101</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>rep_stock_resumen.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Reportes > Stock > Resumen de Stock</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>139</id>
+                    <descripcion>Solicitudes Depositos</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>101</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>rep_pdi_solicitudes.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Reportes > Stock > Solicitudes Depositos</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>140</id>
+                    <descripcion>Ajustes</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>101</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>rep_pdi_ajustes.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Reportes > Stock > Ajustes</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>154</id>
+                    <descripcion>Movimientos</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>101</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>rep_stock_movimientos.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>0</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Reportes > Stock > Movimientos</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>162</id>
+                    <descripcion>Reingreso por Devoluciones</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>101</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>rep_pdi_reingresos.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Reportes > Stock > Reingreso por Devoluciones</familia_descripcion>
+            
+
+                </item>
+
+                </item>
+
+		<item>			
+		
+                    <id>79</id>
+                    <descripcion>Ventas</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>46</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>5</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2023-05-02 20:37:56</modificado>
+                    <modificado_por>1</modificado_por>
+                    <familia_descripcion>Reportes > Ventas</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>81</id>
+                    <descripcion>Presupuestos</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>79</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>rep_vta_presupuesto.php</link>
+                    <observacion></observacion>
+                    <orden>1</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Reportes > Ventas > Presupuestos</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>82</id>
+                    <descripcion>Ordenes de Venta</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>79</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>rep_vta_orden_venta.php</link>
+                    <observacion></observacion>
+                    <orden>2</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Reportes > Ventas > Ordenes de Venta</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>83</id>
+                    <descripcion>Remitos</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>79</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>rep_vta_remito.php</link>
+                    <observacion></observacion>
+                    <orden>3</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Reportes > Ventas > Remitos</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>84</id>
+                    <descripcion>Facturas</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>79</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>rep_vta_factura.php</link>
+                    <observacion></observacion>
+                    <orden>4</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Reportes > Ventas > Facturas</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>161</id>
+                    <descripcion>Ajustes Debe</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>79</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>rep_vta_ajuste_debe.php</link>
+                    <observacion></observacion>
+                    <orden>5</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Reportes > Ventas > Ajustes Debe</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>85</id>
+                    <descripcion>Notas de Credito</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>79</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>rep_vta_nota_credito.php</link>
+                    <observacion></observacion>
+                    <orden>6</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Reportes > Ventas > Notas de Credito</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>86</id>
+                    <descripcion>Notas de Debito</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>79</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>rep_vta_nota_debito.php</link>
+                    <observacion></observacion>
+                    <orden>7</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Reportes > Ventas > Notas de Debito</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>87</id>
+                    <descripcion>Recibos de Venta</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>79</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>rep_vta_recibo.php</link>
+                    <observacion></observacion>
+                    <orden>8</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Reportes > Ventas > Recibos de Venta</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>144</id>
+                    <descripcion>Recibos de Venta - Items</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>79</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>rep_vta_recibo_item.php</link>
+                    <observacion></observacion>
+                    <orden>9</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Reportes > Ventas > Recibos de Venta - Items</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>88</id>
+                    <descripcion>Resumen de Cuenta de Clientes</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>79</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>rep_vta_resumen_cuenta.php</link>
+                    <observacion></observacion>
+                    <orden>10</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Reportes > Ventas > Resumen de Cuenta de Clientes</familia_descripcion>
+            
+
+                </item>
+
+                </item>
+
+		<item>			
+		
+                    <id>168</id>
+                    <descripcion>Valoraciones</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>46</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link></link>
+                    <observacion></observacion>
+                    <orden>6</orden>
+                    <estado>1</estado>
+                    <creado>2023-05-02 20:37:38</creado>
+                    <creado_por>1</creado_por>
+                    <modificado>2023-05-02 20:37:56</modificado>
+                    <modificado_por>1</modificado_por>
+                    <familia_descripcion>Reportes > Valoraciones</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>169</id>
+                    <descripcion>Sucursales</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>168</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>rep_gral_sucursal_valoracion.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2023-05-02 20:37:59</creado>
+                    <creado_por>1</creado_por>
+                    <modificado>2023-05-02 20:39:52</modificado>
+                    <modificado_por>1</modificado_por>
+                    <familia_descripcion>Reportes > Valoraciones > Sucursales</familia_descripcion>
+            
+
+                </item>
+
+                </item>
+
+		<item>			
+		
+                    <id>147</id>
+                    <descripcion>Estadisticas</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>46</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>7</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2023-05-02 20:37:56</modificado>
+                    <modificado_por>1</modificado_por>
+                    <familia_descripcion>Reportes > Estadisticas</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>148</id>
+                    <descripcion>Ventas de Vendedores a Clientes</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>147</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>rep_vta_vendedor_ventas_x_cliente.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Reportes > Estadisticas > Ventas de Vendedores a Clientes</familia_descripcion>
+            
+
+                </item>
+
+                </item>
+
+		<item>			
+		
+                    <id>78</id>
+                    <descripcion>Compras</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>46</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>8</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2023-05-02 20:37:56</modificado>
+                    <modificado_por>1</modificado_por>
+                    <familia_descripcion>Reportes > Compras</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>90</id>
+                    <descripcion>Pedidos de Cotizacion</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>78</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>rep_pde_pedido.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>0</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Reportes > Compras > Pedidos de Cotizacion</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>91</id>
+                    <descripcion>Ordenes de Compra</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>78</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>rep_pde_orden_compra.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Reportes > Compras > Ordenes de Compra</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>92</id>
+                    <descripcion>Recepciones</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>78</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo>aqui se ingresa lalala para sasasa</alternativo>
+                    <link>rep_pde_recepcion.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Reportes > Compras > Recepciones</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>93</id>
+                    <descripcion>Facturas</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>78</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>rep_pde_factura.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Reportes > Compras > Facturas</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>94</id>
+                    <descripcion>Notas de Credito</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>78</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>rep_pde_nota_credito.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Reportes > Compras > Notas de Credito</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>95</id>
+                    <descripcion>Notas de Debito</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>78</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>rep_pde_nota_debito.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Reportes > Compras > Notas de Debito</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>96</id>
+                    <descripcion>Recibos de Compra</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>78</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>rep_pde_recibo.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Reportes > Compras > Recibos de Compra</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>103</id>
+                    <descripcion>Resumen de Cuenta con Proveedores</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>78</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>rep_pde_resumen_cuenta.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Reportes > Compras > Resumen de Cuenta con Proveedores</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>156</id>
+                    <descripcion>Imputación a Centros de Costos</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>78</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>rep_pde_factura_centro_costo_concepto.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Reportes > Compras > Imputación a Centros de Costos</familia_descripcion>
+            
+
+                </item>
+
+                </item>
+
+		<item>			
+		
+                    <id>115</id>
+                    <descripcion>Finanzas</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>46</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>9</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2023-05-02 20:37:56</modificado>
+                    <modificado_por>1</modificado_por>
+                    <familia_descripcion>Reportes > Finanzas</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>116</id>
+                    <descripcion>Cheques</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>115</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>rep_fnd_chq_cheques.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Reportes > Finanzas > Cheques</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>145</id>
+                    <descripcion>Cajas</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>115</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>rep_fnd_caja.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Reportes > Finanzas > Cajas</familia_descripcion>
+            
+
+                </item>
+
+                </item>
+
+		<item>			
+		
+                    <id>80</id>
+                    <descripcion>Contabilidad</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>46</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>10</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2023-05-02 20:37:56</modificado>
+                    <modificado_por>1</modificado_por>
+                    <familia_descripcion>Reportes > Contabilidad</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>89</id>
+                    <descripcion>Libro Ventas</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>80</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>rep_cntb_libro_ventas.php</link>
+                    <observacion></observacion>
+                    <orden>1</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Reportes > Contabilidad > Libro Ventas</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>97</id>
+                    <descripcion>Libros Compras</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>80</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>rep_cntb_libro_compras.php</link>
+                    <observacion></observacion>
+                    <orden>2</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Reportes > Contabilidad > Libros Compras</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>149</id>
+                    <descripcion>Retenciones</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>80</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>3</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Reportes > Contabilidad > Retenciones</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>150</id>
+                    <descripcion>de Clientes</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>149</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>rep_cntb_retenciones_de_clientes.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Reportes > Contabilidad > Retenciones > de Clientes</familia_descripcion>
+            
+
+                </item>
+
+		<item>			
+		
+                    <id>151</id>
+                    <descripcion>a Proveedores</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>149</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>rep_cntb_retenciones_a_proveedores.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Reportes > Contabilidad > Retenciones > a Proveedores</familia_descripcion>
+            
+
+                </item>
+
+                </item>
+
+		<item>			
+		
+                    <id>152</id>
+                    <descripcion>Percepciones</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>80</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>4</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Reportes > Contabilidad > Percepciones</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>153</id>
+                    <descripcion>a Clientes</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>152</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>rep_cntb_percepciones_a_clientes.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Reportes > Contabilidad > Percepciones > a Clientes</familia_descripcion>
+            
+
+                </item>
+
+                </item>
+
+                </item>
+
+		<item>			
+		
+                    <id>159</id>
+                    <descripcion>Usuarios</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>46</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>#</link>
+                    <observacion></observacion>
+                    <orden>11</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2023-05-02 20:37:56</modificado>
+                    <modificado_por>1</modificado_por>
+                    <familia_descripcion>Reportes > Usuarios</familia_descripcion>
+            
+
+		<item>			
+		
+                    <id>160</id>
+                    <descripcion>Navegacion</descripcion>
+                    <gen_arbol_id>2</gen_arbol_id>
+                    <gen_menu_item_padre>159</gen_menu_item_padre>
+                    <codigo></codigo>
+                    <alternativo></alternativo>
+                    <link>rep_us_navegacion.php</link>
+                    <observacion></observacion>
+                    <orden>0</orden>
+                    <estado>1</estado>
+                    <creado>2022-07-22 14:29:43</creado>
+                    <creado_por>0</creado_por>
+                    <modificado>2022-07-22 14:29:43</modificado>
+                    <modificado_por>0</modificado_por>
+                    <familia_descripcion>Reportes > Usuarios > Navegacion</familia_descripcion>
+            
+
+                </item>
+
+                </item>
+
+                </item>
+</arbol>

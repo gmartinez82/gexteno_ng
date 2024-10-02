@@ -1,0 +1,17 @@
+<?php
+require_once "base/BEkuParamTipoRegimen.php";
+
+class EkuParamTipoRegimen extends BEkuParamTipoRegimen {
+
+    const TIPO_REGIMEN_TURISMO = 'REGIMEN_TURISMO';
+    const TIPO_IMPORTADOR = 'IMPORTADOR';
+    const TIPO_EXPORTADOR = 'EXPORTADOR';
+    const TIPO_MAQUILA = 'MAQUILA';
+    const TIPO_LEY_60_90 = 'LEY_60_90';
+    const TIPO_REGIMEN_PEQUENIO_PRODUCTOR = 'REGIMEN_PEQUENIO_PRODUCTOR';
+    const TIPO_REGIMEN_MEDIANO_PRODUCTOR = 'REGIMEN_MEDIANO_PRODUCTOR';
+    const TIPO_REGIMEN_CONTABLE = 'REGIMEN_CONTABLE';
+
+}
+
+?>

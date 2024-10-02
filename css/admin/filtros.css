@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+
+.filtros{
+    margin: 1px 0 10px 15px;
+}
+.filtros .titulo{
+    font-size:13px;
+    font-weight:normal;
+    padding: 2px;
+}
+.filtros .filtro{
+    display:inline-block;
+
+    border:#CCCCCC solid 1px;
+    background-color:#E6F0F9;
+    padding:3px;
+    box-shadow: 5px 5px 8px #666;	
+}
+.filtros .campo{
+    display:inline;
+    padding:3px;
+    color:#666;
+}
+.filtros .comparador{
+    display:inline;
+    padding:3px;
+    color:#000000;
+}
+.filtros .valor{
+    display:inline;
+    padding:3px;
+    font-weight:bold;
+}
+.filtros .criterios-varios{
+    display:inline;
+    font-size: 13px;
+    padding: 5px 20px;
+}
+.filtros .eliminar{
+    display:inline;
+    padding:3px 1px 3px 8px;
+}

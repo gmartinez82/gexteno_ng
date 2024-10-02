@@ -1,0 +1,137 @@
+
+<?php
+
+?>
+<td align='center' class='adm_tbl_lineas <?php echo $estado ?> <?php echo $publicado ?> <?php echo $destacado ?> <?php echo $principal ?>'>
+    <div class="vermasinfo" identificador="<?php echo $gen_prca_ejecucion->getId() ?>" modulo="gen_prca_ejecucion">+</div>
+</td>
+
+<td align='center' class='adm_tbl_lineas <?php echo $estado ?> <?php echo $publicado ?> <?php echo $destacado ?> <?php echo $principal ?>'>
+    <div class="id">
+            <?php Gral::_echo($gen_prca_ejecucion->getId()) ?>
+    </div>
+</td>	
+
+<td align='left' class='adm_tbl_lineas <?php echo $estado ?> <?php echo $publicado ?> <?php echo $destacado ?> <?php echo $principal ?>'>
+    <div class="descripcion">
+            <?php Gral::_echo($gen_prca_ejecucion->getDescripcion()) ?>
+    </div>
+    <?php if (count($gen_prca_ejecucion->getArrDescripcionExtendidaParaBackend()) > 0) { ?>
+        <div class="descripcion-extendida">
+            <?php foreach ($gen_prca_ejecucion->getArrDescripcionExtendidaParaBackend() as $i => $arr_descripcion_extendida) { ?>
+                <?php if (trim($arr_descripcion_extendida['dato']) != '') { ?>
+                    <div class="descripcion-extendida-uno <?php echo $i ?> ">
+                        <div class="par">
+                            <div class="label">
+                                <?php Gral::_echo($arr_descripcion_extendida['label']) ?>            
+                            </div>
+                            <div class="dato">
+                                <?php Gral::_echo($arr_descripcion_extendida['dato']) ?>            
+                            </div>
+                        </div>
+                    </div>
+                <?php } ?>
+            <?php } ?>
+        </div>
+    <?php } ?>                
+
+</td>	
+
+<td align='center' class='adm_tbl_lineas <?php echo $estado ?> <?php echo $publicado ?> <?php echo $destacado ?> <?php echo $principal ?>'>
+	
+    <div class="gen_api_proyecto_id <?php Gral::_echo($gen_prca_ejecucion->getGenApiProyecto()->getCodigo()) ?> ">	
+
+        <?php Gral::_echo($gen_prca_ejecucion->getGenApiProyecto()->getDescripcion()) ?>
+    </div>
+
+</td>
+<td align='center' class='adm_tbl_lineas <?php echo $estado ?> <?php echo $publicado ?> <?php echo $destacado ?> <?php echo $principal ?>'>
+	
+    <div class="gen_prca_proceso_id <?php Gral::_echo($gen_prca_ejecucion->getGenPrcaProceso()->getCodigo()) ?> ">	
+
+        <?php Gral::_echo($gen_prca_ejecucion->getGenPrcaProceso()->getDescripcion()) ?>
+    </div>
+
+</td>
+<td align='center' class='adm_tbl_lineas <?php echo $estado ?> <?php echo $publicado ?> <?php echo $destacado ?> <?php echo $principal ?>'>
+    <div class="fechahora_inicio">
+            <?php Gral::_echo(Gral::getFechaHoraToWeb($gen_prca_ejecucion->getFechahoraInicio())) ?>
+    </div>
+</td>	
+
+<td align='center' class='adm_tbl_lineas <?php echo $estado ?> <?php echo $publicado ?> <?php echo $destacado ?> <?php echo $principal ?>'>
+    <div class="fechahora_fin">
+            <?php Gral::_echo(Gral::getFechaHoraToWeb($gen_prca_ejecucion->getFechahoraFin())) ?>
+    </div>
+</td>	
+
+<td align='center' class='adm_tbl_lineas <?php echo $estado ?> <?php echo $publicado ?> <?php echo $destacado ?> <?php echo $principal ?>'>
+	
+    <div class="iniciado <?php Gral::_echo(GralSiNo::getOxId($gen_prca_ejecucion->getIniciado())->getCodigo()) ?> ">	
+
+        <?php if($gen_prca_ejecucion->getIniciado()){ ?>
+        <img src='imgs/tilde_<?php echo $gen_prca_ejecucion->getIniciado() ?>.png' width='16' border='0' alt="<?php Gral::_echo($gen_prca_ejecucion->getIniciado()) ?>" title="<?php Gral::_echo(GralSiNo::getOxId($gen_prca_ejecucion->getIniciado())->getDescripcion()) ?>" />
+        <?php }else{ ?>
+        -
+        <?php } ?>        
+
+    </div>
+
+</td>
+<td align='center' class='adm_tbl_lineas <?php echo $estado ?> <?php echo $publicado ?> <?php echo $destacado ?> <?php echo $principal ?>'>
+	
+    <div class="finalizado <?php Gral::_echo(GralSiNo::getOxId($gen_prca_ejecucion->getFinalizado())->getCodigo()) ?> ">	
+
+        <?php if($gen_prca_ejecucion->getFinalizado()){ ?>
+        <img src='imgs/tilde_<?php echo $gen_prca_ejecucion->getFinalizado() ?>.png' width='16' border='0' alt="<?php Gral::_echo($gen_prca_ejecucion->getFinalizado()) ?>" title="<?php Gral::_echo(GralSiNo::getOxId($gen_prca_ejecucion->getFinalizado())->getDescripcion()) ?>" />
+        <?php }else{ ?>
+        -
+        <?php } ?>        
+
+    </div>
+
+</td>
+<td align='center' class='adm_tbl_lineas <?php echo $estado ?> <?php echo $publicado ?> <?php echo $destacado ?> <?php echo $principal ?>'>
+	
+    <div class="confirmado <?php Gral::_echo(GralSiNo::getOxId($gen_prca_ejecucion->getConfirmado())->getCodigo()) ?> ">	
+
+        <?php if($gen_prca_ejecucion->getConfirmado()){ ?>
+        <img src='imgs/tilde_<?php echo $gen_prca_ejecucion->getConfirmado() ?>.png' width='16' border='0' alt="<?php Gral::_echo($gen_prca_ejecucion->getConfirmado()) ?>" title="<?php Gral::_echo(GralSiNo::getOxId($gen_prca_ejecucion->getConfirmado())->getDescripcion()) ?>" />
+        <?php }else{ ?>
+        -
+        <?php } ?>        
+
+    </div>
+
+</td>
+<td align='center' class='adm_tbl_lineas <?php echo $estado ?> <?php echo $publicado ?> <?php echo $destacado ?> <?php echo $principal ?>'>
+    <ul class="adm_botones_acciones">
+	
+	<?php if(UsCredencial::getEsAcreditado('GEN_PRCA_EJECUCION_ADM_ACCION_MODIFICAR')){ ?>
+	<li class='adm_botones_accion'>
+            <a href='gen_prca_ejecucion_alta.php?id=<?php Gral::_echo($gen_prca_ejecucion->getId()) ?>' title='<?php Lang::_lang('Modificar') ?>'><img src='imgs/btn_modi.gif' width='20' border='0' /></a>
+	</li>
+	<?php } ?>
+	
+	<?php if(UsCredencial::getEsAcreditado('GEN_PRCA_EJECUCION_ADM_ACCION_ELIMINAR')){ ?>
+	<li class='adm_botones_accion'>
+            <a href='Javascript:eliminar(<?php Gral::_echo($gen_prca_ejecucion->getId()) ?>)' title='<?php Lang::_lang('Eliminar') ?>'><img src='imgs/btn_elim.gif' width='20' border='0' /></a>
+	</li>
+	<?php } ?>
+
+	<?php if(UsCredencial::getEsAcreditado('GEN_PRCA_EJECUCION_ADM_ACCION_ESTADO')){ ?>
+	<li class='adm_botones_accion estado' title='<?php Lang::_lang('Habilitar/Deshabilitar') ?>'>
+            <img src='imgs/btn_estado_<?php Gral::_echo($gen_prca_ejecucion->getEstado())  ?>.gif' width='20' border='0' />
+	</li>
+	<?php } ?>
+
+        <?php if (UsCredencial::getEsAcreditado('GEN_PRCA_EJECUCION_ADM_ACCION_CONFIG')) { ?>
+        <li class='adm_botones_accion db_context' archivo='<?php Gral::_echo(Gral::getPath('path_http')) ?>admin/ajax/modulos/gen_prca_ejecucion/gen_prca_ejecucion_db_context_acciones.php?id=<?php Gral::_echo($gen_prca_ejecucion->getId()) ?>' modulo_metodo_init="setInitGenPrcaEjecucion()">
+            <img src='imgs/btn_config.png' width='20' />       
+        </li>
+        <?php } ?>
+
+    </ul>
+</td>
+
+

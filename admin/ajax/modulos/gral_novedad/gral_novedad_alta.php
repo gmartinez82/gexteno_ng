@@ -1,0 +1,398 @@
+<?php
+include_once "_autoload.php";
+include_once Gral::getPathAbs()."admin/control/seguridad_modulo.php";
+include_once Gral::getPathAbs()."admin/control/init.php";
+
+// -----------------------------------------------------------------------------
+// se controla la credencial para realizar la accion
+// -----------------------------------------------------------------------------
+if(!UsCredencial::getEsAcreditado('GRAL_NOVEDAD_ALTA')){
+    echo "No tiene asignada la credencial GRAL_NOVEDAD_ALTA. ";
+    return false;
+}
+
+$db_nombre_objeto = 'gral_novedad';
+$db_nombre_pagina = 'gral_novedad_alta';
+
+$gral_novedad = new GralNovedad();
+$error = new DbError();
+$hdn_error = 1;
+
+if(Gral::esPost()){
+	$hdn_id = Gral::getVars(1, 'hdn_id');
+
+	$btn_guardar = Gral::getVars(1, 'btn_guardar');
+	$btn_guardarnvo = Gral::getVars(1, 'btn_guardarnvo');
+
+	$accion = '';
+	if(trim($btn_guardar)!= ''){ $accion = 'guardar'; }
+	if(trim($btn_guardarnvo) != ''){ $accion = 'guardarnvo'; }
+	
+	$gral_novedad = new GralNovedad();
+	if(trim($hdn_id) != '') $gral_novedad->setId($hdn_id, false);
+	$gral_novedad->setDescripcion(Gral::getVars(1, "gral_novedad_txt_descripcion"));
+	$gral_novedad->setDescripcionCorta(Gral::getVars(1, "gral_novedad_txt_descripcion_corta"));
+	$gral_novedad->setCodigo(Gral::getVars(1, "gral_novedad_txt_codigo"));
+	$gral_novedad->setLaboral(Gral::getVars(1, "gral_novedad_cmb_laboral", 0));
+	$gral_novedad->setPlanificable(Gral::getVars(1, "gral_novedad_cmb_planificable", 0));
+	$gral_novedad->setRequiereMovimientos(Gral::getVars(1, "gral_novedad_cmb_requiere_movimientos", 0));
+	$gral_novedad->setPermiteConfirmacion(Gral::getVars(1, "gral_novedad_cmb_permite_confirmacion", 0));
+	$gral_novedad->setHoras(Gral::getVars(1, "gral_novedad_txt_horas"));
+	$gral_novedad->setCodigoColor(Gral::getVars(1, "gral_novedad_txt_codigo_color"));
+	$gral_novedad->setObservacion(Gral::getVars(1, "gral_novedad_txa_observacion"));
+	$gral_novedad->setOrden(Gral::getVars(1, "gral_novedad_txt_orden", 0));
+	$gral_novedad->setEstado(Gral::getVars(1, "gral_novedad_cmb_estado", 0));
+	$gral_novedad->setCreado(Gral::getFechaHoraToDb(Gral::getVars(1, "gral_novedad_txt_creado")));
+	$gral_novedad->setCreadoPor(Gral::getVars(1, "gral_novedad__creado_por", 0));
+	$gral_novedad->setModificado(Gral::getFechaHoraToDb(Gral::getVars(1, "gral_novedad_txt_modificado")));
+	$gral_novedad->setModificadoPor(Gral::getVars(1, "gral_novedad__modificado_por", 0));
+
+	$gral_novedad_estado = new GralNovedad();
+	if(trim($hdn_id) != ''){
+		$gral_novedad_estado->setId($hdn_id);
+		$gral_novedad->setEstado($gral_novedad_estado->getEstado());
+				
+	}else{
+		$gral_novedad->setEstado(1);
+				
+	}
+	
+	switch($accion){
+		case 'guardar':
+			$error = $gral_novedad->control();
+			if(!$error->getExisteError()){
+				$gral_novedad->saveDesdeBackend();				
+								
+				$hdn_error = 0;
+				//header('Location: gral_novedad_alta.php?cs=1&id='.$gral_novedad->getId());
+			}
+		break;
+		case 'guardarnvo':
+			$error = $gral_novedad->control();
+			if(!$error->getExisteError()){
+				$gral_novedad->saveDesdeBackend();
+
+				//$hdn_error = 0; // aqui no debe ir para que no cierre el modal
+				//header('Location: gral_novedad_alta.php?cs=1');
+				$gral_novedad = new GralNovedad();
+			}
+		break;
+	}
+	Gral::setSes('GralNovedad_ULTIMO_INSERTADO', $gral_novedad->getId());
+}else{
+	$prefijo = Gral::getVars(2, 'prefijo');
+	$cmb_gral_novedad_id = Gral::getVars(2, $prefijo.'cmb_gral_novedad_id', 0);
+	if($cmb_gral_novedad_id != 0){
+		$gral_novedad = GralNovedad::getOxId($cmb_gral_novedad_id);
+	}else{
+	
+	$gral_novedad->setDescripcion(Gral::getVars(2, "descripcion", ''));
+	$gral_novedad->setDescripcionCorta(Gral::getVars(2, "descripcion_corta", ''));
+	$gral_novedad->setCodigo(Gral::getVars(2, "codigo", ''));
+	$gral_novedad->setLaboral(Gral::getVars(2, "laboral", 0));
+	$gral_novedad->setPlanificable(Gral::getVars(2, "planificable", 0));
+	$gral_novedad->setRequiereMovimientos(Gral::getVars(2, "requiere_movimientos", 0));
+	$gral_novedad->setPermiteConfirmacion(Gral::getVars(2, "permite_confirmacion", 0));
+	$gral_novedad->setHoras(Gral::getVars(2, "horas", ''));
+	$gral_novedad->setCodigoColor(Gral::getVars(2, "codigo_color", ''));
+	$gral_novedad->setObservacion(Gral::getVars(2, "observacion", ''));
+	$gral_novedad->setOrden(Gral::getVars(2, "orden", 0));
+	$gral_novedad->setEstado(Gral::getVars(2, "estado", 0));
+	$gral_novedad->setCreado(Gral::getVars(2, "creado", date('Y-m-d H:m:s')));
+	$gral_novedad->setCreadoPor(Gral::getVars(2, "creado_por", 0));
+	$gral_novedad->setModificado(Gral::getVars(2, "modificado", date('Y-m-d H:m:s')));
+	$gral_novedad->setModificadoPor(Gral::getVars(2, "modificado_por", 0));
+	}
+}
+
+if(!$error->getExisteError()){ 
+	$hdn_id = Gral::getVars(2, 'id');
+	if(trim($hdn_id) != '') $gral_novedad->setId($hdn_id);
+}
+
+?>
+<body>
+<form id='formu' name='formu' method='post' action='ajax/modulos/gral_novedad/gral_novedad_alta.php' >
+      <?php //include 'parciales/confirmacion.php';?>
+            <?php //include 'parciales/error.php';?>
+        
+            <div class="alta full datos">
+                <table border='0' cellspacing='10' class='adm_carga_datos' align='center' id='alta_modal_gral_novedad' width='90%'>
+        
+				<tr>
+				  <td  id="label_gral_novedad_txt_descripcion" class='adm_carga_datos_titulos' width='200' help="<?php echo 'help_'.$db_nombre_pagina.'_descripcion' ?>" >
+				  
+                                        <?php Lang::_lang('Descripcion', false, true, XmlLenguajeTipo::TIPO_PALABRA) ?>
+				  
+				  </td>
+				  <td  id="dato_gral_novedad_txt_descripcion" class='adm_carga_datos_datos' width='400'>
+
+					<?php $error_input_css = ($error->getErrorXIndice('descripcion')->getMensaje()) ? 'error-mensaje-input' : ''; ?>
+				  
+				  <input name='gral_novedad_txt_descripcion' type='text' class='textbox <?php echo $error_input_css ?> ' id='gral_novedad_txt_descripcion' value='<?php Gral::_echoTxt($gral_novedad->getDescripcion(), true) ?>' size='50' />            
+                    <?php if(Lang::_lang('help_gral_novedad_alta_descripcion', true, false, XmlLenguajeTipo::TIPO_AYUDA) != ''){ ?>
+                        <img class="gen-help-icon" src="imgs/btn_ayuda_verde.png" width="25" alt="help" title="<?php Lang::_lang('help_gral_novedad_alta_descripcion', false, false, XmlLenguajeTipo::TIPO_AYUDA) ?>" />
+                    <?php } ?>
+
+                    <?php if(Lang::_lang('comentario_gral_novedad_alta_descripcion', true, false, XmlLenguajeTipo::TIPO_COMENTARIO) != ''){ ?>
+                        <div class="gen-help-comentario"><?php Lang::_lang('comentario_gral_novedad_alta_descripcion', false, false, XmlLenguajeTipo::TIPO_COMENTARIO) ?></div>
+                    <?php } ?>
+                
+                    <div class="error-mensaje-input-texto"><?php Gral::_echo($error->getErrorXIndice('descripcion')->getMensaje()) ?></div>
+
+                </td>
+            </tr>
+				
+				<tr>
+				  <td  id="label_gral_novedad_txt_descripcion_corta" class='adm_carga_datos_titulos' width='200' help="<?php echo 'help_'.$db_nombre_pagina.'_descripcion_corta' ?>" >
+				  
+                                        <?php Lang::_lang('Descripcion Corta', false, true, XmlLenguajeTipo::TIPO_PALABRA) ?>
+				  
+				  </td>
+				  <td  id="dato_gral_novedad_txt_descripcion_corta" class='adm_carga_datos_datos' width='400'>
+
+					<?php $error_input_css = ($error->getErrorXIndice('descripcion_corta')->getMensaje()) ? 'error-mensaje-input' : ''; ?>
+				  
+				  <input name='gral_novedad_txt_descripcion_corta' type='text' class='textbox <?php echo $error_input_css ?> ' id='gral_novedad_txt_descripcion_corta' value='<?php Gral::_echoTxt($gral_novedad->getDescripcionCorta(), true) ?>' size='10' />            
+                    <?php if(Lang::_lang('help_gral_novedad_alta_descripcion_corta', true, false, XmlLenguajeTipo::TIPO_AYUDA) != ''){ ?>
+                        <img class="gen-help-icon" src="imgs/btn_ayuda_verde.png" width="25" alt="help" title="<?php Lang::_lang('help_gral_novedad_alta_descripcion_corta', false, false, XmlLenguajeTipo::TIPO_AYUDA) ?>" />
+                    <?php } ?>
+
+                    <?php if(Lang::_lang('comentario_gral_novedad_alta_descripcion_corta', true, false, XmlLenguajeTipo::TIPO_COMENTARIO) != ''){ ?>
+                        <div class="gen-help-comentario"><?php Lang::_lang('comentario_gral_novedad_alta_descripcion_corta', false, false, XmlLenguajeTipo::TIPO_COMENTARIO) ?></div>
+                    <?php } ?>
+                
+                    <div class="error-mensaje-input-texto"><?php Gral::_echo($error->getErrorXIndice('descripcion_corta')->getMensaje()) ?></div>
+
+                </td>
+            </tr>
+				
+				<tr>
+				  <td  id="label_gral_novedad_txt_codigo" class='adm_carga_datos_titulos' width='200' help="<?php echo 'help_'.$db_nombre_pagina.'_codigo' ?>" >
+				  
+                                        <?php Lang::_lang('Codigo', false, true, XmlLenguajeTipo::TIPO_PALABRA) ?>
+				  
+				  </td>
+				  <td  id="dato_gral_novedad_txt_codigo" class='adm_carga_datos_datos' width='400'>
+
+					<?php $error_input_css = ($error->getErrorXIndice('codigo')->getMensaje()) ? 'error-mensaje-input' : ''; ?>
+				  
+				  <input name='gral_novedad_txt_codigo' type='text' class='textbox <?php echo $error_input_css ?> ' id='gral_novedad_txt_codigo' value='<?php Gral::_echoTxt($gral_novedad->getCodigo(), true) ?>' size='40' />            
+                    <?php if(Lang::_lang('help_gral_novedad_alta_codigo', true, false, XmlLenguajeTipo::TIPO_AYUDA) != ''){ ?>
+                        <img class="gen-help-icon" src="imgs/btn_ayuda_verde.png" width="25" alt="help" title="<?php Lang::_lang('help_gral_novedad_alta_codigo', false, false, XmlLenguajeTipo::TIPO_AYUDA) ?>" />
+                    <?php } ?>
+
+                    <?php if(Lang::_lang('comentario_gral_novedad_alta_codigo', true, false, XmlLenguajeTipo::TIPO_COMENTARIO) != ''){ ?>
+                        <div class="gen-help-comentario"><?php Lang::_lang('comentario_gral_novedad_alta_codigo', false, false, XmlLenguajeTipo::TIPO_COMENTARIO) ?></div>
+                    <?php } ?>
+                
+                    <div class="error-mensaje-input-texto"><?php Gral::_echo($error->getErrorXIndice('codigo')->getMensaje()) ?></div>
+
+                </td>
+            </tr>
+				
+				<tr>
+				  <td  id="label_gral_novedad_cmb_laboral" class='adm_carga_datos_titulos' width='200' help="<?php echo 'help_'.$db_nombre_pagina.'_laboral' ?>" >
+				  
+                                        <?php Lang::_lang('Laboral', false, true, XmlLenguajeTipo::TIPO_PALABRA) ?>
+				  
+				  </td>
+				  <td  id="dato_gral_novedad_cmb_laboral" class='adm_carga_datos_datos' width='400'>
+
+					<?php $error_input_css = ($error->getErrorXIndice('laboral')->getMensaje()) ? 'error-mensaje-input' : ''; ?>
+				  
+		<?php Html::html_dib_select(1, 'gral_novedad_cmb_laboral', GralSiNo::getGralSiNosCmb(), $gral_novedad->getLaboral(), 'textbox '.$error_input_css) ?>
+		            
+                    <?php if(Lang::_lang('help_gral_novedad_alta_laboral', true, false, XmlLenguajeTipo::TIPO_AYUDA) != ''){ ?>
+                        <img class="gen-help-icon" src="imgs/btn_ayuda_verde.png" width="25" alt="help" title="<?php Lang::_lang('help_gral_novedad_alta_laboral', false, false, XmlLenguajeTipo::TIPO_AYUDA) ?>" />
+                    <?php } ?>
+
+                    <?php if(Lang::_lang('comentario_gral_novedad_alta_laboral', true, false, XmlLenguajeTipo::TIPO_COMENTARIO) != ''){ ?>
+                        <div class="gen-help-comentario"><?php Lang::_lang('comentario_gral_novedad_alta_laboral', false, false, XmlLenguajeTipo::TIPO_COMENTARIO) ?></div>
+                    <?php } ?>
+                
+                    <div class="error-mensaje-input-texto"><?php Gral::_echo($error->getErrorXIndice('laboral')->getMensaje()) ?></div>
+
+                </td>
+            </tr>
+				
+				<tr>
+				  <td  id="label_gral_novedad_cmb_planificable" class='adm_carga_datos_titulos' width='200' help="<?php echo 'help_'.$db_nombre_pagina.'_planificable' ?>" >
+				  
+                                        <?php Lang::_lang('Planificable', false, true, XmlLenguajeTipo::TIPO_PALABRA) ?>
+				  
+				  </td>
+				  <td  id="dato_gral_novedad_cmb_planificable" class='adm_carga_datos_datos' width='400'>
+
+					<?php $error_input_css = ($error->getErrorXIndice('planificable')->getMensaje()) ? 'error-mensaje-input' : ''; ?>
+				  
+		<?php Html::html_dib_select(1, 'gral_novedad_cmb_planificable', GralSiNo::getGralSiNosCmb(), $gral_novedad->getPlanificable(), 'textbox '.$error_input_css) ?>
+		            
+                    <?php if(Lang::_lang('help_gral_novedad_alta_planificable', true, false, XmlLenguajeTipo::TIPO_AYUDA) != ''){ ?>
+                        <img class="gen-help-icon" src="imgs/btn_ayuda_verde.png" width="25" alt="help" title="<?php Lang::_lang('help_gral_novedad_alta_planificable', false, false, XmlLenguajeTipo::TIPO_AYUDA) ?>" />
+                    <?php } ?>
+
+                    <?php if(Lang::_lang('comentario_gral_novedad_alta_planificable', true, false, XmlLenguajeTipo::TIPO_COMENTARIO) != ''){ ?>
+                        <div class="gen-help-comentario"><?php Lang::_lang('comentario_gral_novedad_alta_planificable', false, false, XmlLenguajeTipo::TIPO_COMENTARIO) ?></div>
+                    <?php } ?>
+                
+                    <div class="error-mensaje-input-texto"><?php Gral::_echo($error->getErrorXIndice('planificable')->getMensaje()) ?></div>
+
+                </td>
+            </tr>
+				
+				<tr>
+				  <td  id="label_gral_novedad_cmb_requiere_movimientos" class='adm_carga_datos_titulos' width='200' help="<?php echo 'help_'.$db_nombre_pagina.'_requiere_movimientos' ?>" >
+				  
+                                        <?php Lang::_lang('Req Movs', false, true, XmlLenguajeTipo::TIPO_PALABRA) ?>
+				  
+				  </td>
+				  <td  id="dato_gral_novedad_cmb_requiere_movimientos" class='adm_carga_datos_datos' width='400'>
+
+					<?php $error_input_css = ($error->getErrorXIndice('requiere_movimientos')->getMensaje()) ? 'error-mensaje-input' : ''; ?>
+				  
+		<?php Html::html_dib_select(1, 'gral_novedad_cmb_requiere_movimientos', GralSiNo::getGralSiNosCmb(), $gral_novedad->getRequiereMovimientos(), 'textbox '.$error_input_css) ?>
+		            
+                    <?php if(Lang::_lang('help_gral_novedad_alta_requiere_movimientos', true, false, XmlLenguajeTipo::TIPO_AYUDA) != ''){ ?>
+                        <img class="gen-help-icon" src="imgs/btn_ayuda_verde.png" width="25" alt="help" title="<?php Lang::_lang('help_gral_novedad_alta_requiere_movimientos', false, false, XmlLenguajeTipo::TIPO_AYUDA) ?>" />
+                    <?php } ?>
+
+                    <?php if(Lang::_lang('comentario_gral_novedad_alta_requiere_movimientos', true, false, XmlLenguajeTipo::TIPO_COMENTARIO) != ''){ ?>
+                        <div class="gen-help-comentario"><?php Lang::_lang('comentario_gral_novedad_alta_requiere_movimientos', false, false, XmlLenguajeTipo::TIPO_COMENTARIO) ?></div>
+                    <?php } ?>
+                
+                    <div class="error-mensaje-input-texto"><?php Gral::_echo($error->getErrorXIndice('requiere_movimientos')->getMensaje()) ?></div>
+
+                </td>
+            </tr>
+				
+				<tr>
+				  <td  id="label_gral_novedad_cmb_permite_confirmacion" class='adm_carga_datos_titulos' width='200' help="<?php echo 'help_'.$db_nombre_pagina.'_permite_confirmacion' ?>" >
+				  
+                                        <?php Lang::_lang('Perm Confirmacion', false, true, XmlLenguajeTipo::TIPO_PALABRA) ?>
+				  
+				  </td>
+				  <td  id="dato_gral_novedad_cmb_permite_confirmacion" class='adm_carga_datos_datos' width='400'>
+
+					<?php $error_input_css = ($error->getErrorXIndice('permite_confirmacion')->getMensaje()) ? 'error-mensaje-input' : ''; ?>
+				  
+		<?php Html::html_dib_select(1, 'gral_novedad_cmb_permite_confirmacion', GralSiNo::getGralSiNosCmb(), $gral_novedad->getPermiteConfirmacion(), 'textbox '.$error_input_css) ?>
+		            
+                    <?php if(Lang::_lang('help_gral_novedad_alta_permite_confirmacion', true, false, XmlLenguajeTipo::TIPO_AYUDA) != ''){ ?>
+                        <img class="gen-help-icon" src="imgs/btn_ayuda_verde.png" width="25" alt="help" title="<?php Lang::_lang('help_gral_novedad_alta_permite_confirmacion', false, false, XmlLenguajeTipo::TIPO_AYUDA) ?>" />
+                    <?php } ?>
+
+                    <?php if(Lang::_lang('comentario_gral_novedad_alta_permite_confirmacion', true, false, XmlLenguajeTipo::TIPO_COMENTARIO) != ''){ ?>
+                        <div class="gen-help-comentario"><?php Lang::_lang('comentario_gral_novedad_alta_permite_confirmacion', false, false, XmlLenguajeTipo::TIPO_COMENTARIO) ?></div>
+                    <?php } ?>
+                
+                    <div class="error-mensaje-input-texto"><?php Gral::_echo($error->getErrorXIndice('permite_confirmacion')->getMensaje()) ?></div>
+
+                </td>
+            </tr>
+				
+				<tr>
+				  <td  id="label_gral_novedad_txt_horas" class='adm_carga_datos_titulos' width='200' help="<?php echo 'help_'.$db_nombre_pagina.'_horas' ?>" >
+				  
+                                        <?php Lang::_lang('Horas', false, true, XmlLenguajeTipo::TIPO_PALABRA) ?>
+				  
+				  </td>
+				  <td  id="dato_gral_novedad_txt_horas" class='adm_carga_datos_datos' width='400'>
+
+					<?php $error_input_css = ($error->getErrorXIndice('horas')->getMensaje()) ? 'error-mensaje-input' : ''; ?>
+				  
+				  <input name='gral_novedad_txt_horas' type='text' class='textbox <?php echo $error_input_css ?> ' id='gral_novedad_txt_horas' value='<?php Gral::_echoTxt($gral_novedad->getHoras(), true) ?>' size='10' />            
+                    <?php if(Lang::_lang('help_gral_novedad_alta_horas', true, false, XmlLenguajeTipo::TIPO_AYUDA) != ''){ ?>
+                        <img class="gen-help-icon" src="imgs/btn_ayuda_verde.png" width="25" alt="help" title="<?php Lang::_lang('help_gral_novedad_alta_horas', false, false, XmlLenguajeTipo::TIPO_AYUDA) ?>" />
+                    <?php } ?>
+
+                    <?php if(Lang::_lang('comentario_gral_novedad_alta_horas', true, false, XmlLenguajeTipo::TIPO_COMENTARIO) != ''){ ?>
+                        <div class="gen-help-comentario"><?php Lang::_lang('comentario_gral_novedad_alta_horas', false, false, XmlLenguajeTipo::TIPO_COMENTARIO) ?></div>
+                    <?php } ?>
+                
+                    <div class="error-mensaje-input-texto"><?php Gral::_echo($error->getErrorXIndice('horas')->getMensaje()) ?></div>
+
+                </td>
+            </tr>
+				
+				<tr>
+				  <td  id="label_gral_novedad_txt_codigo_color" class='adm_carga_datos_titulos' width='200' help="<?php echo 'help_'.$db_nombre_pagina.'_codigo_color' ?>" >
+				  
+                                        <?php Lang::_lang('Codigo Color', false, true, XmlLenguajeTipo::TIPO_PALABRA) ?>
+				  
+				  </td>
+				  <td  id="dato_gral_novedad_txt_codigo_color" class='adm_carga_datos_datos' width='400'>
+
+					<?php $error_input_css = ($error->getErrorXIndice('codigo_color')->getMensaje()) ? 'error-mensaje-input' : ''; ?>
+				  
+				  <input name='gral_novedad_txt_codigo_color' type='text' class='textbox <?php echo $error_input_css ?> ' id='gral_novedad_txt_codigo_color' value='<?php Gral::_echoTxt($gral_novedad->getCodigoColor(), true) ?>' size='10' />            
+                    <?php if(Lang::_lang('help_gral_novedad_alta_codigo_color', true, false, XmlLenguajeTipo::TIPO_AYUDA) != ''){ ?>
+                        <img class="gen-help-icon" src="imgs/btn_ayuda_verde.png" width="25" alt="help" title="<?php Lang::_lang('help_gral_novedad_alta_codigo_color', false, false, XmlLenguajeTipo::TIPO_AYUDA) ?>" />
+                    <?php } ?>
+
+                    <?php if(Lang::_lang('comentario_gral_novedad_alta_codigo_color', true, false, XmlLenguajeTipo::TIPO_COMENTARIO) != ''){ ?>
+                        <div class="gen-help-comentario"><?php Lang::_lang('comentario_gral_novedad_alta_codigo_color', false, false, XmlLenguajeTipo::TIPO_COMENTARIO) ?></div>
+                    <?php } ?>
+                
+                    <div class="error-mensaje-input-texto"><?php Gral::_echo($error->getErrorXIndice('codigo_color')->getMensaje()) ?></div>
+
+                </td>
+            </tr>
+				
+				<tr>
+				  <td  id="label_gral_novedad_txa_observacion" class='adm_carga_datos_titulos' width='200' help="<?php echo 'help_'.$db_nombre_pagina.'_observacion' ?>" >
+				  
+                                        <?php Lang::_lang('Observaciones', false, true, XmlLenguajeTipo::TIPO_PALABRA) ?>
+				  
+				  </td>
+				  <td  id="dato_gral_novedad_txa_observacion" class='adm_carga_datos_datos' width='400'>
+
+					<?php $error_input_css = ($error->getErrorXIndice('observacion')->getMensaje()) ? 'error-mensaje-input' : ''; ?>
+				  
+			<textarea name='gral_novedad_txa_observacion' rows='10' cols='50' id='gral_novedad_txa_observacion' class='textbox <?php echo $error_input_css ?>'><?php Gral::_echoTxt($gral_novedad->getObservacion(), true) ?></textarea>            
+                    <?php if(Lang::_lang('help_gral_novedad_alta_observacion', true, false, XmlLenguajeTipo::TIPO_AYUDA) != ''){ ?>
+                        <img class="gen-help-icon" src="imgs/btn_ayuda_verde.png" width="25" alt="help" title="<?php Lang::_lang('help_gral_novedad_alta_observacion', false, false, XmlLenguajeTipo::TIPO_AYUDA) ?>" />
+                    <?php } ?>
+
+                    <?php if(Lang::_lang('comentario_gral_novedad_alta_observacion', true, false, XmlLenguajeTipo::TIPO_COMENTARIO) != ''){ ?>
+                        <div class="gen-help-comentario"><?php Lang::_lang('comentario_gral_novedad_alta_observacion', false, false, XmlLenguajeTipo::TIPO_COMENTARIO) ?></div>
+                    <?php } ?>
+                
+                    <div class="error-mensaje-input-texto"><?php Gral::_echo($error->getErrorXIndice('observacion')->getMensaje()) ?></div>
+
+                </td>
+            </tr>
+				
+        </table>
+      </div>
+      
+      <table border='0' align='center'>
+            <tr>
+                <td width='550' class='adm_carga_datos_botones'>
+                    <input name='hdn_id' type='hidden' id='hdn_id' size='1' value='<?php Gral::_echoTxt($gral_novedad->getId(), true) ?>'/>
+                    <input name='hdn_accion' type='hidden' class='hdn_accion' size='1' value=''/>
+                    <input name='hdn_elemento_id' type='hidden' class='hdn_elemento_id' size='1' value='cmb_gral_novedad_id'/>
+                    <input name='hdn_clase_id' type='hidden' class='hdn_clase_id' size='1' value='gral_novedad'/>
+                    <input name='hdn_prefijo' type='hidden' class='hdn_prefijo' size='1' value='<?php echo $prefijo ?>'/>
+
+                    <input name='hdn_error' type='hidden' class='hdn_error' value='<?php echo $hdn_error ?>' />
+
+                    <input name='btn_cerrar' type='button' class='btn_cerrar' value='<?php Lang::_lang('Cerrar') ?>' />
+			  
+	
+                    <input name='btn_guardarnvo' type='button' class='btn_guardarnvo' value="<?php Lang::_lang('Guardar y Agregar Nuevo') ?>" />
+                    <input name='btn_guardar' type='button' class='btn_guardar' value='<?php Lang::_lang('Guardar') ?>' />
+                </td>
+            </tr>
+      </table>
+      
+	  
+</form>
+</body>
+</html>
+<script>
+    setInit();
+    setInitDbSuggest();
+    setInitDbContext();
+</script>
+

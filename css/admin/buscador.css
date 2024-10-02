@@ -1,0 +1,110 @@
+@charset "iso-8859-2";
+/* CSS Document */
+
+#div_buscador{
+    border:#CCCCCC solid 1px;
+    margin:0px;
+    margin-top:0px;
+    background-color:#E6F0F9;
+    padding:4px;
+    padding-bottom:10px;
+
+}
+
+#div_buscador .datos{
+    text-align:left!important;
+}
+#div_buscador .titulo{
+    font-family:Geneva, Arial, Helvetica, sans-serif;
+    font-size:12px;
+    font-weight:bold;
+    text-align:right;
+    padding:5px;
+    padding-right:10px;
+    color:#FFFFFF;
+
+    background-color:#013254;
+    background-color:#013254;
+}
+
+#div_buscador .par-buscador{
+    display:block;
+    border-bottom:#ccc dotted 1px;
+    margin:5px;
+    padding:5px;
+
+    text-align:right;
+}
+#div_buscador .label{
+    display:inline-block;
+    vertical-align:top;
+
+    padding:2px;
+    padding-left:10px;
+    padding-top:10px;
+    color:#666666;
+}
+#div_buscador .dato{
+    display:inline-block;
+    vertical-align:top;
+
+    padding:1px;
+    padding-left:7px;
+}
+#div_buscador .botones{
+    padding:1px;
+    padding-top:25px;
+    padding-left:15px;
+    text-align:right;
+}
+#div_buscador .botones input{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:12px;
+    background-color:#013254;
+    border:#013254 solid 1px;
+    color:#FFFFFF;
+    padding:6px;
+
+    -moz-border-radius: 5px;
+    cursor:pointer;
+
+    /*width:70px;*/
+}
+#div_buscador .botones #btn_limpiar{
+    color:#f4f4f4;
+}
+#div_buscador .botones #btn_buscar{
+    width:150px!important;
+    font-size:14px;
+}
+#div_buscador .botones input:hover{
+    background-color:#666;
+}
+
+#div_buscador input{
+    border:#999999 solid 1px;
+    background-color:#FFFFFF;
+    color:#013254;
+
+    /*width:165px;*/
+    display:inline-block;
+
+}
+#div_buscador select{
+    display:inline-block;
+    border:#999999 solid 1px;
+    background-color:#FFFFFF;
+    color:#013254;
+
+    width:185px;	
+}
+#div_buscador .comparador{
+    display:inline-block;
+    border:#ccc solid 1px;
+    background-color:#f9f9f9;
+    color:#013254;
+
+    width:80px;
+    font-size:10px;
+    color:#000000;
+}

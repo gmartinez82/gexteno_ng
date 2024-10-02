@@ -1,0 +1,50 @@
+@charset "iso-8859-2";
+/* CSS Document */
+
+.user{
+    width:94%;
+    margin:2px;
+    margin-left:50px;
+    margin-top:-30px;
+    text-align:right;
+}
+.user .datos{
+    display:inline;
+    margin:2px;
+    padding-right:15px;
+}
+.user .datos .usuario{
+    font-weight:bold;
+}
+.user .datos .label{
+    color:#999999;
+    padding-left:8px;
+    margin:2px;
+    border-left:#999999 solid 1px;
+}
+.user .logout{
+    display:inline;
+    padding-left:8px;
+    margin:5px;
+    border-left:#999999 solid 1px;
+}
+/* Avisos */
+.user .db_avisos{
+    float:right;
+}
+.user .db_avisos .db_aviso{
+    border:#000 solid 1px;
+    background-color:#f00;
+
+    color:#FFF;
+    font-weight:bold;
+    font-size:12px;
+
+    height:15px;
+    padding:2px 5px 2px 5px;
+}
+.user .fechahora{
+    display:inline;
+    font-size:10px;
+    color:#666;
+}

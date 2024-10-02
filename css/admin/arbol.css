@@ -1,0 +1,119 @@
+@charset "iso-8859-2";
+/* CSS Document */
+
+.arbol-gestion{
+    margin:20px 20px 20px 20px;
+}
+.arbol-gestion .raiz{
+    padding:10px;
+    background-color:#fdfdfd;
+    border:#CCCCCC dotted 2px;
+}
+.arbol-gestion .raiz .acciones{
+    margin-right:20px;
+    margin-top: -5px;
+    float:right;
+}
+.arbol-gestion .raiz .acciones .accion{
+    margin-left:10px;
+    display:inline-block;
+
+    cursor:pointer;
+}
+
+.arbol-gestion ul{
+    margin-top:3px;
+    padding-left:20px;
+}
+.arbol-gestion li{
+    list-style:none;
+    margin-top:1px;
+}
+.arbol-gestion .uno{
+    background-color: #ededed;
+    border-bottom: #999999 dotted 1px;
+    border-left: #cccccc solid 1px;
+    padding:5px;
+    min-height:32px;
+
+}
+.arbol-gestion .uno:hover{
+    background-color: #dedede;
+}
+.arbol-gestion .uno .arbol-descripcion{
+    font-size:12px;
+    font-weight:bold;
+    color:#000000;
+    margin-left:5px;
+    padding:2px;
+    padding-left:5px;
+
+    cursor: pointer;
+}
+.arbol-gestion .uno .arbol-familia-descripcion{
+    font-size:9px;
+    font-weight:normal;
+    color:#999999;
+    margin-left:5px;
+    padding:2px;
+    padding-left:5px;
+}
+.arbol-gestion .uno .arbol-descripcion:hover{
+    color: #0283bc;
+}
+.arbol-gestion .uno .par{
+    font-size:11px;
+    display:inline-block;
+    vertical-align:top;
+    width:40%!important;
+
+    text-align:left;
+}
+.arbol-gestion .uno .par .label{
+    color:#666;
+    width:auto!important;
+    padding:0px;
+}
+.arbol-gestion .uno .par .dato{
+    font-weight:bold;
+    color:#333;
+    width:auto!important;
+    padding:0px;
+}
+
+.arbol-gestion .uno .arbol-info{
+    display:nonex;
+    vertical-align:top;
+
+    width: 500px;
+    right: 300px;
+    position: absolute;
+
+    padding:0px;
+
+    background-color:transparent;
+    border:none;
+}
+.arbol-gestion .uno .link{
+}
+.arbol-gestion .uno .alternativo{
+}
+.arbol-gestion .uno .arbol-acciones{
+    margin-top: 5px;
+    right: 20px;
+    position: absolute;
+    width: 265px;
+}
+.arbol-gestion .uno .arbol-acciones .accion{
+    margin-left:8px;
+    display:inline-block;
+
+    cursor:pointer;
+}
+
+.arbol-gestion .hijos{
+    border-left: #ccc dotted 2px;
+}
+.arbol-gestion .hijos:hover{
+    border-left: #0283bc solid 2px;    
+}

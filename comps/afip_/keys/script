@@ -1,0 +1,12 @@
+# ----------------------------------------------------------------------------
+# se genera la private key
+# ----------------------------------------------------------------------------
+openssl genrsa -out gexteno_kya.key 2048
+
+# ----------------------------------------------------------------------------
+# se genera el CSR
+# subj_o = Nombre de Empresa
+# subj_cn = Nombre de Server
+# subj_cuit = CUIT de Empresa
+# ----------------------------------------------------------------------------
+openssl req -new -key gexteno_kya.key -subj "/C=AR/O=KYA/CN=GEXTENO/serialNumber=CUIT 30707150609" -out gexteno_kya.csr

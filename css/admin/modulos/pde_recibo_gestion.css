@@ -1,0 +1,379 @@
+/* Archivo CSS de 'pde_recibo' */
+
+/* Listado de Recibo */
+#listado_adm_pde_recibo_gestion{
+
+}
+#listado_adm_pde_recibo_gestion .codigo{
+    font-size: 10px;
+    color: #666;
+}
+#listado_adm_pde_recibo_gestion .fecha_emision{
+    font-size: 10px;
+    color: #666;
+}
+#listado_adm_pde_recibo_gestion .tipo-origen{
+    background-color: #ededed;
+    padding: 2px 3px;
+    margin: 2px;
+
+    font-size: 10px;
+    color: #333;
+}
+#listado_adm_pde_recibo_gestion .cuit{
+    color: #666;
+    font-size: 11px;
+}
+#listado_adm_pde_recibo_gestion .persona_descripcion{
+    font-weight: bold;
+    color: #000;
+}
+
+#listado_adm_pde_recibo_gestion .cliente{
+    font-weight: bold;
+    color: #000;
+}
+#listado_adm_pde_recibo_gestion .cliente img{
+    vertical-align: middle;
+}
+#listado_adm_pde_recibo_gestion .email{
+    color: #333;
+}
+#listado_adm_pde_recibo_gestion .documento{
+    color: #333;
+}
+#listado_adm_pde_recibo_gestion .pde_recibo_tipo_estado{
+    color: #000;
+}
+#listado_adm_pde_recibo_gestion .pde_recibo_tipo_estado img{
+    vertical-align: middle;
+}
+#listado_adm_pde_recibo_gestion .pde-comprobantes-vinculados{
+    margin: 0px;
+    max-height: 50px;
+    overflow: auto;
+}
+#listado_adm_pde_recibo_gestion .pde-comprobantes-vinculados .pde-comprobante-vinculado{
+    color: #666;
+    font-size: 10px;
+    padding-left: 0px;
+}
+#listado_adm_pde_recibo_gestion .pde_tipo_recibo{
+    color: #333;
+    font-weight: bold;
+}
+#listado_adm_pde_recibo_gestion .subtotal{
+    text-align: right;
+    color: #000;
+}
+#listado_adm_pde_recibo_gestion .iva,
+#listado_adm_pde_recibo_gestion .tributos{
+    text-align: right;
+    color: #666;
+    font-size: 11px;
+}
+#listado_adm_pde_recibo_gestion .total{
+    color: #000;
+    font-weight: bold;
+    text-align: right;
+}
+#listado_adm_pde_recibo_gestion .items{
+}
+#listado_adm_pde_recibo_gestion .periodo-fiscal{
+    font-size: 10px;
+    color: #666;
+}
+#listado_adm_pde_recibo_gestion .numero_recibo{
+    color: #000;
+    font-weight: bold;
+    text-align: right;
+}
+
+#listado_adm_pde_recibo_gestion .cae{
+    font-size: 10px;
+    /*color: #666;*/
+}
+#listado_adm_pde_recibo_gestion .fecha_emision_cae{
+    font-size: 10px;
+    color: #666;
+}
+
+/* Modal generar recibo */
+.div_modal .datos.generar-recibo{
+
+}
+.div_modal .datos.generar-recibo .buscador{
+    background-color: #ddd;
+
+    margin: 5px;
+    padding: 10px;
+}
+
+.div_modal .datos.generar-recibo .buscador .col{
+    display: inline-block;
+    vertical-align: top;
+}
+.div_modal .datos.generar-recibo .buscador .col.c1{
+    width: 400px;
+}
+.div_modal .datos.generar-recibo .buscador .col.c2{
+    /*width: 300px;*/
+}
+.div_modal .datos.generar-recibo .buscador .col.c3{
+    /*width: 300px;*/
+}
+
+.div_modal .datos.generar-recibo #form_generar_recibo tr.selected td{
+    background-color: #FFDDA6;
+
+    color: #000;
+}
+
+
+.div_modal_modal .datos.generar-ws-fe-afip #form_generar_ws_fe_afip .col{
+    display:inline-block;
+    vertical-align: top;
+
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+
+    margin: 5px;
+    padding: 10px 30px;
+
+    width: 48%;
+}
+
+.div_modal_modal .datos.generar-ws-fe-afip #form_generar_ws_fe_afip .col.col1{
+    width: 50%;
+}
+.div_modal_modal .datos.generar-ws-fe-afip #form_generar_ws_fe_afip .col.col1 select{
+    max-width: 100%;
+}
+
+.div_modal_modal .datos.generar-ws-fe-afip #form_generar_ws_fe_afip .col.col2{
+    width: 46%;
+}
+
+.div_modal_modal #detalle_pde_comprobante_total{
+    border: none;
+    color: #666;
+}
+.div_modal_modal #detalle_pde_comprobante_total td{
+    border: #dedede solid 1px;
+    background-color: #fff;
+
+    padding: 4px;
+}
+.div_modal_modal #detalle_pde_comprobante_total tr.total td{
+    background-color: #ddd!important;
+    font-weight: bold;
+
+    padding: 6px;
+}
+
+
+#listado_pde_recibo_items{
+    margin: 0 auto 0 auto;
+}
+#listado_pde_recibo_items th{
+    background-color: #666;
+    border-bottom: #ccc solid 1px;
+    color: #fff;
+    padding: 5px;
+}
+#listado_pde_recibo_items td{
+    background-color: #fff;
+    border-bottom: #ccc solid 1px;
+    color: #000;
+    padding: 5px;
+}
+#listado_pde_recibo_items td .ver_modal_set_cheque_info{
+    display: none;
+}
+
+#listado_pde_recibo_items_confirmacion th{
+    background-color: #ddd;
+    border-bottom: #ccc solid 1px;
+    color: #000;
+    padding: 5px;
+}
+#listado_pde_recibo_items_confirmacion td{
+    background-color: #fff;
+    border-bottom: #ccc solid 1px;
+    color: #000;
+    padding: 5px;
+}
+
+/* Ficha Emails */
+#tab_emails .tabla-modal-ficha-emails{
+
+}
+
+#tab_emails .tabla-modal-ficha-emails .par td{
+    background-color: #f0f0f0;
+}
+#tab_emails .tabla-modal-ficha-emails .impar td{
+    background-color: #fff;
+}
+
+#tab_emails .tabla-modal-ficha-emails .fecha{
+    color: #000;
+}
+#tab_emails .tabla-modal-ficha-emails .codigo-factura{
+    font-weight: bold;
+    color: #000;
+}
+#tab_emails .tabla-modal-ficha-emails .fecha-factura{
+    color: #666;
+}
+#tab_emails .tabla-modal-ficha-emails .asunto{
+    color: #000;
+    font-size: 11px;
+    font-weight: bold;
+}
+#tab_emails .tabla-modal-ficha-emails .destinatario{
+    color: #666;
+}
+#tab_emails .tabla-modal-ficha-emails .observacion{
+    color: #AD3826;
+    font-style: italic;
+}
+#tab_emails .tabla-modal-ficha-emails .creado-por-descripcion{
+    color: #000;
+    /*font-weight: bold;*/
+}
+
+/* Ficha Solicitud AFIP */
+#tab_solicitud_afip{
+
+}
+
+#tab_solicitud_afip .tabla-modal .par td{
+    background-color: #f0f0f0;
+}
+#tab_solicitud_afip .tabla-modal .impar td{
+    background-color: #fff;
+}
+
+#tab_solicitud_afip .tabla-modal .numero-comprobante-solicitud{
+    color: #000;
+    font-weight: bold;
+}
+
+#tab_solicitud_afip .tabla-modal .fecha-comprobante-solicitud{
+    font-size: 10px;
+    color: #666;
+}
+
+#tab_solicitud_afip .tabla-modal .tipo-comprobante-solicitud{
+}
+
+#tab_solicitud_afip .tabla-modal .importe-neto{
+    color: #000;
+}
+
+#tab_solicitud_afip .tabla-modal .importe-iva{
+    color: #000;
+}
+
+#tab_solicitud_afip .tabla-modal .importe-concepto{
+    color: #000;
+}
+
+#tab_solicitud_afip .tabla-modal .importe-tributo{
+    color: #000;
+}
+
+#tab_solicitud_afip .tabla-modal .importe-exento{
+    color: #000;
+}
+
+#tab_solicitud_afip .tabla-modal .importe-total{
+    color: #000;
+    font-weight: bold;
+}
+
+#tab_solicitud_afip .tabla-modal .tipo-comprobante-respuesta{
+}
+
+#tab_solicitud_afip .tabla-modal .numero-comprobante-respuesta{
+    color: #000;
+    font-weight: bold;
+}
+
+#tab_solicitud_afip .tabla-modal .fecha-comprobante-respuesta{
+    font-size: 10px;
+    color: #999;
+}
+
+#tab_solicitud_afip .tabla-modal .cantida-registro{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#tab_solicitud_afip .tabla-modal .resultado-cabecera{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#tab_solicitud_afip .tabla-modal .resultado-detalle{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#tab_solicitud_afip .tabla-modal .cae{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#tab_solicitud_afip .tabla-modal .cae-fecha-vencimiento{
+    font-size: 10px;
+    color: #999;
+}
+
+/* tab_items */
+#tab_items .tabla-modal .cae-fecha-vencimiento{
+}
+
+#tab_items .tabla-modal .codigo-pde-recibo{
+    color: #000;
+    font-weight: bold;
+}
+#tab_items .tabla-modal .fecha-emision-pde-recibo{
+    font-size: 10px;
+    color: #666;
+}
+#tab_items .tabla-modal .numero-recibo-pde-recibo{
+    color: #000;
+    font-weight: bold;
+}
+#tab_items .tabla-modal .cae-pde-recibo{
+    font-size: 10px;
+    font-weight: bold;
+}
+#tab_items .tabla-modal .fecha_emision_cae{
+    font-size: 10px;
+    color: #999;
+}
+#tab_items .tabla-modal .descripcion-pde-tipo-recibo{
+}
+#tab_items .tabla-modal .descripcion{
+}
+#tab_items .tabla-modal .condicion-iva{
+}
+#tab_items .tabla-modal .tipo-personeria{
+}
+#tab_items .tabla-modal .empresa-facturadora{
+}
+#tab_items .tabla-modal .cantidad{
+    color: #000;
+    font-weight: bold;
+}
+#tab_items .tabla-modal .importe-unitario{
+    color: #000;
+}
+#tab_items .tabla-modal .importe-total{
+    color: #000;
+    font-weight: bold;
+}
+

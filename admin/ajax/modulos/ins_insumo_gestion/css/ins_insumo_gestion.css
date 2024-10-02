@@ -1,0 +1,736 @@
+/* Archivo CSS de 'ins_insumo' */
+
+.div_listado_buscador .col.orden{
+    margin-right: 7%;
+}
+.div_listado_buscador select#cmb_filtro_ins_categoria_id{
+    max-width:350px;
+}
+.div_listado_buscador .col.categoria .selectize-control{
+    min-width:350px;    
+}
+
+#listado_adm_ins_insumo_gestion{
+    
+}
+#listado_adm_ins_insumo_gestion .id{
+    font-size: 10px;
+    color: #666;
+}
+#listado_adm_ins_insumo_gestion .codigo-interno{
+    color: #000;
+}
+#listado_adm_ins_insumo_gestion .creado{
+    font-size: 10px;
+    color: #666;
+}
+#listado_adm_ins_insumo_gestion .creado-por{
+    font-size: 9px;
+    color: #999;
+}
+#listado_adm_ins_insumo_gestion .icon-es-consumible{
+    background: #0283bc;
+    color: #ffffff;
+    font-size: 11px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin: 5px 0;
+    padding: 5px 5px;
+    width: 25px;
+    height: 25px;
+}
+#listado_adm_ins_insumo_gestion .icon-es-fabricable{
+    background: #013254;
+    color: #ffffff;
+    font-size: 11px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin: 5px 0;
+    padding: 5px 5px;
+    width: 25px;
+    height: 25px;
+}
+
+#listado_adm_ins_insumo_gestion .avatar{
+    
+}
+#listado_adm_ins_insumo_gestion .avatar .foto{
+    border: #013254 solid 1px;
+    width: 90px;
+}
+#listado_adm_ins_insumo_gestion .avatar .fotos-min{
+    margin-top: 5px;
+}
+#listado_adm_ins_insumo_gestion .fotos-min .foto{
+    display: inline-block; 
+    vertical-align: top;
+
+    box-sizing: border-box;
+    
+    width: 20px;
+    height: 15px;
+    
+    overflow: hidden;
+}
+#listado_adm_ins_insumo_gestion .fotos-min .foto img{
+    width: 100%;
+    border: #013254 solid 1px;
+}
+
+#listado_adm_ins_insumo_gestion .info-insumo{
+    text-align: left;
+    font-size: 12px;
+}
+#listado_adm_ins_insumo_gestion .info-insumo div{
+    margin: 2px;
+}
+#listado_adm_ins_insumo_gestion .info-insumo .label{
+    color: #666;
+    font-weight: normal;
+}
+#listado_adm_ins_insumo_gestion .info-insumo .marca{
+    font-weight: bold;
+    color: #000;
+}
+#listado_adm_ins_insumo_gestion .info-insumo .descripcion-marca{
+    font-size: 10px;
+    background-color: #ddd;
+    padding: 3px 6px;
+}
+#listado_adm_ins_insumo_gestion .info-insumo .codigo-marca{
+    font-size: 10px;
+    background-color: #ddd;
+    padding: 3px 6px;
+}
+#listado_adm_ins_insumo_gestion .info-insumo .insumo{
+    font-size: 14px;
+    font-weight: bold;
+    
+    color: #000;
+}
+#listado_adm_ins_insumo_gestion .info-insumo .categoria{
+    font-size: 10px;
+    color: #003366;
+}
+#listado_adm_ins_insumo_gestion .info-insumo .modelos{
+    font-size: 10px;
+    color: #666;
+}
+#listado_adm_ins_insumo_gestion .info-insumo .modelos .modelo{
+    color: #003366;
+}
+#listado_adm_ins_insumo_gestion .info-insumo .etiquetas{
+    font-size: 10px;
+    color: #666;
+}
+#listado_adm_ins_insumo_gestion .info-insumo .etiquetas .etiqueta{
+    color: #003366;
+}
+#listado_adm_ins_insumo_gestion .info-insumo .atributos{
+    font-size: 10px;
+    color: #666;
+}
+#listado_adm_ins_insumo_gestion .info-insumo .atributos .atributo{
+    color: #003366;
+}
+#listado_adm_ins_insumo_gestion .info-insumo .atributos .atributo-valor{
+    color: #000;
+    font-weight: bold;
+}
+#listado_adm_ins_insumo_gestion .info-insumo .proveedores{
+    font-size: 10px;
+    color: #666;
+}
+#listado_adm_ins_insumo_gestion .info-insumo .proveedores .proveedor{
+    color: #003366;
+}
+
+#listado_adm_ins_insumo_gestion .info-insumo .otras-marcas{
+    font-size: 10px;
+    color: #666;
+}
+#listado_adm_ins_insumo_gestion .info-insumo .otras-marcas .otra-marca{
+    color: #003366;
+}
+#listado_adm_ins_insumo_gestion .info-insumo .nota-interna{
+    font-size: 11px;
+    color: #006600;
+}
+#listado_adm_ins_insumo_gestion .info-insumo .codigo-barra{
+    font-size: 11px;
+    color: #666; 
+}
+#listado_adm_ins_insumo_gestion .info-insumo .codigo-barra img{
+    vertical-align: middle; 
+    margin-right: 5px;
+}
+
+/* Stock */
+#listado_adm_ins_insumo_gestion .tabs-stock{  
+    border-color: #dedede;
+}
+#listado_adm_ins_insumo_gestion .tabs-stock .datos{   
+}
+#listado_adm_ins_insumo_gestion .tabs-stock li{
+    border-color: #dedede;
+    font-size: 10px; 
+    margin: 0px .2em 0 0;    
+}
+#listado_adm_ins_insumo_gestion .tabs-stock li a{
+    color: #666666;
+    padding: 0.5em 0.9em;
+    font-size: 0.9em;
+}
+#listado_adm_ins_insumo_gestion .tabs-stock li.ui-state-active a{
+    color: #003399;
+    font-weight: bold;
+    font-size: 1.0em;
+}
+
+#listado_adm_ins_insumo_gestion .stock{
+}
+#listado_adm_ins_insumo_gestion .stock .panol{
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+#listado_adm_ins_insumo_gestion .stock .cantidad{
+    font-weight: bold;
+    font-size: 20px;
+    color: #003399;
+    padding: 2px;
+}
+#listado_adm_ins_insumo_gestion .stock .cantidad input{
+    border: none;
+    
+    width: 60%;
+    max-width: 100px;
+    
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;    
+}
+#listado_adm_ins_insumo_gestion .stock .unidad-medida{
+    font-size: 11px;
+    color: #666;
+}
+#listado_adm_ins_insumo_gestion .stock .stock-ubicacion{
+    font-size: 10px;
+    color: #666;
+    padding: 5px;
+}
+#listado_adm_ins_insumo_gestion .uno .stock-puntos{
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    
+    border: #ccc solid 1px;
+    background-color: #fff;
+    
+    font-size: 10px;
+    color: #666;
+    
+    padding: 1px 2px 1px 2px;
+    
+    width: 40px;    
+}
+#listado_adm_ins_insumo_gestion .uno .stock-puntos.editar{
+    border: none;    
+    width: 20px;
+    
+    cursor: pointer;
+}
+#listado_adm_ins_insumo_gestion .uno .stock-puntos.editar:hover{
+    opacity: 0.8;
+}
+#listado_adm_ins_insumo_gestion .uno .stock-tipo-estado{
+    font-size: 9px;
+    margin-bottom: 5px;
+}
+#listado_adm_ins_insumo_gestion .uno .stock-no-controla{
+    font-size: 10px;
+    color: #666;
+}
+#listado_adm_ins_insumo_gestion .stock .no-inicializado{
+    font-size: 11px;
+    color: #666;
+    padding: 10px;
+}
+
+/* Importe Venta */
+#listado_adm_ins_insumo_gestion .importes-venta{
+}
+#listado_adm_ins_insumo_gestion .importes-venta .importe-venta-bruto{
+    font-weight: bold;
+    color: #000;
+}
+#listado_adm_ins_insumo_gestion .importes-venta .importe-iva{
+    color: #333;
+}
+#listado_adm_ins_insumo_gestion .importes-venta .importe-venta-neto{
+    font-weight: bold;
+    font-size: 18px;
+        
+    color: #003399;
+
+    margin-top: 6px;
+}
+#listado_adm_ins_insumo_gestion .importes-venta .importe-tipo-lista{
+    font-size: 10px;
+    color: #666;
+}
+#listado_adm_ins_insumo_gestion .importes-venta .importe-no-vinculado{
+    font-size: 10px;
+    color: #666;
+}
+
+#listado_adm_ins_insumo_gestion .importes-venta .importe-costo-modificado{
+    font-size: 11px;
+    color: #666;
+    
+    width: 80%;
+    margin: 3px auto 2px auto;
+    padding: 2px 4px;
+}
+#listado_adm_ins_insumo_gestion .importes-venta .importe-costo-modificado.MES_ACTUAL{
+    color: #006600;
+}
+#listado_adm_ins_insumo_gestion .importes-venta .importe-costo-modificado.MES_ANTERIOR{
+    border: #840 solid 1px;
+    background-color: #FFFFDE;
+    color: #840;
+}
+#listado_adm_ins_insumo_gestion .importes-venta .importe-costo-modificado.MES_MUYANTERIOR{
+    border: #CC0000 solid 1px;
+    background-color: #ffe0e0;
+    color: #CC0000;
+}
+.grid-datos.ins-insumo-gestion .importes-venta .importe-costo-modificado.MES_ACTUAL{
+    color: #006600;
+}
+.grid-datos.ins-insumo-gestion .importes-venta .importe-costo-modificado.MES_ANTERIOR{
+    color: #DA8028;
+}
+.grid-datos.ins-insumo-gestion .importes-venta .importe-costo-modificado.MES_MUYANTERIOR{
+    color: #F00;
+}
+#listado_adm_ins_insumo_gestion .importes-venta .importe-costo-modificado .importe-costo-modificado-por{
+    font-size: 10px;
+    opacity: 0.5;
+}
+
+#listado_adm_ins_insumo_gestion .importes-venta .importe-descuentos-personalizados{
+    display: nonex;
+    
+    background-color: #3f9a00;
+    width: 90px;
+    
+    font-size: 11px;
+    color: #fff;
+    
+    padding: 3px;
+    margin: 2px;
+}
+#listado_adm_ins_insumo_gestion .importes-venta .importe-descuentos-personalizados strong{
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#listado_adm_ins_insumo_gestion .importes-venta .cantidad-minima-venta{
+    font-size: 10px;
+    width: 100px;
+}
+#listado_adm_ins_insumo_gestion .importes-venta .cantidad-minima-venta .label{
+    background-color: #dedede;
+    color: #000;
+    padding: 2px 6px;
+    padding: 1px;
+}
+#listado_adm_ins_insumo_gestion .importes-venta .cantidad-minima-venta .dato{
+    background-color: #bae8f5;
+    color: #013254;
+    padding: 2px 6px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Acciones Uno */
+#listado_adm_ins_insumo_gestion .adm_tbl_lineas .adm_botones_acciones{
+}
+#listado_adm_ins_insumo_gestion .adm_tbl_lineas .adm_botones_acciones li.adm_botones_accion.agregar-carrito.existe img{
+    border-bottom: #003399 solid 4px;
+}
+
+#listado_adm_ins_insumo_gestion .similares{
+    display: nonex;
+    text-align: left;
+}
+#listado_adm_ins_insumo_gestion .similares .similar{
+    display: inline-block;
+    vertical-align: top;
+    
+    width: 50px;
+}
+
+/* Ficha */
+.div_modal{}
+.div_modal .tabs{
+    width: 98%;
+}
+
+/* Ficha - Modal Top */
+.div_modal .ficha-insumo .modal-top{
+    margin: 5px;
+    padding: 5px;
+    
+    background-color: #f4f4f4;
+    border-bottom: #ccc solid 1px;
+}
+.div_modal .ficha-insumo .modal-top .col{
+    display: inline-block;
+    vertical-align: top;
+    
+    width: 100px;
+}
+.div_modal .ficha-insumo .modal-top .col .label{
+    color: #666;
+    font-weight: normal;
+}
+.div_modal .ficha-insumo .modal-top .col.foto{
+    width: 70px;
+    margin: 0 10px;
+}
+.div_modal .ficha-insumo .modal-top .col.foto img{
+    border: #ccc solid 1px;
+    width: 100%;
+}
+.div_modal .ficha-insumo .modal-top .col.info-insumo{
+    width: 650px;
+}
+.div_modal .ficha-insumo .modal-top .col.info-insumo .descripcion{
+    background-color: #ddd;
+    padding: 5px;
+    margin: 3px 0;
+    font-size: 12px;
+    font-weight: bold;
+}
+.div_modal .ficha-insumo .modal-top .col.info-insumo .codigo-interno{
+    color: #003366;
+    font-weight: bold;
+}
+.div_modal .ficha-insumo .modal-top .col.info-insumo .categoria{
+    color: #003366;
+    font-weight: bold;
+}
+.div_modal .ficha-insumo .modal-top .col.info-insumo .modelos{
+    color: #666;
+}
+.div_modal .ficha-insumo .modal-top .col.info-insumo .modelos .modelo{
+    color: #333;
+    font-weight: bold;
+}
+.div_modal .ficha-insumo .modal-top .col.marca{
+    background-color: #ddd;
+    padding: 5px;
+    margin: 3px 0;
+    width: 250px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* Ficha - General */
+.div_modal .ficha-insumo .fotos{
+    margin: 10px;
+}
+.div_modal .ficha-insumo .fotos .foto{
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 100px;
+    
+    margin: 2px;
+}
+.div_modal .ficha-insumo .fotos .foto img{
+    width: 100%;
+}
+
+/* Ficha - Costos */
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_costos{
+    
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_costos .strong{
+    font-weight: bold;
+    color: #000;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_costos .observacion{
+    font-weight: normal;
+    color: #013254;
+}
+
+/* Ficha - Proveedores */
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_proveedores{
+    
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_proveedores .referencial{
+    cursor: pointer;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_proveedores .codigo{
+    color: #000;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_proveedores .proveedor{
+    border-bottom: #ccc dotted 1px;
+    padding: 2px 1px;
+    margin: 1px 0;
+    
+    color: #000;
+    font-weight: bold;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_proveedores .insumo{
+    color: #840;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_proveedores .creado,
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_proveedores .modificado{
+    color: #666;
+    font-size: 10px;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_proveedores .marca-id{
+    color: #666;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_proveedores .marca-codigo{
+    font-weight: bold;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_proveedores .oem-marca-id{
+    color: #666;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_proveedores .oem-marca-codigo{
+    font-weight: bold;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_proveedores .importe-bruto{
+    color: #666;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_proveedores .descuento{
+    background-color: #ddd;
+    color: #333;
+    
+    width: 65px;
+    
+    font-size: 10px;
+    
+    padding: 2px;
+    margin: 2px;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_proveedores .importe-neto{
+    color: #000;
+    font-weight: bold;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_proveedores .importe-neto-anterior{
+    color: #000;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_proveedores .fecha{
+    color: #666;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_proveedores .diferencia{
+    background-color: #ddd;
+    color: #333;
+        
+    font-size: 11px;
+    
+    padding: 2px;
+    margin: 2px;
+}
+
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_proveedores .acciones .accion{
+    cursor: pointer;
+}
+
+/* Ficha - Vinculados */
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_vinculados{
+    
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_vinculados .avatar{
+    width:70px;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_vinculados .avatar img{
+    width:80%;
+}
+.div_modal .ficha-insumo .vincular-nuevo-insumo{
+    background-color: #eee;
+    padding: 10px;
+
+    width: 500px;
+}
+.div_modal .ficha-insumo .vincular-nuevo-insumo input[type=text]{
+    width: 450px;
+}
+.div_modal .ficha-insumo .vincular-nuevo-insumo .boton{
+    margin: 5px;
+}
+
+/* Ficha - Similares */
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_similares{
+    
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_similares .avatar{
+    width:70px;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_similares .avatar img{
+    width:80%;
+}
+.div_modal .ficha-insumo .similar-nuevo-insumo{
+    background-color: #eee;
+    padding: 10px;
+
+    width: 500px;
+}
+.div_modal .ficha-insumo .similar-nuevo-insumo input[type=text]{
+    width: 450px;
+}
+.div_modal .ficha-insumo .similar-nuevo-insumo .boton{
+    margin: 5px;
+}
+
+/* Ficha - Compras */
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_compras{
+    
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_compras .codigo{
+    color: #000;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_compras .creado{
+    color: #666;
+    font-size: 10px;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_compras .creado-por{
+    color: #666;
+    font-size: 10px;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_compras .importe_costo{
+    color: #333;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_compras .importe_unitario{
+    color: #000;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_compras .ins-tipo-lista-precio{
+    color: #666;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_compras .vta_orden_venta_tipo_estado_recepcion{
+    color: #000;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_compras .vta_orden_venta_tipo_estado_recepcion img{
+    vertical-align: middle;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_compras .cantidad-recibida{
+    padding-left: 14px;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_compras .vta_orden_venta_tipo_estado_facturacion{
+    color: #000;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_compras .vta_orden_venta_tipo_estado_facturacion img{
+    vertical-align: middle;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_compras .cantidad-facturada{
+    padding-left: 14px;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_compras .nro-factura{
+    color: #666;
+    font-size: 11px;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_compras .prv_descuento_financiero{
+    color: #666;
+    font-size: 10px;
+}
+
+
+/* Ficha - Ventas */
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_ventas{
+    
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_ventas .codigo{
+    color: #000;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_ventas .creado{
+    color: #666;
+    font-size: 10px;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_ventas .creado-por{
+    color: #666;
+    font-size: 10px;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_ventas .importe_costo{
+    color: #333;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_ventas .importe_unitario{
+    color: #000;
+    font-weight: bold;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_ventas .importe_unitario.tachado{
+    color: #999;
+    font-weight: normal;
+    text-decoration: line-through;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_ventas .ins-tipo-lista-precio{
+    color: #666;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_ventas .vta_orden_venta_tipo_estado_remision{
+    color: #000;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_ventas .vta_orden_venta_tipo_estado_remision img{
+    vertical-align: middle;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_ventas .cantidad-remitida{
+    padding-left: 14px;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_ventas .vta_orden_venta_tipo_estado_facturacion{
+    color: #000;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_ventas .vta_orden_venta_tipo_estado_facturacion img{
+    vertical-align: middle;
+}
+.div_modal .ficha-insumo #tbl_insumo_gestion_ficha_ventas .cantidad-facturada{
+    padding-left: 14px;
+}
+
+
+/* Ficha Tecnica */
+.div_modal .ficha-tecnica{
+}
+.div_modal .ficha-tecnica .info-publica{
+    background-color: #fff; 
+    border: #ccc dotted 3px; 
+    
+    padding: 15px;
+    margin: 10px;
+}
+.div_modal .ficha-tecnica .info-publica #txt_descripcion_insumo{
+    font-size: 15px;
+    font-weight: bold;
+    
+    color: #aa563d;
+    border: #f4f4f4 solid 1px;
+}
+.div_modal .ficha-tecnica .info-publica .par .label {
+    width: 160px;
+}
+.div_modal .ficha-tecnica .info-publica .par .dato {
+    width: 70%;
+}
+.div_modal .ficha-tecnica .info-publica .ins-atributos .par{
+    display: inline-block;
+    vertical-align: top;
+    
+    width: 45%;    
+}
+.div_modal .ficha-tecnica .info-publica .ins-atributos .par .label{
+}
+.div_modal .ficha-tecnica .info-publica .ins-atributos .par .dato{
+    width: 35%;
+}
+.div_modal .ficha-tecnica .info-publica .fotos{
+    margin: 20px 50px;
+}
+.div_modal .ficha-tecnica .info-publica .fotos .foto{
+    display: inline-block;
+    vertical-align: top;
+    
+    width: 140px;
+}

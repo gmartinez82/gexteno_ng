@@ -1,0 +1,44 @@
+/* Archivo CSS de 'vta_politica_descuento' */
+
+#listado_adm_vta_politica_descuento_gestion .vta-politica-descuento-rangos{
+    margin: 5px;
+}
+#listado_adm_vta_politica_descuento_gestion .vta-politica-descuento-rango{
+    display: inline-block;
+    vertical-align: top;
+        
+    border: #0283c1 solid 1px;
+    background-color: #ededed;
+    width: 80px;
+    
+    font-size: 12px;
+    
+    padding: 3px;
+}
+#listado_adm_vta_politica_descuento_gestion .vta-politica-descuento-rango .cantidad{
+    color: #333;
+}
+#listado_adm_vta_politica_descuento_gestion .vta-politica-descuento-rango .descuento{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#listado_adm_vta_politica_descuento_gestion .ins-tipo-lista-precios,
+#listado_adm_vta_politica_descuento_gestion .ins-categorias,
+#listado_adm_vta_politica_descuento_gestion .ins-insumos{
+}
+
+#listado_adm_vta_politica_descuento_gestion .ins-tipo-lista-precio,
+#listado_adm_vta_politica_descuento_gestion .ins-categoria,
+#listado_adm_vta_politica_descuento_gestion .ins-insumo{
+    display: inline-block;
+    vertical-align: top;
+        
+    border: #ccc dotted 1px;
+    background-color: #ededed;
+    
+    font-size: 12px;
+    
+    padding: 3px;
+    margin: 2px 5px;
+}

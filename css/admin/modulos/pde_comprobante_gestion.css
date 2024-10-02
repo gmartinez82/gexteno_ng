@@ -1,0 +1,490 @@
+/* Archivo CSS de 'pde_comprobante_gestion' */
+
+.div_listado_buscador{
+
+}
+.div_listado_buscador .titulo-grupo{
+    color: #000;
+    text-align: center;
+    
+    padding: 3px;
+    margin: 3px;
+    
+    background-color: #f4f4f4;
+}
+
+/* Resumen */
+.contenedor.central .div_listado_datos .resumen{
+    background-color: #eee;
+    padding: 10px;
+    
+    margin: 10px auto 10px auto;
+    width: 80%;
+}
+.contenedor.central .div_listado_datos .resumen .cli-cliente-info{
+    width: 70%;
+    margin: 0 auto 10px auto;
+}
+.contenedor.central .div_listado_datos .resumen .cli-cliente-info .par{
+    margin: 0;
+    padding: 0;
+}
+.contenedor.central .div_listado_datos .resumen .cli-cliente-info .par .label{
+    width: 100%;
+    text-align: center;
+            
+    font-size: 12px;
+    padding: 2px;
+    
+    box-sizing: border-box;
+}
+.contenedor.central .div_listado_datos .resumen .cli-cliente-info .par .dato{
+    width: 100%;
+    text-align: center;
+    
+    background-color: #ddd;
+
+    font-size: 18px;
+    font-weight: bold;
+    
+    box-sizing: border-box;
+}
+.contenedor.central .div_listado_datos .resumen .cli-cliente-info .cli-botonera{
+    text-align: center;
+    background-color: #ddd;
+    
+    padding: 2px;
+}
+.contenedor.central .div_listado_datos .resumen .cli-cliente-info .cli-botonera .boton{
+    cursor: pointer;
+}
+
+.contenedor.central .div_listado_datos .resumen .col{
+    display:inline-block;
+    vertical-align: top;
+
+    background-color: #fdfdfd;
+    box-sizing: border-box;
+
+    margin: 2px;
+
+    width: 49%;
+    min-height: 40px;
+}
+.contenedor.central .div_listado_datos .resumen .col .par{
+    font-size: 14px;
+    border-bottom: #ccc dotted 1px;
+}
+.contenedor.central .div_listado_datos .resumen .col .par.saldo{
+    background-color: #d6e8f3;
+}
+.contenedor.central .div_listado_datos .resumen .col .par.orden-pago{
+    background-color: #ffdda6;
+}
+.contenedor.central .div_listado_datos .resumen .col .par .label{
+    text-align: left;
+    width: 45%;
+}
+.contenedor.central .div_listado_datos .resumen .col .par .dato{
+    text-align: right;
+    width: 45%;
+    font-size: 16px;
+    
+    color: #666;
+}
+.contenedor.central .div_listado_datos .resumen .col .par.saldo .dato{
+    font-size: 20px;
+    font-weight: bold;
+    
+    color: #aa563d;
+}
+
+/* Cuerpo */
+.contenedor.central .div_listado_datos .col{
+    display:inline-block;
+    vertical-align: top;
+
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+
+    margin: 0px;
+
+    width: 49.5%;
+    min-height: 300px;
+}
+.contenedor.central .div_listado_datos .col h3{
+    background-color: #ddd;
+    
+    font-size: 15px;
+    text-align: center;
+    
+    padding: 10px;
+    margin: 0;
+}
+.contenedor.central .div_listado_datos .col.col1{
+}
+.contenedor.central .div_listado_datos .col.col2{
+}
+.contenedor.central .div_listado_datos .col table.listado_adm_pde_comprobante_gestion{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.contenedor.central .div_listado_datos .col table.listado_adm_pde_comprobante_gestion .remarcar td{
+    background-color: #ddd;
+}
+
+/* Modal */
+.div_modal .div_listado_datos .col{
+    display:inline-block;
+    vertical-align: top;
+
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+
+    margin: 2px;
+
+}
+.div_modal .div_listado_datos .col h3{
+    background-color: #ddd;
+    
+    font-size: 15px;
+    text-align: center;
+    
+    padding: 10px;
+    margin: 0;
+}
+.div_modal .div_listado_datos .col.col1{
+    width: 55%;
+}
+.div_modal .div_listado_datos .col.col2{
+    width: 40%;
+}
+.div_modal .div_listado_datos .col.col2 .par{
+    font-size: 14px;
+}
+.div_modal .div_listado_datos .col.col2 .par .label{
+    color: #666;
+}
+.div_modal .div_listado_datos .col.col2 .par .dato{
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+}
+.div_modal .div_listado_datos .col.col2 .par.total{
+    background-color: #ddd;
+    border-top: #666 solid 1px;
+    padding: 10px;
+}
+.div_modal .div_listado_datos .col.col2 .par.total .dato{
+}
+.div_modal .div_listado_datos .col.col2 .par.saldo{
+    background-color: #eee;
+    border-top: #666 solid 1px;
+    padding: 10px;
+}
+.div_modal .div_listado_datos .col.col2 .par.saldo.positivo{
+    background-color: #b6d7a0;
+    color: #fff;
+}
+.div_modal .div_listado_datos .col.col2 .par.saldo.negativo{
+    background-color: #e6a1a6;
+    color: #fff;
+}
+
+/* Ficha - Modal Top */
+.div_modal .modal-top{
+    margin: 5px;
+    padding: 5px;
+
+    background-color: #f4f4f4;
+    border-bottom: #ccc solid 1px;
+}
+.div_modal .modal-top .col{
+    display: inline-block;
+    vertical-align: top;
+
+    width: 175px;
+}
+.div_modal .modal-top .col .label{
+    color: #666;
+    font-weight: normal;
+    width: 100%;
+    display: block;
+}
+.div_modal .modal-top .col .dato{
+    color: #000;
+    font-weight: bold;
+    width: 100%;
+}
+
+.div_modal .modal-top .col.cliente{
+}
+.div_modal .modal-top .col.importe_imputable{
+}
+.div_modal .modal-top .col.importe_imputable .dato{
+    background-color: #d6e8f3;
+    padding: 1px 10px;
+    color: #000;
+    font-weight: bold;    
+}
+
+/* Ficha Ordenes de Venta */
+#tab_oc{
+
+}
+
+#tab_oc .tabla-modal .par td{
+    background-color: #f0f0f0;
+}
+#tab_oc .tabla-modal .impar td{
+    background-color: #fff;
+}
+
+#tab_oc .tabla-modal .codigo-pde-factura{
+    color: #000;
+}
+
+#tab_oc .tabla-modal .fecha-pde-factura{
+    font-size: 10px;
+    color: #666;
+}
+
+#tab_oc .tabla-modal .codigo-pde-orden-venta{
+    color: #000;
+    font-weight: bold;
+}
+
+#tab_oc .tabla-modal .fecha-pde-orden-venta{
+    font-size: 10px;
+    color: #666;
+}
+
+#tab_oc .tabla-modal .cliente{
+}
+
+#tab_oc .tabla-modal .email{
+}
+
+#tab_oc .tabla-modal .descripcion{
+    color: #000;
+    font-weight: bold;
+}
+
+#tab_oc .tabla-modal .pde_oc_tipo_estado_id{
+}
+
+#tab_oc .tabla-modal .pde_oc_tipo_estado_id img{
+    vertical-align: middle;
+    position: relative;
+}
+
+#tab_oc .tabla-modal .pde_oc_tipo_estado_remision_id{
+}
+
+#tab_oc .tabla-modal .pde_oc_tipo_estado_remision_id img{
+    vertical-align: middle;
+    position: relative;
+}
+
+#tab_oc .tabla-modal .pde_oc_tipo_estado_facturacion_id{
+}
+
+#tab_oc .tabla-modal .pde_oc_tipo_estado_facturacion_id img{
+    vertical-align: middle;
+    position: relative;
+}
+
+#tab_oc .tabla-modal .ins_tipo_lista_precio_id{
+}
+
+#tab_oc .tabla-modal .cantidad{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#tab_oc .tabla-modal .unidad-medida{
+    font-size: 10px;
+    color: #999;
+}
+
+#tab_oc .tabla-modal .importe-unitario{
+}
+#tab_oc .tabla-modal .importe-unitario.bruto{
+    text-decoration: line-through;
+    color: #999;
+}
+#tab_oc .tabla-modal .importe-unitario.neto{
+    color: #000;
+}
+#tab_oc .tabla-modal .importe-total{
+}
+#tab_oc .tabla-modal .importe-total.bruto{
+    text-decoration: line-through;
+    color: #999;
+}
+#tab_oc .tabla-modal .importe-total.neto{
+    color: #000;
+    font-weight: bold;
+}
+
+/* Tab Items */
+#tab_items .tabla-modal .cae-fecha-vencimiento{
+}
+
+#tab_items .tabla-modal .codigo-pde-nota-debito{
+    color: #000;
+    font-weight: bold;
+}
+#tab_items .tabla-modal .fecha-emision-pde-nota-debito{
+    font-size: 10px;
+    color: #666;
+}
+#tab_items .tabla-modal .numero-nota-debito-pde-nota-debito{
+    color: #000;
+    font-weight: bold;
+}
+#tab_items .tabla-modal .cae-pde-nota-debito{
+    font-size: 10px;
+    font-weight: bold;
+}
+#tab_items .tabla-modal .fecha_emision_cae{
+    font-size: 10px;
+    color: #999;
+}
+#tab_items .tabla-modal .descripcion-pde-tipo-nota-debito{
+}
+#tab_items .tabla-modal .descripcion{
+}
+#tab_items .tabla-modal .condicion-iva{
+}
+#tab_items .tabla-modal .tipo-personeria{
+}
+#tab_items .tabla-modal .empresa-facturadora{
+}
+#tab_items .tabla-modal .cantidad{
+    color: #000;
+    font-weight: bold;
+}
+#tab_items .tabla-modal .importe-unitario{
+    color: #000;
+}
+#tab_items .tabla-modal .importe-total{
+    color: #000;
+    font-weight: bold;
+}
+
+/* Listado de Comprobantes */
+.listado_adm_pde_comprobante_gestion{
+    margin: 15px 5px 15px 5px
+}
+.listado_adm_pde_comprobante_gestion .adm_tbl_lineas.tipo_FAC,
+.listado_adm_pde_comprobante_gestion .adm_tbl_lineas.tipo_NDE,
+.listado_adm_pde_comprobante_gestion .adm_tbl_lineas.tipo_NCR,
+.listado_adm_pde_comprobante_gestion .adm_tbl_lineas.tipo_RBO{
+    background-color: #ddd;
+    border: none;
+    font-size: 11px;
+    color: #999;
+}
+.listado_adm_pde_comprobante_gestion .adm_tbl_lineas.tipo_FAC{
+    background-color: #aad9a2!important;
+}
+.listado_adm_pde_comprobante_gestion .adm_tbl_lineas.tipo_NDE{
+    background-color: #e0ea91!important;
+}
+.listado_adm_pde_comprobante_gestion .adm_tbl_lineas.tipo_NCR{
+    background-color: #a8e3dd!important;
+}
+.listado_adm_pde_comprobante_gestion .adm_tbl_lineas.tipo_RBO{
+    background-color: #d4ecf6!important;
+}
+
+.listado_adm_pde_comprobante_gestion .prv_proveedor_id{
+    color: #000;
+    font-weight: bold;
+}
+.listado_adm_pde_comprobante_gestion .fecha_emision{
+    color: #666;
+}
+.listado_adm_pde_comprobante_gestion .codigo{
+    color: #333;
+}
+.listado_adm_pde_comprobante_gestion .pde_numero_comprobante{
+    color: #aa563d;
+    font-weight: bold;
+}
+.listado_adm_pde_comprobante_gestion .pde_orden_pago{
+    color: #666;
+    font-size: 10px;
+}
+.listado_adm_pde_comprobante_gestion .pde_comprobante_tipo_estado_id{
+    color: #333;
+    font-size: 10px;
+}
+.listado_adm_pde_comprobante_gestion .pde_comprobante_tipo_estado_id img{
+    vertical-align: middle;
+}
+
+.listado_adm_pde_comprobante_gestion .importe_imputar{
+    background-color: #d6e8f3;
+    padding: 5px 10px;
+    font-weight: bold;
+    color: #000;
+}
+.listado_adm_pde_comprobante_gestion .importe_imputar_cero{
+    color: #666;
+}
+.listado_adm_pde_comprobante_gestion .comprobantes-vinculados{
+    text-align: center;
+    max-height: 100px;
+    overflow: auto;
+}
+.listado_adm_pde_comprobante_gestion .comprobantes-vinculados .comprobante-vinculado{
+    font-size: 10px;
+    color: #666;
+    
+    padding: 3px 0;
+    margin: 0 10px;
+    
+    border-bottom: #ccc dotted 1px;
+}
+
+/* Modal Comprobantes Vinculados */
+.bloque-comprobantes-vinculados{
+    margin: 5px;
+}
+.bloque-comprobantes-vinculados .codigo{
+    color: #000;
+}
+.bloque-comprobantes-vinculados .fecha_emision{
+    color: #666;
+}
+.bloque-comprobantes-vinculados .numero_comprobante{
+    color: #000;
+    font-weight: bold;
+}
+.bloque-comprobantes-vinculados .cae{
+    color: #666;
+    font-size: 10px;
+}
+.bloque-comprobantes-vinculados .fecha_emision_cae{
+    color: #666;
+}
+.bloque-comprobantes-vinculados .subtotal{
+    color: #000;
+}
+.bloque-comprobantes-vinculados .fecha_emision_cae{
+    color: #666;
+}
+.bloque-comprobantes-vinculados .fecha_emision_cae{
+    color: #666;
+}
+.bloque-comprobantes-vinculados .total{
+    color: #000;
+    font-weight: bold;
+}
+.bloque-comprobantes-vinculados .porcentaje_afectado{
+    background-color: #ddd;
+    padding: 5px;
+    color: #000;
+}

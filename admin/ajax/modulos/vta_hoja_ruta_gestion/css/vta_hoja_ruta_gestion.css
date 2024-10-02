@@ -1,0 +1,238 @@
+/* Archivo CSS de 'vta_hoja_ruta' */
+#listado_adm_vta_hoja_ruta_gestion{
+
+}
+
+#listado_adm_vta_hoja_ruta_gestion .codigo{
+    font-size: 10px;
+    font-weight: bold;
+    color: #000;
+}
+
+#listado_adm_vta_hoja_ruta_gestion .creado{
+    font-size: 10px;
+    color: #666;
+}
+
+#listado_adm_vta_hoja_ruta_gestion .creado-por{
+    font-size: 10px;
+    color: #666;
+}
+
+#listado_adm_vta_hoja_ruta_gestion .ruta{
+    font-weight: bold;
+    color: #000;
+}
+
+#listado_adm_vta_hoja_ruta_gestion .fecha{
+    color: #013254;
+}
+
+#listado_adm_vta_hoja_ruta_gestion .chofer{
+    color: #333;
+}
+
+#listado_adm_vta_hoja_ruta_gestion .remitos{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#listado_adm_vta_hoja_ruta_gestion .remitos-ajuste{
+    font-size: 14px;
+    font-weight: bold;
+}
+#listado_adm_vta_hoja_ruta_gestion .vta_hoja_ruta_tipo_estado_id{
+    color: #000;
+    font-size: 11px;
+    font-weight: bold;
+}
+#listado_adm_vta_hoja_ruta_gestion .vta_hoja_ruta_tipo_estado_id img{
+    vertical-align: middle;
+}
+
+.div_modal .bloque-comprobantes{
+    border: #000 solid 1px;
+    background-color: #fff;
+    margin: 10px;
+    padding: 10px;
+    
+    list-style: none;
+}
+.div_modal .bloque-comprobantes ul{
+    background-color: #fff;
+}
+.div_modal .bloque-comprobantes .geo-localidad{
+    border-bottom: #000 dotted 1px;
+    background-color: #ccc;
+    
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px;
+    margin: 5px;
+}
+.div_modal .bloque-comprobantes .geo-localidad .localidad-ordenar{
+    display:inline-block;
+    vertical-align: middle;
+    width: 5%;
+    
+    text-align: center;
+    
+    cursor: move;    
+}
+.div_modal .bloque-comprobantes .geo-localidad .localidad-info{
+    display:inline-block;
+    width: 92%;
+}
+.div_modal .bloque-comprobantes-x-localidad{
+    margin: 10px;
+    margin-bottom: 15px;
+    
+    list-style: none;
+    padding-left: 5px;
+}
+.div_modal .bloque-comprobantes .uno{
+    border-bottom: #000 dotted 1px;
+    padding: 10px;    
+}
+.div_modal .bloque-comprobantes .uno:hover{
+}
+.div_modal .bloque-comprobantes .uno:active{
+}
+.div_modal .bloque-comprobantes .uno .comprobante-ordenar{
+    display:inline-block;
+    vertical-align: middle;
+    width: 5%;
+    
+    text-align: center;
+    
+    cursor: move;    
+}
+.div_modal .bloque-comprobantes .uno .comprobante-info{
+    display:inline-block;
+    vertical-align: middle;
+    width: 92%;
+    
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.div_modal .bloque-comprobantes .uno .comprobante-info .comprobante-codigo{
+    color: #666;
+}
+.div_modal .bloque-comprobantes .uno .comprobante-info .comprobante-cliente{
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+}
+.div_modal .bloque-comprobantes .uno .comprobante-info .comprobante-centro-recepcion{
+    color: #666;
+}
+.div_modal .bloque-comprobantes .uno .comprobante-info .comprobante-localidad{
+    color: #666;
+}
+.div_modal .bloque-comprobantes .uno .comprobante-info .comprobante-domicilio{
+    color: #0283bc;
+}
+
+
+.vincular-comprobantes{
+}
+.vincular-comprobantes .uno{
+
+}
+
+/*
+.vincular-comprobantes .uno .remito-centro-recepcion-localidad{
+    color: #C00;
+}
+*/
+/*
+.vincular-comprobantes .uno .misma{
+    color: #F00;
+}*/
+
+.listado-comprobante{
+
+}
+
+.listado-comprobante .comprobante-codigo{
+    font-size: 10px;
+    font-weight: bold;
+    color: #000;
+}
+
+.listado-comprobante .comprobante-tipo-estado{
+    color: #000;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.listado-comprobante .comprobante-tipo-estado img{
+    vertical-align: middle;
+}
+
+.listado-comprobante .comprobante-fecha{
+    font-size: 10px;
+    color: #666;
+}
+
+.listado-comprobante .comprobante-cliente{
+    color: #000000;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.listado-comprobante .comprobante-centro-recepcion{
+    color: #0283bc;
+    font-size: 12px;
+}
+
+.listado-comprobante .comprobante-centro-recepcion-domicilio{
+    font-style: normal;
+    color: #013254;
+}
+
+.listado-comprobante .comprobante-centro-recepcion-localidad{
+    color: #000;
+}
+
+.listado-comprobante .comprobante-items{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.listado-comprobante .comprobante-nota-interna,
+.listado-comprobante .comprobante-nota-publica{
+    color: #4294c6;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.listado-comprobante .hoja-ruta{
+    font-size: 10px;
+    color: #000;
+}
+
+.listado-comprobante .hoja-ruta.misma {
+    color: #0283bc;
+}
+
+.listado-comprobante .hoja-ruta.distinta {
+    font-size: 11px;
+    font-weight: bold;
+    color: #ca8e06;
+}
+.listado-comprobante .hoja-ruta.distinta-texto {
+    font-size: 10px;
+    font-weight: normal;
+    color: #ca8e06;
+}
+.listado-comprobante .creado{
+    color: #000;
+    font-size: 10px;
+}
+
+.listado-comprobante .creado-por{
+    font-size: 10px;
+    color: #666;
+}

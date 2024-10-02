@@ -1,0 +1,11 @@
+<?php
+include_once '_autoload.php';
+
+$c = Gral::getVars(1, 'c');
+$t = Gral::getVars(1, 't');
+$criterio = new Criterio(CntbDiarioAsiento::SES_CRITERIOS);
+$criterio->addTabla('cntb_diario_asiento');
+$criterio->addOrden($c, $t);
+$criterio->setOrden();
+?>
+

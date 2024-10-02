@@ -1,0 +1,444 @@
+/* Archivo CSS de 'vta_orden_venta' */
+
+
+#listado_adm_vta_orden_venta_gestion{
+    
+}
+
+/* Separador */
+#listado_adm_vta_orden_venta_gestion .uno.separador td{
+    background-color: #ccc;
+    padding: 10px;
+}
+#listado_adm_vta_orden_venta_gestion .uno.separador td .vta-presupuesto-info{
+}
+#listado_adm_vta_orden_venta_gestion .uno.separador td .vta-presupuesto-info .col{
+    display: inline-block;
+    vertical-align: top;
+    width: 100px;
+    
+    overflow: hidden;
+    
+    color: #000;
+}
+#listado_adm_vta_orden_venta_gestion .uno.separador td .vta-presupuesto-info .tipo-emision{
+    background-color: #ddd;
+    color: #000;
+
+    text-align: center;
+    font-size: 10px;
+
+    padding: 3px 4px;
+}
+#listado_adm_vta_orden_venta_gestion .uno.separador td .vta-presupuesto-info .tipo-venta{
+    background-color: #999;
+    color: #fff;
+
+    text-align: center;
+    font-size: 10px;
+
+    padding: 3px 4px;
+}
+#listado_adm_vta_orden_venta_gestion .uno.separador td .vta-presupuesto-info .tipo-venta.VENTA_A{
+    background-color: #013254;
+}
+#listado_adm_vta_orden_venta_gestion .uno.separador td .vta-presupuesto-info .tipo-venta.VENTA_Z{
+}
+#listado_adm_vta_orden_venta_gestion .uno.separador td .vta-presupuesto-info .codigo{
+    font-weight: bold;
+    font-size: 12px;
+}
+#listado_adm_vta_orden_venta_gestion .uno.separador td .vta-presupuesto-info .fecha{
+    font-size: 11px;
+    color: #666;
+}
+#listado_adm_vta_orden_venta_gestion .uno.separador td .vta-presupuesto-info .creado-por{
+    font-size: 9px;
+    color: #666;
+}
+#listado_adm_vta_orden_venta_gestion .uno.separador td .vta-presupuesto-info .cli-cliente{    
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+}
+#listado_adm_vta_orden_venta_gestion .uno.separador td .vta-presupuesto-info .vta-vendedor{
+    width: 250px;
+    font-size: 12px;
+}
+#listado_adm_vta_orden_venta_gestion .uno.separador td .vta-presupuesto-info .gral-sucursal{
+    font-weight: bold;
+    font-size: 12px;
+}
+#listado_adm_vta_orden_venta_gestion .uno.separador td .vta-presupuesto-info .cli-email{
+    font-size: 11px;
+}
+#listado_adm_vta_orden_venta_gestion .uno.separador td .vta-presupuesto-info .cli-telefono{
+    font-size: 11px;
+}
+#listado_adm_vta_orden_venta_gestion .uno.separador td .vta-presupuesto-info .vta-presupuesto-tipo-despacho{
+    font-weight: bold;
+    color: #000;
+}
+#listado_adm_vta_orden_venta_gestion .uno.separador td .vta-presupuesto-info .sucursal-retiro{
+    font-size: 10px;
+    color: #0000cc;
+}
+#listado_adm_vta_orden_venta_gestion .uno.separador td .vta-presupuesto-info .centro-recepcion{
+    font-size: 10px;
+    color: #0000cc;
+}
+
+#listado_adm_vta_orden_venta_gestion .codigo-vta-orden-venta{
+    color: #000;
+    font-weight: bold;
+}
+
+#listado_adm_vta_orden_venta_gestion .fecha-vta-orden-venta{
+    font-size: 11px;
+    color: #666;
+}
+#listado_adm_vta_orden_venta_gestion .creado-por{
+    font-size: 9px;
+    color: #666;
+}
+#listado_adm_vta_orden_venta_gestion .foto{
+    float: left;
+    margin: 5px;
+    min-height: 40px;
+}
+#listado_adm_vta_orden_venta_gestion .codigo-interno{
+    color: #666;
+}
+#listado_adm_vta_orden_venta_gestion .descripcion{
+    padding: 2px;
+    font-size: 12px;
+}
+#listado_adm_vta_orden_venta_gestion .vta_orden_venta_tipo_estado_remision_id{
+    font-size: 10px;
+    font-weight: bold;
+    color: #000;
+}
+#listado_adm_vta_orden_venta_gestion .cantidad_remitida{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 3px 1px 0px 1px;
+}
+#listado_adm_vta_orden_venta_gestion .vta_orden_venta_tipo_estado_facturacion_id{
+    font-size: 10px;
+    font-weight: bold;
+    color: #000;
+}
+#listado_adm_vta_orden_venta_gestion .cantidad_facturada{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 3px 1px 0px 1px;
+}
+
+#listado_adm_vta_orden_venta_gestion .unidad-medida{
+    font-size: 10px;
+    color: #999;
+}
+
+/* Comprobantes Vinculados */
+#listado_adm_vta_orden_venta_gestion .bloque-comprobantes-vinculados{
+    margin-top: 5px;
+}
+#listado_adm_vta_orden_venta_gestion .bloque-comprobantes-vinculados .bloque-comprobante-vinculado{
+    font-size: 10px;
+    color: #000;
+}
+#listado_adm_vta_orden_venta_gestion .bloque-comprobantes-vinculados .bloque-comprobante-vinculado img{
+    vertical-align: middle;
+    position: relative;
+}
+
+#listado_adm_vta_orden_venta_gestion .importe-unitario{
+}
+#listado_adm_vta_orden_venta_gestion .importe-unitario.bruto{
+    text-decoration: line-through;
+    color: #999;
+}
+#listado_adm_vta_orden_venta_gestion .importe-unitario.neto{
+    color: #000;
+}
+#listado_adm_vta_orden_venta_gestion .ins_tipo_lista_precio{
+    font-size: 10px;
+    color: #666;
+}
+#listado_adm_vta_orden_venta_gestion .gral_tipo_iva{
+    font-size: 10px;
+    color: #666;
+}
+#listado_adm_vta_orden_venta_gestion .importe-subtotal{
+}
+#listado_adm_vta_orden_venta_gestion .importe-subtotal.bruto{
+    text-decoration: line-through;
+    color: #999;
+}
+#listado_adm_vta_orden_venta_gestion .importe-subtotal.neto{
+    color: #333;
+}
+
+#listado_adm_vta_orden_venta_gestion .importe-total{
+    color: #000;
+    font-weight: bold;
+}
+#listado_adm_vta_orden_venta_gestion .importe-total .label-iva-incluido{
+    font-weight: normal;
+    font-size: 10px;
+    color: #666;    
+
+}
+
+
+#listado_adm_vta_orden_venta_gestion .importe-iva{
+    color: #000;
+}
+
+#listado_adm_vta_orden_venta_gestion .gral_tipo_iva_id{
+    font-weight: normal;
+    font-size: 10px;
+    color: #666;    
+}
+
+#listado_adm_vta_orden_venta_gestion .codigo-vta-remito{
+    color: #000;
+}
+
+#listado_adm_vta_orden_venta_gestion .fecha-vta-remito{
+    font-size: 10px;
+    color: #666;
+}
+
+#listado_adm_vta_orden_venta_gestion .vta-presupuesto-tipo-emision{
+    margin-left: 15px;
+    font-size: 10px;
+    color: #666;
+}
+
+#listado_adm_vta_orden_venta_gestion .vta_orden_venta_tipo_estado_id{
+}
+#listado_adm_vta_orden_venta_gestion .vta_orden_venta_tipo_estado_id img{
+    vertical-align: middle;
+    position: relative;
+}
+
+#listado_adm_vta_orden_venta_gestion .vta_orden_venta_tipo_estado_remision_id{
+}
+#listado_adm_vta_orden_venta_gestion .vta_orden_venta_tipo_estado_remision_id img{
+    vertical-align: middle;
+    position: relative;
+}
+
+#listado_adm_vta_orden_venta_gestion .vta_orden_venta_tipo_estado_facturacion_id{
+}
+#listado_adm_vta_orden_venta_gestion .vta_orden_venta_tipo_estado_facturacion_id img{
+    vertical-align: middle;
+    position: relative;
+}
+
+/* Ficha OV */
+
+/* Ficha - Modal Top */
+.div_modal .ficha-orden-venta .modal-top{
+    margin: 5px;
+    padding: 5px;
+    
+    background-color: #f4f4f4;
+    border-bottom: #ccc solid 1px;
+}
+.div_modal .ficha-orden-venta .modal-top .col{
+    display: inline-block;
+    vertical-align: top;
+    
+    width: 100px;
+}
+.div_modal .ficha-orden-venta .modal-top .col .label{
+    color: #666;
+    font-weight: normal;
+}
+.div_modal .ficha-orden-venta .modal-top .col.foto{
+    width: 70px;
+    margin: 0 10px;
+}
+.div_modal .ficha-orden-venta .modal-top .col.foto img{
+    border: #ccc solid 1px;
+    width: 100%;
+}
+.div_modal .ficha-orden-venta .modal-top .col.cliente{
+    width: 350px;
+}
+
+/* Ficha Tab estados */
+#tab_estados .tabla-modal .fecha{
+    font-size: 10px;
+    color: #000;
+}
+
+#tab_estados .tabla-modal .descripcion{
+    color: #000;
+    font-weight: bold;
+}
+
+#tab_estados .tabla-modal .tipo-estado{
+}
+
+#tab_estados .tabla-modal .tipo-estado img{
+    vertical-align: middle;
+    position: relative;
+}
+
+#tab_estados .tabla-modal .observacion{
+    color: #000;
+}
+
+#tab_estados .tabla-modal .creado-por{
+    color: #000;
+}
+
+#tab_estados .tabla-modal .actual{
+}
+
+/* Ficha Tab estados Remision */
+#tab_estados_remision .tabla-modal .fecha{
+    font-size: 10px;
+    color: #000;
+}
+
+#tab_estados_remision .tabla-modal .descripcion{
+    color: #000;
+    font-weight: bold;
+}
+
+#tab_estados_remision .tabla-modal .tipo-estado{
+}
+
+#tab_estados_remision .tabla-modal .tipo-estado img{
+    vertical-align: middle;
+    position: relative;
+}
+
+#tab_estados_remision .tabla-modal .observacion{
+    color: #000;
+}
+
+#tab_estados_remision .tabla-modal .creado-por{
+    color: #000;
+}
+
+#tab_estados_remision .tabla-modal .actual{
+}
+
+/* Ficha Tab estados Facturacion*/
+#tab_estados_facturacion .tabla-modal .fecha{
+    font-size: 10px;
+    color: #000;
+}
+
+#tab_estados_facturacion .tabla-modal .descripcion{
+    color: #000;
+    font-weight: bold;
+}
+
+#tab_estados_facturacion .tabla-modal .tipo-estado{
+}
+
+#tab_estados_facturacion .tabla-modal .tipo-estado img{
+    vertical-align: middle;
+    position: relative;
+}
+
+#tab_estados_facturacion .tabla-modal .observacion{
+    color: #000;
+}
+
+#tab_estados_facturacion .tabla-modal .creado-por{
+    color: #000;
+}
+
+#tab_estados_facturacion .tabla-modal .actual{
+}
+
+/* Ficha Tab Remito */
+
+#tab_remito .tabla-modal{
+    
+}
+
+#tab_remito .tabla-modal .par td{
+    background-color: #f0f0f0;
+}
+#tab_remito .tabla-modal .impar td{
+    background-color: #fff;
+}
+
+#tab_remito .tabla-modal .codigo-vta-remito{
+    color: #000;
+    font-weight: bold;
+}
+
+#tab_remito .tabla-modal .fecha-vta-remito{
+    font-size: 10px;
+    color: #666;
+}
+
+#tab_remito .tabla-modal .codigo-vta-orden-venta{
+    color: #000;
+}
+
+#tab_remito .tabla-modal .fecha-vta-orden-venta{
+    font-size: 10px;
+    color: #666;
+}
+
+#tab_remito .tabla-modal .descripcion{
+    color: #000;
+    font-weight: bold;
+}
+
+#tab_remito .tabla-modal .vta_remito_tipo_estado_id{
+}
+
+#tab_remito .tabla-modal .vta_remito_tipo_estado_id img{
+    vertical-align: middle;
+    position: relative;
+}
+
+#tab_remito .tabla-modal .cantidad{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#tab_remito .tabla-modal .unidad-medida{
+    font-size: 10px;
+    color: #999;
+}
+
+#tab_remito .tabla-modal .descuento{
+    font-size: 12px;
+    color: #000;
+}
+
+#tab_remito .tabla-modal .importe-unitario{
+}
+#tab_remito .tabla-modal .importe-unitario.bruto{
+    text-decoration: line-through;
+    color: #999;
+}
+#tab_remito .tabla-modal .importe-unitario.neto{
+    color: #000;
+}
+#tab_remito .tabla-modal .importe-total{
+}
+#tab_remito .tabla-modal .importe-total.bruto{
+    text-decoration: line-through;
+    color: #999;
+}
+#tab_remito .tabla-modal .importe-total.neto{
+    color: #000;
+    font-weight: bold;
+}
+
+#tab_remito .tabla-modal .creado-por{
+    color: #000;
+}

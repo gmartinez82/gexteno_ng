@@ -1,0 +1,152 @@
+@charset "iso-8859-2";
+/* CSS Document */
+
+.archivos{
+    margin:35px 15px;
+}
+
+.archivos .titulo{
+	margin-left:15px;
+}
+.archivos .titulo div{
+	display:inline;
+}
+.archivos .titulo .label{
+	font-size:14px;
+	color:#666;
+}
+.archivos .titulo .dato{
+	font-size:16px;
+	font-weight:bold;
+	color:#000000;
+}
+
+/* Botonera */
+.archivos .botonera{
+	background-color:transparent;
+	
+	text-align:left;
+	margin-top:-25px;
+	float:right;
+}
+.archivos .botonera .boton{
+	background-color:#013254;
+	display:inline-block;
+	vertical-align:top;
+	width:150px;
+	
+	text-align:center;
+	font-size:10px;
+}
+.archivos .botonera .boton a{
+	color:#FFFFFF;
+	display:block;
+}
+.archivos .botonera .boton:hover{
+	background-color:#C0C0C0;
+	color:#013254;
+	cursor:pointer;
+}
+
+/* Uno */
+.archivos .uno{
+	border:#ccc solid 1px;
+	background:#fff;
+	padding:10px;
+	margin:8px;
+	
+	display:inline-block;
+	vertical-align:top;
+	width:250px;
+	
+	min-height:50px;
+
+	-moz-box-shadow:    3px 3px 5px 2px #999;
+	-webkit-box-shadow: 3px 3px 5px 2px #999;
+	box-shadow:         3px 3px 5px 2px #999;	
+}
+.archivos .uno .archivo{
+	float:left;
+	margin-right:10px;
+}
+.archivos .uno .descripcion{
+	font-size:14px;
+	font-weight:bold;
+	color:#000000;
+}
+.archivos .uno .observacion{
+	font-size:11px;
+	color:#666;
+}
+.archivos .uno .acciones{
+	margin:5px;
+	text-align:right;
+}
+.archivos .uno .acciones .accion{
+	display:inline-block;
+	margin:3px;
+	
+	cursor:pointer;
+}
+.archivos .uno .accion.ver{
+	margin-left:138px;
+	
+	padding:2px;
+	font-size:10px;
+	
+	width:100px;
+	cursor:pointer;
+}
+
+
+/* Nuevo */
+.archivos .nuevo{
+	border:none;
+	width:60px;
+	text-align:center;
+	
+	margin:15px;
+	display:inline-block;
+}
+.archivos .nuevo .descripcion{
+	font-size:12px;
+	font-weight:bold;
+}
+
+/* Masivos */
+.masivo-bloque{
+	background-color:#f9f9f9;
+	border-top:#999999 solid 5px;
+	padding:15px;
+	
+	margin-top:10px;
+
+}
+.masivo-bloque .comentario{
+	font-size:11px;
+	color:#666;
+}
+.masivo-bloque .uno{
+	background-color:#FFFFFF;
+	border-bottom:#999999 dotted 1px;
+	padding:8px;
+	margin:5px;				
+	font-size:14px;
+}
+.masivo-titulo{
+	font-size:16px;
+	font-weight:bold;
+}
+.masivo-botones{
+	background-color:#999999;
+	border:#000000 solid 1px;
+	font-size:11px;
+	
+	padding:3px;
+	margin:3px;
+	color:#fff!important;
+}
+.masivo-botones:hover{
+	background-color:#CCCCCC;
+	color:#000!important;
+}
