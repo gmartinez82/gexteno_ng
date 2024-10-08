@@ -225,15 +225,13 @@ class PDFTicketKude extends TCPDF {
         $actividad = $this->getActividad();
         $timbrado = $this->getTimbrado();
         $receptor_fecha_hora_emision = $this->getReceptorFechaHoraEmision();
+        $numero_comprobante = $this->getNumeroComprobante();
 
-        $tipo = $this->getTipo();
-        $tipo_letra = $this->getTipoLetra();
-        $codigo = $this->getNumeroComprobante();
         $punto_venta_localidad = $this->getPuntoVentaLocalidad();
         $punto_venta_domicilio = $this->getPuntoVentaDomicilio();
-        $fecha = $this->getFecha();
+        $fecha_inicio_vigencia = $this->getFecha();
         $vendedor = $this->getVendedor();
-
+        
         $cliente = $this->getCliente();
         $localidad = $this->getLocalidad();
         $provincia = $this->getProvincia();
@@ -241,7 +239,7 @@ class PDFTicketKude extends TCPDF {
         
         $iibb = $this->getIIBB();
         
-        $this->HeaderComprobante($domicilio, $cuit, $punto_venta_localidad, $telefono, $email, $actividad, $timbrado, $receptor_fecha_hora_emision, $tipo_letra, $codigo, $fecha, $vendedor, $punto_venta_domicilio);
+        $this->HeaderComprobante($domicilio, $cuit, $punto_venta_localidad, $telefono, $email, $actividad, $timbrado, $receptor_fecha_hora_emision, $fecha_inicio_vigencia, $numero_comprobante);
 
         //$this->HeaderComprobanteDatosCliente($cliente, $domicilio, $localidad, $provincia, $condicion_iva, $cuit, $iibb, $telefono);
     }
@@ -366,8 +364,8 @@ class PDFTicketKude extends TCPDF {
      * Datos de Cabecera de Empresa
      * -------------------------------------------------------------------------
      */
-    function HeaderComprobante($domicilio, $cuit, $punto_venta_localidad, $telefono, $email, $actividad, $timbrado, $receptor_fecha_hora_emision, $tipo_letra, $codigo, $fecha, $vendedor, $punto_venta_domicilio, $codigo_tipo_comprobante = 'X') {
-        
+    function HeaderComprobante($domicilio, $cuit, $punto_venta_localidad, $telefono, $email, $actividad, $timbrado, $receptor_fecha_hora_emision, $fecha_inicio_vigencia, $numero_comprobante)
+    {
         // ---------------------------------------------------------------------
         // logo
         // ---------------------------------------------------------------------
@@ -438,6 +436,14 @@ class PDFTicketKude extends TCPDF {
         $this->setXY($x, $y+= $y_alto);
         $this->setXY($x, $y+= $y_alto);
         $this->Cell(1, 3, 'Timbrado: ' . $timbrado, 0, 1, 'L', 1);
+
+        // Fecha inicio vigencia
+        $this->setXY($x, $y+= $y_alto);
+        $this->Cell(1, 3, 'Inicio Vigencia: ' . $fecha_inicio_vigencia, 0, 1, 'L', 1);
+
+        // Factura
+        $this->setXY($x, $y+= $y_alto);
+        $this->Cell(1, 3, 'KuDE de Factura electrónica: ' . $numero_comprobante, 0, 1, 'L', 1);
 
         // Fecha emision
         $this->setXY($x, $y+= $y_alto);

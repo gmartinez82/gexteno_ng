@@ -182,7 +182,7 @@ $eku_de_f001_g_tot_sub = $eku_de->getEkuDeF001GTotSub();
             
         <tr>
             <th class="adm_tbl_encabezado_gris" colspan="6" align="left">Subtotal</th>
-            <th class="adm_tbl_encabezado_gris" align="right"><?php Gral::_echoImp($eku_de_f001_g_tot_sub->getEkuF003Dsubexo(), false, false, ' ', 2) ?></th>
+            <th class="adm_tbl_encabezado_gris" align="right"><?php Gral::_echoImp($eku_de_f001_g_tot_sub->getEkuF002Dsubexe(), false, false, ' ', 2) ?></th>
             <th class="adm_tbl_encabezado_gris" align="right"><?php Gral::_echoImp($eku_de_f001_g_tot_sub->getEkuF004Dsub5(), false, false, ' ', 2) ?></th>
             <th class="adm_tbl_encabezado_gris" align="right"><?php Gral::_echoImp($eku_de_f001_g_tot_sub->getEkuF005Dsub10(), false, false, ' ', 2) ?></th>
         </tr>
