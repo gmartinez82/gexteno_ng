@@ -23,8 +23,12 @@ class PDFTicketKude extends TCPDF {
     // ---------------------------------------------------
     //  Atributos del Cliente
     // ---------------------------------------------------
+    private $receptor_razon_social;
     private $receptor_fecha_hora_emision;
-
+    private $receptor_ruc;
+    private $receptor_documento;
+    private $receptor_condicion_operacion;
+    
     private $cliente;
     private $localidad;
     private $provincia;
@@ -126,6 +130,23 @@ class PDFTicketKude extends TCPDF {
         return $this->punto_venta_domicilio;
     }
 
+    public function getReceptorRazonSocial() {
+        return $this->receptor_razon_social;
+    }
+
+    public function getReceptorRuc() {
+        return $this->receptor_ruc;
+    }
+
+    public function getReceptorDocumento() {
+        return $this->receptor_documento;
+    }
+
+    public function getReceptorCondicionOperacion() {
+        return $this->receptor_condicion_operacion;
+    }
+
+    
     
     // ---------------------------------------------------
     //  Metodos Setter
@@ -214,9 +235,25 @@ class PDFTicketKude extends TCPDF {
         $this->punto_venta_domicilio = $v;
     }
 
-    //Cabecera de pagina
-    function Header() {
+    public function setReceptorRuc($v) {
+        $this->receptor_ruc = $v;
+    }
 
+    public function setReceptorDocumento($v) {
+        $this->receptor_documento = $v;
+    }
+
+    public function setReceptorRazonSocial($v) {
+        $this->receptor_razon_social = $v;
+    }
+    
+    public function setReceptorCondicionOperacion($v) {
+        $this->receptor_condicion_operacion = $v;
+    }
+
+    //Cabecera de pagina
+    function Header()
+    {
         $domicilio = $this->getDomicilio();
         $cuit = $this->getCUIT();
         $punto_venta_localidad = $this->getPuntoVentaLocalidad();
@@ -226,139 +263,16 @@ class PDFTicketKude extends TCPDF {
         $timbrado = $this->getTimbrado();
         $receptor_fecha_hora_emision = $this->getReceptorFechaHoraEmision();
         $numero_comprobante = $this->getNumeroComprobante();
-
+        
         $punto_venta_localidad = $this->getPuntoVentaLocalidad();
-        $punto_venta_domicilio = $this->getPuntoVentaDomicilio();
         $fecha_inicio_vigencia = $this->getFecha();
-        $vendedor = $this->getVendedor();
-        
-        $cliente = $this->getCliente();
-        $localidad = $this->getLocalidad();
-        $provincia = $this->getProvincia();
-        $condicion_iva = $this->getCondicionIva();
-        
-        $iibb = $this->getIIBB();
         
         $this->HeaderComprobante($domicilio, $cuit, $punto_venta_localidad, $telefono, $email, $actividad, $timbrado, $receptor_fecha_hora_emision, $fecha_inicio_vigencia, $numero_comprobante);
-
+        
         //$this->HeaderComprobanteDatosCliente($cliente, $domicilio, $localidad, $provincia, $condicion_iva, $cuit, $iibb, $telefono);
     }
-
-    /**
-     * -------------------------------------------------------------------------
-     * Datos de Cabecera de Empresa
-     * -------------------------------------------------------------------------
-     */
-    function HeaderComprobante__($tipo, $tipo_letra, $codigo, $fecha, $vendedor, $punto_venta_localidad, $punto_venta_domicilio, $codigo_tipo_comprobante = 'X') {
-        
-        // ---------------------------------------------------------------------
-        // logo
-        // ---------------------------------------------------------------------
-        $this->Image(Gral::getPathAbs() . DbConfig::PATH_LOGO_EMPRESA_PDF, 5, 10, 70);
-        
-        $this->SetFont('Helvetica', '', 10);
-
-        $this->SetTextColor(0, 0, 0);
-        $this->SetFont('Helvetica', '', 9);
-        $this->SetFillColor(255, 255, 255);
-
-        $x = 4;
-        $y = 35;
-        $y_alto = 4;
-        $line_x = 3;
-        $line_y = 70;
-        
-        
-        $style_line = array('width' => 0.25, 'cap' => 'butt', 'join' => 'miter', 'dash' => 0, 'color' => array(150, 150, 150));
-        // -------------------------------------------------------------------------------------------
-        $this->Line($line_x, $y+= $y_alto, $x + $line_y, $y, 'D', array('all' => $style_line));
-        
-        // ---------------------------------------------------------------------
-        // razon social
-        // ---------------------------------------------------------------------        
-        $this->setXY($x, $y+= $y_alto - 3);
-        $this->Cell(1, 3, DbConfig::CONFIG_GRAL_RAZON_SOCIAL, 0, 1, 'L', 1);
-        
-        // ---------------------------------------------------------------------
-        // condicion iva
-        // ---------------------------------------------------------------------
-        $this->setXY($x, $y = $y + $y_alto);
-        $this->Cell(1, 3, DbConfig::CONFIG_GRAL_CLIENTE_CONDICION_IVA, 0, 1, 'L', 1);
-        
-        // ---------------------------------------------------------------------
-        // cuit
-        // ---------------------------------------------------------------------
-        $this->setXY($x, $y+= $y_alto);
-        $this->Cell(1, 3, "CUIT: " . DbConfig::CONFIG_GRAL_CLIENTE_CUIT, 0, 1, 'L', 1);
-
-        // ---------------------------------------------------------------------
-        // iibb
-        // ---------------------------------------------------------------------
-        $this->setXY($x, $y+= $y_alto);
-        $this->Cell(1, 3, "IIBB: " . DbConfig::CONFIG_GRAL_CLIENTE_IIBB, 0, 1, 'L', 1);
-                
-        // -------------------------------------------------------------------------------------------
-        //$this->Line($line_x, $y+= $y_alto + 2, $x + $line_y, $y, 'D', array('all' => $style_line));
-        
-        
-        // ---------------------------------------------------------------------
-        // domicilio
-        // ---------------------------------------------------------------------
-        $this->setXY($x, $y = $y + $y_alto);
-        $this->Cell(1, 3, $punto_venta_domicilio, 0, 1, 'L', 1);
-
-        // ---------------------------------------------------------------------
-        // localidad
-        // ---------------------------------------------------------------------
-        $this->setXY($x, $y = $y + $y_alto);
-        $this->Cell(1, 3, 'CP '.DbConfig::CONFIG_GRAL_CLIENTE_CODIGO_POSTAL.' - '.$punto_venta_localidad, 0, 1, 'L', 1);
-        
-        // ---------------------------------------------------------------------
-        // inicio de actividades
-        // ---------------------------------------------------------------------
-        $this->setXY($x, $y = $y + $y_alto);
-        $this->Cell(1, 3, "Inicio de Actividades: " . DbConfig::CONFIG_GRAL_CLIENTE_FECHA_INICIO, 0, 1, 'L', 1);
-        
-        // ---------------------------------------------------------------------
-        // telefono
-        // ---------------------------------------------------------------------
-        $this->setXY($x, $y = $y + $y_alto);
-        $this->Cell(1, 3, 'Teléfonos: ' . DbConfig::CONFIG_GRAL_CLIENTE_TELEFONOS, 0, 1, 'L', 1);
-
-        // ---------------------------------------------------------------------
-        // celular
-        // ---------------------------------------------------------------------
-        $this->setXY($x, $y = $y + $y_alto);
-        $this->Cell(1, 3, 'Celular: ' . DbConfig::CONFIG_GRAL_CLIENTE_CELULARES, 0, 1, 'L', 1);
-
-        // -------------------------------------------------------------------------------------------
-        $this->Line($line_x, $y+= $y_alto + 2, $x + $line_y, $y, 'D', array('all' => $style_line));
-        
-        $this->SetFont('Helvetica', 'B', 11);
-        
-        // ---------------------------------------------------------------------
-        // tipo
-        // ---------------------------------------------------------------------
-        $this->setXY($x, $y = $y + $y_alto - 2);
-        $this->Cell(1, 3, 'No valido como factura', 0, 1, 'L', 1);            
-
-        $this->SetFont('Helvetica', '', 9);            
-        
-        // ---------------------------------------------------------------------
-        // fecha
-        // ---------------------------------------------------------------------
-        $this->setXY($x, $y = $y + $y_alto + 2);
-        $this->Cell(1, 3, 'Fecha: ' . $fecha, 0, 1, 'L', 1);
-
-        // ---------------------------------------------------------------------
-        // codigo
-        // ---------------------------------------------------------------------
-        $this->setXY($x + 30, $y);
-        $this->Cell(1, 3, 'Nro: '.$codigo, 0, 1, 'L', 1);
-        
-    }
-
-
+    
+    
     /**
      * -------------------------------------------------------------------------
      * Datos de Cabecera de Empresa
@@ -372,11 +286,11 @@ class PDFTicketKude extends TCPDF {
         $this->Image(Gral::getPathAbs() . DbConfig::PATH_LOGO_EMPRESA_PDF, 5, 10, 70);
         
         $this->SetFont('Helvetica', '', 10);
-
+        
         $this->SetTextColor(0, 0, 0);
         $this->SetFont('Helvetica', '', 9);
         $this->SetFillColor(255, 255, 255);
-
+        
         $x = 4;
         $y = 35;
         $y_alto = 4;
@@ -393,19 +307,19 @@ class PDFTicketKude extends TCPDF {
         // ---------------------------------------------------------------------        
         $this->setXY($x, $y+= $y_alto - 3);
         $this->Cell(1, 3, 'RUC: ' . $cuit, 0, 1, 'L', 1);
-
+        
         // ---------------------------------------------------------------------
         // Texto
         // ---------------------------------------------------------------------        
         $this->setXY($x, $y+= $y_alto);
         $this->Cell(1, 3, 'Sistema integrado de facturación', 0, 1, 'L', 1);
-
+        
         // ---------------------------------------------------------------------
         // Texto
         // ---------------------------------------------------------------------        
         $this->setXY($x, $y+= $y_alto);
         $this->Cell(1, 3, 'Electrónica Nacional', 0, 1, 'L', 1);
-
+        
         // ---------------------------------------------------------------------
         // Domicilio
         // ---------------------------------------------------------------------        
@@ -417,46 +331,47 @@ class PDFTicketKude extends TCPDF {
         // ---------------------------------------------------------------------
         $this->setXY($x, $y+= $y_alto);
         $this->Cell(1, 3, 'Ciudad: ' . $punto_venta_localidad, 0, 1, 'L', 1);
-
+        
         // ---------------------------------------------------------------------
         // Telefono
         // ---------------------------------------------------------------------
         $this->setXY($x, $y+= $y_alto);
         $this->Cell(1, 3, 'Teléfono: ' . $telefono, 0, 1, 'L', 1);
-
+        
         // Email
         $this->setXY($x, $y+= $y_alto);
         $this->Cell(1, 3, $email, 0, 1, 'L', 1);
-
+        
         // Actividad
         $this->setXY($x, $y+= $y_alto);
-        $this->Cell(1, 3, 'Actividad: ' . $actividad, 0, 1, 'L', 1);
-
+        $this->Cell(1, 3, 'Actividad: ' . substr($actividad, 0, 30), 0, 1, 'L', 1);
+        
         // Timbrado
         $this->setXY($x, $y+= $y_alto);
         $this->setXY($x, $y+= $y_alto);
         $this->Cell(1, 3, 'Timbrado: ' . $timbrado, 0, 1, 'L', 1);
-
+        
         // Fecha inicio vigencia
         $this->setXY($x, $y+= $y_alto);
         $this->Cell(1, 3, 'Inicio Vigencia: ' . $fecha_inicio_vigencia, 0, 1, 'L', 1);
-
+        
         // Factura
         $this->setXY($x, $y+= $y_alto);
         $this->Cell(1, 3, 'KuDE de Factura electrónica: ' . $numero_comprobante, 0, 1, 'L', 1);
-
+        
         // Fecha emision
         $this->setXY($x, $y+= $y_alto);
         $this->Cell(1, 3, "Fecha de Emisión: " . $receptor_fecha_hora_emision, 0, 1, 'L', 1);
     }
-
+    
+    
     /**
      * -------------------------------------------------------------------------
      * Datos de Cabecera de Cliente
      * -------------------------------------------------------------------------
      */
-    function HeaderComprobanteDatosCliente($cliente, $domicilio, $localidad, $provincia, $condicion_iva, $cuit, $iibb, $telefono) {
-        
+    function HeaderComprobanteDatosCliente($cliente, $domicilio, $localidad, $provincia, $condicion_iva, $cuit, $iibb, $telefono)
+    {
         $x = 4;
         $y = 90;
         $y_alto = 4;
@@ -506,9 +421,12 @@ class PDFTicketKude extends TCPDF {
     }
 
     //Pie de pagina
-    function Footer() {
-
-        
+    function Footer()
+    {
+        /*$x = 4;
+        $y = 150;
+        $this->setXY($x, $y+ 4 - 3);
+        $this->Cell(1, 3, 'X: ' . $this->GetX() + 1 . ' - Y: ' . $this->GetY() + 1, 0, 1, 'L', 1);*/ 
     }
 
 }

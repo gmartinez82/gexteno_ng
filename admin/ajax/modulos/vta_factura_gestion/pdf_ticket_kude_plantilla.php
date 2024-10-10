@@ -168,8 +168,16 @@ $pdf->setActividad($actividad);
 $pdf->setTimbrado($timbrado);
 $pdf->setReceptorFechaHoraEmision($receptor_fecha_hora_emision);
 $pdf->setNumeroComprobante($numero_comprobante);
-
 $pdf->setFecha($fecha);
+
+//receptor
+$receptor_razon_social = substr($receptor_razon_social, 0, 40);
+$receptor_domicilio = substr($receptor_domicilio, 0, 40);
+$pdf->setReceptorRuc($receptor_ruc);
+$pdf->setReceptorDocumento($receptor_doc);
+$pdf->setReceptorRazonSocial($receptor_razon_social);
+$pdf->setReceptorCondicionOperacion($receptor_condicion_operacion);
+
 
 $pdf->AddFont('DejaVuSans', '', Gral::getPathAbs().'comps/tcpdf/fonts/dejavusans.php');
 $pdf->AddFont('DejaVuSansCondensed', '', Gral::getPathAbs().'comps/tcpdf/fonts/dejavusanscondensed.php');
@@ -192,7 +200,8 @@ $line_y = 70;
 
 $style_line = array('width' => 0.25, 'cap' => 'butt', 'join' => 'miter', 'dash' => 0, 'color' => array(150, 150, 150));
 // -------------------------------------------------------------------------------------------
-$pdf->Line($line_x, $y += $y_alto + 3, $x + $line_y, $y, 'D', array('all' => $style_line));
+$pdf->Line($line_x, $y += $y_alto, $x + $line_y, $y, 'D', array('all' => $style_line));
+
 $pdf->setXY($x, $y += $y_alto);
 $pdf->Cell(1, 3, 'Productos', 0, 1, 'L', 0);
 
@@ -247,7 +256,7 @@ foreach ( $eku_de_e700_g_dtip_d_e_g_cam_items as $i => $eku_de_e700_g_dtip_d_e_g
 
 $style_line = array('width' => 0.25, 'cap' => 'butt', 'join' => 'miter', 'dash' => 0, 'color' => array(150, 150, 150));
 // -------------------------------------------------------------------------------------------
-$pdf->Line($line_x, $y += $y_alto + 3, $x + $line_y, $y, 'D', array('all' => $style_line));
+$pdf->Line($line_x, $y += $y_alto + 2, $x + $line_y, $y, 'D', array('all' => $style_line));
 
 // -----------------------------------------------------------------------------
 // Subtotal
@@ -255,7 +264,7 @@ $pdf->Line($line_x, $y += $y_alto + 3, $x + $line_y, $y, 'D', array('all' => $st
 $pdf->SetFont('Helvetica', '', 8);
 
 // label
-$pdf->setXY($x, $y += $y_alto + 1);
+$pdf->setXY($x, $y += $y_alto);
 $pdf->Cell(1, 3, 'Total Operación', 0, 1, 'L', 0);
 
 // dato
@@ -263,7 +272,7 @@ $pdf->setXY($x + 65, $y);
 $pdf->Cell(1, 3, Gral::_echoImp($eku_F008_dtotope, false, true), 0, 1, 'R', 0);
 
 // label
-$pdf->setXY($x, $y += $y_alto + 5);
+$pdf->setXY($x, $y += $y_alto + 2);
 $pdf->Cell(1, 3, 'Total Descuento en Gs', 0, 1, 'L', 0);
 
 // dato
@@ -271,7 +280,7 @@ $pdf->setXY($x + 65, $y);
 $pdf->Cell(1, 3, Gral::_echoImp($eku_F009_dtotdesc, false, true), 0, 1, 'R', 0);
 
 // label
-$pdf->setXY($x, $y += $y_alto + 5);
+$pdf->setXY($x, $y += $y_alto + 2);
 $pdf->Cell(1, 3, 'Detalle totales (Base Imponible)', 0, 1, 'L', 0);
 
 foreach($gral_tipo_ivas as $gral_tipo_iva)
@@ -296,7 +305,7 @@ foreach($gral_tipo_ivas as $gral_tipo_iva)
         }
         
         // label
-        $pdf->setXY($x, $y += $y_alto + 2);
+        $pdf->setXY($x, $y += $y_alto);
         $pdf->Cell(1, 3, 'Sub total Gravadas ' . $gral_tipo_iva->getDescripcion(), 0, 1, 'L', 0);
         
         // dato
@@ -309,7 +318,7 @@ foreach($gral_tipo_ivas as $gral_tipo_iva)
 // IVA
 // -----------------------------------------------------------------------------
 
-$pdf->setXY($x, $y += $y_alto + 5);
+$pdf->setXY($x, $y += $y_alto + 2);
 $pdf->Cell(1, 3, 'Detalle del impuesto', 0, 1, 'L', 0);
 
 foreach ( $gral_tipo_ivas as $gral_tipo_iva )
@@ -334,9 +343,9 @@ foreach ( $gral_tipo_ivas as $gral_tipo_iva )
         }
         
         // label
-        $pdf->setXY($x, $y += $y_alto + 2);
+        $pdf->setXY($x, $y += $y_alto);
         $pdf->Cell(1, 3, $gral_tipo_iva->getDescripcion(), 0, 1, 'L', 0);
-
+        
         // dato
         $pdf->setXY($x + 65, $y);
         $pdf->Cell(1, 3, Gral::_echoImp($iva_liquidacion, false, true), 0, 1, 'R', 0);
@@ -344,15 +353,42 @@ foreach ( $gral_tipo_ivas as $gral_tipo_iva )
 }
 
 // label
-$pdf->setXY($x, $y += $y_alto + 3);
-$pdf->Cell(1, 3, 'Liquidación total del iva', 0, 1, 'L', 0);
+$pdf->setXY($x, $y += $y_alto + 2);
+$pdf->Cell(1, 3, 'Liquidación total del iva' .'X: ' . $pdf->GetX()   . ' - Y: ' . $pdf->GetY(), 0, 1, 'L', 0);
 
 // dato
 $pdf->setXY($x + 65, $y);
 $pdf->Cell(1, 3, Gral::_echoImp($eku_de_f001_g_tot_sub->getEkuF017Dtotiva(), false, true), 0, 1, 'R', 0);
 
 
+
 $style_line = array('width' => 0.25, 'cap' => 'butt', 'join' => 'miter', 'dash' => 0, 'color' => array(150, 150, 150));
 // -------------------------------------------------------------------------------------------
-$pdf->Line($line_x, $y += $y_alto + 6, $x + $line_y, $y, 'D', array('all' => $style_line));
+$pdf->Line($line_x, $y += $y_alto + 2, $x + $line_y, $y, 'D', array('all' => $style_line));
+
+
+$pdf->SetFont('Helvetica', '', 8);
+
+// cliente
+$pdf->setXY($x, $y += $y_alto);
+$pdf->Cell(1, 3, 'Cliente: ' . $receptor_razon_social, 0, 1, 'L', 0);
+
+// Documento
+$pdf->setXY($x, $y += $y_alto + 1);
+$pdf->Cell(1, 3, 'Documento: ' . $receptor_documento, 0, 1, 'L', 0);
+
+// RUC
+$pdf->setXY($x, $y += $y_alto + 1);
+$pdf->Cell(1, 3, 'RUC: ' . $receptor_ruc, 0, 1, 'L', 0);
+
+// condicion venta
+$pdf->setXY($x, $y += $y_alto + 1);
+$pdf->Cell(1, 3, "Condición de Venta: " . $receptor_condicion_operacion, 0, 1, 'L', 0);
+
+$style_line = array('width' => 0.25, 'cap' => 'butt', 'join' => 'miter', 'dash' => 0, 'color' => array(150, 150, 150));
+// -------------------------------------------------------------------------------------------
+$pdf->Line($line_x, $y += $y_alto + 2,  $x + $line_y, $y, 'D', array('all' => $style_line));
+
+//$pdf->setXY($pdf->GetX(), $pdf->GetY()+ 6);
+//$pdf->Cell(1, 3, 'X: ' . $pdf->GetX(), 0, 1, 'L', 0);
 ?>
