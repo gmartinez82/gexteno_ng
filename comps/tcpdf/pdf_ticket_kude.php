@@ -292,7 +292,7 @@ class PDFTicketKude extends TCPDF {
         $this->SetFillColor(255, 255, 255);
         
         $x = 4;
-        $y = 35;
+        $y = 28;
         $y_alto = 4;
         $line_x = 3;
         $line_y = 70;

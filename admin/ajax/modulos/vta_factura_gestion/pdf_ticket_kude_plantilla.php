@@ -193,7 +193,7 @@ $pdf->SetFont('Helvetica', 'B', 11);
 // -----------------------------------------------------------------------------
 
 $x = 3;
-$y = 90;
+$y = 85;
 $y_alto = 4;
 $line_x = 3;
 $line_y = 70;
@@ -202,7 +202,7 @@ $style_line = array('width' => 0.25, 'cap' => 'butt', 'join' => 'miter', 'dash' 
 // -------------------------------------------------------------------------------------------
 $pdf->Line($line_x, $y += $y_alto, $x + $line_y, $y, 'D', array('all' => $style_line));
 
-$pdf->setXY($x, $y += $y_alto);
+$pdf->setXY($x, $y += $y_alto-2);
 $pdf->Cell(1, 3, 'Productos', 0, 1, 'L', 0);
 
 
