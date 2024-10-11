@@ -186,14 +186,14 @@ $pdf->AddFont('DejaVuSansCondensed', '', Gral::getPathAbs().'comps/tcpdf/fonts/d
 // Se crea pagina y margenes
 // -----------------------------------------------------------------------------
 $pdf->AddPage();
-$pdf->SetFont('Helvetica', 'B', 11);
+$pdf->SetFont('Helvetica', 'B', 8);
 
 // -----------------------------------------------------------------------------
 // Productos
 // -----------------------------------------------------------------------------
 
 $x = 3;
-$y = 85;
+$y = 80;
 $y_alto = 4;
 $line_x = 3;
 $line_y = 70;
@@ -256,15 +256,15 @@ foreach ( $eku_de_e700_g_dtip_d_e_g_cam_items as $i => $eku_de_e700_g_dtip_d_e_g
 
 $style_line = array('width' => 0.25, 'cap' => 'butt', 'join' => 'miter', 'dash' => 0, 'color' => array(150, 150, 150));
 // -------------------------------------------------------------------------------------------
-$pdf->Line($line_x, $y += $y_alto + 2, $x + $line_y, $y, 'D', array('all' => $style_line));
+$pdf->Line($line_x, $y += $y_alto + 1, $x + $line_y, $y, 'D', array('all' => $style_line));
 
 // -----------------------------------------------------------------------------
 // Subtotal
 // -----------------------------------------------------------------------------
-$pdf->SetFont('Helvetica', '', 8);
+$pdf->SetFont('Helvetica', '', 7);
 
 // label
-$pdf->setXY($x, $y += $y_alto);
+$pdf->setXY($x, $y += $y_alto-1);
 $pdf->Cell(1, 3, 'Total Operación', 0, 1, 'L', 0);
 
 // dato
@@ -272,7 +272,7 @@ $pdf->setXY($x + 65, $y);
 $pdf->Cell(1, 3, Gral::_echoImp($eku_F008_dtotope, false, true), 0, 1, 'R', 0);
 
 // label
-$pdf->setXY($x, $y += $y_alto + 2);
+$pdf->setXY($x, $y += $y_alto + 1);
 $pdf->Cell(1, 3, 'Total Descuento en Gs', 0, 1, 'L', 0);
 
 // dato
@@ -280,7 +280,7 @@ $pdf->setXY($x + 65, $y);
 $pdf->Cell(1, 3, Gral::_echoImp($eku_F009_dtotdesc, false, true), 0, 1, 'R', 0);
 
 // label
-$pdf->setXY($x, $y += $y_alto + 2);
+$pdf->setXY($x, $y += $y_alto + 1);
 $pdf->Cell(1, 3, 'Detalle totales (Base Imponible)', 0, 1, 'L', 0);
 
 foreach($gral_tipo_ivas as $gral_tipo_iva)
@@ -318,7 +318,7 @@ foreach($gral_tipo_ivas as $gral_tipo_iva)
 // IVA
 // -----------------------------------------------------------------------------
 
-$pdf->setXY($x, $y += $y_alto + 2);
+$pdf->setXY($x, $y += $y_alto + 1);
 $pdf->Cell(1, 3, 'Detalle del impuesto', 0, 1, 'L', 0);
 
 foreach ( $gral_tipo_ivas as $gral_tipo_iva )
@@ -354,7 +354,7 @@ foreach ( $gral_tipo_ivas as $gral_tipo_iva )
 
 // label
 $pdf->setXY($x, $y += $y_alto + 2);
-$pdf->Cell(1, 3, 'Liquidación total del iva' .'X: ' . $pdf->GetX()   . ' - Y: ' . $pdf->GetY(), 0, 1, 'L', 0);
+$pdf->Cell(1, 3, 'Liquidación total del iva', 0, 1, 'L', 0);
 
 // dato
 $pdf->setXY($x + 65, $y);
@@ -370,25 +370,77 @@ $pdf->Line($line_x, $y += $y_alto + 2, $x + $line_y, $y, 'D', array('all' => $st
 $pdf->SetFont('Helvetica', '', 8);
 
 // cliente
-$pdf->setXY($x, $y += $y_alto);
+$pdf->setXY($x, $y += $y_alto-1);
 $pdf->Cell(1, 3, 'Cliente: ' . $receptor_razon_social, 0, 1, 'L', 0);
 
 // Documento
-$pdf->setXY($x, $y += $y_alto + 1);
+$pdf->setXY($x, $y += $y_alto);
 $pdf->Cell(1, 3, 'Documento: ' . $receptor_documento, 0, 1, 'L', 0);
 
 // RUC
-$pdf->setXY($x, $y += $y_alto + 1);
+$pdf->setXY($x, $y += $y_alto);
 $pdf->Cell(1, 3, 'RUC: ' . $receptor_ruc, 0, 1, 'L', 0);
 
 // condicion venta
-$pdf->setXY($x, $y += $y_alto + 1);
+$pdf->setXY($x, $y += $y_alto);
 $pdf->Cell(1, 3, "Condición de Venta: " . $receptor_condicion_operacion, 0, 1, 'L', 0);
 
 $style_line = array('width' => 0.25, 'cap' => 'butt', 'join' => 'miter', 'dash' => 0, 'color' => array(150, 150, 150));
 // -------------------------------------------------------------------------------------------
 $pdf->Line($line_x, $y += $y_alto + 2,  $x + $line_y, $y, 'D', array('all' => $style_line));
 
-//$pdf->setXY($pdf->GetX(), $pdf->GetY()+ 6);
-//$pdf->Cell(1, 3, 'X: ' . $pdf->GetX(), 0, 1, 'L', 0);
+
+
+//$pdf->SetFont('dejavusans', '', 7);
+//$pdf->setXY($x, $y += $y_alto);
+
+
+// -------------------------------------------------------------------------
+// QR
+// -------------------------------------------------------------------------
+
+//$pdf->SetY($y += $y_alto + 1);
+$pdf->write2DBarcode($pdf->getSifenComprobanteUrlQR(), 'QRCODE,L', $x, $y += $y_alto +2, 30, 30, $style, 'N');
+
+// -------------------------------------------------------------------------
+// enlace
+// -------------------------------------------------------------------------
+//$pdf->Link(10, 250, 30, 30, rawurldecode($pdf->getSifenComprobanteUrlQR()));
+
+
+// -------------------------------------------------------------------------
+// consulte la validez
+// -------------------------------------------------------------------------
+$pdf->SetFont('dejavusans', '', 6);
+$pdf->setXY($x + 3, $y += $y_alto);
+$pdf->Cell(60, 4, 'Consulte la validez de este Documento Electrónico con', 0, 1, 'C', false);
+
+$pdf->setXY($x, $y += 3);
+$pdf->Cell(50, 4, 'el número de CDC impreso abajo en:', 0, 1, 'C', false);
+
+$pdf->setXY($x, $y += $y_alto);
+$pdf->SetTextColor(0, 0, 255);
+$pdf->Write(5, 'https://ekuatia.set.gov.py/consultas', 'https://ekuatia.set.gov.py/consultas', false, 'C', true);
+
+// -------------------------------------------------------------------------
+// CDC
+// -------------------------------------------------------------------------
+$pdf->SetTextColor(0, 0, 0);
+$pdf->setXY($x, $y += $y_alto);
+$pdf->Cell(10, 4, 'CDC ' . $pdf->getSifenCdc(), 0, 1, 'L', false);
+
+// -------------------------------------------------------------------------
+// ESTE DOCUMENTO ES UN ...
+// -------------------------------------------------------------------------
+$pdf->setXY($x, $y += $y_alto);
+$pdf->Cell(10, 4, 'ESTE DOCUMENTO ES UNA REPRESENTACIÓN', 0, 1, 'L', false);
+
+$pdf->setXY($x, $y += $y_alto);
+$pdf->Cell(10, 4, 'GRÁFICA DE UN DOCUMENTO ELECTRÓNICO (XML)', 0, 1, 'L', false);
+
+// -------------------------------------------------------------------------
+// Información de interés ...
+// -------------------------------------------------------------------------
+$pdf->setXY($x, $y += $y_alto);
+$pdf->Cell(10, 4, 'Información de interés del facturador electrónico emisor.', 0, 1, 'L', false);    
 ?>

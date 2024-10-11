@@ -43,6 +43,9 @@ class PDFTicketKude extends TCPDF {
     private $punto_venta_localidad;
     private $punto_venta_domicilio;
 
+    private $sifen_comprobante_url_qr;
+    private $sifen_cdc;
+
     // ---------------------------------------------------
     //  Metodos Getter
     // ---------------------------------------------------
@@ -144,6 +147,14 @@ class PDFTicketKude extends TCPDF {
 
     public function getReceptorCondicionOperacion() {
         return $this->receptor_condicion_operacion;
+    }
+
+    public function getSifenComprobanteUrlQR() {
+        return $this->sifen_comprobante_url_qr;
+    }
+
+    public function getSifenCdc() {
+        return $this->sifen_cdc;
     }
 
     
@@ -251,6 +262,14 @@ class PDFTicketKude extends TCPDF {
         $this->receptor_condicion_operacion = $v;
     }
 
+    public function setSifenComprobanteUrlQR($v) {
+        $this->sifen_comprobante_url_qr = $v;
+    }
+
+    public function setSifenCdc($v) {
+        $this->sifen_cdc = $v;
+    }
+
     //Cabecera de pagina
     function Header()
     {
@@ -285,10 +304,10 @@ class PDFTicketKude extends TCPDF {
         // ---------------------------------------------------------------------
         $this->Image(Gral::getPathAbs() . DbConfig::PATH_LOGO_EMPRESA_PDF, 5, 10, 70);
         
-        $this->SetFont('Helvetica', '', 10);
+        $this->SetFont('Helvetica', '', 8);
         
         $this->SetTextColor(0, 0, 0);
-        $this->SetFont('Helvetica', '', 9);
+        $this->SetFont('Helvetica', '', 8);
         $this->SetFillColor(255, 255, 255);
         
         $x = 4;
@@ -347,8 +366,7 @@ class PDFTicketKude extends TCPDF {
         $this->Cell(1, 3, 'Actividad: ' . substr($actividad, 0, 30), 0, 1, 'L', 1);
         
         // Timbrado
-        $this->setXY($x, $y+= $y_alto);
-        $this->setXY($x, $y+= $y_alto);
+        $this->setXY($x, $y+= $y_alto + 2);
         $this->Cell(1, 3, 'Timbrado: ' . $timbrado, 0, 1, 'L', 1);
         
         // Fecha inicio vigencia
