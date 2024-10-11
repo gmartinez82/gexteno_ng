@@ -178,6 +178,8 @@ $pdf->setReceptorDocumento($receptor_doc);
 $pdf->setReceptorRazonSocial($receptor_razon_social);
 $pdf->setReceptorCondicionOperacion($receptor_condicion_operacion);
 
+$pdf->setSifenComprobanteUrlQR($vta_factura->getSIFEN_DTE_URL());
+$pdf->setSifenCdc($eku_de->getCdcFormateadoParaComprobante());
 
 $pdf->AddFont('DejaVuSans', '', Gral::getPathAbs().'comps/tcpdf/fonts/dejavusans.php');
 $pdf->AddFont('DejaVuSansCondensed', '', Gral::getPathAbs().'comps/tcpdf/fonts/dejavusanscondensed.php');
@@ -387,38 +389,33 @@ $pdf->Cell(1, 3, "Condición de Venta: " . $receptor_condicion_operacion, 0, 1, 
 
 $style_line = array('width' => 0.25, 'cap' => 'butt', 'join' => 'miter', 'dash' => 0, 'color' => array(150, 150, 150));
 // -------------------------------------------------------------------------------------------
-$pdf->Line($line_x, $y += $y_alto + 2,  $x + $line_y, $y, 'D', array('all' => $style_line));
-
-
-
-//$pdf->SetFont('dejavusans', '', 7);
-//$pdf->setXY($x, $y += $y_alto);
-
+$pdf->Line($line_x, $y += $y_alto + 1,  $x + $line_y, $y, 'D', array('all' => $style_line));
 
 // -------------------------------------------------------------------------
 // QR
 // -------------------------------------------------------------------------
-
-//$pdf->SetY($y += $y_alto + 1);
-$pdf->write2DBarcode($pdf->getSifenComprobanteUrlQR(), 'QRCODE,L', $x, $y += $y_alto +2, 30, 30, $style, 'N');
+$pdf->SetY($y += 2);
+$pdf->write2DBarcode($pdf->getSifenComprobanteUrlQR(), 'QRCODE,L', 27, $y, 18, 18, $style, 'N');
 
 // -------------------------------------------------------------------------
 // enlace
 // -------------------------------------------------------------------------
-//$pdf->Link(10, 250, 30, 30, rawurldecode($pdf->getSifenComprobanteUrlQR()));
+$pdf->Link(27, $y, 18, 18, rawurldecode($pdf->getSifenComprobanteUrlQR()));
 
+
+$pdf->SetFont('dejavusans', '', 7);
 
 // -------------------------------------------------------------------------
 // consulte la validez
 // -------------------------------------------------------------------------
-$pdf->SetFont('dejavusans', '', 6);
-$pdf->setXY($x + 3, $y += $y_alto);
-$pdf->Cell(60, 4, 'Consulte la validez de este Documento Electrónico con', 0, 1, 'C', false);
+$y = $pdf->GetY();
+$pdf->setXY($x, $y);
+$pdf->Cell(60, 4, 'Consulte la validez de este Documento Electrónico con', 0, 1, 'L', false);
 
 $pdf->setXY($x, $y += 3);
-$pdf->Cell(50, 4, 'el número de CDC impreso abajo en:', 0, 1, 'C', false);
+$pdf->Cell(50, 4, 'el número de CDC impreso abajo en:', 0, 1, 'L', false);
 
-$pdf->setXY($x, $y += $y_alto);
+$pdf->setXY($x, $y += 3);
 $pdf->SetTextColor(0, 0, 255);
 $pdf->Write(5, 'https://ekuatia.set.gov.py/consultas', 'https://ekuatia.set.gov.py/consultas', false, 'C', true);
 
@@ -426,21 +423,21 @@ $pdf->Write(5, 'https://ekuatia.set.gov.py/consultas', 'https://ekuatia.set.gov.
 // CDC
 // -------------------------------------------------------------------------
 $pdf->SetTextColor(0, 0, 0);
-$pdf->setXY($x, $y += $y_alto);
-$pdf->Cell(10, 4, 'CDC ' . $pdf->getSifenCdc(), 0, 1, 'L', false);
+$pdf->setXY($x, $y += 3);
+$pdf->Cell(10, 4, $pdf->getSifenCdc() , 0, 1, 'L', false);
 
 // -------------------------------------------------------------------------
 // ESTE DOCUMENTO ES UN ...
 // -------------------------------------------------------------------------
-$pdf->setXY($x, $y += $y_alto);
+$pdf->setXY($x, $y += 3);
 $pdf->Cell(10, 4, 'ESTE DOCUMENTO ES UNA REPRESENTACIÓN', 0, 1, 'L', false);
 
-$pdf->setXY($x, $y += $y_alto);
+$pdf->setXY($x, $y += 3);
 $pdf->Cell(10, 4, 'GRÁFICA DE UN DOCUMENTO ELECTRÓNICO (XML)', 0, 1, 'L', false);
 
 // -------------------------------------------------------------------------
 // Información de interés ...
 // -------------------------------------------------------------------------
-$pdf->setXY($x, $y += $y_alto);
+$pdf->setXY($x, $y += 4);
 $pdf->Cell(10, 4, 'Información de interés del facturador electrónico emisor.', 0, 1, 'L', false);    
 ?>
